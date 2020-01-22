@@ -14,7 +14,7 @@ const seccionesPagina = new  fullpage('#fullpage',{
 	slidesNavigation: true,
     slidesNavPosition: 'bottom',
 	responsiveWidth: 200,
-	loopBottom: true
+	loopBottom: false
 
 });
 
