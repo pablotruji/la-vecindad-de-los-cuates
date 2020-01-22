@@ -49,9 +49,10 @@ a{
 }
 
 .contenedor-imagen-centro .imagen-centro{
-    background-image: url(../imagenes/Imagen-centro-calavera-480.svg);
+    background-image: url(../imagenes/Imagen-centro-calavera-480.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     opacity: 1;
     box-sizing: content-box;
     height: 100vh;
