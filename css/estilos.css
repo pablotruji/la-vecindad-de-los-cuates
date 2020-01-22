@@ -67,25 +67,25 @@ a{
     z-index: 150;
 }
 .contenedor-imagen-centro img:nth-child(2){
-    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse infinite;
+    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse 10;
     z-index: 100;
 }
 
 .contenedor-imagen-centro img:nth-child(3){
 
-    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse infinite;
+    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse 10;
     z-index: 200;
 }
 
 .contenedor-imagen-centro img:nth-child(4){
 
-    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse infinite;
+    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse 10;
     z-index: 200;
 }
 
 .contenedor-imagen-centro img:nth-child(5){
 
-    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse infinite;
+    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse 10;
     z-index: 200;
 }
 
@@ -195,9 +195,9 @@ a{
 }
 
 @keyframes movimientos-chavo{
-    0% {transform: translateY(10px);}
+    0% {transform: translateY(5px);}
     25% {transform: translateY(0);}
-    75% {transform: translateY(10px);}
+    75% {transform: translateY(7px);}
     100%{transform: translateY(0);}
 }
 
