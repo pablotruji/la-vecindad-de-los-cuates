@@ -14,8 +14,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background: #E62256;
-    height: 100vh;
+    /* background: #E62256; */
+    height: 100%;
+    /* min-height: 800px; */
 }
 
 a{
@@ -32,6 +33,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-color:#E62256;
     box-sizing: content-box;
     justify-content: center;
@@ -43,28 +45,33 @@ a{
 /*==============  BACKGROUND  ===============*/
 .contenedor .contenedor-imagen-centro{
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 80%;
+    margin: auto;
 
 }
 
+/*
 .contenedor-imagen-centro .imagen-centro{
     background-image: url(../imagenes/Imagen-centro-calavera-480.png);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
     box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
+    height: 75%;
+    width: 200px;
     margin: auto;
-    left: 10%;
-    bottom: 7%;
+    left: 13%;
+    bottom: 19%;
     position: absolute;
     z-index: 100;
+    
 }
+*/
 
 /*=================== IMAGENES ANIMADAS ==================*/
+/*
 .contenedor-animacion-maracas-izq{
     background-image: url(../imagenes/Imagenes-fondo-animacion-maraca-izq-480.svg);
     background-position: center;
@@ -124,7 +131,7 @@ a{
     position: absolute;
     animation: movimientos-chavo 1s 5s ease-out alternate-reverse 8;
 }
-
+*/
 /*==================== ANIMACIONES ====================*/
 
 @keyframes movimientos-maracas-izq{
