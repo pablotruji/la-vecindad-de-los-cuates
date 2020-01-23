@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 20px
 }
 
-/* ================== IMAGENES FONDO ========================= */
+/* ================== IMAGENES DE PLATOS ========================= */
  
 .contenedor-plato-slide{
     position: relative;
@@ -196,14 +196,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .contenedor-plato-slide img{
-    width: 300px;
+    width: 200px;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15%;
     margin: auto;
+    background: limegreen;
 }
 
 /* ========================= LICORES ================================ */
@@ -225,11 +226,11 @@ img.imagen-slide-licores{
     /* margin-top: 10%; */
 }
 
-.descripcion{
+.contenedor-plato-slide .descripcion{
     position: absolute;
     left: 0;    
     right: 0;
-    bottom: 130px;
+    bottom: 30%;
     color: #fff;
     text-align: center;
 }
@@ -303,3 +304,21 @@ body {
 */
 
 
+/* =============================================== */
+/* ================== RESPONSIVE ================ */
+/* ============================================= */
+
+@media only screen and (max-height: 600px) {
+
+    .contenedor-plato-slide img{
+        background: lightsteelblue;
+    }
+    .contenedor-plato-slide .titulo{
+        font-size: 38px;
+    }
+
+    .contenedor-imagen .titulo-paginas-menu{
+        width: 60%;
+    }
+    
+} 
