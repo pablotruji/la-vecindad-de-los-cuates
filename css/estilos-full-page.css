@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* ================== IMAGENES FONDO ========================= */
  
-.contenedor-imagen-slide{
+.contenedor-plato-slide{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6{
     background: lightsalmon;
 }
 
-.contenedor-imagen-slide img{
+.contenedor-plato-slide img{
     width: 300px;
     height: auto;
     position: absolute;
@@ -214,7 +214,7 @@ img.imagen-slide-licores{
 
 /*============ ESTILOS TÍTULO DE PLATOS Y DESCRIPCIÓN =============*/
 
-.contenedor-imagen-slide .titulo{
+.contenedor-plato-slide .titulo{
     position: absolute;
     color: #fff;
     font-family: Mayan;
