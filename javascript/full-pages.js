@@ -11,7 +11,7 @@ const seccionesPagina = new  fullpage('#fullpage',{
 	navigationPosition: 'right',
 	// navigationTooltips: ['inicio', '1', '2', '3', '4'],
 	showActiveTooltip: true,
-	slidesNavigation: true,
+	slidesNavigation: false,
     slidesNavPosition: 'bottom',
 	responsiveWidth: 200,
 	loopBottom: false
