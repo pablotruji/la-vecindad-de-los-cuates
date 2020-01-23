@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .full-page{
     /* background: rgb(191, 230, 173); */
     width: 100%;
@@ -109,7 +114,7 @@ h1, h2, h3, h4, h5, h6{
     display:grid;
     grid-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-areas: "logo logo logo-2"
                          "aside-izquierda . aside-derecha"
                          "footer footer footer";
@@ -124,7 +129,7 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid lightgreen;
+    /* border: 1px solid lightgreen; */
     z-index: 400;
 }
 
@@ -135,7 +140,7 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid lightpink;
+    /* border: 1px solid lightpink; */
 
 }
 
@@ -155,7 +160,7 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     z-index: 0;
     align-self: flex-start;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
 .footer .patron-footer{
@@ -176,10 +181,9 @@ h1, h2, h3, h4, h5, h6{
 
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
-    width: 35%;
+    width: 25%;
     /* background:red; */
     z-index: 500;
-    border: 2px solid #fff;
 }
 
 .contenedor-alas{
@@ -232,13 +236,13 @@ h1, h2, h3, h4, h5, h6{
 
 /* ======== IMAGENES FOOTER COSTADOS ========== */
 
-.footer .imagen.izquierda-footer{
+.footer .imagen-izquierda-footer{
     display: flex;
     width: 100%;
 }
 
 .footer .imagen-izquierda-footer img {
-    width: 25%;
+    width: 26%;
     position: absolute;
     align-self: flex-end;
 }
