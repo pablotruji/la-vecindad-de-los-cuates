@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
 
 .footer .contenedor-footer{
     display:flex;
-    width: 80%;
+    width: 100%;
     height: 200px;  
     position: relative;
     justify-content: center;
@@ -162,7 +162,97 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     position: absolute;
     bottom: 41px;
-    z-index: 700;
+    z-index: 400;
+}
+
+.footer .imagen-mitad-del-mundo{
+    display:flex;
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    justify-content:center;
+    z-index: 200;
+}
+
+.imagen-mitad-del-mundo img.monumento{
+    position: relative;
+    width: 35%;
+    /* background:red; */
+    z-index: 500;
+    border: 2px solid #fff;
+}
+
+.contenedor-alas{
+    display:flex;
+    width: 100%;
+    position: absolute;
+    bottom: 33%;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.contenedor-alas img.alas-izq{
+    position: relative;
+    width: 17%;
+    height: auto;
+    z-index: 500;
+    margin-right: 25%;
+    margin-bottom: 47px;
+    animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
+    animation-fill-mode: forwards;
+}
+
+.contenedor-alas img.alas-der{
+    position: relative;
+    width: 17%;
+    height: auto;
+    z-index: 300;
+    margin-left: 24%;
+    margin-bottom: 47px;
+    transform: scaleX(-1);
+    animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
+    animation-fill-mode: forwards;
+}
+
+/* ANIMACIONES ALAS */
+
+@keyframes animacion-alas-izq{
+    0% {transform: rotate(-10deg) translateY(15px);}
+    20% {transform: rotate(0deg) translateY(0px);}
+    75% {transform: rotate(-15deg) translateY(15px);}
+    100% {transform: rotate(0deg) translateY(0px);}
+}
+@keyframes animacion-alas-der{
+    0% {transform: rotate(10deg) scaleX(-1) translateY(15px);}
+    20% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+    75% {transform: rotate(15deg) scaleX(-1) translateY(15px);}
+    100% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+}
+
+
+/* ======== IMAGENES FOOTER COSTADOS ========== */
+
+.footer .imagen.izquierda-footer{
+    display: flex;
+    width: 100%;
+}
+
+.footer .imagen-izquierda-footer img {
+    width: 25%;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.footer .imagen-derecha-footer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+} 
+
+.footer .imagen-derecha-footer img{
+    width: 26%;
+    position: absolute;
+    align-self: flex-end;
 }
 
 /* ================= ICONO BAJAR ================= */
@@ -184,6 +274,42 @@ h1, h2, h3, h4, h5, h6{
     25%{ transform: translateY(0px); }
     100%{ transform: translateY(20px); }
 }
+
+/* ================= REDES SOCIALES ======================== */
+
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    z-index: 500;
+}
+
+
+.footer .redes-sociales a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin:  7px;
+    color: #2C0D10;
+    transition: 0.4s;
+    margin-top: -80px;
+}
+
+.footer .redes-sociales a:hover{
+    background: #2C0D10;
+    color: #fff;
+    font-size: 27px;
+}
+
+.redes-sociales img{
+    position: absolute;
+    width: 40px;
+}
+
 
 
 /*=================== ESTILOS IMAGENES SLIDES ==================*/
