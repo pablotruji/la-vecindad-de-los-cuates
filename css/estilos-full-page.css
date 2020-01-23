@@ -170,23 +170,23 @@ h1, h2, h3, h4, h5, h6{
 #carta-menu-15{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-15.png");
 }
-/* ================== IMAGENES FONDO ========================= */
 
-.contenedor-imagen{
-    /* position: relative; */
-    position: fixed;
-    background: red;
-   
-    /* z-index: 10; */
+/* ================== TÍTULO DE PAGINAS DEL MENU ================ */
+
+.contenedor-imagen .titulo-paginas-menu{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    /* background: lightyellow; */
 }
-
-.contenedor-imagen img{
-    position: absolute;
+.titulo-paginas-menu img{
+    position: relative;
     width: 100%;
-    height: 100vh;
-    /* z-index: 500; */
+    margin-top: 20px
 }
 
+/* ================== IMAGENES FONDO ========================= */
+ 
 .contenedor-imagen-slide{
     position: relative;
     width: 100%;
