@@ -22,7 +22,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .full-page{
-    background: rgb(191, 230, 173);
+    /* background: rgb(191, 230, 173); */
+    width: 100%;
 }
 
 /* ======================== CLASES DE FULLPAGES ========================*/
@@ -109,19 +110,81 @@ h1, h2, h3, h4, h5, h6{
 
 
 /*=================== ESTILOS IMAGENES SLIDES ==================*/
-.contenedor-imagen{
-    position: relative;
-    background: red;
+#carta-menu-1, #carta-menu-2, #carta-menu-3,
+#carta-menu-4, #carta-menu-5, #carta-menu-6,
+#carta-menu-7, #carta-menu-8, #carta-menu-9,
+#carta-menu-10, #carta-menu-11, #carta-menu-12,
+#carta-menu-13, #carta-menu-14, #carta-menu-15
+{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    height: 100vh;
     z-index: 100;
-    margin: auto;
+}
+
+#carta-menu-1{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
+}
+#carta-menu-2{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
+}
+#carta-menu-3{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-3.png");
+}
+#carta-menu-4{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-4.png");
+}
+#carta-menu-5{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-5.png");
+}
+#carta-menu-6{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-6.png");
+}
+#carta-menu-7{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-7.png");
+}
+#carta-menu-8{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-8.png");
+}
+#carta-menu-9{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-9.png");
+}
+#carta-menu-10{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-10.png");
+}
+#carta-menu-11{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-11.png");
+}
+#carta-menu-12{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-12.png");
+}
+#carta-menu-13{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-13.png");
+}
+#carta-menu-14{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-14.png");
+}
+#carta-menu-15{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-15.png");
+}
+/* ================== IMAGENES FONDO ========================= */
+
+.contenedor-imagen{
+    /* position: relative; */
+    position: fixed;
+    background: red;
+   
+    /* z-index: 10; */
 }
 
 .contenedor-imagen img{
     position: absolute;
     width: 100%;
     height: 100vh;
+    /* z-index: 500; */
 }
 
 .contenedor-imagen-slide{
@@ -187,11 +250,53 @@ img.imagen-slide-licores{
 }
 
 
+/* =========== ESTILOS DEL NAVEGADOR DE LOS SLIDE HORIZONTALES ==========*/
+/*
+li:hover a.active span {
+    height: 21px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: 
+    #333;
+    left: 50%;
+    top: 44%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.fp-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a {
+    cursor: pointer;
+}
+body {
+    font-size: 18px;
+}
 
-
-
-
-
-
+*/
 
 
