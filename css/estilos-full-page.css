@@ -41,57 +41,13 @@ a {
     color: orange;
 }
 
+/* =====================================================  */
+/*===================== CONTENIDO   =================== */
+/* ================================================== */
 
-/* ========================MENU NAVEGACIÓN ========================*/
+/* ================CONTENDIDO DEL FOOTER ======================*/
 
-/*
-.nav{
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 170;
-    width: 100%;
-    top: 60px;
-    left: 10px;
-}
-
-.nav img{
-    width: 80px;
-}
-*/
-
-/*
-.nav li,
-.nav li a{
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 19px;
-    color: #c2c2c2;
-    transition: .5s ease;
-} 
-
-.nav li.active {
-    border-bottom: 2px solid orange;
-}
-
-.menu li a {
-    transition: .5s ease;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li.active a,
-.menu li:hover a{
-    color: orange;
-}
-*/  
-
-/*===================== HEADER Y PÁGINA COMPLETA =================== */
-
-.header{
+.header-footer{
     background: url(../imagenes/Imagenes-menu/Carta-Menu-1.png);
     background-position: center center;
     background-size: cover;
@@ -100,6 +56,8 @@ a {
     height: 100vh;
 
 }
+
+/* ========================  CONTENEDOR DE GRID ============================*/
 
 .contenedor-grid{
     position: absolute;
@@ -110,7 +68,7 @@ a {
 
 }
 
-/* ===================== CSS GRID ============================*/
+/* ======================== CSS GRID ============================*/
 .contenedor-grid .grid{
     width: 100%;
     height: 100%;
@@ -127,7 +85,6 @@ a {
 /* ================ LOGOTIPOS =================== */
 
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
-
 
 .contenedor-logo-principal{
     grid-area: logo;
@@ -366,8 +323,11 @@ a {
 }
 
 
+/* ====================================================================== */
+/* ================== CONTENIDO PRINCIPAL SLIDES MENU ================== */
+/* ==================================================================== */
 
-/*=================== ESTILOS IMAGENES SLIDES ==================*/
+/*=================== ESTILOS IMAGENES FONDO DE SLIDES ==================*/
 #carta-menu-1, #carta-menu-2, #carta-menu-3,
 #carta-menu-4, #carta-menu-5, #carta-menu-6,
 #carta-menu-7, #carta-menu-8, #carta-menu-9,
@@ -465,21 +425,6 @@ a {
 }
 
 
-/* ========================= LICORES ================================ */
-img.imagen-slide-licores{
-    width: 150px;
-}
-
-img.margarita{
-    width: 90px;
-}
-
-/* ====================SOPAS ============================*/
-
-img.imagen-slide-sopas{
-    width: 100%;
-}
-
 /*============ ESTILOS TÍTULO DE PLATOS Y DESCRIPCIÓN =============*/
 
 .contenedor-plato-slide .titulo{
@@ -502,6 +447,9 @@ img.imagen-slide-sopas{
     color: #fff;
     text-align: center;
 }
+
+
+
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
 .fp-controlArrow.fp-next,
