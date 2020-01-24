@@ -521,57 +521,6 @@ img.imagen-slide-sopas{
     border-color: transparent transparent transparent #fff;
 }
 
-
-/* =========== ESTILOS DEL NAVEGADOR DE LOS SLIDE HORIZONTALES ==========*/
-/*
-li:hover a.active span {
-    height: 21px;
-    width: 12px;
-    margin: -6px 0 0 -6px;
-    border-radius: 100%;
-}
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    height: 4px;
-    width: 4px;
-    border: 0;
-    background: 
-    #333;
-    left: 50%;
-    top: 44%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-.fp-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-#fp-nav ul li a, .fp-slidesNav ul li a {
-    cursor: pointer;
-}
-body {
-    font-size: 18px;
-}
-
-*/
-
-
 /* =============================================== */
 /* ================== RESPONSIVE ================ */
 /* ============================================= */
