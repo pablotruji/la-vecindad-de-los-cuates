@@ -701,7 +701,7 @@ a {
     background: rgba(248, 18, 18, 0.89);
 }
 
-/* ============== SECCIÓN 6 ============ */
+/* ============== SECCIÓN 6 LICORES TÍTULO ============ */
 
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-superior .titulo{ 
     width:  100%;
@@ -709,6 +709,7 @@ a {
     right: 22%;
     top: 50%;
     line-height: 20px;
+    color: rgb(209, 172, 8);
 }
 
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-inferior .titulo{ 
@@ -717,9 +718,105 @@ a {
     left: 20%;
     top: 40%;
     line-height: 20px;
+    color: rgb(209, 172, 8);
+
 }
 
-/* ========= LO NEJOR DE NUESTRO GANANDO TÍTULO ========= */
+.contenedor-info-producto.contenedor-licores-2 .contenedor-info-producto-superior .titulo{ 
+    width:  100%;
+    background:transparent;
+    right: 22%;
+    top: 50%;
+    line-height: 20px;
+    color: rgb(255, 0, 149);
+}
+
+.contenedor-info-producto.contenedor-licores-2 .contenedor-info-producto-inferior .titulo{ 
+    width:  100%;
+    background:transparent;
+    left: 22%;
+    top: 40%;
+    line-height: 20px;
+    color: rgb(255, 0, 149);
+}
+
+.contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-superior .titulo{ 
+    width:  100%;
+    background:transparent;
+    right: 25%;
+    top: 50%;
+    line-height: 20px;
+    color: rgb(209, 172, 8);
+}
+
+.contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-inferior .titulo{ 
+    width:  100%;
+    background:transparent;
+    left: 25%;
+    top: 40%;
+    line-height: 20px;
+    color: rgb(255, 0, 149);
+}
+
+.contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-superior .titulo{ 
+    width:  100%;
+    background:transparent;
+    right: 20%;
+    top: 50%;
+    line-height: 20px;
+    color: rgb(47, 255, 227);
+}
+
+.contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-inferior .titulo{ 
+    width:  100%;
+    background:transparent;
+    left: 23%;
+    top: 30%;
+    line-height: 30px;
+    color: rgb(255, 0, 149);
+}
+
+.contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-superior .titulo{ 
+    width:  100%;
+    background:transparent;
+    right: 20%;
+    top: 50%;
+    line-height: 16px;
+    color: rgb(209, 172, 8);
+
+}
+
+.contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-inferior .titulo{ 
+    width:  100%;
+    background:transparent;
+    left: 23%;
+    top: 30%;
+    line-height: 20px;
+    color: rgb(255, 0, 149);
+}
+
+.contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-superior .titulo{ 
+    width:  100%;
+    background:transparent;
+    right: 20%;
+    top: 55%;
+    line-height: 20px;
+    color: rgb(255, 0, 34);
+}
+
+.contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-inferior .titulo{ 
+    width:  100%;
+    background:transparent;
+    left: 23%;
+    top: 20%;
+    line-height: 20px;
+    color: rgb(209, 172, 8);
+
+}
+#carta-menu-14 .titulo span{
+    background: indigo;  
+}
+/* ========= LO MEJOR DE NUESTRO GANANDO TÍTULO ========= */
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo{
     background: transparent;
@@ -731,10 +828,7 @@ a {
     background: orange;
 }
 
-.contenedor-licores-1 .titulo span{
-    background: indigo;
-   
-}
+
 
 /* ================= DESCRIPCIÓN ===================== */
 .descripcion{
