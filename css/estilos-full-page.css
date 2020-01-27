@@ -50,18 +50,6 @@ a {
 /*===================== CONTENIDO   =================== */
 /* ================================================== */
 
-/* ================CONTENDIDO DEL FOOTER ======================*/
-
-.header-footer{
-    background: url(../imagenes/Imagenes-menu/Carta-Menu-1.png);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-
-}
-
 /* ========================  CONTENEDOR DE GRID ============================*/
 
 .contenedor-grid{
@@ -87,9 +75,9 @@ a {
 
 }
 
-/* ================ LOGOTIPOS =================== */
+/* ======================= LOGOTIPOS ============================ */
 
-/* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
+/* =========== LOGOTIPO LA VECIDAD DE LOS CUATES ================*/
 
 .contenedor-logo-principal{
     grid-area: logo;
@@ -120,8 +108,9 @@ a {
     width: 77px;
 }
 
-
-/* ====================== FOOTER ========================== */
+/* ======================================================== */
+/* ====================== FOOTER ========================= */
+/* ====================================================== */
 
 .footer{
     display: flex;
@@ -220,7 +209,7 @@ a {
     animation-fill-mode: forwards;
 }
 
-/* ANIMACIONES ALAS */
+/*====================== ANIMACIONES ALAS ============================*/
 
 @keyframes animacion-alas-izq{
     0% {transform: rotate(-10deg) translateY(15px);}
@@ -235,8 +224,7 @@ a {
     100% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
 }
 
-
-/* ======== IMAGENES FOOTER COSTADOS ========== */
+/* ============== IMAGENES FOOTER IZQUIERDA Y DERECHA ========== */
 
 .footer .imagen-izquierda-footer{
     display: flex;
@@ -308,7 +296,7 @@ a {
     height: 100vh;
 }
 
-/*=================== ESTILOS IMAGENES FONDO DE SLIDES ==================*/
+/*=================== ESTILO IMAGENES FONDO DE SLIDES ==================*/
 #carta-menu-1, #carta-menu-2, #carta-menu-3,
 #carta-menu-4, #carta-menu-5, #carta-menu-6,
 #carta-menu-7, #carta-menu-8, #carta-menu-9,
@@ -371,7 +359,6 @@ a {
 }
 
 /* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
-
 .contenedor-slide .titulo-paginas-menu{
     position: absolute;
     width: 60%;
@@ -390,8 +377,8 @@ a {
     /* background: blue; */
 }
 
-/* ===== CONTENEDOR IMAGENES DE PLATOS E INFORMACIÓN ===== */
- 
+/* ======== CONTENEDOR IMÁGENES DE PLATOS E INFORMACIÓN ===== */
+
 .contenedor-info-producto{
     position: relative;
     width: 100%;
@@ -402,31 +389,25 @@ a {
 }
 
 .contenedor-info-producto .contenedor-info-producto-superior{
-    /* position: ; */
     position: relative;
     width: 100%;
     height: 50%;
-    /* border: 1px solid hotpink; */
 }
 .contenedor-info-producto .contenedor-info-producto-inferior{
     position: relative;
     width: 100%;
-    height: 50%;
-    /* border: 5px solid indigo; */
-   
+    height: 50%;   
 }
 
 
-/* ====================== IMÁGENES PLATOS ====================== */
+/* =========== ESTILOS GENERALES IMÁGENES PLATOS Y BEBIDAS ======== */
 .contenedor-info-producto img{
     width: 65%;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    /* border: 1px solid lavender; */
 }
-
 .contenedor-info-producto-superior img{
     left:0;
 }
@@ -434,9 +415,10 @@ a {
     right: 0;
 }
 
-/* ===== IMAGENES PERSONALIZADAS DE ACUERDO A SU TIPO ===*/
+/* =============================================================== */
+/* = ESTILOS PARTICULARES DE IMÁGENES PLATOS, LICORES Y BEBIDAS ==*/
 
-/* ================= SECCION 1  =======================*/
+/* =========== PRIMERA SECCIÓN - PA' COMPARTIR ================= */
 .contenedor-pa-compartir-1 .contenedor-info-producto-superior img{
     width: 80%;
     transform: RotateZ(10deg);
@@ -450,19 +432,16 @@ a {
     width: 70%;
 }
 
-/* =============== SECCION 2 =========================*/
-
+/* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ==========*/
 .contenedor-pa-entrarle-solito-1 .contenedor-info-producto-superior img{
     width: 60%;
-
 }
 
 .contenedor-pa-entrarle-solito-1 .contenedor-info-producto-inferior img{
     width: 70%;
-
 }
 
-/* ============== SECCION 3 ========================*/
+/* ============== TERCERA SECCIÓN - SOPAS =================== */
 .contenedor-sopas-1 .contenedor-info-producto-superior img{
     width: 55%;
 }
@@ -471,8 +450,9 @@ a {
     width: 60%;
 }
 
-/* ============= SECCIÓN 4 ========================*/
+/* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
 
+/* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
 .contenedor-los-mero-mero-1 .contenedor-info-producto-superior img{
     width: 75%;
     transform: scaleX(-1);
@@ -496,8 +476,7 @@ a {
     transform: rotateZ(20deg);
 }
 
-/* ================== SECCIÓN 5 ============================ */
-
+/* ================= SEXTA SECCIÓN  - LAS ESTRELLAS ============== */
 .contenedor-las-estrellas-1 .contenedor-info-producto-superior img{
     width: 70%;
     transform: rotateY(180deg);
@@ -507,8 +486,7 @@ a {
     width: 58%;
 }
 
-/* ================= SECCIÓN 6 =========================== */
-
+/* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior img{
     width: 65%;
 }
@@ -523,7 +501,7 @@ a {
     transform: rotateZ(20deg);
 }
 
-/* ================== SECCIÓN 7 ===========================*/
+/* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
 .contenedor-pechugas-pio-pio-1 .contenedor-info-producto-superior img{
     width: 52%;
     transform: rotateZ(30deg);
@@ -534,12 +512,13 @@ a {
     transform: rotateZ(29deg);
 }
 
-/* ===================== SECCIÓN 8 ==================== */
+/* ================== NOVENA SECCIÓN - Y EL PUERCO ============ */
 .contenedor-y-el-puerco-1 .contenedor-info-producto-superior img {
     width: 55%;
     transform: rotateZ(22deg);
 }
 
+/* ================= DÉCIMA SECCIÓN - MARISCOS ============== */
 .contenedor-mariscos-1 .contenedor-info-producto-superior img {
     width: 70%;
     transform: rotateZ(-5deg);
@@ -549,14 +528,31 @@ a {
     width: 77%;
     transform: rotateZ(-25deg) scaleY(-1) scaleX(-1);
 }
-/* =================== SECCIÓN 9 ====================== */
 
+/* ===== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ===== */
+
+/* ============= DUODECIMA SECCIÓN - POSTRES =============== */
 .contenedor-postres-1 .contenedor-info-producto-superior img{
+    width: 70%;
+    transform: rotateZ(-15deg);
+}
+
+.contenedor-postres-1 .contenedor-info-producto-inferior img{
     width: 70%;
     transform: rotateZ(-5deg);
 }
 
-/* ================== SECCION 10 =======================*/
+.contenedor-postres-2 .contenedor-info-producto-superior img{
+    width: 65%;
+    transform: rotateZ(-5deg);
+}
+
+.contenedor-postres-2 .contenedor-info-producto-inferior img{
+    width: 70%;
+    transform: rotateZ(-5deg);
+}
+
+/* =========== TRIGÉSIMA SECCIÓN - LICORES =================*/
 
 .contenedor-licores-1 .contenedor-info-producto-superior img{
     width: 26%;
@@ -626,11 +622,12 @@ a {
 .contenedor-licores-6 .contenedor-info-producto-inferior img{
     width: 33%;
     right: 10%;
-    bottom: 55%;
+    bottom: 40%;
 }
 
-/*============ ESTILOS TÍTULO DE PLATOS Y DESCRIPCIÓN =============*/
+/* ============== CUATRIGÉSIMA SECCIÓN BEBIDAS ==================== */
 
+/*=== ESTILOS GENERALESS DE TÍTULO DE PLATOS, LICORES Y BEBIDAS === */
 .contenedor-info-producto .titulo{
     position: absolute;
     color: #fff;
@@ -650,9 +647,10 @@ a {
     left: 5%;
 }
 
-/* ======== PERSONALIZACIÓN DE TÍTULOS ==========*/
-/* =================SECCION 1 ===================*/
+/* =============================================================== */
+/* ========= ESTILOS PARTICULARES DE TÍTULOS DE PLATOS ===========*/
 
+/* ============ PRIMERA SECCIÓN - PA' COMPARTIR ================*/
 .contenedor-pa-compartir-1 .titulo{
     background: rgb(247, 121, 3);
 }
@@ -665,7 +663,7 @@ a {
     background: rgb(187, 21, 181);
 }
 
-/* ================ SECCIÓN 2 ================= */
+/* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ============= */
 .contenedor-pa-entrarle-solito-1 .titulo{
     background: rgb(236, 22, 68);
 }
@@ -674,7 +672,7 @@ a {
     background: red;
 }
 
-/* ================ SECCIÓN 3 ================ */
+/* ============== TERCERA SECCIÓN - SOPAS   ===================== */
 .contenedor-sopas-1 .titulo{
     background: rgb(176, 0, 182);  
 }
@@ -683,41 +681,59 @@ a {
     background: red  
 }
 
+/* ========= CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
+
+/* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS =========*/
 .contenedor-los-mero-mero-1 .titulo,
 .contenedor-los-mero-mero-2 .titulo,
 .contenedor-los-mero-mero-3 .titulo{
     background: red;
 }
 
-/* =============== SECCIÓN 4 ================*/
+/* ============== SEXTA SECCIÓN  - LAS ESTRELLAS =============*/
 .contenedor-las-estrellas-1 .titulo{
     background: rgb(5, 196, 5);
 }
 
-/* ============== SECCIÓN 5 ============== */
-
-.contenedor-mariscos-1 .titulo,
-.contenidor-mariscos-2 .titulo{
-    background: rgba(248, 18, 18, 0.89);
+/* ===== SÉPTIMA SECCIÓN - LO MEJOR DE NUESTRO GANADO ====== */
+.contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo{
+    background: transparent;
+    line-height: 20px;
 }
 
-/* ============== SECCIÓN 6 LICORES TÍTULO ============ */
+.contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo span{
+    background: orange;
+}
 
+/* ========= OCTAVA SECCIÓN - PECHUGAS PIO PIO ============ */
+
+/* =========== NOVENA SECCIÓN - Y EL PUERCO ================ */
+
+/* =============== DÉCIMA SECCIÓN - MARISCOS ==============*/
+.contenedor-mariscos-1 .titulo,
+.contenidor-mariscos-2 .titulo{
+    background: rgba(33, 56, 187, 0.89);
+}
+
+/* ==== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ==== */
+
+/* ============= DUODÉCIMA SECCIÓN - POSTRES =============== */
+
+/* ============ TRIGÉSIMA SECCIÓN - LICORES 6 ============= */
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-superior .titulo{ 
     width:  100%;
     background:transparent;
-    right: 22%;
+    right: 23%;
     top: 50%;
-    line-height: 20px;
+    line-height: 83%;
     color: rgb(209, 172, 8);
 }
 
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-inferior .titulo{ 
     width:  100%;
     background:transparent;
-    left: 20%;
+    left: 22%;
     top: 40%;
-    line-height: 20px;
     color: rgb(209, 172, 8);
 
 }
@@ -727,7 +743,6 @@ a {
     background:transparent;
     right: 22%;
     top: 50%;
-    line-height: 20px;
     color: rgb(255, 0, 149);
 }
 
@@ -736,7 +751,6 @@ a {
     background:transparent;
     left: 22%;
     top: 40%;
-    line-height: 20px;
     color: rgb(255, 0, 149);
 }
 
@@ -745,7 +759,6 @@ a {
     background:transparent;
     right: 25%;
     top: 50%;
-    line-height: 20px;
     color: rgb(209, 172, 8);
 }
 
@@ -754,7 +767,6 @@ a {
     background:transparent;
     left: 25%;
     top: 40%;
-    line-height: 20px;
     color: rgb(255, 0, 149);
 }
 
@@ -763,25 +775,25 @@ a {
     background:transparent;
     right: 20%;
     top: 50%;
-    line-height: 20px;
+    line-height: 85%;
     color: rgb(47, 255, 227);
 }
 
 .contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-inferior .titulo{ 
     width:  100%;
     background:transparent;
-    left: 23%;
+    left: 22%;
     top: 30%;
-    line-height: 30px;
+    line-height: 85%;
     color: rgb(255, 0, 149);
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-superior .titulo{ 
     width:  100%;
     background:transparent;
-    right: 20%;
+    right: 22%;
     top: 50%;
-    line-height: 16px;
+    line-height: 70%;
     color: rgb(209, 172, 8);
 
 }
@@ -791,16 +803,15 @@ a {
     background:transparent;
     left: 23%;
     top: 30%;
-    line-height: 20px;
     color: rgb(255, 0, 149);
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-superior .titulo{ 
     width:  100%;
     background:transparent;
-    right: 20%;
+    right: 21%;
     top: 55%;
-    line-height: 20px;
+    line-height: 75%;
     color: rgb(255, 0, 34);
 }
 
@@ -808,29 +819,18 @@ a {
     width:  100%;
     background:transparent;
     left: 23%;
-    top: 20%;
-    line-height: 20px;
+    top: 27%;
     color: rgb(209, 172, 8);
 
 }
 #carta-menu-14 .titulo span{
     background: indigo;  
 }
-/* ========= LO MEJOR DE NUESTRO GANANDO TÍTULO ========= */
-
-.contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo{
-    background: transparent;
-    line-height: 20px;
-}
-
-
-.contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo span{
-    background: orange;
-}
 
 
 
-/* ================= DESCRIPCIÓN ===================== */
+
+/* ======== ESTILOS GENERALES DE DESCRIPCIÓN DE PLATOS  =========== */
 .descripcion{
     display: flex;
     position: absolute;
@@ -864,41 +864,59 @@ a {
     justify-content: center;
 }
 
-/* ========== PERSONALIZACIÓN DESCRIPCIÓN =========== */
+/* =============================================================== */
+/* ======== ESTILOS PARTICULARES DE DESCRIPCIÓN DE PLATOS =======*/
 
-/* ===========SECCION 2 ===========================*/
+/* =========== PRIMERA SECCIÓN - PA' COMPARTIR ================= */
 
-/* =============== SECCIÓN 3 ===========================*/
+/* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ==========*/
 
+/* ============== TERCERA SECCIÓN - SOPAS =================== */
 .contenedor-sopas-1 .descripcion span{
     background: rgba(255, 251, 3, 0.6);
     color: brown;
 }
 
-/* ================ SECCIÓN 4  ==================== */
+/* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
+
+/* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
 .contenedor-los-mero-mero-1 span, .contenedor-los-mero-mero-2 span, .contenedor-los-mero-mero-3 span{
     background:rgba(116, 10, 2, 0.4);
 }
 
-/* ================ SECCIÓN 5 =================== */
+/* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
 .contenedor-las-estrellas-1 span{
     background: rgb(75, 6, 238, 0.4);
 }
 
-/*================ SECCIÓN 6 ====================*/
-
+/* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
 #carta-menu-14 .contenedor-info-producto .descripcion{
-    /* background: red; */
     top: 10%;
     bottom: 0;
     margin: auto;
 }
 
-/* ========= LO NEJOR DE NUESTRO GANANDO DESCRIPCIÓN ========= */
-
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
     top: 24%;
 }
+
+/* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
+
+/* ================== NOVENA SECCIÓN - Y EL PUERCO ============ */
+
+/* ================= DÉCIMA SECCIÓN - MARISCOS ============== */
+
+/* ===== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ===== */
+
+/* ============= DUODECIMA SECCIÓN - POSTRES =============== */
+
+/* ============= TRIGÉSIMA SECCIÓN - LICORES ============== */
+
+/* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
+
+
+
+
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
 .fp-controlArrow.fp-next,
