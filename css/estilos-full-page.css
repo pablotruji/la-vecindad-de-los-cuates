@@ -51,6 +51,17 @@ a {
     color: orange;
 }
 
+/* ======================= LOGOTIPOS ============================ */
+
+/* ==================== LOGOTIPO STICKY ========================= */
+.contenedor-logotipo-sticky{
+    width: 20%;
+    position: fixed;
+    top: 6%;
+    left: 10px;
+    z-index: 1000;
+}
+
 /* =====================================================  */
 /*===================== CONTENIDO   =================== */
 /* ================================================== */
@@ -75,57 +86,46 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
     grid-template-areas: "logo logo logo-2"
-                         "aside-izquierda . aside-derecha"
+                         "aside-izquierda boton aside-derecha"
                          "footer footer footer";
 
 }
 
-/* ======================= LOGOTIPOS ============================ */
 
-/* ==================== LOGOTIPO STICKY ========================= */
-.contenedor-logotipo-sticky{
-    width: 20%;
-    position: fixed;
-    top: 6%;
-    left: 10px;
-    z-index: 1000;
-}
-
-/* =========== LOGOTIPO LA VECIDAD DE LOS CUATES ================*/
-
-/* .contenedor-logo-principal{
-    grid-area: logo;
-}
-
-.contenedor-logo-principal img{
-    width: 110px;
-    margin-top: 35px;
-    margin-left: 7px;
-    position: static;
-} */
-
-/*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
-/* .contenedor-logo-2{
-    grid-area: logo-2;
-    display:flex;
-    border: green 1px solid;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.contenedor-logo-2 a{
-    margin-bottom: 10px;
-    margin-right: 10px ;
-}
-
-
-.contenedor-logo-2 img{
-    width: 77px;
-} */
 
 /* ======================================================== */
 /* ====================== FOOTER ========================= */
 /* ====================================================== */
+
+/* ==================== BOTÓN RESERVAS ================= */
+
+.boton-reservas-footer{
+    position: relative;
+    grid-area: boton;
+    width: 100%;
+    /* background: red; */
+}
+
+.boton-reservas-footer img{
+    width: 170px;
+    animation: giro 50s linear infinite ; 
+    cursor: pointer;
+    z-index: 500;
+}
+
+@keyframes giro{
+    0%{ transform: rotateZ(0deg); } 
+    100%{ transform: rotateZ(360deg); }
+}
+
+.boton-reservas-footer .nombre-reserva{
+    position: absolute;
+    z-index: 700;
+    color: #fff;
+    top: 32%;
+    right: 33%;
+    font-size: 15px;
+}
 
 .footer{
     display: flex;
@@ -959,10 +959,6 @@ a {
     margin: auto;
 }
 /* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
-
-
-
-
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
 .fp-controlArrow.fp-next,
