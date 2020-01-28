@@ -517,6 +517,7 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
+    border: 1px solid #E62256;
 
 }
 
@@ -563,7 +564,7 @@ a{
  .footer .imagen-mitad-del-mundo{
     display: flex;
     width: 100%;
-    width: auto;
+    height: auto;
     position: absolute;
     bottom: 60px;
     justify-content: center;
