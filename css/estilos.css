@@ -462,7 +462,7 @@ a{
     grid-area: aside-derecha;
     width: 100%;
     height: 100%;
-    border: 1px solid lightskyblue;
+    /* border: 1px solid lightskyblue; */
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-end;
@@ -471,7 +471,7 @@ a{
 
 .contenedor-botones-aside{
     width: 90px;
-    border: 1px solid lightpink;
+    /* border: 1px solid lightpink; */
 }
 
 
