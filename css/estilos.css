@@ -46,7 +46,7 @@ a{
 .contenedor .contenedor-imagen-centro{
     display: flex;
     position: relative;
-    width: 80%;
+    width: 75%;
     height: 100%;
     margin: auto;
     /* background: red; */
@@ -470,7 +470,7 @@ a{
 }
 
 .contenedor-botones-aside{
-    width: 90px;
+    width: 110px;
     /* border: 1px solid lightpink; */
 }
 
@@ -494,12 +494,12 @@ a{
 }
 
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: 2px;
+    margin-left: 0px;
     margin-top: 30px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
-    margin-left: 5px;
+    margin-left: -10px;
     margin-top: 20px;
 }
 
@@ -573,7 +573,7 @@ a{
 
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
-    width: 25%;
+    width: 5%;
     z-index: 500;
 }
 
