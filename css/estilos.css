@@ -563,7 +563,8 @@ a{
 
  .footer .imagen-mitad-del-mundo{
     display: flex;
-    width: 100%;
+    width: 400px;
+    max-width: 400px;
     height: auto;
     position: relative;
     bottom: 60px;
