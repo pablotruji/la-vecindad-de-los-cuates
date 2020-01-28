@@ -565,7 +565,7 @@ a{
     display: flex;
     width: 100%;
     height: auto;
-    position: absolute;
+    position: relative;
     bottom: 60px;
     justify-content: center;
     z-index: 200;
@@ -573,7 +573,7 @@ a{
 
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
-    width: 5%;
+    width: 23%;
     z-index: 500;
 }
 
