@@ -5,7 +5,12 @@
 }
 @font-face{
     font-family: 'Tequila';
-    src: url(../fonts/ElRio.TTF);
+    src: url(../fonts/Stronger.ttf);
+}
+
+@font-face{
+    font-family: 'Mirian';
+    src: url(../fonts/MyriadPro-Regular_1.otf)
 }
 
 /*============== ESTILOS GENERALES =================*/
@@ -77,9 +82,18 @@ a {
 
 /* ======================= LOGOTIPOS ============================ */
 
+/* ==================== LOGOTIPO STICKY ========================= */
+.contenedor-logotipo-sticky{
+    width: 20%;
+    position: fixed;
+    top: 6%;
+    left: 10px;
+    z-index: 1000;
+}
+
 /* =========== LOGOTIPO LA VECIDAD DE LOS CUATES ================*/
 
-.contenedor-logo-principal{
+/* .contenedor-logo-principal{
     grid-area: logo;
 }
 
@@ -88,13 +102,13 @@ a {
     margin-top: 35px;
     margin-left: 7px;
     position: static;
-}
+} */
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
-.contenedor-logo-2{
+/* .contenedor-logo-2{
     grid-area: logo-2;
     display:flex;
-    /* border: green 1px solid; */
+    border: green 1px solid;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -107,7 +121,7 @@ a {
 
 .contenedor-logo-2 img{
     width: 77px;
-}
+} */
 
 /* ======================================================== */
 /* ====================== FOOTER ========================= */
@@ -121,7 +135,6 @@ a {
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid lightgreen;
     z-index: 400;
 }
 
@@ -303,7 +316,6 @@ a {
 #carta-menu-10, #carta-menu-11, #carta-menu-12,
 #carta-menu-13, #carta-menu-14, #carta-menu-15
 {
-    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
     background-position: center center;
     background-repeat: repeat-x;
     background-size: cover;
@@ -375,6 +387,15 @@ a {
     left: 0;
     right: 0;
     /* background: blue; */
+}
+
+/* ============== TÍTULO DE SECCIÓN DOBLE ================= */
+.contenedor-ensaladas-tacos .imagen-titulo-seccion-doble{
+    position: absolute;
+    width: 67%;
+    top: -100%;
+    right: 0;
+    left: 0;
 }
 
 /* ======== CONTENEDOR IMÁGENES DE PLATOS E INFORMACIÓN ===== */
@@ -450,12 +471,18 @@ a {
 }
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.titulo-paginas-menu-doble img{
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior .imagen-seccion-doble{
     position: absolute;
-    width: 65%;
-    top: -100%;
-    right: 0;
+    width: 75%;
+    top: -50px;
     left: 0;
+}
+
+.contenedor-ensaladas-tacos .contenedor-info-producto-inferior .imagen-seccion-doble{
+    position: absolute;
+    width: 74%;
+    top: -50px;
+    right: 0;
 }
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
@@ -636,12 +663,17 @@ a {
 .contenedor-info-producto .titulo{
     position: absolute;
     color: #fff;
-    font-family: 'Tequila';
-    font-size: 24px;
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Londrina Solid', cursive; */
+    /* font-family: 'Mountains of Christmas', cursive; */
+    font-family: 'Rye', cursive;
+    /* font-family: 'Atma', cursive; */
+    /* font-family: 'Slackey', cursive; */
+    font-size: 20px;
     top: 8%;
     text-transform: uppercase;
-    background: #f07909;
-    line-height: 25px;
+    background: rgb(255, 109, 24);
+    line-height: 90%;
 }
 
 .contenedor-info-producto-superior .titulo{
@@ -657,24 +689,25 @@ a {
 
 /* ============ PRIMERA SECCIÓN - PA' COMPARTIR ================*/
 .contenedor-pa-compartir-1 .titulo{
-    background: rgb(247, 121, 3);
+    background: rgb(255, 109, 24);
+
 }
 
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .titulo{
-    background: rgb(187, 21, 181);
+    background: rgb(140, 21, 187);
 }
 
 .contenedor-pa-compartir-2 .contenedor-info-producto-inferior .titulo{
-    background: rgb(187, 21, 181);
+    background: rgb(140, 21, 187);
 }
 
 /* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ============= */
 .contenedor-pa-entrarle-solito-1 .titulo{
-    background: rgb(236, 22, 68);
+    background: rgb(235, 13, 61);
 }
 
 .contenedor-pa-entrarle-solito-2 .titulo{
-    background: red;
+    background: rgb(235, 13, 61);
 }
 
 /* ============== TERCERA SECCIÓN - SOPAS   ===================== */
@@ -683,19 +716,18 @@ a {
 }
 
 .contenedor-sopas-1 .contenedor-info-producto-inferior .titulo{
-    background: red  
+    background: rgb(235, 13, 61);
 }
 
 /* ========= CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
 .contenedor-ensaladas-tacos .titulo{
-    font-size: 45px;
-    text-shadow: 4px 2px 4px #000000, 5px 1px 1px #fff ;
+   
 }
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS =========*/
 .contenedor-los-mero-mero-1 .titulo,
 .contenedor-los-mero-mero-2 .titulo,
 .contenedor-los-mero-mero-3 .titulo{
-    background: red;
+    background: rgb(235, 13, 61);
 }
 
 /* ============== SEXTA SECCIÓN  - LAS ESTRELLAS =============*/
@@ -706,21 +738,24 @@ a {
 /* ===== SÉPTIMA SECCIÓN - LO MEJOR DE NUESTRO GANADO ====== */
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo{
     background: transparent;
-    line-height: 20px;
+    line-height: 100%;
 }
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .titulo span{
-    background: orange;
+    background: rgb(255, 109, 24);
 }
 
 /* ========= OCTAVA SECCIÓN - PECHUGAS PIO PIO ============ */
+.contenedor-pechugas-pio-pio-1 .contenedor-info-producto-superior .titulo span{
+    background: rgb(24, 220, 255);
+}
 
 /* =========== NOVENA SECCIÓN - Y EL PUERCO ================ */
 
 /* =============== DÉCIMA SECCIÓN - MARISCOS ==============*/
 .contenedor-mariscos-1 .titulo,
 .contenidor-mariscos-2 .titulo{
-    background: rgba(33, 56, 187, 0.89);
+    background: rgba(49, 78, 243, 0.89);
 }
 
 /* ==== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ==== */
@@ -733,7 +768,7 @@ a {
     background:transparent;
     right: 23%;
     top: 50%;
-    line-height: 83%;
+    line-height: 100%;
     color: rgb(209, 172, 8);
 }
 
@@ -783,7 +818,7 @@ a {
     background:transparent;
     right: 20%;
     top: 50%;
-    line-height: 85%;
+    line-height: 100%;
     color: rgb(47, 255, 227);
 }
 
@@ -792,7 +827,7 @@ a {
     background:transparent;
     left: 22%;
     top: 30%;
-    line-height: 85%;
+    line-height: 100%;
     color: rgb(255, 0, 149);
 }
 
@@ -801,7 +836,7 @@ a {
     background:transparent;
     right: 22%;
     top: 50%;
-    line-height: 70%;
+    line-height: 95%;
     color: rgb(209, 172, 8);
 
 }
@@ -819,7 +854,7 @@ a {
     background:transparent;
     right: 21%;
     top: 55%;
-    line-height: 75%;
+    line-height: 100%;
     color: rgb(255, 0, 34);
 }
 
@@ -844,7 +879,7 @@ a {
     height: auto;
     top: 20%;
     font-size: 12px;
-    font-family: Mayan;
+    font-family: Mirian;
     /* border: 1px solid #333; */
     justify-content: flex-start;  
 }
@@ -853,7 +888,7 @@ a {
 }
 
 .descripcion  span {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
     border-top: 4px solid rgba(0, 0, 0, 0.02); 
     line-height: 16px;
     color: #fff;
@@ -883,8 +918,12 @@ a {
 }
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.contenedor-ensaladas-tacos .descripcion span{
-     background: rgba(255, 251, 3, 0.2); 
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior span{
+     background: rgba(110, 223, 5, 0.4); 
+}
+
+.contenedor-ensaladas-tacos .contenedor-info-producto-inferior span{
+    background: rgba(255, 73, 1, 0.4); 
 }
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
@@ -898,11 +937,6 @@ a {
 }
 
 /* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
-#carta-menu-14 .contenedor-info-producto .descripcion{
-    top: 10%;
-    bottom: 0;
-    margin: auto;
-}
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
     top: 24%;
@@ -919,7 +953,11 @@ a {
 /* ============= DUODECIMA SECCIÓN - POSTRES =============== */
 
 /* ============= TRIGÉSIMA SECCIÓN - LICORES ============== */
-
+#carta-menu-14 .contenedor-info-producto .descripcion{
+    top: 10%;
+    bottom: 0;
+    margin: auto;
+}
 /* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
 
 
@@ -992,7 +1030,7 @@ a {
         /* background: lightsteelblue; */
     }
     .contenedor-info-producto .titulo{
-        font-size: 25px
+        font-size: 20px
     }
 
     .contenedor-info-producto .descripcion{
