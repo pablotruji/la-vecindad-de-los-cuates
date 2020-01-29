@@ -1,12 +1,12 @@
 /*================= FUENTES ==========================*/
 @font-face{
-    font-family: 'Mayan';
-    src: url(../fonts/Mayan\ 2.ttf);
+    font-family: 'Helvetica';
+    src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
 
 @font-face{
-    font-family: 'Bebas';
-    src: url(../fonts/BebasNeue\ Book.otf);
+    font-family: 'Woodstand';
+    src: url(../fonts/Woodstamp.otf);
 }
 
 /*=============== ESTILOS GENERALES ===============*/
@@ -176,7 +176,7 @@ a{
     display:grid;
     grid-gap:10px;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 250px 300px 250px;
+    grid-template-rows: 250px 350px 250px;
     grid-template-areas: "logo contenido-principal logo-2"
                          "aside-izquierda contenido-principal aside-derecha"
                          "footer footer footer";
@@ -322,96 +322,86 @@ a{
 /*===========================================================*/
 /*===============CONTENIDO PRINCIPAL========================*/
 /*=========================================================*/
-
 .contenedor-contenido{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    /* background: red; */
 }
 
 .contenedor-contenido .contenido-principal{
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
     /* background: blue; */
 }
 
-/* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
-.contenido-principal .vive-la-experiencia-logotipo {
+/* ================ INFORMACIÓN LOCALES =================== */
+
+.contenido-principal .contenido-informacion{
     position: absolute;
-    width: 44%;
-    /* background: red; */
-    top: 20%;
-    right: 0;
-    left: -15px;
-    margin:auto;
+    width: 55%;
 }
 
-.contenido-principal .vive-la-experiencia-logotipo img{
-    position: absolute;
-    width: 100%;
-    /* background: red; */
+.contenido-informacion.el-batan{
+    margin-top: 100px;
 }
 
-/* ================ TEXTO QUIENES SOMOS ============== */
-.quienes-somos-texto{
-    position: absolute;
-    width: 45%;
-    top: 32%;
-    /* background-color: red; */
+.contenido-informacion.condado{
+    margin-top: 210px;
 }
 
-.quienes-somos-texto p{
-    color: #058181;
-    text-align: center;
-    font-size: 11px;
-    line-height: 160%;
+.contenido-informacion.el-bosque{
+    margin-top: 320px;
 }
 
-/* =================== PARTE ICONOS ===================*/
-.quienes-somos-iconos{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
+.contenido-informacion.cumbaya{
+    margin-top: 430px;
+}
+
+.contenido-informacion.la-floresta{
+    margin-top: 560px;
+}
+
+
+/* ========== ESTILOS COMUNES INFORMACIÓN LOCALES ================ */
+.contenido-principal .contenido-informacion img{
     width: 60%;
-    height: 30%;
-    top: 59%;
-    right: 0;
-    left: 0 ;
-    margin: 0 auto;
-    justify-content: center;
+    margin-left: 20%;
+    /* background:lightgreen; */
 }
 
-/* ================ IMÁGENES LOGOTIPOS ================== */
-.quienes-somos-iconos img{
-    position: relative;
-    width: 50px;
-    height: auto;
-    /* margin: 0 -45px; */
+.contenido-informacion .direccion{
+   position: relative; 
+   font-family: Helvetica;
+   width: 150px; 
+   font-size: 13px;
+   color: #fff;
+   letter-spacing: 0.5px; 
+   margin: 0 auto;
+   /* margin-left: 40px; */
 }
 
-.quienes-somos-iconos p{
-    font-size: 10px;
-    font-family: Bebas;
-    text-align: center;
+.contenido-informacion .telefono{
+    font-family: Woodstand;
+    font-size: 20px;
+    color: #FABC1A;
+    margin-left: 20px;
+}
+
+.contenido-informacion .telefono-numero{
+    font-family: Helvetica;
     color: #fff;
-    padding: 4px 16px;
-    background:rgb(47, 144, 161);
-    margin-top: 7px;
-    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
-.quienes-somos-iconos .logo-1, 
-.quienes-somos-iconos .logo-2,
-.quienes-somos-iconos .logo-3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2px 2px;
-}
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
