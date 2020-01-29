@@ -1,0 +1,634 @@
+/*================= FUENTES ==========================*/
+@font-face{
+    font-family: 'Mayan';
+    src: url(../fonts/Mayan\ 2.ttf);
+}
+
+@font-face{
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue\ Book.otf);
+}
+
+/*=============== ESTILOS GENERALES ===============*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;   
+    background: #E62256;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*=====================================================*/
+/*=============== CONTENEDOR PRINCIPAL ===============*/
+/*===================================================*/
+.contenedor {
+    background-color: #fff;
+    background-image: url(../imagenes/Ubicanos/Background-480.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-color: lightpink; */
+    box-sizing: content-box;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+/*==============  BACKGROUND  ===============*/
+.contenedor .contenedor-imagen-centro{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* background: red; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-imagen-centro img{
+    top: 19vh;
+    position: absolute;
+    width: 85%;
+    /* top: 100px; */
+    min-width: 100px;
+}
+
+.contenedor-imagen-centro img:nth-child(1){
+    z-index: 150;
+}
+.contenedor-imagen-centro img:nth-child(2){
+    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse 10;
+    z-index: 100;
+}
+
+.contenedor-imagen-centro img:nth-child(3){
+
+    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse 10;
+    z-index: 200;
+}
+
+.contenedor-imagen-centro img:nth-child(4){
+
+    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse 10;
+    z-index: 200;
+}
+
+.contenedor-imagen-centro img:nth-child(5){
+
+    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse 10;
+    z-index: 200;
+}
+
+/*==================== ANIMACIONES ====================*/
+
+@keyframes movimientos-maracas-izq{
+    0% {transform: translateY(20px);}
+    20% {transform: translateY(0);}
+    80% {transform: translateY(10px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes movimientos-maracas-der{
+    0% {transform: translateY(-20px);}
+    20% {transform: translateY(0);}
+    80% {transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes movimientos-mariachi{
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(0);}
+    75% {transform: rotate(5deg);}
+    100%{transform: rotate(0);}
+}
+
+@keyframes movimientos-chavo{
+    0% {transform: translateY(5px);}
+    25% {transform: translateY(0);}
+    75% {transform: translateY(7px);}
+    100%{transform: translateY(0);}
+}
+
+/*=========================== CORTINAS ========================== */
+
+.contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+    position: absolute;
+    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:170px;
+    height:750px;
+    top: -50px;
+    z-index: 200;
+    left: -10px;
+}
+
+.contenedor .contenedor-cortina .contenedor-cortina-derecha{
+    position: absolute;
+    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:170px;
+    height:750px;
+    top: -50px;
+    right: 0 ;
+    transform: scaleX(-1);
+    z-index: 200;
+}
+
+.contenedor .contenedor-guirnaldas{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+}
+
+/*=================  CONTENEDOR DE GRILLA  ===============*/
+.contenedor .contenedor-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 300;
+}
+
+/*===================  GRILLA  ========================*/
+.contenedor .contenedor-grid .grid{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 250px 300px 250px;
+    grid-template-areas: "logo contenido-principal logo-2"
+                         "aside-izquierda contenido-principal aside-derecha"
+                         "footer footer footer";
+
+}
+
+/*===========================================================*/
+/*====================== HEADER ============================*/
+/*=========================================================*/
+
+/*================= NAVEGADOR PRINCIPAL =================*/
+/*==================  BOTÓN MENÚ  =====================*/
+.menu-principal-toggle{
+    display:flex;
+    grid-area: logo-2;
+    width: 1.3rem;
+    height: 1rem;
+    background:linear-gradient(white 20%, transparent 20%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 80%,white 80% );
+    cursor: pointer;
+    z-index: 800;
+    position: absolute;
+    right: 47px;
+    top: 70px;
+}
+
+.menu-imagen{
+    grid-area: logo-2;
+    position: absolute;
+    top: 36px;
+    right: 14px;
+}
+
+.menu-imagen img{
+    width: 83px;
+}
+
+/*======================BARRA DE MENÚ===================== */
+.nav-principal{
+    display: flex;
+    position: fixed;
+    /* height: calc(100vh - 4rem); */
+    height: 240px;
+    width: 290px;
+    background: #2C0D10;
+    left: -80vh;
+    z-index: 700;
+    top: 20px;
+    transition: left 0.8s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    font-family: Mayan;
+}
+
+.nav-principal .marco-menu{
+    width: 100%;
+}
+
+.nav-principal.show{
+    left: 0;
+}
+
+.menu-principal{
+   display: flex;
+   position: absolute;
+   flex-direction: column;
+   width: 90%;
+   height: 90%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.menu-principal-item{
+    width: 85%;
+    height: 16%;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s ease-in;
+
+}
+
+.menu-principal-item:not(:last-of-type){
+     border-bottom: 1px ridge #fff ;
+}
+
+.menu-principal-item:hover{
+    width: 80%;
+    height: 16%;
+    list-style: none;
+    text-align: center;
+    background: rgb(107, 32, 39);
+
+}
+
+.menu-principal a{
+    font-size: 10px;
+    color: #fff;
+}
+
+
+/* ==================== LOGOS ==================*/
+
+/* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
+.contenedor-logo-principal{
+    grid-area: logo;
+    width: 100%;
+}
+
+.contenedor-logo-principal img{
+    width: 105px;
+    margin-top: 35px;
+    margin-left: 7px;
+}
+
+/* ============ BOTÓN EVENTOS =============== */
+
+.contenedor-logo-principal .contenedor-botones-aside img{
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+/*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
+.contenedor-logo-2{
+    grid-area: logo-2;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contenedor-logo-2 a{
+    margin-bottom: 10px;
+    margin-right: 10px ;
+}
+
+
+.contenedor-logo-2 img{
+    width: 77px;
+}
+
+/*===========================================================*/
+/*===============CONTENIDO PRINCIPAL========================*/
+/*=========================================================*/
+
+.contenedor-contenido{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor-contenido .contenido-principal{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    /* background: blue; */
+}
+
+/* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
+.contenido-principal .vive-la-experiencia-logotipo {
+    position: absolute;
+    width: 44%;
+    /* background: red; */
+    top: 20%;
+    right: 0;
+    left: -15px;
+    margin:auto;
+}
+
+.contenido-principal .vive-la-experiencia-logotipo img{
+    position: absolute;
+    width: 100%;
+    /* background: red; */
+}
+
+/* ================ TEXTO QUIENES SOMOS ============== */
+.quienes-somos-texto{
+    position: absolute;
+    width: 45%;
+    top: 32%;
+    /* background-color: red; */
+}
+
+.quienes-somos-texto p{
+    color: #058181;
+    text-align: center;
+    font-size: 11px;
+    line-height: 160%;
+}
+
+/* =================== PARTE ICONOS ===================*/
+.quienes-somos-iconos{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    top: 59%;
+    right: 0;
+    left: 0 ;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* ================ IMÁGENES LOGOTIPOS ================== */
+.quienes-somos-iconos img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    /* margin: 0 -45px; */
+}
+
+.quienes-somos-iconos p{
+    font-size: 10px;
+    font-family: Bebas;
+    text-align: center;
+    color: #fff;
+    padding: 4px 16px;
+    background:rgb(47, 144, 161);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+.quienes-somos-iconos .logo-1, 
+.quienes-somos-iconos .logo-2,
+.quienes-somos-iconos .logo-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px 2px;
+}
+
+/* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
+/* ======================================================= */
+
+/*==================== ASIDE DERECHA ==================*/
+.aside-derecha{
+    display: flex;
+    grid-area: aside-derecha;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.contenedor-botones-aside{
+    width: 110px;
+    /* border: 1px solid lightpink; */
+}
+
+/*==================== ASIDE IZQUIERDA ==================*/
+.aside-izquierda{
+    display: flex;
+    grid-area: aside-izquierda;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.aside-izquierda .contenedor-botones-aside:last-child{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.aside-izquierda .contenedor-botones-aside:first-child{
+    margin-left: -10px;
+    margin-top: 0px;
+}
+/*===================================================*/
+/*==================== FOOTER ======================*/
+/*=================================================*/
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.footer .contenedor-footer{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    justify-content:center;
+    align-items: flex-end;
+    /* background: lightskyblue; */
+
+}
+
+
+.footer .contenedor-footer .caja-1{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background: #2C0D10;
+    box-shadow: 0px 0px 40px rgba(0,0,0,10);
+    z-index: 100;
+    /* border: 1px solid lightseagreen; */
+}
+
+.footer .contenedor-footer .caja-2{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 0;
+    align-self:flex-start;
+    /* border: 1px solid #fff; */
+    /* bottom: 220px; */
+}
+
+.footer .patron-footer{
+    width: 100%;
+    position:absolute;
+    bottom: 41px;
+    z-index: 400;
+}
+
+ .footer .imagen-mitad-del-mundo{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    justify-content: center;
+    z-index: 200;
+}
+
+.imagen-mitad-del-mundo img.monumento{
+    position: relative;
+    width: 25%;
+    z-index: 500;
+}
+
+.contenedor-alas{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 33%;
+    justify-content: space-evenly;
+    z-index: 100;
+    /* background: red; */
+}
+
+.contenedor-alas img.alas-izq{
+    position: relative;
+    width: 17%;
+    height: auto;
+    z-index: 500;
+    margin-right: 25%;
+    margin-bottom: 47px;
+    animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
+    animation-fill-mode: forwards;
+    
+}
+
+.contenedor-alas img.alas-der{
+    position: relative;
+    width: 17%;
+    height: auto;
+    z-index: 300;
+    margin-left: 24%;
+    margin-bottom: 47px;
+    animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
+    animation-fill-mode: forwards;
+    transform: scaleX(-1);
+    
+}
+
+/* ANIMACIONES ALAS  */
+
+@keyframes animacion-alas-izq{
+    0% {transform: rotate(-10deg) translateY(15px);}
+    20% {transform: rotate(0deg) translateY(0px);}
+    75% {transform: rotate(-15deg) translateY(15px);}
+    100% {transform: rotate(0deg) translateY(0px);}
+}
+@keyframes animacion-alas-der{
+    0% {transform: rotate(10deg) scaleX(-1) translateY(15px);}
+    20% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+    75% {transform: rotate(15deg) scaleX(-1) translateY(15px);}
+    100% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+}
+
+/* ======== IMAGENES FOOTER COSTADOS ========== */
+
+.footer .imagen-izquierda-footer{
+    display: flex;
+    width: 100%;
+}
+
+.footer .imagen-izquierda-footer img{
+    width: 26%;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.footer .imagen-derecha-footer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer .imagen-derecha-footer img{
+    width: 26%;
+    position: absolute;
+    align-self: flex-end;
+}
+
+/* ================ REDES SOCIALES ===================== */
+
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    z-index: 500;
+}
+
+
+.footer .redes-sociales a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin:  7px;
+    color: #2C0D10;
+    transition: 0.4s;
+    margin-top: -80px;
+}
+
+.footer .redes-sociales a:hover{
+    background: #2C0D10;
+    color: #fff;
+    font-size: 27px;
+}
+
+.redes-sociales img{
+    position: absolute;
+    width: 40px;
+}

@@ -33,7 +33,7 @@ a{
 /*===================================================*/
 .contenedor {
     background-color: #fff;
-    background-image: url(../imagenes/Quienes-somos/Background.png);
+    background-image: url(../imagenes/Vive-la-experiencia/Background.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,9 +188,7 @@ a{
 /*=========================================================*/
 
 /*================= NAVEGADOR PRINCIPAL =================*/
-
 /*==================  BOTÓN MENÚ  =====================*/
-
 .menu-principal-toggle{
     display:flex;
     grid-area: logo-2;
@@ -331,20 +329,31 @@ a{
     height: 100vh;
 }
 
-.contenido-principal{
+.contenedor-contenido .contenido-principal{
     display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    /* background: blue; */
 }
 
-/* ================ LOGOTIPO BAZFEX =================== */
-.contenido-principal img{
+/* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
+.contenido-principal .vive-la-experiencia-logotipo {
     position: absolute;
-    width: 30%;
-    top: 15%;
+    width: 44%;
+    /* background: red; */
+    top: 20%;
+    right: 0;
+    left: -15px;
+    margin:auto;
+}
+
+.contenido-principal .vive-la-experiencia-logotipo img{
+    position: absolute;
+    width: 100%;
+    /* background: red; */
 }
 
 /* ================ TEXTO QUIENES SOMOS ============== */
