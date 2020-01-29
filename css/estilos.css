@@ -422,8 +422,7 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid #E62256;
-
+    border: 1px solid rgb(10, 172, 137);
 }
 
 .footer .contenedor-footer{
