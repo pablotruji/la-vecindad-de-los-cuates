@@ -4,6 +4,11 @@
     src: url(../fonts/Mayan\ 2.ttf);
 }
 
+@font-face{
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue\ Book.otf);
+}
+
 /*=============== ESTILOS GENERALES ===============*/
 *{
     padding: 0;
@@ -27,7 +32,7 @@ a{
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-
+    background-color: #fff;
     background-image: url(../imagenes/Quienes-somos/Background.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -89,88 +94,6 @@ a{
     z-index: 200;
 }
 
-
-/*
-.contenedor-imagen-centro .imagen-centro{
-    background-image: url(../imagenes/Imagen-centro-calavera-480.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 75%;
-    width: 200px;
-    margin: auto;
-    left: 13%;
-    bottom: 19%;
-    position: absolute;
-    z-index: 100;
-    
-}
-*/
-
-/*=================== IMAGENES ANIMADAS ==================*/
-/*
-.contenedor-animacion-maracas-izq{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-maraca-izq-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-maracas-izq 0.5s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-maracas-der{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-maraca-der-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-maracas-der 0.5s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-mariachi{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-mariachi-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index:200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-mariachi 1s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-chavo{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-chavo-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 0;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-chavo 1s 5s ease-out alternate-reverse 8;
-}
-*/
 /*==================== ANIMACIONES ====================*/
 
 @keyframes movimientos-maracas-izq{
@@ -205,26 +128,26 @@ a{
 
 .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina.png);
+    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -100px;
+    top: -30px;
     z-index: 200;
     left: -10px;
 }
 
 .contenedor .contenedor-cortina .contenedor-cortina-derecha{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina.png);
+    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -100px;
+    top: -30px;
     right: 0 ;
     transform: scaleX(-1);
     z-index: 200;
@@ -253,7 +176,7 @@ a{
     display:grid;
     grid-gap:10px;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 250px 300px auto;
+    grid-template-rows: 250px 300px 250px;
     grid-template-areas: "logo contenido-principal logo-2"
                          "aside-izquierda contenido-principal aside-derecha"
                          "footer footer footer";
@@ -303,7 +226,7 @@ a{
     left: -80vh;
     z-index: 700;
     top: 20px;
-    transition: left 1.5s;
+    transition: left 0.8s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
@@ -351,7 +274,6 @@ a{
 
 }
 
-
 .menu-principal a{
     font-size: 10px;
     color: #fff;
@@ -364,8 +286,6 @@ a{
 .contenedor-logo-principal{
     grid-area: logo;
     width: 100%;
-    border:  1px solid red;
-
 }
 
 .contenedor-logo-principal img{
@@ -378,15 +298,15 @@ a{
 
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
-    margin-left: 15px;
-    margin-top: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+
 }
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
 .contenedor-logo-2{
     grid-area: logo-2;
     display:flex;
-    /* border: green 1px solid; */
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -406,30 +326,86 @@ a{
 /*=========================================================*/
 
 .contenedor-contenido{
-    display: flex;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    align-items:flex-start;
-    
 }
 
 .contenido-principal{
+    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+/* ================ LOGOTIPO BAZFEX =================== */
 .contenido-principal img{
     position: absolute;
-    width: 25%;
-    height: auto;
-    right: 10px;
-    left: 0;
-    margin: auto;
+    width: 30%;
     top: 15%;
 }
-/* ============== FIN CONTENIDO PRONCIPAL DE PÁGINA ======*/
+
+/* ================ TEXTO QUIENES SOMOS ============== */
+.quienes-somos-texto{
+    position: absolute;
+    width: 45%;
+    top: 32%;
+    /* background-color: red; */
+}
+
+.quienes-somos-texto p{
+    color: #058181;
+    text-align: center;
+    font-size: 11px;
+    line-height: 160%;
+}
+
+/* =================== PARTE ICONOS ===================*/
+.quienes-somos-iconos{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    top: 59%;
+    right: 0;
+    left: 0 ;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* ================ IMÁGENES LOGOTIPOS ================== */
+.quienes-somos-iconos img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    /* margin: 0 -45px; */
+}
+
+.quienes-somos-iconos p{
+    font-size: 10px;
+    font-family: Bebas;
+    text-align: center;
+    color: #fff;
+    padding: 4px 16px;
+    background:rgb(47, 144, 161);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+.quienes-somos-iconos .logo-1, 
+.quienes-somos-iconos .logo-2,
+.quienes-somos-iconos .logo-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px 2px;
+}
+
+/* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
+/* ======================================================= */
 
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
@@ -437,7 +413,6 @@ a{
     grid-area: aside-derecha;
     width: 100%;
     height: 100%;
-    border: 1px solid lightskyblue;
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-end;
@@ -445,8 +420,8 @@ a{
 }
 
 .contenedor-botones-aside{
-    width: 90px;
-    border: 1px solid lightpink;
+    width: 110px;
+    /* border: 1px solid lightpink; */
 }
 
 /*==================== ASIDE IZQUIERDA ==================*/
@@ -455,13 +430,20 @@ a{
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
-    border: 1px solid lightskyblue;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
+.aside-izquierda .contenedor-botones-aside:last-child{
+    margin-left: -10px;
+    margin-top: 10px;
+}
 
+.aside-izquierda .contenedor-botones-aside:first-child{
+    margin-left: -10px;
+    margin-top: 0px;
+}
 /*===================================================*/
 /*==================== FOOTER ======================*/
 /*=================================================*/
@@ -606,8 +588,6 @@ a{
     position: absolute;
     align-self: flex-end;
 }
-
-
 
 /* ================ REDES SOCIALES ===================== */
 

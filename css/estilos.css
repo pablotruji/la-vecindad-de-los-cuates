@@ -89,90 +89,7 @@ a{
     z-index: 200;
 }
 
-
-/*
-.contenedor-imagen-centro .imagen-centro{
-    background-image: url(../imagenes/Imagen-centro-calavera-480.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 75%;
-    width: 200px;
-    margin: auto;
-    left: 13%;
-    bottom: 19%;
-    position: absolute;
-    z-index: 100;
-    
-}
-*/
-
-/*=================== IMAGENES ANIMADAS ==================*/
-/*
-.contenedor-animacion-maracas-izq{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-maraca-izq-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-maracas-izq 0.5s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-maracas-der{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-maraca-der-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-maracas-der 0.5s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-mariachi{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-mariachi-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index:200;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-mariachi 1s 5s ease-out alternate-reverse 8;
-}
-
-.contenedor-animacion-chavo{
-    background-image: url(../imagenes/Imagenes-fondo-animacion-chavo-480.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    box-sizing: content-box;
-    height: 100vh;
-    width: 80%;
-    z-index: 0;
-    left: 10%;
-    bottom: 7%;
-    position: absolute;
-    animation: movimientos-chavo 1s 5s ease-out alternate-reverse 8;
-}
-*/
 /*==================== ANIMACIONES ====================*/
-
 @keyframes movimientos-maracas-izq{
     0% {transform: translateY(20px);}
     20% {transform: translateY(0);}
@@ -303,7 +220,7 @@ a{
     left: -80vh;
     z-index: 700;
     top: 20px;
-    transition: left 1.5s;
+    transition: left 0.8s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
@@ -415,7 +332,6 @@ a{
 
 }
 
-
 /*======================== CORRUSEL ==================*/
  .carrusel{
     /* grid-area: carrusel; */
@@ -455,18 +371,16 @@ a{
 }
 */
 
-
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
     display: flex;
     grid-area: aside-derecha;
     width: 100%;
     height: 100%;
-    /* border: 1px solid lightskyblue; */
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .contenedor-botones-aside{
@@ -474,22 +388,16 @@ a{
     /* border: 1px solid lightpink; */
 }
 
-
-.aside-derecha .contenedor-botones-aside:first-child{
-}
-
-.aside-derecha .contenedor-botones-aside:last-child{
-}
-
-
-
 /*==================== ASIDE IZQUIERDA ==================*/
 .aside-izquierda{
+    display: flex;
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
-    /* border: 1px solid lightskyblue; */
+    border: 1px solid lightskyblue;
     box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 
@@ -502,9 +410,6 @@ a{
     margin-left: -10px;
     margin-top: 20px;
 }
-
-
-
 /*===================================================*/
 /*==================== FOOTER ======================*/
 /*=================================================*/
