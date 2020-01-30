@@ -422,6 +422,7 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
+    background: red;
 }
 
 .footer .contenedor-footer{
