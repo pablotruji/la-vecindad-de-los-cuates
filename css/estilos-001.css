@@ -422,7 +422,7 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    background: red;
+    /* background: red; */
 }
 
 .footer .contenedor-footer{
