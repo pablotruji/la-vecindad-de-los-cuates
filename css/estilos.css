@@ -220,7 +220,7 @@ a{
     left: -80vh;
     z-index: 700;
     top: 20px;
-    transition: left 0.8s ease-in-out;
+    transition: left 1.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
