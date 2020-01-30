@@ -394,7 +394,7 @@ a{
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
-    border: 1px solid lightskyblue;
+    /* border: 1px solid lightskyblue; */
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
@@ -422,7 +422,7 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-    border: 1px solid rgb(10, 172, 137);
+    /* border: 1px solid rgb(32, 65, 57); */
 }
 
 .footer .contenedor-footer{
@@ -467,10 +467,10 @@ a{
 
  .footer .imagen-mitad-del-mundo{
     display: flex;
-    width: 400px;
-    max-width: 400px;
-    height: 100px;
-    max-height: 100px;
+    width: 100%;
+    height: 60%;
+    /* max-width: 400px; */
+    /* max-height: 100px; */
     position: relative;
     bottom: 60px;
     justify-content: center;
@@ -479,7 +479,7 @@ a{
 
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
-    width: 23%;
+    width: 30%;
     z-index: 500;
 }
 
@@ -494,6 +494,7 @@ a{
 }
 
 .contenedor-alas img.alas-izq{
+    display: flex;
     position: relative;
     width: 17%;
     height: auto;
@@ -506,6 +507,7 @@ a{
 }
 
 .contenedor-alas img.alas-der{
+    display: flex;
     position: relative;
     width: 17%;
     height: auto;
