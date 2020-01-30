@@ -490,10 +490,10 @@ a{
 .contenedor-alas img.alas-izq{
     display: flex;
     position: relative;
-    width: 17%;
+    width: 20%;
     height: 10%;
     z-index: 500;
-    margin-right: 25%;
+    margin-right: 27%;
     margin-bottom: 47px;
     animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
     animation-fill-mode: forwards;
@@ -503,10 +503,10 @@ a{
 .contenedor-alas img.alas-der{
     display: flex;
     position: relative;
-    width: 17%;
+    width: 20%;
     height: 10%;
     z-index: 300;
-    margin-left: 24%;
+    margin-left: 27%;
     margin-bottom: 47px;
     animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
     animation-fill-mode: forwards;
