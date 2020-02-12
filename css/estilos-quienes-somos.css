@@ -37,7 +37,7 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    /* background-attachment: fixed;s */
     /* background-color: lightpink; */
     box-sizing: content-box;
     justify-content: center;
@@ -45,83 +45,6 @@ a{
     height: 100%;
     position: relative;
 
-}
-
-/*==============  BACKGROUND  ===============*/
-.contenedor .contenedor-imagen-centro{
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    /* background: red; */
-    justify-content: center;
-    align-items: center;
-
-}
-
-.contenedor-imagen-centro img{
-    top: 19vh;
-    position: absolute;
-    width: 85%;
-    /* top: 100px; */
-    min-width: 100px;
-}
-
-.contenedor-imagen-centro img:nth-child(1){
-    z-index: 150;
-}
-.contenedor-imagen-centro img:nth-child(2){
-    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse 10;
-    z-index: 100;
-}
-
-.contenedor-imagen-centro img:nth-child(3){
-
-    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse 10;
-    z-index: 200;
-}
-
-.contenedor-imagen-centro img:nth-child(4){
-
-    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse 10;
-    z-index: 200;
-}
-
-.contenedor-imagen-centro img:nth-child(5){
-
-    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse 10;
-    z-index: 200;
-}
-
-/*==================== ANIMACIONES ====================*/
-
-@keyframes movimientos-maracas-izq{
-    0% {transform: translateY(20px);}
-    20% {transform: translateY(0);}
-    80% {transform: translateY(10px);}
-    100%{transform: translateY(0);}
-}
-
-@keyframes movimientos-maracas-der{
-    0% {transform: translateY(-20px);}
-    20% {transform: translateY(0);}
-    80% {transform: translateY(-10px);}
-    100%{transform: translateY(0);}
-}
-
-@keyframes movimientos-mariachi{
-    0% {transform: rotate(5deg);}
-    25% {transform: rotate(0);}
-    75% {transform: rotate(5deg);}
-    100%{transform: rotate(0);}
-}
-
-@keyframes movimientos-chavo{
-    0% {transform: translateY(5px);}
-    25% {transform: translateY(0);}
-    75% {transform: translateY(7px);}
-    100%{transform: translateY(0);}
 }
 
 /*=========================== CORTINAS ========================== */
@@ -175,10 +98,10 @@ a{
     height: 100%;
     display:grid;
     grid-gap:10px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 250px 300px 250px;
-    grid-template-areas: "logo contenido-principal logo-2"
-                         "aside-izquierda contenido-principal aside-derecha"
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 300px 192px;
+    grid-template-areas: "logo logo logo-2"
+                         "aside-izquierda . aside-derecha"
                          "footer footer footer";
 
 }
@@ -188,9 +111,7 @@ a{
 /*=========================================================*/
 
 /*================= NAVEGADOR PRINCIPAL =================*/
-
 /*==================  BOTÓN MENÚ  =====================*/
-
 .menu-principal-toggle{
     display:flex;
     grid-area: logo-2;
@@ -226,7 +147,7 @@ a{
     left: -80vh;
     z-index: 700;
     top: 20px;
-    transition: left 0.8s ease-in-out;
+    transition: left 1.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
@@ -344,22 +265,21 @@ a{
 .contenido-principal img{
     position: absolute;
     width: 30%;
-    top: 15%;
+    top: 10%;
 }
 
 /* ================ TEXTO QUIENES SOMOS ============== */
 .quienes-somos-texto{
     position: absolute;
     width: 45%;
-    top: 32%;
-    /* background-color: red; */
+    top: 28%;
 }
 
 .quienes-somos-texto p{
     color: #058181;
     text-align: center;
     font-size: 11px;
-    line-height: 160%;
+    line-height: 145%;
 }
 
 /* =================== PARTE ICONOS ===================*/
@@ -367,21 +287,32 @@ a{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    width: 60%;
+    width: 55%;
     height: 30%;
-    top: 59%;
+    top: 45%;
     right: 0;
     left: 0 ;
     margin: 0 auto;
     justify-content: center;
+    /* background: red; */
 }
 
 /* ================ IMÁGENES LOGOTIPOS ================== */
 .quienes-somos-iconos img{
     position: relative;
-    width: 50px;
     height: auto;
-    /* margin: 0 -45px; */
+}
+
+.quienes-somos-iconos .logo-1 img{
+    width: 50px;
+}
+
+.quienes-somos-iconos .logo-2 img{
+    width: 45px;
+}
+
+.quienes-somos-iconos .logo-3 img{
+    width: 70px;
 }
 
 .quienes-somos-iconos p{
@@ -389,11 +320,16 @@ a{
     font-family: Bebas;
     text-align: center;
     color: #fff;
-    padding: 4px 16px;
+    padding: 2px 16px;
     background:rgb(47, 144, 161);
-    margin-top: 7px;
     border-radius: 5px;
+    margin-top: 30%;
 }
+
+.quienes-somos-iconos .logo-1 p{
+    margin-top: 33%;
+}
+
 
 .quienes-somos-iconos .logo-1, 
 .quienes-somos-iconos .logo-2,
@@ -401,7 +337,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2px 2px;
+    margin: 2px 3%;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
@@ -420,7 +356,7 @@ a{
 }
 
 .contenedor-botones-aside{
-    width: 110px;
+    width: 115px;
     /* border: 1px solid lightpink; */
 }
 
@@ -456,7 +392,6 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .footer .contenedor-footer{
@@ -488,8 +423,6 @@ a{
     position: absolute;
     z-index: 0;
     align-self:flex-start;
-    /* border: 1px solid #fff; */
-    /* bottom: 220px; */
 }
 
 .footer .patron-footer{
@@ -502,7 +435,8 @@ a{
  .footer .imagen-mitad-del-mundo{
     display: flex;
     width: 100%;
-    position: absolute;
+    height: auto;
+    position: relative;
     bottom: 60px;
     justify-content: center;
     z-index: 200;
@@ -510,38 +444,41 @@ a{
 
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
-    width: 25%;
+    width: 30%;
+    max-width: 110px;
+    height: 10%;
     z-index: 500;
 }
 
 .contenedor-alas{
     display: flex;
     width: 100%;
+    height: auto;
     position: absolute;
-    bottom: 33%;
+    bottom: 40%;
     justify-content: space-evenly;
     z-index: 100;
-    /* background: red; */
 }
 
 .contenedor-alas img.alas-izq{
+    display: flex;
     position: relative;
-    width: 17%;
-    height: auto;
+    width: 20%;
+    height: 10%;
     z-index: 500;
-    margin-right: 25%;
+    margin-right: 27%;
     margin-bottom: 47px;
     animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
     animation-fill-mode: forwards;
-    
 }
 
 .contenedor-alas img.alas-der{
+    display: flex;
     position: relative;
-    width: 17%;
-    height: auto;
+    width: 20%;
+    height: 10%;
     z-index: 300;
-    margin-left: 24%;
+    margin-left: 27%;
     margin-bottom: 47px;
     animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
     animation-fill-mode: forwards;
@@ -573,6 +510,7 @@ a{
 
 .footer .imagen-izquierda-footer img{
     width: 26%;
+    max-width: 100px;
     position: absolute;
     align-self: flex-end;
 }
@@ -585,6 +523,7 @@ a{
 
 .footer .imagen-derecha-footer img{
     width: 26%;
+    max-width:100px;
     position: absolute;
     align-self: flex-end;
 }
@@ -593,16 +532,17 @@ a{
 
 .footer .redes-sociales{
     display: flex;
+    position: absolute;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     z-index: 500;
 }
 
 
 .footer .redes-sociales a{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: #fff;
     align-items: center;
     justify-content: center;
@@ -616,7 +556,7 @@ a{
 .footer .redes-sociales a:hover{
     background: #2C0D10;
     color: #fff;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .redes-sociales img{

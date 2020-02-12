@@ -27,7 +27,7 @@ a{
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-
+    /* position: relative; */
     background-image: url(../imagenes/Fondo-480.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ a{
 .contenedor .contenedor-imagen-centro{
     display: flex;
     position: relative;
-    width: 75%;
+    width: 85%;
     height: 100%;
     margin: auto;
     /* background: red; */
@@ -56,9 +56,9 @@ a{
 }
 
 .contenedor-imagen-centro img{
-    top: 19vh;
+    top: 28svh;
     position: absolute;
-    width: 85%;
+    width: 80%;
     /* top: 100px; */
     min-width: 100px;
 }
@@ -158,7 +158,7 @@ a{
 .contenedor .contenedor-grid {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 300;
 }
@@ -166,11 +166,11 @@ a{
 /*===================  GRILLA  ========================*/
 .contenedor .contenedor-grid .grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display:grid;
     grid-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 300px 192px;
+    grid-template-rows: 250px 300px auto;
     grid-template-areas: "logo logo logo-2"
                          "aside-izquierda . aside-derecha"
                          "footer footer footer";
@@ -384,7 +384,7 @@ a{
 }
 
 .contenedor-botones-aside{
-    width: 110px;
+    width: 115px;
     /* border: 1px solid lightpink; */
 }
 
@@ -419,10 +419,8 @@ a{
     grid-area: footer;
     width: 100%;
     height: 100%;
-    position: relative;
     justify-content: center;
     align-items: flex-end;
-    /* background: red; */
 }
 
 .footer .contenedor-footer{
@@ -474,6 +472,7 @@ a{
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
     width: 30%;
+    max-width: 110px;
     height: 10%;
     z-index: 500;
 }
@@ -498,7 +497,6 @@ a{
     margin-bottom: 47px;
     animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
     animation-fill-mode: forwards;
-    
 }
 
 .contenedor-alas img.alas-der{
@@ -514,8 +512,6 @@ a{
     transform: scaleX(-1);
     
 }
-
-
 
 /* ANIMACIONES ALAS  */
 
@@ -541,6 +537,7 @@ a{
 
 .footer .imagen-izquierda-footer img{
     width: 26%;
+    max-width: 100px;
     position: absolute;
     align-self: flex-end;
 }
@@ -553,6 +550,7 @@ a{
 
 .footer .imagen-derecha-footer img{
     width: 26%;
+    max-width:100px;
     position: absolute;
     align-self: flex-end;
 }
@@ -563,17 +561,17 @@ a{
 
 .footer .redes-sociales{
     display: flex;
+    position: absolute;
     justify-content: center;
-    font-size: 22px;
+    font-size: 25px;
     z-index: 500;
-    display: none;
 }
 
 
 .footer .redes-sociales a{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: #fff;
     align-items: center;
     justify-content: center;
@@ -587,7 +585,7 @@ a{
 .footer .redes-sociales a:hover{
     background: #2C0D10;
     color: #fff;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .redes-sociales img{
