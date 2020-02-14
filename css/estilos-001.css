@@ -46,12 +46,15 @@ a{
 .contenedor .contenedor-imagen-centro{
     display: flex;
     position: relative;
-    width: 85%;
+    width: 80%;
+    max-width: 400px;
     height: 100%;
     margin: auto;
     /* background: red; */
     justify-content: center;
     align-items: center;
+    align-self: center;
+
 
 }
 

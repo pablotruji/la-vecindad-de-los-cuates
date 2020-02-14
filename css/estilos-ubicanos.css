@@ -249,6 +249,7 @@ a{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    background: red;
 }
 
 .contenedor-contenido .contenido-principal{
@@ -263,13 +264,17 @@ a{
 /* ================ INFORMACIÓN LOCALES =================== */
 
 .contenido-principal .contenido-informacion{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 55%;
+    width: 60%;
     background: lightskyblue;
+    align-items: center;
+    justify-content: start;
 }
 
 .contenido-informacion.el-batan{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .contenido-informacion.condado{
@@ -288,38 +293,57 @@ a{
     margin-top: 560px;
 }
 
+/* == CONDADO SHOPING == */
+
+.contenido-informacion.condado{
+    display: flex;
+    flex: wrap;
+    background: yellow;
+
+}
+
+.condado .contenedor-info-local{
+    width: 50%;
+
+}
+
+.condado .contenedor-sombrero{
+    width: 50%;
+}
+
+
 
 /* ========== ESTILOS COMUNES INFORMACIÓN LOCALES ================ */
 .contenido-principal .contenido-informacion img{
-    width: 60%;
-    margin-left: 20%;
-    /* background:lightgreen; */
+    width: 35%;
+    background:lightgreen;
+
 }
 
 .contenido-informacion .direccion{
    position: relative; 
    font-family: Helvetica;
-   width: 150px; 
+   width: 60%; 
    font-size: 13px;
    color: #fff;
    letter-spacing: 0.5px; 
-   margin: 0 auto;
-   /* margin-left: 40px; */
 }
 
 .contenido-informacion .telefono{
     font-family: Woodstand;
-    font-size: 20px;
+    font-size: 15px;
     color: #FABC1A;
-    margin-left: 20px;
+    width: 50%;
 }
 
 .contenido-informacion .telefono-numero{
     font-family: Helvetica;
     color: #fff;
     font-size: 14px;
-    margin-left: 20px;
+    width: 50%;
 }
+
+
 
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
