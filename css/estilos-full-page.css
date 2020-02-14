@@ -364,11 +364,18 @@ a {
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-13.png");
 }
 #carta-menu-14{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
+}
+
+#carta-menu-16{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-14.png");
 }
+
 #carta-menu-15{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-15.png");
 }
+
+
 
 /* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
 .contenedor-slide .titulo-paginas-menu{
@@ -865,7 +872,7 @@ a {
     background: indigo;  
 }
 
-
+/* ================================================================ */
 /* ======== ESTILOS GENERALES DE DESCRIPCIÓN DE PLATOS  =========== */
 .descripcion{
     display: flex;
@@ -874,7 +881,7 @@ a {
     height: auto;
     top: 20%;
     font-size: 12px;
-    font-family: Mirian;
+    font-family: Mayan;
     /* border: 1px solid #333; */
     justify-content: flex-start;  
 }
@@ -883,7 +890,7 @@ a {
 }
 
 .descripcion  span {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.2);
     border-top: 4px solid rgba(0, 0, 0, 0.02); 
     line-height: 16px;
     color: #fff;
@@ -949,9 +956,13 @@ a {
 
 /* ============= TRIGÉSIMA SECCIÓN - LICORES ============== */
 #carta-menu-14 .contenedor-info-producto .descripcion{
-    top: 10%;
     bottom: 0;
     margin: auto;
+}
+
+#carta-menu-14 .descripcion  span {
+    background: none;
+  
 }
 /* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
 
