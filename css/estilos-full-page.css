@@ -722,8 +722,8 @@ a {
 }
 
 /* ========= CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.contenedor-ensaladas-tacos .titulo{
-   
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior .titulo{
+    background: rgb(2, 88, 13);
 }
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS =========*/
 .contenedor-los-mero-mero-1 .titulo,
@@ -921,8 +921,9 @@ a {
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
 .contenedor-ensaladas-tacos .contenedor-info-producto-superior span{
-     background: rgba(110, 223, 5, 0.4); 
+     background: rgba(192, 28, 6, 0.7); 
 }
+
 
 .contenedor-ensaladas-tacos .contenedor-info-producto-inferior span{
     background: rgba(255, 73, 1, 0.4); 
