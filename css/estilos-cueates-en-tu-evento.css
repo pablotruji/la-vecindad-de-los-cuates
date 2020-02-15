@@ -33,7 +33,7 @@ a{
 /*===================================================*/
 .contenedor {
     background-color: #fff;
-    background-image: url(../imagenes/Ubicanos/Background-480.png);
+    background-image: url(../imagenes/Toque-de-los-cuates/Background-480.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,132 +253,20 @@ a{
 }
 
 .main .contenido-principal{
-    width: 80%;
-    margin: auto;
-    height: auto;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-/* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
-
-/* == EL BATÁN == */
-
-.contenido-batan{
-    width: 100%; 
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-/* == CONDADO SHOPING == */
-
-.contenido-condado{
-    display: flex;
-    width: 80%; 
-    /* border: 1px solid lightgreen; */
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.contenido-condado .contenedor-sombrero{
-    width: 70px;
-    min-width: 50px;
-    height: 100%;
-    margin-top: 20px;
-    /* border: 1px solid  lightgrey; */
-}
-
-.contenido-condado .telefono-numero{
-    width: 120px;
-}
-
-/* == EL BOSQUE == */
-
-.contenido-bosque{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%; 
-    margin-bottom: 20px;
-    /* border: 1px solid lightgreen; */
-}
-
-.contenido-bosque .contenedor-info-local{
-    /* border: 1px solid lightblue; */
-    margin-right: 0;
-}
-
-.contenido-bosque .contenedor-limon{
-    width: 50px;
-    height: 100%;
-    /* border: 1px solid lightpink; */
-    margin-top: 15px;
-    margin: auto;
-}
-
-/* == CUMBAYA == */
-
-.contenido-cumbaya{
-    display: flex;
-    width: 90%; 
-    margin-bottom: 20px;
-}
-
-.contenido-cumbaya .contenedor-tequila{
-    width: 40px;
-}
-
-/* == LA FLORESTA == */
-
-.contenido-floresta{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%; 
-    margin-bottom: 20px;
-    margin: auto;
-}
-
-.contenido-floresta .contenedor-captus{
-    width: 50px;
-}
-
-
-/* ========= ESTILOS GENERALES DE INFOMRACIÓN ============ */
-.contenedor-info-local{
     position: relative;
+    width: 60%;
+    background: red;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contenedor-imagen-principal img{
+    display: block;
     width: 150px;
-    font-family: Helvetica;
     margin: auto;
+    background: blue;
 }
 
-.contenedor-info-local img{
-    width: 90px;
-    margin-left: 20%;
-}
-
-.contenedor-info-local .direccion{
-    width: 90%;
-    margin: auto;
-    line-height: 10px;
-    letter-spacing: 0.9px; 
-    font-size: 11px;
-    color: #fff;
-}
-
-.contenedor-info-local .telefono{
-    font-family: Woodstand;
-    font-size: 12px;
-    letter-spacing: 0.6px;
-    color: #FABC1A;
-    margin-left: 25px;
-}
-
-.contenedor-info-local .telefono-numero{
-    letter-spacing: 0.8px;
-    font-family: Helvetica;
-    color: #fff;
-    font-size: 11px;
-    margin-left: 25px;
-}
 
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
