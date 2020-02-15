@@ -254,7 +254,7 @@ a{
 
 .main .contenido-principal{
     position: relative;
-    width: 60%;
+    width: 80%;
     background: red;
     margin: auto;
     margin-top: 20px;
@@ -265,6 +265,20 @@ a{
     width: 150px;
     margin: auto;
     background: blue;
+}
+
+.contenedor-informacion{
+    width: 95%;
+    background: lightyellow;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contenedor-informacion p{
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
 
