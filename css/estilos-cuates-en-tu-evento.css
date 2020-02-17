@@ -34,8 +34,8 @@ a{
 .contenedor {
     background-color: #fff;
     background-image: url(../imagenes/Toque-de-los-cuates/Background-480.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-repeat: repeat-y;
     background-size: cover;
     /* background-attachment: fixed; */
     /* background-color: lightpink; */
@@ -257,12 +257,13 @@ a{
     width: 80%;
     /* background: red; */
     margin: auto;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .contenedor-imagen-principal img{
     display: block;
-    width: 150px;
+    width: 65%;
+    min-width: 100px;
     margin: auto;
     /* background: blue; */
 }
@@ -286,7 +287,7 @@ a{
 .contenedor-informacion-imagen{
     display: flex;
     flex-direction:row-reverse;
-    width: 80%;
+    width: 60%;
     /* background: pink; */
     margin: auto;
     margin-top: 20px;
@@ -306,19 +307,14 @@ a{
 
 .contenedor-imagen-evento{
     width: 60%;
-    /* background: salmon; */
-    
+    /* background: salmon;     */
 }
 
 .contenedor-imagen-evento img{
-    width: 80%;
+    width: 90%;
+    min-width: 50px;
     transform: rotateZ(10deg);
-    margin-left: 12px;
 }
-
-
-
-
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
