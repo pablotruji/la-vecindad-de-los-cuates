@@ -1,5 +1,10 @@
 /*================= FUENTES ==========================*/
 @font-face{
+    font-family: 'Mayan';
+    src: url(../fonts/Mayan\ 2.ttf);
+}
+
+@font-face{
     font-family: 'Helvetica';
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
@@ -39,7 +44,7 @@ a{
 .contenedor {
     background-color: #fff;
     background-image: url(../imagenes/Toque-de-los-cuates/Background-480.png);
-    /* background-position: center center; */
+    background-position: center center;
     background-repeat: repeat-y;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -126,7 +131,7 @@ a{
     cursor: pointer;
     z-index: 800;
     position: absolute;
-    right: 47px;
+    right: 46px;
     top: 70px;
 }
 
@@ -305,25 +310,26 @@ a{
 
 .contenedor-mas-info{
     /* background: blue;  */
-    width: 90%;
+    width: 100%;
 }
 
 .contenedor-mas-info p{
     font-family: Helvetica;
-    font-size: 14px;
+    font-size: 12px;
     text-align: right;
     color: #7F4F25;
+    width: 100%;
 }
 
 .contenedor-imagen-evento{
-    width: 80%; 
+    width: 100%; 
 }
 
 .contenedor-imagen-evento img{
     width: 100%;
     min-width: 70px;
     transform: rotateZ(10deg);
-    margin-left: -20px;
+    margin-left: -10px;
     margin-top: 20px;
 }
 

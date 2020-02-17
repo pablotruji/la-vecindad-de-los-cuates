@@ -40,7 +40,7 @@ a{
 .contenedor {
     background-color: #fff;
     background-image: url(../imagenes/Contactanos/Background-480.png);
-    /* background-position: center center; */
+    background-position: center center;
     background-repeat: repeat-y;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -291,7 +291,8 @@ a{
 }
 
 .informacion-email img{
-    width: 45%;
+    width: 30%;
+    height: 100%;
 }
 
 .informacion-email p{
@@ -335,7 +336,7 @@ a{
 }
 
 .informacion-telefono p::first-line{
-    color: #E62733;;
+    color: #E62733;
 }
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
