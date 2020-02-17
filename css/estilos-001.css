@@ -27,15 +27,10 @@ a{
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-    background-color: #fff;
+    /* position: relative; */
     background-image: url(../imagenes/Fondo-480.svg);
-<<<<<<< HEAD
     background-position: center center;
-    background-repeat: no-repeat;   
-=======
-    /* background-position: center center; */
-    background-repeat: repeat-y;
->>>>>>> 1d2743e54bf8f3208c87d82fee65f31c079ba6de
+    background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
     /* background-color: lightpink; */
@@ -45,6 +40,85 @@ a{
     height: 100%;
     position: relative;
 
+}
+
+/*==============  BACKGROUND  ===============*/
+.contenedor .contenedor-imagen-centro{
+    display: flex;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    /* background: red; */
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+
+}
+
+.contenedor-imagen-centro img{
+    top: 28svh;
+    position: absolute;
+    width: 80%;
+    /* top: 100px; */
+    min-width: 100px;
+}
+
+.contenedor-imagen-centro img:nth-child(1){
+    z-index: 150;
+}
+.contenedor-imagen-centro img:nth-child(2){
+    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse 10;
+    z-index: 100;
+}
+
+.contenedor-imagen-centro img:nth-child(3){
+
+    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse 10;
+    z-index: 200;
+}
+
+.contenedor-imagen-centro img:nth-child(4){
+
+    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse 10;
+    z-index: 200;
+}
+
+.contenedor-imagen-centro img:nth-child(5){
+
+    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse 10;
+    z-index: 200;
+}
+
+/*==================== ANIMACIONES ====================*/
+@keyframes movimientos-maracas-izq{
+    0% {transform: translateY(20px);}
+    20% {transform: translateY(0);}
+    80% {transform: translateY(10px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes movimientos-maracas-der{
+    0% {transform: translateY(-20px);}
+    20% {transform: translateY(0);}
+    80% {transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes movimientos-mariachi{
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(0);}
+    75% {transform: rotate(5deg);}
+    100%{transform: rotate(0);}
+}
+
+@keyframes movimientos-chavo{
+    0% {transform: translateY(5px);}
+    25% {transform: translateY(0);}
+    75% {transform: translateY(7px);}
+    100%{transform: translateY(0);}
 }
 
 /*=========================== CORTINAS ========================== */
@@ -87,7 +161,7 @@ a{
 .contenedor .contenedor-grid {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 300;
 }
@@ -95,13 +169,13 @@ a{
 /*===================  GRILLA  ========================*/
 .contenedor .contenedor-grid .grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display:grid;
     grid-gap:10px;
-    grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "logo contenido-principal logo-2"
-                         "aside-izquierda contenido-principal aside-derecha"
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 300px auto;
+    grid-template-areas: "logo logo logo-2"
+                         "aside-izquierda . aside-derecha"
                          "footer footer footer";
 
 }
@@ -111,7 +185,9 @@ a{
 /*=========================================================*/
 
 /*================= NAVEGADOR PRINCIPAL =================*/
+
 /*==================  BOTÓN MENÚ  =====================*/
+
 .menu-principal-toggle{
     display:flex;
     grid-area: logo-2;
@@ -140,14 +216,14 @@ a{
 .nav-principal{
     display: flex;
     position: fixed;
-    height: calc(100vh - 4rem);
+    /* height: calc(100vh - 4rem); */
     height: 240px;
     width: 290px;
     background: #2C0D10;
     left: -80vh;
     z-index: 700;
     top: 20px;
-    transition: left 0.8s ease-in-out;
+    transition: left 1.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
@@ -178,7 +254,7 @@ a{
     list-style: none;
     text-align: center;
     line-height: 40px;
-    transition: 1.5s ease-in;
+    transition: 0.3s ease-in;
 
 }
 
@@ -195,6 +271,7 @@ a{
 
 }
 
+
 .menu-principal a{
     font-size: 10px;
     color: #fff;
@@ -206,11 +283,12 @@ a{
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
 .contenedor-logo-principal{
     grid-area: logo;
-    width: 100%;
+    /* border:  1px solid red; */
+
 }
 
 .contenedor-logo-principal img{
-    width: 105px;
+    width: 110px;
     margin-top: 35px;
     margin-left: 7px;
 }
@@ -219,15 +297,15 @@ a{
 
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-
+    margin-left: 15px;
+    margin-top: 40px;
 }
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
 .contenedor-logo-2{
     grid-area: logo-2;
     display:flex;
+    /* border: green 1px solid; */
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -243,109 +321,58 @@ a{
 }
 
 /*===========================================================*/
-/*=============== CONTENIDO PRINCIPAL========================*/
+/*===============CONTENIDO PRINCIPAL========================*/
 /*=========================================================*/
 
-/* .main{
-    display: flex;
-    grid-area: contenido-principal;
-    width: 100%;
-    height: auto;
-    border: 1px solid #fff;
+.contenedor-main{
+
+    grid-area: contenido;
+    /* border: darkorchid 1px solid; */
+
 }
 
-.main .contenido-principal{
-    display:  flex;
-    width: 100%;
-    height: 90%;
-    margin: auto;
-    border: 1px solid #2C0D10;
-    align-items: flex-end;
-    justify-content: center;
+.contenedor-main .main{
+
 }
 
-.contenedor-imagen-centro{
+/*======================== CORRUSEL ==================*/
+ .carrusel{
+    /* grid-area: carrusel; */
+    /* display: grid; */
+    /* border: darkmagenta 13px solid; */
+    z-index: 500px;
+    display: none;
+}
+
+.carousel{
     position: relative;
+    background: lightgreen;
+    width: 10px;
+    height: 10px;
+
+}
+.carousel-item{
+    /* background: green; */
+    position: relative;
+    width: 20%;
+}
+
+.corousel .carousel-item img{
+    background-size: 40%;
+    background:blue;
+    z-index: 600;
+    max-width: 50%;
+}
+/*
+.aside-izquierda .boton-evento{
     display: flex;
-    width: 100%;
-    height: 400px;
-    border: 1px solid red;
-    align-items: flex-end;
-    
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
 }
-
-.contenedor-imagen-centro img{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    min-width: 50px;
-    max-width: 300px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border: 2px solid #2C0D10;
-}
-
-.contenedor-imagen-centro img:nth-child(1){
-    z-index: 150;
-}
-.contenedor-imagen-centro img:nth-child(2){
-    animation: movimientos-chavo 1.5s 2s ease-out alternate-reverse 10;
-    z-index: 100;
-}
-
-.contenedor-imagen-centro img:nth-child(3){
-
-    animation: movimientos-maracas-der 1.0s 2s ease-out alternate-reverse 10;
-    z-index: 200;
-}
-
-.contenedor-imagen-centro img:nth-child(4){
-
-    animation: movimientos-maracas-izq 1.0s 2s ease-in alternate-reverse 10;
-    z-index: 200;
-}
-
-.contenedor-imagen-centro img:nth-child(5){
-
-    animation: movimientos-mariachi 1s 2s ease-out alternate-reverse 10;
-    z-index: 200;
-} */
-
-/*==================== ANIMACIONES ====================*/
-
-@keyframes movimientos-maracas-izq{
-    0% {transform: translateY(20px);}
-    20% {transform: translateY(0);}
-    80% {transform: translateY(10px);}
-    100%{transform: translateY(0);}
-}
-
-@keyframes movimientos-maracas-der{
-    0% {transform: translateY(-20px);}
-    20% {transform: translateY(0);}
-    80% {transform: translateY(-10px);}
-    100%{transform: translateY(0);}
-}
-
-@keyframes movimientos-mariachi{
-    0% {transform: rotate(5deg);}
-    25% {transform: rotate(0);}
-    75% {transform: rotate(5deg);}
-    100%{transform: rotate(0);}
-}
-
-@keyframes movimientos-chavo{
-    0% {transform: translateY(5px);}
-    25% {transform: translateY(0);}
-    75% {transform: translateY(7px);}
-    100%{transform: translateY(0);}
-} 
-
-
-
-/* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
-/* ======================================================= */
+*/
 
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
@@ -357,7 +384,6 @@ a{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    /* border: 1px solid #dc4  */
 }
 
 .contenedor-botones-aside{
@@ -365,31 +391,27 @@ a{
     /* border: 1px solid lightpink; */
 }
 
-.aside-derecha .contenedor-botones-aside:last-child{
-    margin-right: 0;
-}
-.aside-derecha .contenedor-botones-aside:first-child{
-    margin-right: 0;
-}
 /*==================== ASIDE IZQUIERDA ==================*/
 .aside-izquierda{
     display: flex;
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
+    /* border: 1px solid lightskyblue; */
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
+
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: -10px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
     margin-left: -10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -411,7 +433,6 @@ a{
     position: relative;
     justify-content:center;
     align-items: flex-end;
-    /* background: lightskyblue; */
 
 }
 
@@ -423,7 +444,6 @@ a{
     background: #2C0D10;
     box-shadow: 0px 0px 40px rgba(0,0,0,10);
     z-index: 100;
-    /* border: 1px solid lightseagreen; */
 }
 
 .footer .contenedor-footer .caja-2{
@@ -433,19 +453,16 @@ a{
     position: absolute;
     z-index: 0;
     align-self:flex-start;
-    /* border: 1px solid #fff; */
-    /* bottom: 220px; */
 }
 
 .footer .patron-footer{
     width: 100%;
-    max-width: 500px;
     position:absolute;
     bottom: 41px;
     z-index: 400;
 }
 
-.footer .imagen-mitad-del-mundo{
+ .footer .imagen-mitad-del-mundo{
     display: flex;
     width: 100%;
     height: auto;
@@ -465,41 +482,38 @@ a{
 
 .contenedor-alas{
     display: flex;
-    width: 300px;
+    width: 100%;
     height: auto;
     position: absolute;
     bottom: 40%;
     justify-content: space-evenly;
     z-index: 100;
-    /* border: 1px solid red; */
 }
 
 .contenedor-alas img.alas-izq{
     display: flex;
     position: relative;
     width: 20%;
-    max-width: 110px;
     height: 10%;
     z-index: 500;
-    margin-right: 30%;
-    margin-bottom: 40px;
+    margin-right: 27%;
+    margin-bottom: 47px;
     animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
     animation-fill-mode: forwards;
-    
 }
 
 .contenedor-alas img.alas-der{
     display: flex;
     position: relative;
     width: 20%;
-    max-width: 110px;
     height: 10%;
-    z-index: 500;
-    margin-left: 30%;
-    margin-bottom: 40px;
+    z-index: 300;
+    margin-left: 27%;
+    margin-bottom: 47px;
     animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
     animation-fill-mode: forwards;
     transform: scaleX(-1);
+    
 }
 
 /* ANIMACIONES ALAS  */
@@ -544,7 +558,10 @@ a{
     align-self: flex-end;
 }
 
+
+
 /* ================ REDES SOCIALES ===================== */
+
 .footer .redes-sociales{
     display: flex;
     position: absolute;
@@ -578,59 +595,3 @@ a{
     position: absolute;
     width: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*======================== CORRUSEL ==================*/
-.carrusel{
-    /* grid-area: carrusel; */
-    /* display: grid; */
-    /* border: darkmagenta 13px solid; */
-    z-index: 500px;
-    display: none;
-}
-
-.carousel{
-    position: relative;
-    background: lightgreen;
-    width: 10px;
-    height: 10px;
-
-}
-.carousel-item{
-    /* background: green; */
-    position: relative;
-    width: 20%;
-}
-
-.corousel .carousel-item img{
-    background-size: 40%;
-    background:blue;
-    z-index: 600;
-    max-width: 50%;
-}
-/*
-.aside-izquierda .boton-evento{
-    display: flex;
-    width: 80%;
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    background: skyblue;
-}
-*/
