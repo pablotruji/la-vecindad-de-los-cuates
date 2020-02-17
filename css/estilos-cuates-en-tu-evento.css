@@ -9,6 +9,11 @@
     src: url(../fonts/Woodstamp.otf);
 }
 
+@font-face{
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue\ Book.otf)
+}
+
 /*=============== ESTILOS GENERALES ===============*/
 *{
     padding: 0;
@@ -278,10 +283,15 @@ a{
 }
 
 .contenedor-informacion p{
+    font-family: Bebas;
     font-size: 13px;
     text-align: center;
     width: 70%;
     margin: auto;
+    color: #2C0D10;
+}
+.contenedor-informacion p::first-line{
+    color: red;
 }
 
 .contenedor-informacion-imagen{
@@ -306,14 +316,15 @@ a{
 }
 
 .contenedor-imagen-evento{
-    width: 60%;
-    /* background: salmon;     */
+    width: 80%; 
 }
 
 .contenedor-imagen-evento img{
-    width: 90%;
-    min-width: 50px;
+    width: 100%;
+    min-width: 70px;
     transform: rotateZ(10deg);
+    margin-left: -20px;
+    margin-top: 20px;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
