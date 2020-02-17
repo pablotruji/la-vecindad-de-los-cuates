@@ -312,20 +312,22 @@ a{
 /* INFO TELEFONO */
 .contenido-principal .informacion-telefono{
     display: flex;
-    width: 85%;
+    width: 90%;
     /* background: blue; */
     margin: auto;
     justify-content: space-between;
 }
 
 .informacion-telefono img{
-    width: 70%;
+    width: 50%;
+    height: 100%;
+    margin-left: -15px;
 }
 
 .informacion-telefono p{
     font-family: Woodstamp;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     /* background: lightseagreen; */
     width: 50%;
