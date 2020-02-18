@@ -51,26 +51,26 @@ a{
 
 .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-image: url(../imagenes/Imagen-cortina.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -50px;
+    top: -100px;
     z-index: 200;
     left: -10px;
 }
 
 .contenedor .contenedor-cortina .contenedor-cortina-derecha{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-image: url(../imagenes/Imagen-cortina.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -50px;
+    top: -100px;
     right: 0 ;
     transform: scaleX(-1);
     z-index: 200;
@@ -87,7 +87,7 @@ a{
 .contenedor .contenedor-grid {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 300;
 }
@@ -95,11 +95,11 @@ a{
 /*===================  GRILLA  ========================*/
 .contenedor .contenedor-grid .grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display:grid;
     grid-gap:10px;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 250px 300px auto;
+    grid-template-rows: 250px 1fr 1fr;
     grid-template-areas: "logo contenido-principal logo-2"
                          "aside-izquierda contenido-principal aside-derecha"
                          "footer footer footer";
@@ -140,7 +140,7 @@ a{
 .nav-principal{
     display: flex;
     position: fixed;
-    /* height: calc(100vh - 4rem); */
+    height: calc(100vh - 4rem);
     height: 240px;
     width: 290px;
     background: #2C0D10;
@@ -220,7 +220,7 @@ a{
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 40px;
 
 }
 
@@ -256,7 +256,7 @@ a{
     display: flex;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: flex-start;
     /* background: blue; */
@@ -314,13 +314,13 @@ a{
 
 }
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: -10px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
     margin-left: -10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -334,13 +334,14 @@ a{
     position: relative;
     justify-content: center;
     align-items: flex-end;
+    /* border: 1px solid rgb(0, 255, 55); */
 
 }
 
 .footer .contenedor-footer{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 170px;
     position: relative;
     justify-content:center;
     align-items: flex-end;

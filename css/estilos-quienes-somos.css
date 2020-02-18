@@ -51,26 +51,26 @@ a{
 
 .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-image: url(../imagenes/Imagen-cortina.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -50px;
+    top: -100px;
     z-index: 200;
     left: -10px;
 }
 
 .contenedor .contenedor-cortina .contenedor-cortina-derecha{
     position: absolute;
-    background-image: url(../imagenes/Imagen-cortina-recortada-2.png);
+    background-image: url(../imagenes/Imagen-cortina.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width:170px;
     height:750px;
-    top: -50px;
+    top: -100px;
     right: 0 ;
     transform: scaleX(-1);
     z-index: 200;
@@ -87,7 +87,7 @@ a{
 .contenedor .contenedor-grid {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 300;
 }
@@ -95,15 +95,14 @@ a{
 /*===================  GRILLA  ========================*/
 .contenedor .contenedor-grid .grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display:grid;
     grid-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 300px auto;
+    grid-template-rows: 250px 1fr 1fr;
     grid-template-areas: "logo logo logo-2"
                          "aside-izquierda . aside-derecha"
                          "footer footer footer";
-
 }
 
 /*===========================================================*/
@@ -219,8 +218,8 @@ a{
 
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 40px;
 
 }
 
@@ -372,13 +371,13 @@ a{
 
 }
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: -10px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
     margin-left: -10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -397,14 +396,12 @@ a{
 .footer .contenedor-footer{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 170px;
     position: relative;
     justify-content:center;
     align-items: flex-end;
     /* background: lightskyblue; */
-
 }
-
 
 .footer .contenedor-footer .caja-1{
     width: 100%;

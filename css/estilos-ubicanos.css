@@ -1,5 +1,10 @@
 /*================= FUENTES ==========================*/
 @font-face{
+    font-family: 'Mayan';
+    src: url(../fonts/Mayan\ 2.ttf);
+}
+
+@font-face{
     font-family: 'Helvetica';
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
@@ -87,7 +92,7 @@ a{
 .contenedor .contenedor-grid {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     z-index: 300;
 }
@@ -95,7 +100,7 @@ a{
 /*===================  GRILLA  ========================*/
 .contenedor .contenedor-grid .grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display:grid;
     grid-gap:10px;
     grid-template-columns: 50px 1fr 50px;
@@ -243,7 +248,7 @@ a{
 }
 
 /*===========================================================*/
-/*=============== CONTENIDO PRINCIPAL========================*/
+/*=============== CONTENIDO PRINCIPAL ========================*/
 /*=========================================================*/
 
 .main{
@@ -320,7 +325,7 @@ a{
 .contenido-cumbaya{
     display: flex;
     width: 90%; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contenido-cumbaya .contenedor-tequila{
@@ -394,7 +399,6 @@ a{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    border: 1px solid #dc4 
 }
 
 .contenedor-botones-aside{
@@ -414,13 +418,13 @@ a{
 
 }
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: -10px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
     margin-left: -10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -438,7 +442,7 @@ a{
 .footer .contenedor-footer{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 170px;
     position: relative;
     justify-content:center;
     align-items: flex-end;
