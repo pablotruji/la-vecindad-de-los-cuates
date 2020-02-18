@@ -54,8 +54,6 @@ a{
     justify-content: center;
     align-items: center;
     align-self: center;
-
-
 }
 
 .contenedor-imagen-centro img{
@@ -150,11 +148,17 @@ a{
     z-index: 200;
 }
 
+/* GUIRNALDAS */
 .contenedor .contenedor-guirnaldas{
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 600;
+    overflow: hidden;
+}
+
+.contenedor .contenedor-guirnaldas img{
+    width: 1200px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -464,6 +468,7 @@ a{
     position:absolute;
     z-index: 400;
     overflow: hidden;
+    bottom: 35px;
 }
 .footer .patron-footer img{
     width: 1000px;
