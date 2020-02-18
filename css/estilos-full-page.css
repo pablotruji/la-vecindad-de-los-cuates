@@ -325,10 +325,10 @@ a {
 }
 
 #carta-menu-1{
-    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
+    background: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
 }
 #carta-menu-2{
-    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
+    background: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
 }
 #carta-menu-3{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-3.png");
@@ -367,9 +367,7 @@ a {
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
 }
 
-#carta-menu-16{
-    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-14.png");
-}
+
 
 #carta-menu-15{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-15.png");
