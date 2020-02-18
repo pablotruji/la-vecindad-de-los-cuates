@@ -314,25 +314,28 @@ a {
 #carta-menu-4, #carta-menu-5, #carta-menu-6,
 #carta-menu-7, #carta-menu-8, #carta-menu-9,
 #carta-menu-10, #carta-menu-11, #carta-menu-12,
-#carta-menu-13, #carta-menu-14, #carta-menu-15
+#carta-menu-13, #carta-menu-14, #carta-menu-15, #carta-menu-16
 {
     background-position: center center;
     background-repeat: repeat-x;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     width: 100%;
     z-index: 100;
 }
 
+/* ULTIMA PÁGINA */
 #carta-menu-1{
-    background: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
 }
+/* PRIMERA PÁGINA */
 #carta-menu-2{
-    background: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-2.png");
 }
 #carta-menu-3{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-3.png");
 }
+
 #carta-menu-4{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-4.png");
 }
@@ -366,11 +369,11 @@ a {
 #carta-menu-14{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-1.png");
 }
-
-
-
 #carta-menu-15{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-15.png");
+}
+#carta-menu-16{
+    background-image: url("../imagenes/Imagenes-menu/Carta-Menu-10.png");
 }
 
 
@@ -1027,9 +1030,7 @@ a {
         width: 30%;
         height: 30%;
     }
-    .contenedor-info-producto img{
-        /* background: lightsteelblue; */
-    }
+    
     .contenedor-info-producto .titulo{
         font-size: 20px
     }
@@ -1037,10 +1038,6 @@ a {
     .contenedor-info-producto .descripcion{
         font-size: 12px;
         
-    }
-    .contenedor-slide .titulo-paginas-menu{
-        /* width: 60%; */
-        /* background: red; */
     }
     
 } 
