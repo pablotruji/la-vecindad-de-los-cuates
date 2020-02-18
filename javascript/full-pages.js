@@ -8,7 +8,7 @@ const seccionesPagina = new  fullpage('#fullpage',{
 	'pagina-5', 'pagina-6', 'pagina-7', 'pagina-8', 'pagina-9', 'pagina-10',
 	'pagina-11', 'pagina-12', 'pagina-13', 'pagina-14', 'pagina-15', 'footer'],
 	navigation: false,
-	navigationPosition: 'right',
+	// navigationPosition: 'right',
 	// navigationTooltips: ['inicio', '1', '2', '3', '4'],
 	showActiveTooltip: true,
 	slidesNavigation: false,
