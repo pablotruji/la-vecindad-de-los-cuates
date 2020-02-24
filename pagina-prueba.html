@@ -23,7 +23,13 @@
 </style>
 </head>
 <body>
-    <div class="container" style="margin-top:20px;margin-bottom:20px;padding:50px;background-color:#ddd;">
+    <div class="container" 
+    style="
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:50px;
+    background-color:#ddd;"
+    >
         <div class="row">
           <div class="col-md-3">
             <img src="" class="profile-pic" style="border-radius:50%;">
@@ -68,14 +74,15 @@
       return (num/1000).toFixed(1).replace(/\.0$/,'') + 'K';
     }
     return num;
+    
   }
   $.ajax({
-    url:"https://www.instagram.com/<?php echo $_GET['user'];?>?__a=1",
+    url:"https://www.instagram.com/lavecindad/?__a=1",
     type:'get',
     success:function(response){
       $(".profile-pic").attr('src',response.graphql.user.profile_pic_url);
       $(".name").html(response.graphql.user.full_name);
-      $(".biography").html(response.graphql.user.biography);
+      // $(".biography").html(response.graphql.user.biography);
       $(".username").html(response.graphql.user.username);
       $(".number-of-posts").html(response.graphql.user.edge_owner_to_timeline_media.count);
       $(".followers").html(nFormatter(response.graphql.user.edge_followed_by.count));
@@ -89,8 +96,11 @@
         posts_html += '<div class="col-md-4 equal-height"><img style="min-height:50px;background-color:#fff;width:100%" src="'+url+'"><div class="row like-comment"><div class="col-md-6">'+nFormatter(likes)+' LIKES</div><div class="col-md-6">'+nFormatter(comments)+' COMMENTS</div></div></div>';
       }
       $(".posts").html(posts_html);
+      console.log(this.url);
     }
+    
   });
+  
 </script>
 </body>
 </html>
