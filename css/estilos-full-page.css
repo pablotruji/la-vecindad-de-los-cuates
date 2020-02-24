@@ -84,14 +84,12 @@ a {
     display:grid;
     grid-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "logo logo logo-2"
                          "aside-izquierda boton aside-derecha"
                          "footer footer footer";
 
 }
-
-
 
 /* ======================================================== */
 /* ====================== FOOTER ========================= */
@@ -137,6 +135,7 @@ a {
     justify-content: center;
     align-items: flex-end;
     position: sticky;
+    /* border: 1px solid #fff; */
 }
 
 .footer .contenedor-footer{
