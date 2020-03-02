@@ -270,15 +270,15 @@ a{
     width: 80%;
     /* background: red; */
     margin: auto;
-    margin-top: 35px;
+    margin-top: 2.5rem;
 }
 
 .contenedor-imagen-principal img{
     display: block;
     width: 60%;
     min-width: 100px;
+    max-width: 150px;
     margin: auto;
-    /* background: blue; */
 }
 
 /* ===== INFORMACIÓN DE PÁGINA *=== */
@@ -306,13 +306,12 @@ a{
     display: flex;
     flex-direction:row-reverse;
     width: 60%;
-    /* background: pink; */
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contenedor-mas-info{
-    /* background: blue;  */
     width: 100%;
 }
 
@@ -566,3 +565,5 @@ a{
     position: absolute;
     width: 40px;
 }
+
+
