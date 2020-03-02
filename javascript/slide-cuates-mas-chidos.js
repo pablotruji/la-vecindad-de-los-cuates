@@ -11,5 +11,9 @@ const seccionesPagina = new fullpage('#fullpage',{
 	slidesNavigation: false,
     slidesNavPosition: 'bottom',
 	responsiveWidth: 200,
-    loopBottom: false
+    loopBottom: false,
+    fitToSection: false
+
 });
+
+fullpage_api.setAutoScrolling(false);
