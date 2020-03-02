@@ -875,7 +875,6 @@ a {
     top: 50%;
     line-height: 95%;
     color: rgb(209, 172, 8);
-
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-inferior .titulo{ 
@@ -1021,38 +1020,39 @@ a {
     margin: auto;
 }
 
+/*=============== IMAGENES ===================*/
+
 .imagenes-parte-superior{
     display: flex;
-    width: 50%;
-    height: 250px;
-    /* border: 1px solid rgb(17, 218, 27);  */
-    justify-content: space-between;
-    /* background: red; */
+    width: 100%;
+    height: auto;
+    /* justify-content: space-between; */
     margin: auto;
+    margin-top: -5%;
 }
 
 .contenedor-rayuela img{
-    width: 100%;
-    margin-top: 20%;
+    width: 150%;
+  
 }
 
 .contenedor-mariachi-calavera img{
-    width: 90%;
-    margin-top: 30%;
+    width: 120%;
+    margin-left: 1em;
 }
 
 .imagenes-parte-inferior-1{
     display: flex;
-    width: 90%;
+    width: 80%;
     height: auto; 
-    /* border: 1px solid rgb(218, 17, 17); */
     justify-content: center;
     margin: auto;
+    margin-top: -5%;
 }
 
 .contenedor-chavo img{
     display:block;
-    width: 85%;
+    width: 80%;
     margin: auto;
     margin-top: 50%;
 }
@@ -1073,9 +1073,8 @@ a {
 
 .imagenes-parte-inferior-2{
     display: flex;
-    width: 70%;
+    width: 90%;
     height: auto; 
-    /* border: 1px solid rgb(218, 17, 17); */
     justify-content: center;
     margin: auto;
 }
@@ -1095,6 +1094,96 @@ a {
 .contenedor-nono img {
     width: 90%;
 }
+
+/* ========== CONTENEDORES DESCRIPCIÓN PLATOS ============= */
+
+.contenido-1{
+    width: 80%;
+}
+
+.contenido-2{
+    width: 80%;
+}
+
+/* ============ TITULOS =================== */
+
+.contenido-1 .contenido-platos{
+    width: 100%;
+    margin-bottom: 1.5em;
+    transform: rotateZ(-10deg);
+}
+
+.contenido-2 .contenido-platos{
+    width: 100%;
+    margin-bottom: 1.5em;
+    transform: rotateZ(10deg);
+}
+
+.contenido-2 .contenido-platos:nth-child(2){
+    margin-right: 10px;
+}
+
+.contenido-platos h2{
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 0.4em;
+    font-family: 'Rye', cursive;
+}
+
+.contenido-1 .contenido-platos:nth-child(1) h2 span{
+    background: #872F83;
+    padding: 4px;
+}
+
+.contenido-platos:nth-child(2) h2 span{
+    background: #E55B2B;
+    padding: 4px;
+}
+
+.contenido-2 .contenido-platos:nth-child(1) h2 span{
+    background: #E12060;
+    padding: 4px;
+}
+
+.contenido-2 .contenido-platos:nth-child(2) h2 span{
+    background: #27A5DD;
+    padding: 4px;
+}
+
+
+/* =========== DESCRIPCIÓN ============== */
+.contenido-platos p{
+    width: 80%;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    font-family: Mayan;
+}
+.contenido-1 .contenido-platos:nth-child(1) p span{
+    background: #BE2981;
+    padding: 2px;
+}
+
+.contenido-1 .contenido-platos:nth-child(2) p span{
+    background: #EE8E22;
+    padding: 2px;
+}
+
+.contenido-2 .contenido-platos:nth-child(1) p span{
+    background: #E55944;
+    padding: 1px;
+}
+
+.contenido-2 .contenido-platos:nth-child(2) p span{
+    background: #087DBB;
+    padding: 2px;
+}
+
+
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
 .fp-controlArrow.fp-next,
