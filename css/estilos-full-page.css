@@ -13,6 +13,12 @@
     src: url(../fonts/MyriadPro-Regular_1.otf)
 }
 
+@font-face{
+    font-family: 'Bison';
+    src: url(../fonts/Bison-Bold\(PersonalUse\).ttf);
+
+}
+
 /*============== ESTILOS GENERALES =================*/
 *{
     padding: 0;
@@ -56,9 +62,11 @@ a {
 /* ==================== LOGOTIPO STICKY ========================= */
 .contenedor-logotipo-sticky{
     width: 20%;
+    height: auto;
+    max-width: 80px;
     position: fixed;
-    top: 6%;
-    left: 10px;
+    top: 2.5rem;
+    left: 0.4rem;
     z-index: 1000;
 }
 
@@ -1028,7 +1036,7 @@ a {
     height: auto;
     /* justify-content: space-between; */
     margin: auto;
-    margin-top: -5%;
+    margin-top: 30%;
 }
 
 .contenedor-rayuela img{
@@ -1047,7 +1055,7 @@ a {
     height: auto; 
     justify-content: center;
     margin: auto;
-    margin-top: -5%;
+    margin-top: -3em;
 }
 
 .contenedor-chavo img{
@@ -1057,27 +1065,29 @@ a {
     margin-top: 50%;
 }
 
-.contenedor-coco img{
-    display:block;
-    width: 90%;
-    margin: auto;
-    
+.contenedor-coco img {
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: -0.8em;
 }
 
 .contenedor-balero img {
     display:block;
     width: 73%;
     margin: auto;
-    margin-top: 60%;
+    margin-top: 10%;
 }
 
-.imagenes-parte-inferior-2{
-    display: flex;
-    width: 90%;
-    height: auto; 
-    justify-content: center;
-    margin: auto;
+.imagenes-parte-inferior-2 {
+	display: flex;
+	width: 90%;
+	height: auto;
+	justify-content: center;
+	margin: auto;
+	margin-top: -2em;
 }
+
 .contenedor-pinata img {
     display:block;
     width: 70%;
@@ -1113,10 +1123,10 @@ a {
     transform: rotateZ(-10deg);
 }
 
-.contenido-2 .contenido-platos{
-    width: 100%;
-    margin-bottom: 1.5em;
-    transform: rotateZ(10deg);
+.contenido-2 .contenido-platos {
+	width: 100%;
+	margin-bottom: 2.5em;
+	transform: rotateZ(10deg);
 }
 
 .contenido-2 .contenido-platos:nth-child(2){
@@ -1186,8 +1196,215 @@ a {
 /* ============================================================ */
  /* ================ MENÚ LICORES BOTELLAS ==================== */
  /*============================================================*/
+.fp-tableCell {
+    vertical-align: initial !important;
+}
 
+.contenedor-menu-botellas{
+     width: 90%;
+     height: auto;
+     color: #fff;
+     /* background: red; */
+     margin: auto;
+     margin-top: 6em;
+ }
+
+ .contenedor-menu-botellas.contenedor-2{
+    margin-top: 4em;
+}
+
+ .contenedor-titulo-botellas {
+	display: inline-block;
+	width: 60%;
+	font-family: 'Rye', cursive;
+	font-size: 18px;
+	/* border: 1px solid #EE8E22; */
+	margin-left: 0;
+	min-width: 195px;
+}
+
+ .contenedor-titulo-botellas h2 span{
+    background: #911442;
+    margin-left: 0.5em;
+}
+
+
+/* =============TITULO PAGINA 2 DE LICORES BOTELLAS====================== */
+.contenedor-titulo-botellas-2 {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 0.2em;
+}
+
+.contenedor-titulo-botellas-2 h2{
+    font-family: Mayan;
+    font-size: 32px;
+}
  
+/* ========== IMAGEN DISEÑO PAGINA 2 ========== */
+.contenedor-titulo-diseno {
+	width: 100%;
+    margin: auto;
+}
+
+.contenedor-titulo-diseno img {
+    display: block;
+	width: 31%;
+	margin: auto;
+	
+}
+
+
+ /* ======= ÍCONOS BOTELLAS Y COPAS 1 ======= */
+.contenedor-iconos-titulo {
+	display: flex;
+	width: 95%;
+	justify-content: space-between;
+}
+
+.contenedor-imagen-botella{
+    display: inline-block;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-left: em;
+}
+
+.contenedor-imagen-botella img{
+    margin: -10px 0;
+}
+
+.contenedor-imagen-copa{
+    display: inline-block;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-right: 0;
+}
+
+.contenedor-imagen-copa img{
+    margin: -5px 8px;
+}
+
+ /* ======= ÍCONOS BOTELLAS Y COPAS 2 ======= */
+.contenedor-iconos-titulo-2 {
+	display: flex;
+    width: 48%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+	margin-left: auto;
+}
+
+ /* ======= NOMBRES BOTELLAS ======= */
+
+ .contenedor-nombres-botellas{
+     white-space: nowrap;
+     width: 50%;
+     height: 100%;
+     /* border: 1px solid khaki; */
+     font-family: Bison;
+     font-size: 18px;
+     overflow: hidden;
+     text-overflow: 'clip';
+     margin-left: 1.5em;
+     margin-top: 1.5em;
+     line-height: 1.2em;
+ }
+
+ .contenedor-nombres-botellas.contenedor-2{
+    margin-top: 0;
+ }
+
+ .contenedor-2 p span{
+     background: #911442;
+ }
+ 
+/* ================================ */
+ /* ========== VINOS ============= */
+ /* ============================= */
+
+.contenedor-vinos{
+     /* background: red; */
+}
+
+.contenedor-vinos h2{
+     font-family: Mayan;
+}
+
+.contenedor-vinos img {
+	width: 30%;
+	margin: auto;
+	display: block;
+}
+
+.contenedor-nombres-botellas.contenedor-3 {
+	font-size: 15px;
+	width: 60%;
+	margin-top: 0.6em !important;
+}
+
+.contenedor-iconos-titulo-3 {
+	display: flex;
+	width: 43%;
+	margin-left: auto;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 0.4em;
+}
+
+.contenedor-iconos-titulo-3 .contenedor-imagen-botella {
+    width: 35%;
+    
+}
+
+.contenedor-iconos-titulo-3 .contenedor-imagen-botella img{
+	width: 80%;
+}
+
+.contenedor-iconos-titulo-3 .contenedor-imagen-copa {
+    width: 35%;
+    margin-right: 0.5em ;
+}
+
+.contenedor-iconos-titulo-3 .contenedor-imagen-copa img{
+	width: 80%;
+}
+
+
+/* =================================================================== */
+/* ========== TERCERA SECCIÓN DE MENÚ LICORES BOTELLAS ============= */
+/* ================================================================= */
+.contenedor-menu-botellas.contenedor-3{
+   font-size: 18px;
+}
+
+.contenedor-3 .contenedor-iconos-titulo{
+    margin-top: 1em;
+}
+
+.contenedor-3 .contenedor-titulo-botellas{
+    font-size: 16px;
+}
+.contenedor-3 .contenedor-titulo-botellas h2 {
+	background: #911442;
+	width: 80%;
+	margin: auto;
+}
+
+.contenedor-3 .contenedor-titulo-botellas h2 span {
+	margin: auto;
+}
+
+.contenedor-3  .contenedor-imagen-botella img {
+	width: 80%
+}
+.contenedor-3 .contenedor-imagen-copa img {
+    width: 59
+    %;
+}
+
+.contenedor-3 .contenedor-nombres-botellas {
+	margin-top: 0.3em;
+}
+
+
 
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
@@ -1261,6 +1478,16 @@ a {
         font-size: 12px;
         
     }
+
+    /* ============================================================ */
+    /* ================ MENÚ LICORES BOTELLAS ==================== */
+    /*============================================================*/
     
 } 
 
+@media only screen and (max-height: 680px) {
+    .contenedor-nombres-botellas {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
