@@ -1193,9 +1193,11 @@ a {
     padding: 2px;
 }
 
-/* ============================================================ */
- /* ================ MENÚ LICORES BOTELLAS ==================== */
- /*============================================================*/
+
+/* =========================================================================== */
+/* ================ MENÚ LICORES BOTELLAS E INDIVIDUALES ==================== */
+/* ========================================================================= */
+
 .fp-tableCell {
     vertical-align: initial !important;
 }
@@ -1209,8 +1211,13 @@ a {
      margin-top: 6em;
  }
 
- .contenedor-menu-botellas.contenedor-2{
+.contenedor-menu-botellas.contenedor-2{
     margin-top: 4em;
+}
+
+.contenedor-nombres-precios{
+    display: flex;
+    justify-content: space-around;
 }
 
  .contenedor-titulo-botellas {
@@ -1218,7 +1225,6 @@ a {
 	width: 60%;
 	font-family: 'Rye', cursive;
 	font-size: 18px;
-	/* border: 1px solid #EE8E22; */
 	margin-left: 0;
 	min-width: 195px;
 }
@@ -1227,7 +1233,6 @@ a {
     background: #911442;
     margin-left: 0.5em;
 }
-
 
 /* =============TITULO PAGINA 2 DE LICORES BOTELLAS====================== */
 .contenedor-titulo-botellas-2 {
@@ -1254,8 +1259,7 @@ a {
 	
 }
 
-
- /* ======= ÍCONOS BOTELLAS Y COPAS 1 ======= */
+/* ======= ÍCONOS BOTELLAS Y COPAS 1 ======= */
 .contenedor-iconos-titulo {
 	display: flex;
 	width: 95%;
@@ -1303,10 +1307,35 @@ a {
      font-size: 18px;
      overflow: hidden;
      text-overflow: 'clip';
-     margin-left: 1.5em;
+     margin-left: 0.5em;
      margin-top: 1.5em;
      line-height: 1.2em;
  }
+
+ .contenedor-precios-botellas{
+    white-space: nowrap;
+    width: 15%;
+    height: 100%;
+    font-family: Bison;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: 'clip';
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    line-height: 1.2em;
+}
+
+.contenedor-precios-individuales {
+	width: 14%;
+	height: 100%;
+	font-family: Bison;
+	font-size: 18px;
+	margin-left: 1.2em;
+	margin-top: 1.5em;
+	line-height: 1.2em;
+}
+
+ 
 
  .contenedor-nombres-botellas.contenedor-2{
     margin-top: 0;
@@ -1396,8 +1425,7 @@ a {
 	width: 80%
 }
 .contenedor-3 .contenedor-imagen-copa img {
-    width: 59
-    %;
+    width: 59%;
 }
 
 .contenedor-3 .contenedor-nombres-botellas {
