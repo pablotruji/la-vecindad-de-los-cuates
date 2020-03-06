@@ -1298,46 +1298,37 @@ a {
 
  /* ======= NOMBRES BOTELLAS ======= */
 
- .contenedor-nombres-botellas{
+ .contenedor-nombres-botellas,
+ .contenedor-precios-botellas,
+ .contenedor-precios-individuales{
      white-space: nowrap;
      width: 50%;
      height: 100%;
-     /* border: 1px solid khaki; */
      font-family: Bison;
-     font-size: 18px;
      overflow: hidden;
      text-overflow: 'clip';
      margin-left: 0.5em;
      margin-top: 1.5em;
-     line-height: 1.2em;
+     /* line-height: 1.2em; */
  }
 
  .contenedor-precios-botellas{
-    white-space: nowrap;
     width: 15%;
-    height: 100%;
-    font-family: Bison;
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: 'clip';
     margin-left: 1.5em;
     margin-top: 1.5em;
-    line-height: 1.2em;
 }
 
 .contenedor-precios-individuales {
 	width: 14%;
-	height: 100%;
-	font-family: Bison;
-	font-size: 18px;
 	margin-left: 1.2em;
 	margin-top: 1.5em;
-	line-height: 1.2em;
 }
 
  
 
- .contenedor-nombres-botellas.contenedor-2{
+ .contenedor-2 .contenedor-nombres-botellas,
+ .contenedor-2 .contenedor-precios-botellas,
+ .contenedor-2 .contenedor-precios-individuales{
     margin-top: 0;
  }
 
@@ -1349,10 +1340,6 @@ a {
  /* ========== VINOS ============= */
  /* ============================= */
 
-.contenedor-vinos{
-     /* background: red; */
-}
-
 .contenedor-vinos h2{
      font-family: Mayan;
 }
@@ -1363,11 +1350,19 @@ a {
 	display: block;
 }
 
-.contenedor-nombres-botellas.contenedor-3 {
-	font-size: 15px;
+.contenedor-3 .contenedor-nombres-botellas {
+    font-size: 15px;
 	width: 60%;
-	margin-top: 0.6em !important;
 }
+
+.contenedor-3 .contenedor-precios-botellas{
+    font-size: 15px;
+}
+
+.contenedor-3 .contenedor-precios-individuales{
+    font-size: 15px;
+}
+
 
 .contenedor-iconos-titulo-3 {
 	display: flex;
@@ -1400,40 +1395,40 @@ a {
 /* =================================================================== */
 /* ========== TERCERA SECCIÓN DE MENÚ LICORES BOTELLAS ============= */
 /* ================================================================= */
-.contenedor-menu-botellas.contenedor-3{
+.contenedor-menu-botellas.contenedor-4{
    font-size: 18px;
 }
 
-.contenedor-3 .contenedor-iconos-titulo{
+.contenedor-4 .contenedor-iconos-titulo{
     margin-top: 1em;
 }
 
-.contenedor-3 .contenedor-titulo-botellas{
+.contenedor-4 .contenedor-titulo-botellas{
     font-size: 16px;
 }
-.contenedor-3 .contenedor-titulo-botellas h2 {
+.contenedor-4 .contenedor-titulo-botellas h2 {
 	background: #911442;
 	width: 80%;
 	margin: auto;
 }
 
-.contenedor-3 .contenedor-titulo-botellas h2 span {
+.contenedor-4 .contenedor-titulo-botellas h2 span {
 	margin: auto;
 }
 
-.contenedor-3  .contenedor-imagen-botella img {
+.contenedor-4  .contenedor-imagen-botella img {
 	width: 80%
 }
-.contenedor-3 .contenedor-imagen-copa img {
+.contenedor-4 .contenedor-imagen-copa img {
     width: 59%;
 }
 
-.contenedor-3 .contenedor-nombres-botellas {
-	margin-top: 0.3em;
+.contenedor-4 .contenedor-nombres-botellas,
+.contenedor-4 .contenedor-precios-botellas,
+.contenedor-4 .contenedor-precios-individuales{
+    margin-top: 1em;
+    line-height:1.1em;
 }
-
-
-
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
 .fp-controlArrow.fp-next,
@@ -1514,8 +1509,9 @@ a {
 } 
 
 @media only screen and (max-height: 680px) {
-    .contenedor-nombres-botellas {
-        font-size: 18px;
-        line-height: 18px;
+    .contenedor-nombres-precios {
+        font-size: 16px;
+        line-height: 1.2em;
+      
     }
 }
