@@ -265,11 +265,13 @@ a{
     /* border: 1px solid #444; */
 }
 
-.main .contenido-principal{
-    width: 80%;
-    height: auto;
-    justify-content: center;
-    margin: auto;
+.main .contenido-principal {
+    display: flex;
+	width: 80%;
+	height: auto;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 2em;
 }
 
 /* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
@@ -320,23 +322,23 @@ a{
 /* INFO TELEFONO */
 .contenido-principal .informacion-telefono{
     display: flex;
-    width: 90%;
+    width: 80%;
     /* background: blue; */
     margin: auto;
     justify-content: space-between;
 }
 
-.informacion-telefono img{
-    width: 50%;
-    max-width: 120px;
-    height: 100%;
-    margin-left: -15px;
+.informacion-telefono img {
+	width: 58%;
+	max-width: 120px;
+	height: 100%;
+	margin-left: -23px;
 }
 
 .informacion-telefono p{
     font-family: Woodstamp;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     /* background: lightseagreen; */
     width: 50%;
