@@ -158,7 +158,7 @@ a{
     background: #2C0D10;
     left: -80vh;
     z-index: 700;
-    top: 20px;
+    top: 1rem;
     transition: left 0.8s ease-in-out;
     align-items: center;
     justify-content: center;
@@ -178,7 +178,7 @@ a{
    position: absolute;
    flex-direction: column;
    width: 90%;
-   height: 90%;
+   height: 95%;
    justify-content: center;
    align-items: center;
 
@@ -190,7 +190,7 @@ a{
     list-style: none;
     text-align: center;
     line-height: 40px;
-    transition: 1.5s ease-in;
+    transition: 0.3s ease-in;
 
 }
 
@@ -208,8 +208,10 @@ a{
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 
@@ -219,39 +221,37 @@ a{
 .contenedor-logo-principal{
     grid-area: logo;
     width: 100%;
+    height: 60px;
 }
 
 .contenedor-logo-principal img{
-    width: 105px;
-    margin-top: 35px;
-    margin-left: 7px;
+    width: 110px;
+    margin-top: 2rem;
+    margin-left: 0.3rem;
 }
 
 /* ============ BOTÓN EVENTOS =============== */
 
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 0.5rem;
+    margin-top: 3.0rem;
 
 }
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
 .contenedor-logo-2{
     grid-area: logo-2;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
-
-.contenedor-logo-2 a{
-    margin-bottom: 10px;
-    margin-right: 10px ;
-}
-
 
 .contenedor-logo-2 img{
-    width: 77px;
+    width: 160%;
+    height: auto;
+    margin-top: 10.5rem;
+    margin-left: -2.5rem;
 }
 
 /*===========================================================*/
@@ -266,18 +266,19 @@ a{
 }
 
 .main .contenido-principal {
-    display: flex;
+	display: flex;
 	width: 80%;
 	height: auto;
 	justify-content: center;
 	margin: auto;
 	margin-bottom: 2em;
+	flex-direction: column;
 }
 
 /* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
 .contenido-principal .contactanos-imagen-charo {
-    width: 100%;
-    margin-bottom: 30px;
+	width: 100%;
+	margin-bottom: 0.5em;
 }
 
 .contenido-principal .contactanos-imagen-charo img{
@@ -286,63 +287,60 @@ a{
     max-width: 160px;
     margin: auto;
     margin-top: 60px;
-    
 }
 
 /* INFO MAIL */
-.contenido-principal .informacion-email{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 50px; 
+.contenido-principal .informacion-email {
+	display: flex;
+	flex-wrap: wrap;
+	width: 79%;
+	margin: auto;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .informacion-email img{
-    width: 30%;
+    display: block;
+    width: 60px;
     max-width: 70px;
     height: 100%;
+    align-self: center;
+    margin: auto;
 }
 
 .informacion-email p{
     font-family: Woodstamp;
     color: #fff;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
 }
 
-.informacion-email p::first-line{
-    font-family: Woodstamp;
+.informacion-email p span{
     color: #E62733;
-    font-size: 20px;
-    text-align: center;
 }
 
 
 /* INFO TELEFONO */
-.contenido-principal .informacion-telefono{
+.contenido-principal .informacion-telefono {
     display: flex;
-    width: 80%;
-    /* background: blue; */
-    margin: auto;
-    justify-content: space-between;
+	flex-wrap: wrap;
+	width: 81%;
+	margin: auto;
+	justify-content: space-between;
 }
 
 .informacion-telefono img {
-	width: 58%;
+	width: 78px;
 	max-width: 120px;
 	height: 100%;
-	margin-left: -23px;
+	/* margin-left: -23px; */
 }
 
-.informacion-telefono p{
-    font-family: Woodstamp;
-    color: #fff;
-    font-size: 22px;
-    text-align: center;
-    /* background: lightseagreen; */
-    width: 50%;
-    margin-top: 40px;
+.informacion-telefono p {
+	font-family: Woodstamp;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
 }
 
 .informacion-telefono p::first-line{
@@ -350,22 +348,28 @@ a{
 }
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
-
+.contenedor-botones-aside{
+    width: 115px;
+    /* border: 1px solid lightpink; */
+}   
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
     display: flex;
     grid-area: aside-derecha;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
 }
 
-.contenedor-botones-aside{
-    width: 115px;
-    /* border: 1px solid lightpink; */
+.aside-derecha .contenedor-botones-aside:first-child{
+    margin-left: 0;
+    margin-top: 0.5rem;
+}
+
+.aside-derecha .contenedor-botones-aside:last-child{
+    margin-left: 0.2rem;
+    margin-top: 2rem;
 }
 
 /*==================== ASIDE IZQUIERDA ==================*/
@@ -374,19 +378,17 @@ a{
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-evenly;
 
-}
-.aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: 0px;
-    margin-top: 10px;
 }
 
 .aside-izquierda .contenedor-botones-aside:first-child{
-    margin-left: -10px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 1rem;
+}
+
+.aside-izquierda .contenedor-botones-aside:last-child{
+    margin-left: 0;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -572,4 +574,32 @@ a{
 }
 
 
-/* MEDIDAD RESPONSIVE */
+/* ============================================================================ */
+/* ============================== RESPONSIVE ================================= */
+/* ========================================================================== */
+
+@media screen and (max-width:432px){
+
+
+    .contenido-principal .informacion-telefono {
+        width: 60%;
+        justify-content: center;
+    }
+    
+    .informacion-telefono img {
+        width: 63px;
+        max-width: 120px;
+        margin-bottom: 1em;
+    }
+
+    .contenido-principal .informacion-email {
+        width: 48%;
+        justify-content: center;
+    }
+    
+    .informacion-email img{
+        width: 40px;
+        max-width: 70px;
+        margin-bottom: 1em;
+    }
+}
