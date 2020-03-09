@@ -441,21 +441,25 @@ a {
 	position: relative;
 	width: 100%;
 	height: 40vh;
-	background: rgba(0,255,255, .3 );
-	border: 1px solid aliceblue;
+	/* background: rgba(0,255,255, .3 );
+	border: 1px solid aliceblue; */
 }
 
 .contenedor-info-producto .contenedor-info-producto-inferior{
     position: relative;
     width: 100%;
     height: 40vh;
-    background: rgba(0,0,255, .3);   
+    /* background: rgba(0,0,255, .3);  */
 }
 
-.contenedor-info-producto .contenedor-info-producto-intermedio{
-    position: relative;
-    width: 100%;
-    height: 100%; 
+.contenedor-info-producto .contenedor-info-producto-intermedio {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	/* background: red; */
+	top: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 
@@ -474,8 +478,11 @@ a {
     right: 0;
 }
 
-.contenedor-info-producto-intermedio img{
-    right: 0;
+.contenedor-info-producto-intermedio img {
+	right: 0;
+	margin: initial;
+	bottom: 35px;
+	top: initial;
 }
 
 /* =============================================================== */
@@ -505,7 +512,7 @@ a {
 }
 
 .contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio img{
-    width: 75%;
+    width: 65%;
 }
 
 /* ============== TERCERA SECCIÓN - SOPAS =================== */
@@ -729,9 +736,9 @@ a {
     left: 5%;
 }
 
-.contenedor-info-producto-intermedio .titulo{
-    left: 15%;
-    top: 12%;
+.contenedor-info-producto-intermedio .titulo {
+	left: 10%;
+	top: 0;
 }
 
 /* =============================================================== */
@@ -1007,6 +1014,7 @@ a {
 
 /* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
 
+
 /* ================== NOVENA SECCIÓN - Y EL PUERCO ============ */
 
 /* ================= DÉCIMA SECCIÓN - MARISCOS ============== */
@@ -1031,11 +1039,28 @@ a {
 /* ================= PRECIOS PLATOS ESTILOS GENERALES ================== */
 /* ==================================================================== */
 
-.descripcion .precio-plato {
+.precio-plato-superior,
+.precio-plato-inferior {
 	background: initial;
 	border-top: initial;
 	color: rgb(255, 255, 255);
 	font-size: 37px;
+	position: absolute;
+	bottom: 0;
+	/* border: 1px solid bisque; */
+	width: 150px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.precio-plato-superior {
+	right: 0;
+}
+
+.precio-plato-inferior{
+    left: 0;
 }
 
 .descripcion-precio {
@@ -1090,7 +1115,36 @@ a {
     font-size: 28px;
 }
 
+/*========================== PA' ENTRARLE SOLITO ================================*/
 
+.contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio .descripcion-precio{
+    left: 10px;
+    width: 190px;
+}
+
+.contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio .descripcion-precio div{
+    display: flex;
+    margin-right: 0.4em;
+    justify-content: space-evenly;
+}
+
+.contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio .descripcion-precio div p {
+	width: 93px;
+	font-family: 'Mayan';
+	font-size: 10px;
+	text-align: center;
+}
+
+.contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio .descripcion-precio div p span{
+    text-align:center;
+    font-size: 28px;
+}
+
+/* =================================== SOPAS  ========================================= */
+
+.contenedor-sopas-1 .contenedor-info-producto-superior .descripcion-precio div p{
+    color: ;
+}
 
 /* =================================================================== */
 /* ==================== MENU INFANTIL ================================*/
@@ -1824,7 +1878,7 @@ a {
         position: relative;
         width: 100%;
         height: 40vh;
-        background: rgb(17, 230, 195);
+        /* background: rgb(17, 230, 195); */
     }
 }
 
