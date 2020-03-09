@@ -437,15 +437,19 @@ a {
     margin-top: 20%;
 }
 
-.contenedor-info-producto .contenedor-info-producto-superior{
-    position: relative;
-    width: 100%;
-    height: 50%;
+.contenedor-info-producto .contenedor-info-producto-superior {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background: rgba(0,255,255, .3 );
+	border: 1px solid aliceblue;
 }
+
 .contenedor-info-producto .contenedor-info-producto-inferior{
     position: relative;
     width: 100%;
-    height: 50%;   
+    height: 40vh;
+    background: rgba(0,0,255, .3);   
 }
 
 .contenedor-info-producto .contenedor-info-producto-intermedio{
@@ -457,7 +461,7 @@ a {
 
 /* =========== ESTILOS GENERALES IMÁGENES PLATOS Y BEBIDAS ======== */
 .contenedor-info-producto img{
-    width: 65%;
+    width: 60%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -479,16 +483,16 @@ a {
 
 /* =========== PRIMERA SECCIÓN - PA' COMPARTIR ================= */
 .contenedor-pa-compartir-1 .contenedor-info-producto-superior img{
-    width: 80%;
+    width: 68%;
     transform: RotateZ(10deg);
 }
 
 .contenedor-pa-compartir-2 .contenedor-info-producto-superior img{
-    width: 60%;
+    width: 55%;
 }
 
 .contenedor-pa-compartir-2 .contenedor-info-producto-inferior img{
-    width: 70%;
+    width: 61%;
 }
 
 /* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ==========*/
@@ -710,10 +714,11 @@ a {
     color: #fff;
     font-family: 'Rye', cursive;
     font-size: 25px;
-    top: 8%;
+    top: 5%;
     text-transform: uppercase;
     background: rgb(255, 109, 24);
     line-height: 90%;
+    padding: 0.2em;
 }
 
 .contenedor-info-producto-superior .titulo{
@@ -740,6 +745,7 @@ a {
 
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .titulo{
     background: rgb(140, 21, 187);
+    padding: 0.2em;
 }
 
 .contenedor-pa-compartir-2 .contenedor-info-producto-inferior .titulo{
@@ -915,7 +921,7 @@ a {
 }
 
 /* ================================================================ */
-/* ======== ESTILOS GENERALES DE DESCRIPCIÓN DE PLATOS  =========== */
+/* ======== ESTILOS GENERALES DE DESCRIPCIÓN DE PLATOS Y PRECIOS  =========== */
 .descripcion{
     display: flex;
     position: absolute;
@@ -932,9 +938,9 @@ a {
 }
 
 .descripcion  span {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.5);
     border-top: 4px solid rgba(0, 0, 0, 0.02); 
-    line-height: 16px;
+    line-height: 1.4em;
     color: #fff;
 }
 
@@ -953,6 +959,7 @@ a {
     justify-content: center;
     font-size: 15px;
 }
+
 
 /* =============================================================== */
 /* ======== ESTILOS PARTICULARES DE DESCRIPCIÓN DE PLATOS =======*/
@@ -995,7 +1002,7 @@ a {
 /* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
-    top: 24%;
+    top: 30%;
 }
 
 /* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
@@ -1019,6 +1026,71 @@ a {
   
 }
 /* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
+
+/* ====================================================================== */
+/* ================= PRECIOS PLATOS ESTILOS GENERALES ================== */
+/* ==================================================================== */
+
+.descripcion .precio-plato {
+	background: initial;
+	border-top: initial;
+	color: rgb(255, 255, 255);
+	font-size: 37px;
+}
+
+.descripcion-precio {
+	display: flex;
+	position: absolute;
+	width: 262px;
+	height: auto;
+	font-size: 14px;
+	font-family: 'Bison';
+	color: #fff;
+	text-transform: uppercase;
+	right: 0;
+	bottom: 0;
+}
+
+.descripcion-precio div{
+    margin-right: 1em;
+}
+
+.descripcion-precio p{
+    text-align: end;
+    align-self: flex-end;
+}
+
+/* ================= PRECIO PLATOS ESTILOS INDIVIDUALES ========================*/
+
+/*============================== PA COMPARTIR ================================ */
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio {
+	flex-direction: column;
+	width: 45%;
+	left: 0;
+	bottom: 1em;
+}
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div{
+    display: flex;
+    margin-right: 0.4em;
+    justify-content: space-evenly;
+}
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div p{
+    width: 50px;
+    font-family: 'Mayan';
+    font-size: 10px;
+    text-align:center;
+  
+}
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div p span{
+    text-align:center;
+    font-size: 28px;
+}
+
+
 
 /* =================================================================== */
 /* ==================== MENU INFANTIL ================================*/
@@ -1553,8 +1625,111 @@ a {
 }
 
 
+/* ========== SLIDE 2 BEBIDAS============= */
 
+.contenedor-menu-bebidas-2 {
+    position: relative;
+	width: 100%;
+	height: 90%;
+	margin: auto;
+    margin-top: 1em;
+    overflow:hidden;
+}
 
+.contenedor-menu-bebidas-2 .contenedor-adorno img {
+	position: absolute;
+	width: 80%;
+	top: 0;
+	bottom: 0;
+    margin: auto;
+    left: -20px;
+}
+
+.contenedor-las-chelas {
+    position: relative;
+    display: flex;
+	flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.contenedor-las-chelas h2 {
+	color: #fff;
+	font-family: 'Rye', cursive;
+    font-size: 23px;
+    margin-bottom: 1em;
+}
+
+.contenedor-las-chelas h2 span{
+    background: #000;
+    padding: 0.3em;
+}
+
+.contenedor-las-chelas p{
+    margin-left: 2em;
+    margin-bottom: 0.2em;
+}
+
+.contenedor-las-chelas p .color {
+	background: red;
+	font-size: 15px;
+	font-family: 'Bison';
+	color: #fff;
+	padding: 0.1em;
+}
+
+.contenedor-menu-bebidas-2 .contenedor-marcas {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 27%;
+	height: 100%;
+	right: 1em;
+	justify-content: center;
+}
+
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(1),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(2),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(3),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(4),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(5)
+{
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(1),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(5){
+    align-self: flex-start;
+    margin-left: -1.5em;
+}
+
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(2),
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(4){
+    align-self: center;
+}
+
+.contenedor-menu-bebidas-2 .contenedor-marcas img:nth-child(3) {
+	align-self: flex-end;
+	margin-right: -0.5em;
+}
+
+.contenedor-menu-bebidas-2 .aclaracion {
+	position: absolute;
+	font-size: 21px;
+	font-family: 'Bison';
+	color: #F8E825;
+	margin: auto;
+	bottom: 3em;
+	right: 0;
+	left: 0;
+}
+
+.contenedor-menu-bebidas-2 h2.aclaracion span{
+    background: #000;
+    padding: 0.1em 1em;
+}
 
 
 /*================= CLASES DE FULL PAGE ESTILOS =============== */
@@ -1642,3 +1817,16 @@ a {
       
     }
 }
+
+
+@media only screen and (max-height:804px){
+    .contenedor-info-producto .contenedor-info-producto-inferior {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        background: rgb(17, 230, 195);
+    }
+}
+
+
+
