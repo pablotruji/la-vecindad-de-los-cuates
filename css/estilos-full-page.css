@@ -418,6 +418,23 @@ a {
     /* background: blue; */
 }
 
+/* =========== TÍTULO DE PÁGINAS DEL MENÚ ESTILOS INDIVIDUALES ======= */
+
+
+/* ====================== MENÚ INFANTIL Y EXTRAS ==================== */
+.menu-infantil .titulo-paginas-menu{
+    width: 35%;
+    right: initial;
+    left: 8%;
+    margin: initial;
+}
+
+.menu-extras .titulo-paginas-menu{
+    width: 35%;
+    left: initial;
+    right: 8%;
+    margin: initial;    
+}
 /* ============== TÍTULO DE SECCIÓN DOBLE ================= */
 .contenedor-ensaladas-tacos .imagen-titulo-seccion-doble{
     position: absolute;
@@ -1379,6 +1396,80 @@ a {
     padding: 2px;
 }
 
+
+/* ============================================================================== */
+/* ============================ MENÚ EXTRAS ==================================== */
+/* ============================================================================ */
+
+.menu-extras{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-extras .contenedor-extras {
+	width: 80%;
+	margin-top: 2em;
+}
+
+.menu-extras .contenedor-extras div p:nth-child(1),
+.menu-extras .contenedor-extras div p:nth-child(2),
+.menu-extras .contenedor-extras div p:nth-child(3),
+.menu-extras .contenedor-extras div p:nth-child(4),
+.menu-extras .contenedor-extras div p:nth-child(5),
+.menu-extras .contenedor-extras div p:nth-child(6){
+    display: flex;
+    font-family: 'Bison';
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 0.4em;
+    padding: 0.1em  0.3em;
+}
+
+.menu-extras .contenedor-extras div:nth-child(1){
+    background: #008F43;
+}
+.menu-extras .contenedor-extras div:nth-child(2){
+    background: #DD2080;
+}
+.menu-extras .contenedor-extras div:nth-child(3){
+    background: #2AA4DB;
+}
+.menu-extras .contenedor-extras div:nth-child(4){
+    background: #E55B2B;
+}
+.menu-extras .contenedor-extras div:nth-child(5){
+    background: #2AA4DB;
+}
+.menu-extras .contenedor-extras div:nth-child(6){
+    background: #DD2080;
+}
+.menu-extras .contenedor-extras div:nth-child(8){
+    background: #E55B2B;
+}
+.menu-extras .contenedor-extras div:nth-child(9){
+    background: #2AA4DB;
+}
+.menu-extras .contenedor-extras div:nth-child(10){
+    background: #DD2080;
+}
+.menu-extras .contenedor-extras div:nth-child(11){
+    background: #2AA4DB;
+}
+.menu-extras .contenedor-extras div:nth-child(12){
+    background: #008F43;
+}
+.menu-extras .contenedor-extras div:nth-child(13){
+    background: #2AA4DB;
+}
+
+.menu-extras .contenedor-extras div span:nth-child(2){
+    font-family: 'Mayan';
+}
 
 /* =========================================================================== */
 /* ================ MENÚ LICORES BOTELLAS E INDIVIDUALES ==================== */
