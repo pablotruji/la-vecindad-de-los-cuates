@@ -481,7 +481,7 @@ a {
 .contenedor-info-producto-intermedio img {
 	right: 0;
 	margin: initial;
-	bottom: 35px;
+	bottom: 88px;
 	top: initial;
 }
 
@@ -998,7 +998,7 @@ a {
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
 .contenedor-los-mero-mero-1 span, .contenedor-los-mero-mero-2 span, .contenedor-los-mero-mero-3 span{
-    background:rgba(116, 10, 2, 0.3);
+    background: rgba(70, 25, 11, 0.7);
 }
 
 /* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
@@ -1143,8 +1143,31 @@ a {
 /* =================================== SOPAS  ========================================= */
 
 .contenedor-sopas-1 .contenedor-info-producto-superior .descripcion-precio div p{
-    color: ;
+    color: #590056;
 }
+
+
+/* ========================= SECCIÓN DOBLE ENSALADAS  & TACOS ========================== */
+
+/* ========================= LOS MERO MERO MEXICANOS ================================== */
+
+.contenedor-los-mero-mero-1 .contenedor-info-producto-superior .descripcion-precio {
+	width: 172px;
+	background: rgba(70, 25, 11, 0.7);
+	right: 25px;
+	justify-content: center;
+}
+
+.contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion-precio {
+	width: 185px;
+	background: rgba(70, 25, 11, 0.7);
+	justify-content: flex-end;
+	font-size: 11px;
+}
+
+.contenedor-los-mero-mero-3 .contenedor-info-producto-intermedio .descripcion-precio{
+    background: rgba(70, 25, 11, 0.7);
+} 
 
 /* =================================================================== */
 /* ==================== MENU INFANTIL ================================*/
