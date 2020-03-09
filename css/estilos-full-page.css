@@ -481,7 +481,7 @@ a {
 .contenedor-info-producto-intermedio img {
 	right: 0;
 	margin: initial;
-	bottom: 88px;
+	bottom: 55px;
 	top: initial;
 }
 
@@ -927,7 +927,7 @@ a {
     background: indigo;  
 }
 
-/* ================================================================ */
+/* =========================================================================== */
 /* ======== ESTILOS GENERALES DE DESCRIPCIÓN DE PLATOS Y PRECIOS  =========== */
 .descripcion{
     display: flex;
@@ -964,7 +964,7 @@ a {
 .contenedor-info-producto-intermedio .descripcion{
     left: 5%;
     justify-content: center;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -1002,13 +1002,19 @@ a {
 }
 
 /* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
+.contenedor-las-estrellas-1 .descripcion{
+    width: 51%;
+    font-size: 11px;
+}
+
 .contenedor-las-estrellas-1 span{
-    background: rgb(75, 6, 238, 0.2);
+    background: rgb(99, 49, 128, 0.8);
 }
 
 /* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
+    width: 50%;
     top: 30%;
 }
 
@@ -1017,7 +1023,15 @@ a {
 
 /* ================== NOVENA SECCIÓN - Y EL PUERCO ============ */
 
+.contenedor-y-el-puerco-1 .contenedor-info-producto-intermedio .descripcion{
+    width: 52%;
+}
+
 /* ================= DÉCIMA SECCIÓN - MARISCOS ============== */
+
+.contenedor-mariscos-1 .descripcion{
+    width: 50%;
+}
 
 /* ===== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ===== */
 
@@ -1043,8 +1057,9 @@ a {
 .precio-plato-inferior {
 	background: initial;
 	border-top: initial;
-	color: rgb(255, 255, 255);
-	font-size: 37px;
+    font-family: 'Mayan';
+    font-size: 37px;
+    color: rgb(255, 255, 255);
 	position: absolute;
 	bottom: 0;
 	/* border: 1px solid bisque; */
@@ -1168,6 +1183,28 @@ a {
 .contenedor-los-mero-mero-3 .contenedor-info-producto-intermedio .descripcion-precio{
     background: rgba(70, 25, 11, 0.7);
 } 
+
+/* ============================= LAS ESTRELLAS ===========================*/
+
+
+
+.contenedor-las-estrellas-1 .contenedor-info-producto-inferior .precio-plato-inferior{
+    right: 10px;
+    left: initial;
+}
+
+/* ========================  LO MEJOR DE NUESTRO GANADO  ============================= */
+
+.contenedor-nuestro-ganado-1 .contenedor-info-producto-inferior .precio-plato-inferior{
+    left: 0;
+    right: initial;
+}
+
+/* ===================== PECHUGAS PIO PIO ============================= */
+
+.conntenedor-pechugas-pio-pio-1 .contenedor-info-producto-inferior .precio-plato-inferior{
+}
+
 
 /* =================================================================== */
 /* ==================== MENU INFANTIL ================================*/
@@ -1877,7 +1914,7 @@ a {
     }
 
     .contenedor-info-producto .descripcion{
-        font-size: 12px;
+        /* font-size: 12px; */
         
     }
 
