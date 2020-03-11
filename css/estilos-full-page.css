@@ -542,14 +542,15 @@ a {
 }
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.contenedor-ensaladas-tacos .contenedor-info-producto-superior .imagen-seccion-doble{
-    position: absolute;
-    width: 75%;
-    top: -50px;
-    left: 0;
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior img {
+	position: absolute;
+	width: 75%;
+	transform: rotateY(180deg);
+	top: 0px;
+	left: 0;
 }
 
-.contenedor-ensaladas-tacos .contenedor-info-producto-inferior .imagen-seccion-doble{
+.contenedor-ensaladas-tacos .contenedor-info-producto-inferior img{
     position: absolute;
     width: 74%;
     top: -50px;
@@ -800,10 +801,20 @@ a {
 }
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS =========*/
 .contenedor-los-mero-mero-1 .titulo,
-.contenedor-los-mero-mero-2 .titulo,
+.contenedor-los-mero-mero-2 .contenedor-info-producto-inferior .titulo,
 .contenedor-los-mero-mero-3 .titulo{
-    background: rgb(235, 13, 61);
+    background: #D22528;
 }
+.contenedor-los-mero-mero-2 .contenedor-info-producto-superior .titulo {
+	background-color: initial;
+	right: 0;
+	top: 25px;
+}
+
+.contenedor-los-mero-mero-2 .contenedor-info-producto-superior .titulo span{
+    background: #D22528;
+    line-height: 1em;
+}   
 
 /* ============== SEXTA SECCIÓN  - LAS ESTRELLAS =============*/
 .contenedor-las-estrellas-1 .titulo{
@@ -957,6 +968,7 @@ a {
     /* border: 1px solid #333; */
     justify-content: flex-start;  
 }
+
 .descripcion p {
     text-align: center;   
 }
@@ -999,14 +1011,24 @@ a {
 
 /* ============== TERCERA SECCIÓN - SOPAS =================== */
 .contenedor-sopas-1 .descripcion span{
-    background: rgba(255, 251, 3, 0.3);
+    background: rgba(255, 251, 3);
     color: brown;
 }
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.contenedor-ensaladas-tacos .contenedor-info-producto-superior span{
-     background: rgba(192, 28, 6, 0.7); 
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior .descripcion{
+    width: 48%;
+
 }
+.contenedor-ensaladas-tacos .contenedor-info-producto-superior span{
+     background: rgba(124, 0, 87, .7); 
+}
+
+.tacos .contenedor-info-producto-superior span{
+    background: rgba(0, 128, 68, .7); 
+}
+
+
 
 
 .contenedor-ensaladas-tacos .contenedor-info-producto-inferior span{
@@ -1018,9 +1040,22 @@ a {
     background: rgba(70, 25, 11, 0.7);
 }
 
+.contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion{
+    width: 53%;
+}
+
+.contenedor-los-mero-mero-2 .contenedor-info-producto-superior .descripcion{
+    top: 30%;
+    width: 53%;
+}
 /* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
-.contenedor-las-estrellas-1 .descripcion{
-    width: 51%;
+.contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion{
+    width: 50%;
+    font-size: 11px;
+}
+
+.contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion{
+    width: 60%;
     font-size: 11px;
 }
 
@@ -1174,7 +1209,8 @@ a {
 
 /* =================================== SOPAS  ========================================= */
 
-.contenedor-sopas-1 .contenedor-info-producto-superior .descripcion-precio div p{
+.contenedor-sopas-1 .precio-plato-superior p,
+.contenedor-sopas-1 .precio-plato-inferior p{
     color: #590056;
 }
 
@@ -1191,10 +1227,12 @@ a {
 }
 
 .contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion-precio {
-	width: 185px;
+	width: 230px;
 	background: rgba(70, 25, 11, 0.7);
 	justify-content: flex-end;
-	font-size: 11px;
+	font-size: 14px;
+	left: 20px;
+	right: initial;
 }
 
 .contenedor-los-mero-mero-3 .contenedor-info-producto-intermedio .descripcion-precio{
@@ -1202,13 +1240,6 @@ a {
 } 
 
 /* ============================= LAS ESTRELLAS ===========================*/
-
-
-
-.contenedor-las-estrellas-1 .contenedor-info-producto-inferior .precio-plato-inferior{
-    right: 10px;
-    left: initial;
-}
 
 /* ========================  LO MEJOR DE NUESTRO GANADO  ============================= */
 
@@ -1586,7 +1617,7 @@ a {
      text-overflow: 'clip';
      margin-left: 0.5em;
      margin-top: 1.5em;
-     /* line-height: 1.2em; */
+     line-height: 1em;
  }
 
  .contenedor-precios-botellas{
@@ -1629,15 +1660,18 @@ a {
 
 .contenedor-3 .contenedor-nombres-botellas {
     font-size: 15px;
-	width: 60%;
+    width: 60%;
+    margin-top: -16px;
 }
 
 .contenedor-3 .contenedor-precios-botellas{
     font-size: 15px;
+    margin-top: -16px;
 }
 
 .contenedor-3 .contenedor-precios-individuales{
     font-size: 15px;
+    margin-top: -16px;
 }
 
 
@@ -1703,8 +1737,8 @@ a {
 .contenedor-4 .contenedor-nombres-botellas,
 .contenedor-4 .contenedor-precios-botellas,
 .contenedor-4 .contenedor-precios-individuales{
-    margin-top: 1em;
-    line-height:1.1em;
+    margin-top: 0.4em;
+    line-height:0.9em;
 }
 
 /* ================================================================ */
@@ -1788,17 +1822,17 @@ a {
     right: 22px;
 }
 .contenedor-menu-bebidas .jugos div:nth-child(2) {
-	top: 70px;
+	top: 25%;
 	right: 32px;
 	line-height: 1.5em;
 }
 .contenedor-menu-bebidas .jugos div:nth-child(3){
-    top:50%;
+    top:43%;
     right: 22px;
 	line-height: 1.5em;
 }
 .contenedor-menu-bebidas .jugos div:nth-child(4){
-    bottom:20px;
+    bottom:25%;
     right: 10px;
 	line-height: 1.5em;
 }
