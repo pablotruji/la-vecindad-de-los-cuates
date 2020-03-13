@@ -944,14 +944,29 @@ a {
 }
 
 .contenedor-sopas-1 .contenedor-info-producto-inferior .titulo{
-    background: rgb(235, 13, 61);
+    background: #D32A7B;
 }
 
-.contenedor-sopas-2 .contenedor-info-producto-sin-imagenes .titulo{
+.contenedor-sopas-2 .contenedor-info-producto-sin-imagenes .titulo,
+.contenedor-sopas-3 .contenedor-info-producto-sin-imagenes .titulo{
     line-height: 100%;
     background: initial;
     position: initial;
     margin-bottom: 0.5em;    
+}
+
+.contenedor-sopas-2 .contenedor-info-producto-sin-imagenes .titulo span,
+.contenedor-sopas-3 .contenedor-info-producto-sin-imagenes .titulo span{
+    background:  #D32A7B;
+    padding: 0.2em;
+    line-height: 1.3em;
+}
+
+.contenedor-sopas-3 .contenedor-info-producto-sin-imagenes 
+.contenedor-info-plato-sin-imagen:last-child .titulo span{
+    background: rgb(176, 0, 182);
+    padding: 0.2em;
+    line-height: 1.3em;
 }
 
 /* ========= CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
