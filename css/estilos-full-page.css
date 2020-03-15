@@ -456,7 +456,7 @@ a {
     width: 100%;
     max-width: 700px;
 	height: 100%;
-	z-index: 300;
+    z-index: 300;
     justify-content: center;
     margin: auto;
     background: rgba(255,0,0,.5);
@@ -467,8 +467,6 @@ a {
 	width: 100%;
 	height: 40vh;
     background: rgba(174, 199, 64, 0.7);
-    justify-content: center;
-    /* border: 1px solid aliceblue;  */
 }
 
 .contenedor-info-producto .contenedor-info-producto-inferior{
@@ -499,16 +497,8 @@ a {
 
 .contenedor-info-producto .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen{
     width: 50%;
-    background: blue;
-    position: relative;
-    height: auto;
-}
-
-.contenedor-info-producto .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen{
-    width: 50%;
     max-width: 200px;
     background: blue;
-    position: relative;
     height: auto;
 }
 
