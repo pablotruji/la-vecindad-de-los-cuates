@@ -1012,7 +1012,8 @@ a {
     background: rgb(255, 109, 24);
 }
 
-.contenedor-nuestro-ganado-3 .titulo span,.contenedor-nuestro-ganado-4 .titulo span, 
+.contenedor-nuestro-ganado-3 .titulo span,
+.contenedor-nuestro-ganado-4 .titulo span, 
 .contenedor-nuestro-ganado-5 .titulo span{
     background: rgb(255, 109, 24);
 }
@@ -1026,15 +1027,38 @@ a {
 
 /* =========== NOVENA SECCIÓN - Y EL PUERCO ================ */
 
+.contenedor-y-el-puerco-1 .contenedor-info-producto-intermedio .titulo,
+.contenedor-y-el-puerco-2 .titulo span{
+    background: #DC2528;
+}
+
 /* =============== DÉCIMA SECCIÓN - MARISCOS ==============*/
 .contenedor-mariscos-1 .titulo,
-.contenidor-mariscos-2 .titulo{
-    background: rgba(49, 78, 243, 0.89);
+.contenidor-mariscos-2 .titulo span,
+.contenedor-mariscos-3 .titulo span{
+    background: #DF2062;
 }
 
 /* ==== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ==== */
 
 /* ============= DUODÉCIMA SECCIÓN - POSTRES =============== */
+
+.contenedor-postres-1 .titulo{
+    background: #FAE81B;
+    color: #E3007E;
+}
+
+.contenedor-postres-2 .titulo,
+.contenedor-postres-3 .contenedor-info-plato-sin-imagen:first-child .titulo span,
+.contenedor-postres-4 .contenedor-info-plato-sin-imagen:first-child .titulo span{
+    background: #DD2080;
+}
+
+.contenedor-postres-3 .contenedor-info-plato-sin-imagen:last-child .titulo span{
+    background: #FAE81B;
+    color: #E3007E;
+}
+
 
 /* ============ TRIGÉSIMA SECCIÓN - LICORES 6 ============= */
 
