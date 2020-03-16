@@ -83,6 +83,7 @@ a{
     z-index: 200;
 }
 
+/* GUIRNALDAS */
 .contenedor .contenedor-guirnaldas{
     position: absolute;
     top: 0;
@@ -191,8 +192,6 @@ a{
     text-align: center;
     line-height: 40px;
     transition: 0.3s ease-in;
-    cursor: pointer;
-
 }
 
 .menu-principal-item:not(:last-of-type){
@@ -530,6 +529,7 @@ a{
     position: absolute;
     align-self: flex-end;
 }
+
 
 /* ================ REDES SOCIALES ===================== */
 .footer .redes-sociales{

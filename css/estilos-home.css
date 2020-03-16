@@ -12,10 +12,11 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;   
-    background: rgb(180, 180, 180);
-    height: 100vh;
+    background-image: url(../imagenes/Fondo-480.svg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 16px; 
 }
 
 a{
@@ -27,22 +28,15 @@ a{
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-    /* position: relative; */
-    background-image: url(../imagenes/Fondo-480.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    /* background-color: lightpink; */
-    box-sizing: content-box;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
 
 }
 
 /*==============  IMAGEN CENTRO CALAVERA ===============*/
+.contenedor-imagen-centro-escritorio{
+    display: none;
+}
 .contenedor .contenedor-imagen-centro{
     display: flex;
     position: relative;
@@ -57,7 +51,7 @@ a{
 }
 
 .contenedor-imagen-centro img{
-    top: 28svh;
+    /* top: 28vh; */
     position: absolute;
     width: 80%;
     /* top: 100px; */
@@ -217,6 +211,11 @@ a{
 }
 
 /*======================BARRA DE MENÚ===================== */
+/* BARRA MENÚ */
+.barra-menu{
+    display: none;
+}
+
 .nav-principal{
     display: flex;
     position: fixed;
@@ -226,7 +225,7 @@ a{
     background: #2C0D10;
     left: -80vh;
     z-index: 700;
-    top: 20px;
+    top: 1rem;
     transition: left 0.8s ease-in-out;
     align-items: center;
     justify-content: center;
@@ -246,7 +245,7 @@ a{
    position: absolute;
    flex-direction: column;
    width: 90%;
-   height: 90%;
+   height: 95%;
    justify-content: center;
    align-items: center;
 
@@ -259,7 +258,6 @@ a{
     text-align: center;
     line-height: 40px;
     transition: 0.3s ease-in;
-
 }
 
 .menu-principal-item:not(:last-of-type){
@@ -275,10 +273,11 @@ a{
 
 }
 
-
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 
@@ -614,7 +613,200 @@ a{
 @media screen and (min-width: 640px){
 
     .footer .contenedor-footer .caja-1{
-        background: red;   
+        /* background: red;    */
     }
     
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background-image: url(../imagenes/Fondo-escritorio.png);
+    }
+
+    .contenedor .contenedor-guirnaldas img {
+        width: 1607px;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:439px;
+        height:700px;
+        top: 0;
+        left: 0;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:439px;
+        height:700px;
+        top: 0;
+        right: 0;
+    }
+
+    .contenedor .contenedor-imagen-centro{
+        display: none;
+    }
+    
+    
+    .contenedor-imagen-centro-escritorio{
+        display: flex;
+        position: relative;
+        width: 600px;
+        /* max-width: 400px; */
+        height: 90%;
+        margin: auto;
+        /* background: red;  */
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        z-index: 200;
+    }
+    .contenedor-imagen-centro-escritorio img{
+        position: absolute;
+        width: 80%;
+        /* top: 100px; */
+        min-width: 100px;
+    }
+
+    /*===================  GRILLA  ========================*/
+    .contenedor .contenedor-grid .grid{
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto;
+        grid-template-areas: "logo barra-menu logo-2"
+                             "aside-izquierda contenido-principal aside-derecha"
+                             "footer footer footer";
+
+    }
+    .barra-menu{
+        display: initial;
+        grid-area: barra-menu;
+        font-family: 'Mayan';
+    }
+
+    .barra-menu .nav-barra-principal{
+        height: 100%;
+    }
+
+    .barra-menu .nav-barra-principal {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 80%;
+        height: 70%;
+        margin: auto;
+    }
+
+    .barra-menu .nav-barra-principal a{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;   
+        margin: 0 10px;   
+    }
+
+    .barra-menu .nav-barra-principal a img{
+        position: relative;
+        width: 120px;
+        z-index: 200;
+        background: #320003;
+        transition: 0.3s ease-in;
+    }
+
+    .barra-menu .nav-barra-principal p{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 11px;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    /* FIN BARRA MENU */
+
+    .menu-imagen{
+        display: none;
+    }
+    .menu-principal-toggle{
+        display: none;
+    }
+
+    /* LOGOTIPO */
+    .contenedor-logo-principal img {
+        width: 150px;
+    }
+
+    .contenedor-logo-2 img {
+        width: 140px;
+    }
+
+    
+
+    /* ASIDE */
+    .contenedor-botones-aside {
+        width: 200px;
+        /* border: 1px solid lightpink; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside:first-child {
+        margin-left: 50px;
+        margin-top: 130px;
+    }
+
+    .aside-izquierda .contenedor-botones-aside:last-child {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    .aside-derecha .contenedor-botones-aside:last-child {
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+    
+    .contenedor-logo-principal .contenedor-botones-aside img {
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+    .contenedor-alas img.alas-izq{
+        margin-top: -5%;
+    }
+    
+    .contenedor-alas img.alas-der{
+        margin-top: -5%;
+        
+    }
+
+    .footer .patron-footer img {
+        width: 1700px;
+    }
+
+    .footer .contenedor-footer .caja-1 {
+        height: 80%;
+    }
+
+    .footer .contenedor-footer .caja-2 {
+        z-index: 100;
+        height: 58%;
+    }
+
+    .imagen-mitad-del-mundo img.monumento{
+        max-width: 110px;
+    }
+    
+    .contenedor-alas{
+        max-width: 380px;
+    }
+
+    .footer .imagen-izquierda-footer img {
+        max-width: 130px;
+    }
+
+    .footer .imagen-derecha-footer img {
+        max-width: 130px;
+    }
 }

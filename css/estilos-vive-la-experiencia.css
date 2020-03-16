@@ -17,34 +17,23 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    background-image: url(../imagenes/Vive-la-experiencia/Background.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
     font-size: 16px;   
-    background: #E62256;
-    height: 100vh;
 }
 
 a{
     text-decoration: none;
     color: #000;
 }
-
 /*=====================================================*/
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-    background-color: #fff;
-    background-image: url(../imagenes/Vive-la-experiencia/Background.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    /* background-color: lightpink; */
-    box-sizing: content-box;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
-
 }
 
 /*=========================== CORTINAS ========================== */
@@ -106,7 +95,7 @@ a{
     display:grid;
     grid-gap:10px;
     grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 250px auto auto;
     grid-template-areas: "logo contenido-principal logo-2"
                          "aside-izquierda contenido-principal aside-derecha"
                          "footer footer footer";
@@ -144,6 +133,13 @@ a{
 }
 
 /*======================BARRA DE MENÚ===================== */
+
+ /* BARRA MENÚ */
+ .barra-menu{
+    display: none;
+}
+
+
 .nav-principal{
     display: flex;
     position: fixed;
@@ -153,7 +149,7 @@ a{
     background: #2C0D10;
     left: -80vh;
     z-index: 700;
-    top: 20px;
+    top: 1rem;
     transition: left 0.8s ease-in-out;
     align-items: center;
     justify-content: center;
@@ -186,7 +182,6 @@ a{
     text-align: center;
     line-height: 40px;
     transition: 0.3s ease-in;
-
 }
 
 .menu-principal-item:not(:last-of-type){
@@ -203,87 +198,100 @@ a{
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
-
 
 /* ==================== LOGOS ==================*/
 
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
-.contenedor-logo-principal{
-    grid-area: logo;
-    width: 100%;
+.contenedor-logo-principal {
+	grid-area: logo;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .contenedor-logo-principal img{
     width: 110px;
-    margin-top: 35px;
-    margin-left: 7px;
 }
 
 /* ============ BOTÓN EVENTOS =============== */
 
 .contenedor-logo-principal .contenedor-botones-aside img{
     width: 100%;
-    margin-left: 15px;
-    margin-top: 40px;
 
 }
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
-.contenedor-logo-2{
-    grid-area: logo-2;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.contenedor-logo-2 {
+	grid-area: logo-2;
+	width: 100%;
+	max-width: 100%;
+	height: 250px;
+	/* display: flex;
+	flex-direction: column;
+    justify-content: space-evenly; */
 }
 
-.contenedor-logo-2 a{
-    margin-bottom: 10px;
-    margin-right: 10px ;
+.contenedor-logo-2 a {
+
 }
 
-
-.contenedor-logo-2 img{
-    width: 77px;
+.contenedor-logo-2 a img{
+    width: 160%;
+    height: auto;
+    margin-top: 10.5rem;
+    margin-left: -2.5rem;
 }
 
 /*===========================================================*/
 /*===============CONTENIDO PRINCIPAL========================*/
 /*=========================================================*/
 
-.contenedor-contenido{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+.main{
+    grid-area: contenido-principal;
+    width: 100%;
+    height: auto;
 }
 
-.contenedor-contenido .contenido-principal{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: flex-start;
-    /* background: blue; */
+.main .contenido-principal {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
 }
 
 /* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
 .contenido-principal .vive-la-experiencia-logotipo {
-    position: absolute;
-    width: 44%;
-    /* background: red; */
-    top: 20%;
-    right: 0;
-    left: -15px;
+    width: 100%;
     margin:auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.contenido-principal .vive-la-experiencia-logotipo img{
-    position: absolute;
-    width: 100%;
-    /* background: red; */
+.contenido-principal .vive-la-experiencia-logotipo img {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+	margin: auto;
+}
+
+.contenido-principal .vive-la-experiencia-parrafo {
+	width: 47%;
+	margin: auto;
+	font-size: 9px;
+	color: #fff;
+	text-align: center;
+    font-family: 'Mayan';
+    margin-bottom: 2em;
 }
 
 /* ================ TEXTO VIVE LA EXPERIENCIA CUATE ============== */
@@ -293,15 +301,15 @@ a{
 /* ======================================================= */
 
 /*==================== ASIDE DERECHA ==================*/
-.aside-derecha{
-    display: flex;
-    grid-area: aside-derecha;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
+.aside-derecha {
+	display: flex;
+	/* grid-area: aside-derecha; */
+	width: 100%;
+	height: 300px;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-evenly;
 }
 
 .contenedor-botones-aside{
@@ -312,9 +320,8 @@ a{
 /*==================== ASIDE IZQUIERDA ==================*/
 .aside-izquierda{
     display: flex;
-    grid-area: aside-izquierda;
     width: 100%;
-    height: 100%;
+    height: 300px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
@@ -397,7 +404,7 @@ a{
 .imagen-mitad-del-mundo img.monumento{
     position: relative;
     width: 30%;
-    max-width: 110px;
+    max-width: 100px;
     height: 10%;
     z-index: 500;
 }
@@ -512,4 +519,238 @@ a{
 .redes-sociales img{
     position: absolute;
     width: 40px;
+}
+
+/* =============================================== */
+/* ================== RESPONSIVE ================ */
+/* ============================================= */
+
+@media screen and (min-width: 375px) and (min-height: 667px){
+    .contenido-principal .vive-la-experiencia-parrafo {
+        width: 56%;
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px){
+    .menu-imagen{
+        grid-area: logo-2;
+        position: absolute;
+        top: 36px;
+        right: 14px;
+    }
+    .contenedor-alas{
+        max-width: 480px;
+    }
+
+    .contenedor-alas img.alas-izq{
+        margin-top: -10%;
+    }
+    
+    .contenedor-alas img.alas-der{
+        margin-top: -10%;
+        
+    }
+    .imagen-mitad-del-mundo img.monumento{
+        max-width: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background-image: url(../imagenes/Vive-la-experiencia/Background-escritorio.png);
+    }
+
+    .contenedor .contenedor-guirnaldas img {
+        width: 1607px;
+    }
+
+
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:439px;
+        height:700px;
+        top: 0;
+        left: 0;
+    }
+    
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:439px;
+        height:700px;
+        top: 0;
+        right: 0;
+    }
+
+    /*===================  GRILLA  ========================*/
+    .contenedor .contenedor-grid .grid{
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto auto;
+    grid-template-areas: "logo barra-menu logo-2"
+                         "aside-izquierda contenido-principal aside-derecha"
+                         "footer footer footer";
+
+    }
+
+    /* BARRA MENÚ */
+    .barra-menu{
+        display: initial;
+        grid-area: barra-menu;
+        font-family: 'Mayan';
+    }
+
+    .barra-menu .nav-barra-principal{
+        height: 100%;
+    }
+
+    .barra-menu .nav-barra-principal {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 80%;
+        height: 70%;
+        margin: auto;
+    }
+
+    .barra-menu .nav-barra-principal a{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;   
+        margin: 0 10px;   
+    }
+
+    .barra-menu .nav-barra-principal a img{
+        position: relative;
+        width: 120px;
+        z-index: 200;
+        background: #320003;
+        transition: 0.3s ease-in;
+    }
+
+    .barra-menu .nav-barra-principal p{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 11px;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    /* FIN BARRA MENU */
+
+    .menu-imagen{
+        display: none;
+    }
+    .menu-principal-toggle{
+        display: none;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .contenido-principal .vive-la-experiencia-parrafo {
+        width: 82%;
+        font-size: 11px;
+    }
+
+    .contenedor-logo-2 a img {
+        width: 150px;
+        height: auto;
+        margin-top: 1.1rem;
+        margin-left: 5.5rem;
+    }
+
+    .contenido-principal .vive-la-experiencia-logotipo {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /* LOGOTIPOS */
+    .contenedor-logo-principal {
+        margin-left: 20px;
+        margin-top: 29px;
+    }
+
+    .contenedor-logo-principal img {
+        width: 180px;
+    }
+
+    /* ASIDE */
+
+    .aside-izquierda{
+        width: 100%;
+        height: auto;
+        margin-top: 84px;
+    }
+
+    .aside-derecha{
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-botones-aside{
+        width: 200px;
+        /* border: 1px solid lightpink; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside:first-child {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .aside-izquierda .contenedor-botones-aside:last-child {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+
+    .aside-derecha .contenedor-botones-aside:last-child {
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+
+    /* FOOTER */
+
+    .contenedor-alas img.alas-izq{
+        margin-top: -10%;
+    }
+    
+    .contenedor-alas img.alas-der{
+        margin-top: -10%;
+        
+    }
+
+    .footer .patron-footer img {
+        width: 1700px;
+    }
+
+    .footer .contenedor-footer .caja-1 {
+        height: 80%;
+    }
+
+    .footer .contenedor-footer .caja-2 {
+        z-index: 100;
+        height: 58%;
+    }
+
+    .imagen-mitad-del-mundo img.monumento{
+        max-width: 150px;
+    }
+    
+    .contenedor-alas{
+        max-width: 480px;
+    }
+
+    .footer .imagen-izquierda-footer img {
+        max-width: 130px;
+    }
+
+    .footer .imagen-derecha-footer img {
+        max-width: 130px;
+    }
 }
