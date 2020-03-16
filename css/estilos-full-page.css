@@ -1335,7 +1335,7 @@ a {
 .precio-plato-sin-imagen{
     font-family: 'Mayan';
     color: #fff;
-    background: red;
+    /* background: red; */
     text-align: end;
     font-size: 38px;
 }
@@ -1495,7 +1495,7 @@ a {
 .menu-infantil {
 	width: 80%;
 	margin: auto;
-	background: red;
+	/* background: red; */
 	max-width: 650px;
 }
 
