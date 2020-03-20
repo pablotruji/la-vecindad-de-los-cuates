@@ -1,0 +1,386 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+}
+
+
+article{
+    background-image: url('../imagenes/Imagenes-menu/Fondo-Menu-Tablet/pa-compartir-fondo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor{
+    width: 95%;
+    height: 100%;
+    border: 1px solid #fff ;
+    margin: auto;
+}
+
+/* ============================= REJILLA ================================== */
+.contenedor .contenido.pa-compartir-1,
+.contenedor .contenido.pa-compartir-2{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr); 
+    border: 1px solid rgb(37, 238, 10);
+    width: 90%;
+    height: 75vh;
+    margin: auto;
+}
+
+
+/* =================== IMAGENES PA' COMPARTIR ======================== */
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-tlacoyos {
+	display: flex;
+	grid-area: 1/1/7/9;
+	background: red;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-tlacoyos img{
+    width: 77%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-huevos-cartoon {
+	display: flex;
+	grid-area: 5/15/7/18;
+	background: red;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-huevos-cartoon img{
+    width: 82%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-la-gringa {
+	display: flex;
+	grid-area: 7/12/11/18;
+	background: blue;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-la-gringa img {
+	width: 42%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-la-gringa-plato {
+	display: flex;
+	grid-area: 17/10/13/18;
+	background: blue;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-la-gringa-plato img{
+    width: 100%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-supernacho {
+	display: flex;
+	grid-area: 11/1/16/8;
+	background: blue;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-supernacho img{
+    width: 83%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-1 {
+	display: flex;
+	grid-area: 1/8/3/10;
+	background: rgb(43, 255, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-1 img{
+    width:70%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-2 {
+	display: flex;
+	grid-area: 10/1/12/3;
+	background: rgb(43, 255, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-2 img{
+    width:70%;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-3 {
+	display: flex;
+	grid-area: 13/16/15/18;
+	background: rgb(43, 255, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor .contenido.pa-compartir-1 .contenedor-imagen-flecha-3 img{
+    width:50%;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-imagen-alitas-sinaloa {
+	display: flex;
+	grid-area: 10/12/18/19;
+	background: rgb(43, 255, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-imagen-alitas-sinaloa img{
+    width: 80%;
+}
+
+/* ========================================================================= */
+/* ================== ESTILOS GENRALES DE PLATOS =========================== */
+/* ========================================================================= */
+
+/* ==================== CONTENEDOR PLATOS ===================================*/
+.contenedor .contenido .contenedor-platos{
+    /* position: absolute; */
+    border: 1px solid #fff;
+    /* width: 100%; */
+    /* left: 30%; */
+}
+
+/* ======================== TITULO PLATOS ================================== */
+.contenedor .contenido .contenedor-platos h2{
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: 'Rye', cursive;
+    font-size: 20px;
+    color: #fff;
+}
+
+.contenedor .contenido .contenedor-platos h2 span{
+    background: #D08021;
+    padding: 0.1em 0.8em;
+}
+
+
+/* ========================= DESCRIPCION PLATOS ============================ */
+.contenedor .contenido .contenedor-platos .descripcion-platos p {
+	text-align: center;
+	margin-bottom: 0.9em;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Mayan';
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-platos p span{
+    background: rgba(128,30,33,.5);
+    padding: 0.2em;
+}
+
+
+/* =======================  PRECIOS   ================================ */
+/* ====== PRECIOS VARIOS ======== */
+.contenedor .contenido .contenedor-platos .descripcion-precios-varios {
+	display: flex;
+	height: auto;
+	font-family: 'Bison';
+	color: #fff;
+	text-transform: uppercase;
+	justify-content: center;
+    margin: auto;
+    font-size: 12px;
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-precios-varios div{
+    margin-right: 1em;
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-precios-varios div p{
+    text-align: end;
+  
+}
+
+/* ===== PRECIO UNICO ======= */
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-unico{
+    font-family: 'Mayan';
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* ======== ETIQUETA ======= */
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta{
+    display: flex;
+    background: blue;
+    justify-content: space-evenly;
+}
+
+/* ======== PRECIOS NACHOS ESTILOS ESPECIALES =============== */
+.contenedor .contenido .contenedor-platos .etiqueta-2 {
+	font-family: 'Bison';
+	font-size: 17px;
+	margin-top: 0.5em;
+}
+
+.contenedor .contenido .contenedor-platos .etiqueta-2 p{
+    /* text-align: center; */
+    /* background: #D8C724; */
+}
+
+.contenedor .contenido .contenedor-platos .etiqueta-2 p span {
+	position: relative;
+	background: #D8C724;
+	color: #C22528;
+	padding: 0 0.3em;
+}
+
+.contenedor .contenido .contenedor-platos .etiqueta-2 img {
+	/* background: blue; */
+	position: relative;
+	left: 199px;
+	bottom: 35px;
+}
+
+
+/* ======== PRECIOS NACHOS ESTILOS FIN =============== */
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .precio-unico{
+    font-family: 'Mayan';
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .etiqueta-1{
+    font-family: 'Bison';
+    font-size: 18px;
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .etiqueta-1 p{
+    text-align: center;
+    color: #C22528;
+    line-height: 1.2em;
+}
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .etiqueta-1 p span {
+	background: #D8C724;
+	padding: 0.1em 0.9em;
+}
+
+
+/* ===================== UBICACION CONTENEDOR PLATOS ========================== */
+
+.contenedor .contenido.pa-compartir-1 .contenedor-platos.tlacoyos {
+	position: absolute;
+	grid-area: 1 / 10 / 3 / 17;
+	background: blue;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-platos.huevos-rancheros {
+	position: absolute;
+	grid-area: 5 / 9 / 7 / 15;
+	width: 100%;
+	height: auto;
+	background: red;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-platos.supernacho {
+	position: absolute;
+	grid-area: 7 / 1 / 8 / 7;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-1 .contenedor-platos.la-gringa {
+	position: absolute;
+	grid-area: 11 / 11 / 12 / 18;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.tostadas {
+	position: absolute;
+	grid-area: 3 / 1 / 5 / 7;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.alitas-sinaloa {
+	position: absolute;
+	grid-area: 7 / 7 / 9 / 13;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.nachos {
+	position: absolute;
+	grid-area: 1 / 11 / 3 / 18;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.sopes {
+	position: absolute;
+	grid-area: 10 / 5 / 12 / 11;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.gorditas {
+	position: absolute;
+	grid-area: 14 / 5 / 16 / 11;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+.contenedor .contenido.pa-compartir-2 .contenedor-platos.carne-chile {
+	position: absolute;
+	grid-area: 14 / 5 / 16 / 11;
+	width: 100%;
+	height: auto;
+	background: green;
+}
+
+
+
+/* article img{
+    display: block;
+    margin: auto;
+    width: 50%;
+} */
+
+
+main .footer{  
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    z-index: 500;
+}
