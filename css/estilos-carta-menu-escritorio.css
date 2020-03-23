@@ -32,8 +32,14 @@ body{
 }
 
 
-article{
+/* article{
     background-image: url('../imagenes/Imagenes-menu/Pa-compartir/Fondo-pa-compartir-escritorio.png');
+    background-size: cover;
+    background-position: center;
+} */
+
+.slide-2{
+	background-image: url('../imagenes/Imagenes-menu/Pa-entrarle-solito/fondo-pa-entrarle-solito-escritorio.png');
     background-size: cover;
     background-position: center;
 }
@@ -198,6 +204,48 @@ article{
    width: 56%;
 }
 
+
+/* ======================= IMAGENES PA' ENTRARLE SOLITO ==================== */
+.contenedor .contenido .contenedor-imagen-jalapeno {
+	display: flex;
+	grid-area: 1/1/8/4;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	background: red;
+}
+.contenedor .contenido .contenedor-imagen-jalapeno img{
+    width: 77%;
+}
+
+.contenedor .contenido .contenedor-imagen-flauta-maiz {
+	display: flex;
+	grid-area: 9/8/17/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	background: red;
+}
+.contenedor .contenido .contenedor-imagen-flauta-maiz img{
+    width: 77%;
+}
+
+.contenedor .contenido .contenedor-imagen-papa-chihuahua {
+	display: flex;
+	grid-area: 5/13/13/18;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	background: red;
+}
+.contenedor .contenido .contenedor-imagen-papa-chihuahua img{
+    width: 77%;
+}
+
+
 /* ========================================================================= */
 /* ================== ESTILOS GENRALES DE PLATOS =========================== */
 /* ========================================================================= */
@@ -232,7 +280,7 @@ article{
 	background: #633180;
 }
 
-/* ============= SUBTITULOS ============================ */
+/* ============================ SUBTITULOS ============================ */
 .contenedor .contenido .contenedor-platos h3 {
 	font-family: 'Bison';
 	font-size: 14px;
@@ -391,7 +439,7 @@ article{
 
 
 /* ===================== UBICACION CONTENEDOR PLATOS ========================== */
-
+	/* ======================== PA COMPARTIR ============================= */
 .contenedor .contenido .contenedor-platos.tlacoyos {
 	position: absolute;
 	grid-area: 1 / 5/ 3 / 8;
@@ -476,6 +524,112 @@ article{
 	/* background: green; */
 	top: 15px;
 }
+
+/* ====================== PA' ENTRARLE SOLITA ========================== */
+
+.contenedor .contenido .contenedor-platos.empanadas-veracruz{
+	position: absolute;
+	grid-area: 2 / 4 / 10 / 7;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.jalapeno-relleno{
+	position: absolute;
+	grid-area: 7 / 1 / 13 / 4;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.flauta-trigo{
+	position: absolute;
+	grid-area: 11 / 3 / 13 / 6;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.flauta-maiz{
+	position: absolute;
+	grid-area: 13 / 6 / 18 / 9;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.quesadillas{
+	position: absolute;
+	grid-area: 4 / 8 / 8 / 11;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.queso-fundido{
+	position: absolute;
+	grid-area: 4 / 11 / 8 / 14;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.elote{
+	position: absolute;
+	grid-area: 1 / 13 / 10 / 16;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.sincronizadas{
+	position: absolute;
+	grid-area: 1 / 13 / 10 / 16;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.papa-chiguagua{
+	position: absolute;
+	grid-area: 12 / 14 / 13 / 16;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .contenedor-platos.esquites{
+	position: absolute;
+	grid-area: 16 / 16 / 15 / 18;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+.contenedor .contenido .queso-fundido-chorizo{
+	position: absolute;
+	grid-area: 14 / 12 / 15 / 14;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* top: 15px; */
+}
+
+
+
+
+
 
 
 /* =================== TÍTULO PÁGINA ===================== */
