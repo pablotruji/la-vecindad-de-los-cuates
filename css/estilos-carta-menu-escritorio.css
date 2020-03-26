@@ -44,6 +44,18 @@ body{
     background-position: center;
 }
 
+.slide-3{
+	background-image: url('../imagenes/Imagenes-menu/Sopas/fondo-sopas-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-4{
+	background-image: url('../imagenes/Imagenes-menu/Ensaladas/Fondo-ensaladas-tacos-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .contenedor{
     width: 100%;
     height: 100%;
@@ -56,7 +68,7 @@ body{
 .contenedor .contenido {
 	display: grid;
 	position: relative;
-	grid-template-columns: repeat(18, 1fr);
+	grid-template-columns: repeat(36, 1fr);
 	grid-template-rows: repeat(18, 1fr);
 	/* border: 1px solid rgb(37, 238, 10); */
 	width: 95%;
@@ -208,7 +220,7 @@ body{
 /* ======================= IMAGENES PA' ENTRARLE SOLITO ==================== */
 .contenedor .contenido .contenedor-imagen-jalapeno {
 	display: flex;
-	grid-area: 1/1/8/4;
+	grid-area: 1/1/8/9;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -216,12 +228,12 @@ body{
 	background: red;
 }
 .contenedor .contenido .contenedor-imagen-jalapeno img{
-    width: 77%;
+    width: 64%;
 }
 
 .contenedor .contenido .contenedor-imagen-flauta-maiz {
 	display: flex;
-	grid-area: 9/8/17/12;
+	grid-area: 9/14/17/21;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -234,7 +246,7 @@ body{
 
 .contenedor .contenido .contenedor-imagen-papa-chihuahua {
 	display: flex;
-	grid-area: 5/13/13/18;
+	grid-area: 6/25/15/35;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -245,6 +257,67 @@ body{
     width: 77%;
 }
 
+/* ====================== IMAGENES SOPAS ==================================== */
+
+.contenedor .contenido .contenedor-imagen-sopa-azteca{
+	display: flex;
+	grid-area: 2/3/10/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.contenedor .contenido .contenedor-imagen-sopa-azteca img{
+	width: 70%;
+}
+
+.contenedor .contenido .contenedor-imagen-pozole-rojo{
+	display: flex;
+	grid-area: 8/20/17/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.contenedor .contenido .contenedor-imagen-pozole-rojo img{
+	width: 73%;
+}
+
+.contenedor .contenido .contenedor-imagen-flores{
+	display: flex;
+	grid-area: 7/17/10/19;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.contenedor .contenido .contenedor-imagen-flores img{
+	width: 73%;
+}
+
+.slide-3 .contenido .contenedor-imagen-flecha-1{
+	display: flex;
+	grid-area: 8/6/12/8;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-3 .contenido .contenedor-imagen-flecha-1 img{
+	width: 60%;
+}
+
+.slide-3 .contenido .contenedor-imagen-flecha-2{
+	display: flex;
+	grid-area: 11/28/13/31;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-3 .contenido .contenedor-imagen-flecha-2 img{
+	width: 60%;
+}
 
 /* ========================================================================= */
 /* ================== ESTILOS GENRALES DE PLATOS =========================== */
@@ -258,6 +331,7 @@ body{
     /* left: 30%; */
 }
 
+/* ========================================================================== */
 /* ======================== TITULO PLATOS ================================== */
 .contenedor .contenido .contenedor-platos h2 {
 	text-align: center;
@@ -268,6 +342,7 @@ body{
 	line-height: 1.1em;
 }
 
+/* =========================== PA' COMPARTIR ================================= */
 .contenedor .contenido .contenedor-platos h2 span {
 	background: #D08021;
 	padding: 0.1em 0.4em;
@@ -280,6 +355,35 @@ body{
 	background: #633180;
 }
 
+/* =========================== PA' ENTRARLE SOLITO================================= */
+.slide-2 .contenedor .contenido .contenedor-platos h2 span {
+	background: #CF1C24;
+	padding: 0.1em 0.4em;
+}
+
+.slide-2 .contenedor .contenedor-platos.empanadas-veracruz h2 span,
+.slide-2 .contenedor .contenedor-platos.flauta-trigo h2 span,
+.slide-2 .contenedor .contenedor-platos.elote h2 span,
+.slide-2 .contenedor .contenedor-platos.sincronizadas h2 span,
+.slide-2 .contenedor .contenedor-platos.queso-fundido-chorizo h2 span{
+	background: #DB8B1D;
+	color:#CF1C24;
+}
+
+/* ================================ SOPAS =================================== */
+.slide-3 .contenedor .contenedor-platos.pozole-blanco h2 span,
+.slide-3 .contenedor .contenedor-platos.sopa-frijoles h2 span,
+.slide-3 .contenedor .contenedor-platos.consome-reina h2 span,
+.slide-3 .contenedor .contenedor-platos.pozole-rojo h2 span{
+	background: #D32A7B;
+}
+
+.slide-3 .contenedor .contenedor-platos.sopa-azteca h2 span,
+.slide-3 .contenedor .contenedor-platos.sopa-pescado h2 span{
+	background: #802780;
+}
+
+/* ===================================================================== */
 /* ============================ SUBTITULOS ============================ */
 .contenedor .contenido .contenedor-platos h3 {
 	font-family: 'Bison';
@@ -309,6 +413,16 @@ body{
     padding: 0.2em;
 }
 
+.slide-2 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(6, 43, 25, 0.7);
+	padding: 0.2em;
+}
+
+.slide-3 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: #FFD700;
+	color: #802780;
+}
+
 
 /* =======================  PRECIOS   ================================ */
 /* ====== PRECIOS VARIOS ======== */
@@ -320,7 +434,7 @@ body{
 	text-transform: uppercase;
 	justify-content: center;
     margin: auto;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div{
@@ -357,7 +471,7 @@ body{
 }
 
 .contenedor .contenido .contenedor-platos .etiqueta-2 p{
-    /* text-align: center; */
+    text-align: center;
     /* background: #D8C724; */
 }
 
@@ -437,6 +551,11 @@ body{
 	padding: 0.1em 0.9em;
 }
 
+/* ============================= PRECIOS SOPAS ====================================== */
+
+.slide-3 .contenedor .contenido .contenedor-platos .descripcion-precio-unico p{
+	color: #590056;
+}
 
 /* ===================== UBICACION CONTENEDOR PLATOS ========================== */
 	/* ======================== PA COMPARTIR ============================= */
@@ -529,7 +648,7 @@ body{
 
 .contenedor .contenido .contenedor-platos.empanadas-veracruz{
 	position: absolute;
-	grid-area: 2 / 4 / 10 / 7;
+	grid-area: 2 / 9 / 8 / 15;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -538,7 +657,7 @@ body{
 
 .contenedor .contenido .contenedor-platos.jalapeno-relleno{
 	position: absolute;
-	grid-area: 7 / 1 / 13 / 4;
+	grid-area: 8 / 1 / 14 / 6;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -547,7 +666,7 @@ body{
 
 .contenedor .contenido .contenedor-platos.flauta-trigo{
 	position: absolute;
-	grid-area: 11 / 3 / 13 / 6;
+	grid-area: 13 / 3 / 13 / 8;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -556,7 +675,7 @@ body{
 
 .contenedor .contenido .contenedor-platos.flauta-maiz{
 	position: absolute;
-	grid-area: 13 / 6 / 18 / 9;
+	grid-area: 12 / 9 / 18 / 14;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -565,16 +684,16 @@ body{
 
 .contenedor .contenido .contenedor-platos.quesadillas{
 	position: absolute;
-	grid-area: 4 / 8 / 8 / 11;
+	grid-area: 3 / 16 / 5 / 20;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.queso-fundido{
+.contenedor .contenido .contenedor-platos.queso-fundido {
 	position: absolute;
-	grid-area: 4 / 11 / 8 / 14;
+	grid-area: 4 / 21 / 8 / 26;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -583,7 +702,7 @@ body{
 
 .contenedor .contenido .contenedor-platos.elote{
 	position: absolute;
-	grid-area: 1 / 13 / 10 / 16;
+	grid-area: 1 / 25 / 10 / 30;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -592,16 +711,16 @@ body{
 
 .contenedor .contenido .contenedor-platos.sincronizadas{
 	position: absolute;
-	grid-area: 1 / 13 / 10 / 16;
+	grid-area: 3 / 32 / 10 / 37;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.papa-chiguagua{
+.contenedor .contenido .contenedor-platos.papa-chiguagua {
 	position: absolute;
-	grid-area: 12 / 14 / 13 / 16;
+	grid-area: 11 / 32 / 14 / 37;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -610,26 +729,65 @@ body{
 
 .contenedor .contenido .contenedor-platos.esquites{
 	position: absolute;
-	grid-area: 16 / 16 / 15 / 18;
+	grid-area: 12 / 21 / 15 / 25;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	/* top: 15px; */
 }
 
-.contenedor .contenido .queso-fundido-chorizo{
+.contenedor .contenido .contenedor-platos.queso-fundido-chorizo{
 	position: absolute;
-	grid-area: 14 / 12 / 15 / 14;
+	grid-area: 14 / 26 / 17 / 31;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	/* top: 15px; */
 }
 
+/* ========================= SOPAS ===========================*/
 
+.contenedor .contenido .contenedor-platos.pozole-blanco{
+	position: absolute;
+	grid-area: 2 / 16 / 7 / 22;
+	width: 100%;
+	height: auto;
+}
 
+.contenedor .contenido .contenedor-platos.sopa-azteca{
+	position: absolute;
+	grid-area: 11 / 7 / 17 / 12;
+	width: 100%;
+	height: auto;
+}
 
+.contenedor .contenido .contenedor-platos.sopa-frijoles{
+	position: absolute;
+	grid-area: 12 / 14 / 17 / 19;
+	width: 100%;
+	height: auto;
+}
 
+.contenedor .contenido .contenedor-platos.consome-reina{
+	position: absolute;
+	grid-area: 2 / 26 / 7 / 31;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.sopa-pescado{
+	position: absolute;
+	grid-area: 7 / 30 / 17 / 36;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.pozole-rojo{
+	position: absolute;
+	grid-area: 13 / 28 / 17 / 34;
+	width: 100%;
+	height: auto;
+}
 
 
 /* =================== TÍTULO PÁGINA ===================== */
@@ -639,6 +797,10 @@ article img{
     width: 20%;
 
 } 
+
+.contenedor-titulos-pagina-doble{
+	display: flex;
+}
 
 /* ==================== FOOTER ========================= */
 
