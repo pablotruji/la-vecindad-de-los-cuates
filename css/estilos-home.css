@@ -287,7 +287,7 @@ a{
 .contenedor-logo-principal{
     grid-area: logo;
     width: 100%;
-
+    background: red;
 }
 
 .contenedor-logo-principal img{
@@ -629,8 +629,8 @@ a{
 
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Cortina-escritorio-02.png);
-        width:439px;
-        height:700px;
+        width:25%;
+        height:100vh;
         top: 0;
         left: 0;
     }
@@ -736,6 +736,9 @@ a{
     }
 
     /* LOGOTIPO */
+    .contenedor-logo-principal .logo-principal{
+        background:green;
+    }
     .contenedor-logo-principal img {
         width: 150px;
     }
