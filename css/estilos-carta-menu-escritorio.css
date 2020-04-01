@@ -19,6 +19,11 @@
 
 }
 
+@font-face{
+	font-family: 'Russian';
+	src: url(../fonts/Russian.ttf);
+}
+
 /* ESTILOS GENERALES */
 *{
     margin: 0;
@@ -56,6 +61,48 @@ body{
     background-position: center;
 }
 
+.slide-5{
+	background-image: url('../imagenes/Imagenes-menu/Meros-Mexicanos/Fondo-los-mero-mero-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-6{
+	background-image: url('../imagenes/Imagenes-menu/Las-Estrellas/Background-las-estrellas-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-7{
+	background-image: url('../imagenes/Imagenes-menu/Nuestro-ganado/Background-nuestro-ganado-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-8{
+	background-image: url('../imagenes/Imagenes-menu/Pechugas-pio-pio/Background-pechugas-pio-pio-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-9{
+	background-image: url('../imagenes/Imagenes-menu/Y-el-puerco/Background-y-el-puerco-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-10{
+	background-image: url('../imagenes/Imagenes-menu/Mariscos/Background-mariscos-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-12{
+	background-image: url('../imagenes/Imagenes-menu/Postres/Background-postres-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .contenedor{
     width: 100%;
     height: 100%;
@@ -78,7 +125,7 @@ body{
 
 /* =================== IMAGENES PA' COMPARTIR ======================== */
 
-.contenedor .contenido .contenedor-imagen-tlacoyos {
+.slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos {
 	display: flex;
 	grid-area: 1/1/8/4;
 	/* background: red; */
@@ -86,11 +133,11 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.contenedor .contenido .contenedor-imagen-tlacoyos img{
+.slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos img{
     width: 77%;
 }
 
-.contenedor .contenido .contenedor-imagen-huevos-cartoon {
+.slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon {
 	display: flex;
 	grid-area: 6/7/8/8;
 	/* background: blue; */
@@ -98,11 +145,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-huevos-cartoon img{
+.slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon img{
     width: 82%;
 }
 
-.contenedor .contenido .contenedor-imagen-la-gringa {
+.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa {
 	display: flex;
 	grid-area: 9/7/14/10;
 	/* background: blue; */
@@ -110,11 +157,11 @@ body{
 	justify-content: center;
 	align-items: flex-end;
 }
-.contenedor .contenido .contenedor-imagen-la-gringa img {
+.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa img {
 	width: 42%;
 }
 
-.contenedor .contenido .contenedor-imagen-la-gringa-plato {
+.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa-plato {
 	display: flex;
 	grid-area: 14/4/16/8;
 	/* background: blue; */
@@ -122,11 +169,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-la-gringa-plato img {
+.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa-plato img {
 	width: 64%;
 }
 
-.contenedor .contenido .contenedor-imagen-supernacho {
+.slide-1 .contenedor .contenido .contenedor-imagen-supernacho {
 	display: flex;
 	grid-area: 14/1/16/4;
 	/* background: blue; */
@@ -134,11 +181,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-supernacho img{
+.slide-1 .contenedor .contenido .contenedor-imagen-supernacho img{
     width: 83%;
 }
 
-.contenedor .contenido .contenedor-imagen-flecha-1 {
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 {
 	display: flex;
 	grid-area: 2/4/3/5;
 	/* background: rgb(43, 255, 0); */
@@ -146,11 +193,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-flecha-1 img{
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 img{
     width:70%;
 }
 
-.contenedor .contenido .contenedor-imagen-flecha-2 {
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 {
 	display: flex;
 	grid-area: 10/1/14/2;
 	/* background: rgb(43, 255, 0); */
@@ -158,11 +205,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-flecha-2 img{
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 img{
     width:70%;
 }
 
-.contenedor .contenido .contenedor-imagen-flecha-3 {
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 {
 	display: flex;
 	grid-area: 10/7/16/6;
 	/* background: rgb(43, 255, 0); */
@@ -171,11 +218,11 @@ body{
 	align-items: center;
 	transform: scaleX(-1) rotate(-83deg);
 }
-.contenedor .contenido .contenedor-imagen-flecha-3 img{
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 img{
     width:50%;
 }
 
-.contenedor .contenido .contenedor-imagen-flecha-4 {
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 {
 	display: flex;
 	grid-area: 5/15/9/16;
 	/* background: rgb(43, 255, 0); */
@@ -185,11 +232,11 @@ body{
 	left: 30px;
 	position: absolute;
 }
-.contenedor .contenido .contenedor-imagen-flecha-4 img{
+.slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 img{
     width:50%;
 }
 
-.contenedor .contenido .contenedor-imagen-alitas-sinaloa {
+.slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa {
 	display: flex;
 	grid-area: 7/14/12/19;
 	/* background: rgb(43, 255, 0); */
@@ -197,11 +244,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.contenedor .contenido .contenedor-imagen-alitas-sinaloa img{
+.slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa img{
     width: 80%;
 }
 
-.contenedor .contenido .contenedor-imagen-chile {
+.slide-1 .contenedor .contenido .contenedor-imagen-chile {
 	display: flex;
 	grid-area: 4/18/7/19;
 	/* background: rgb(43, 255, 0); */
@@ -212,13 +259,13 @@ body{
 	z-index: 400;
 }
 
-.contenedor .contenido .contenedor-imagen-chile img{
+.slide-1 .contenedor .contenido .contenedor-imagen-chile img{
    width: 56%;
 }
 
 
 /* ======================= IMAGENES PA' ENTRARLE SOLITO ==================== */
-.contenedor .contenido .contenedor-imagen-jalapeno {
+.slide-2 .contenedor .contenido .contenedor-imagen-jalapeno {
 	display: flex;
 	grid-area: 1/1/8/9;
 	/* background: red; */
@@ -227,11 +274,11 @@ body{
 	align-items: flex-start;
 	background: red;
 }
-.contenedor .contenido .contenedor-imagen-jalapeno img{
+.slide-2 .contenedor .contenido .contenedor-imagen-jalapeno img{
     width: 64%;
 }
 
-.contenedor .contenido .contenedor-imagen-flauta-maiz {
+.slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz {
 	display: flex;
 	grid-area: 9/14/17/21;
 	/* background: red; */
@@ -240,11 +287,11 @@ body{
 	align-items: flex-start;
 	background: red;
 }
-.contenedor .contenido .contenedor-imagen-flauta-maiz img{
+.slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz img{
     width: 77%;
 }
 
-.contenedor .contenido .contenedor-imagen-papa-chihuahua {
+.slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua {
 	display: flex;
 	grid-area: 6/25/15/35;
 	/* background: red; */
@@ -253,13 +300,13 @@ body{
 	align-items: flex-start;
 	background: red;
 }
-.contenedor .contenido .contenedor-imagen-papa-chihuahua img{
+.slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua img{
     width: 77%;
 }
 
 /* ====================== IMAGENES SOPAS ==================================== */
 
-.contenedor .contenido .contenedor-imagen-sopa-azteca{
+.slide-3.contenedor .contenido .contenedor-imagen-sopa-azteca{
 	display: flex;
 	grid-area: 2/3/10/11;
 	/* background: red; */
@@ -267,11 +314,11 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.contenedor .contenido .contenedor-imagen-sopa-azteca img{
+.slide-3.contenedor .contenido .contenedor-imagen-sopa-azteca img{
 	width: 70%;
 }
 
-.contenedor .contenido .contenedor-imagen-pozole-rojo{
+.slide-3.contenedor .contenido .contenedor-imagen-pozole-rojo{
 	display: flex;
 	grid-area: 8/20/17/29;
 	/* background: red; */
@@ -279,11 +326,11 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.contenedor .contenido .contenedor-imagen-pozole-rojo img{
+.slide-3.contenedor .contenido .contenedor-imagen-pozole-rojo img{
 	width: 73%;
 }
 
-.contenedor .contenido .contenedor-imagen-flores{
+.slide-3.contenedor .contenido .contenedor-imagen-flores{
 	display: flex;
 	grid-area: 7/17/10/19;
 	/* background: red; */
@@ -291,7 +338,7 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.contenedor .contenido .contenedor-imagen-flores img{
+.slide-3.contenedor .contenido .contenedor-imagen-flores img{
 	width: 73%;
 }
 
@@ -318,6 +365,930 @@ body{
 .slide-3 .contenido .contenedor-imagen-flecha-2 img{
 	width: 60%;
 }
+
+/* ===================== IMAGENES ENSALADAS =========================== */
+.slide-4 .contenido .contenedor-imagen-ensalada{
+	display: flex;
+	grid-area: 1/2/11/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-4 .contenido .contenedor-imagen-ensalada img{
+	width: 95%;
+}
+
+.slide-4 .contenido .contenedor-imagen-flecha-1{
+	display: flex;
+	grid-area: 5/10/13/13;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-4 .contenido .contenedor-imagen-flecha-1 img{
+	width: 60%;
+}
+
+/* ===================== IMAGENES TACOS =========================== */
+.slide-4 .contenido .contenedor-imagen-tacos-carne{
+	display: flex;
+	grid-area: 14/28/6/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-4 .contenido .contenedor-imagen-tacos-carne img{
+	width: 90%;
+}
+
+.slide-4 .contenido .contenedor-imagen-taco-sudadero{
+	display: flex;
+	grid-area: 11/19/18/27;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-4 .contenido .contenedor-imagen-taco-sudadero img{
+	width: 60%;
+}
+
+.slide-4 .contenido .contenedor-imagen-flecha-2{
+	display: flex;
+	grid-area: 6/30/13/32;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	transform: scaleY(-1) rotateZ(160deg);
+} 
+.slide-4 .contenido .contenedor-imagen-flecha-2 img{
+	width: 60%;
+}
+
+.slide-4 .contenido .contenedor-imagen-flecha-3{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	transform: rotateZ(-60deg);
+} 
+.slide-4 .contenido .contenedor-imagen-flecha-3 img{
+	width: 60%;
+}
+
+/* ======================  IMAGENES LOS MERO MERO ============================ */
+.slide-5 .contenido .contenedor-imagen-chimichanga{
+	display: flex;
+	grid-area: 2/1/6/7;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-5 .contenido .contenedor-imagen-chimichanga img{
+	width: 100%;
+	transform: rotate(180deg) scaleY(-1);
+}
+
+.slide-5 .contenido .contenedor-imagen-alambre{
+	display: flex;
+	grid-area: 8/1/10/7;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+} 
+.slide-5 .contenido .contenedor-imagen-alambre img{
+	width: 100%;
+	transform: scaleY(-1) rotateZ(180deg);
+}
+
+.slide-5 .contenido .contenedor-imagen-burrito-cuate{
+	display: flex;
+	grid-area: 1/30/6/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+} 
+.slide-5 .contenido .contenedor-imagen-burrito-cuate img{
+	width: 100%;
+}
+
+.slide-5 .contenido .contenedor-imagen-huarache{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+} 
+.slide-5 .contenido .contenedor-imagen-huarache img{
+	width: 60%;
+}
+
+.slide-5 .contenido .contenedor-imagen-supermachote{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-5 .contenido .contenedor-imagen-supermachote img{
+	width: 60%;
+}
+
+/* ================= IMAGENES LAS ESTRELLAS ===================== */
+.slide-6 .contenido .contenedor-imagen-tabla-ranchera{
+	display: flex;
+	grid-area: 1/7/12/21;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-tabla-ranchera img{
+	width: 100%;
+}
+
+.slide-6 .contenido .contenedor-imagen-plato-los-cuates{
+	display: flex;
+	grid-area: 5/16/18/31;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-plato-los-cuates img{
+	width: 80%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-1{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-1 img{
+	width: 60%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-2{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-2 img{
+	width: 60%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-3{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-3 img{
+	width: 60%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-4{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-4 img{
+	width: 60%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-5{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-5 img{
+	width: 60%;
+}
+
+.slide-6 .contenido .contenedor-imagen-adorno-6{
+	display: flex;
+	grid-area: 9/28/19/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-6 .contenido .contenedor-imagen-adorno-6 img{
+	width: 60%;
+}
+
+/* ============= IMAGENES LO MEJOR DE NUESTRO GANADO ============ */
+
+.slide-7 .contenido .contenedor-imagen-bistec-chente{
+	display: flex;
+	grid-area: 1/1/9/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-bistec-chente img{
+	width: 77%;
+}
+
+.slide-7 .contenido .contenedor-imagen-sabana-monterrey{
+	display: flex;
+	grid-area: 8/12/16/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-sabana-monterrey img{
+	width: 75%;
+}
+
+.slide-7 .contenido .contenedor-imagen-tapiquena{
+	display: flex;
+	grid-area: 1/24/9/35;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-tapiquena img{
+	width: 70%;
+}
+
+.slide-7 .contenido .contenedor-imagen-adorno-1{
+	display: flex;
+	grid-area: 15/20/17/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-adorno-1 img{
+	width: 50%;
+}
+
+.slide-7 .contenido .contenedor-imagen-adorno-2{
+	display: flex;
+	grid-area: 9/9/11/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-adorno-2 img{
+	width: 50%;
+}
+
+.slide-7 .contenido .contenedor-imagen-adorno-3{
+	display: flex;
+	grid-area: 6/17/8/19;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-adorno-3 img{
+	width: 50%;
+}
+
+.slide-7 .contenido .contenedor-imagen-chile-nuestro-ganado{
+	display: flex;
+	grid-area: 13/6/15/7;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-chile-nuestro-ganado img{
+	width: 90%;
+}
+
+.slide-7 .contenido .contenedor-imagen-flecha-1-nuestro-ganado{
+	display: flex;
+	grid-area: 1/9/4/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-flecha-1-nuestro-ganado img{
+	width: 50%;
+}
+
+.slide-7 .contenido .contenedor-imagen-flecha-2-nuestro-ganado{
+	display: flex;
+	grid-area: 11/10/13/13;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-flecha-2-nuestro-ganado img{
+	width: 55%;
+}
+
+.slide-7 .contenido .contenedor-imagen-flecha-3-nuestro-ganado{
+	display: flex;
+	grid-area: 1/26/4/23;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7 .contenido .contenedor-imagen-flecha-3-nuestro-ganado img{
+	width: 55%;
+}
+
+/* ============ IMAGENES PECHUGAS PIO PIO ===================== */
+.slide-8 .contenido .contenedor-imagen-pechuga-mole{
+	display: flex;
+	grid-area: 1/4/12/14;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-pechuga-mole img{
+	width: 75%;
+}
+
+.slide-8 .contenido .contenedor-imagen-pechuga-mexicano{
+	display: flex;
+	grid-area: 6/26/18/36;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-pechuga-mexicano img{
+	width: 75%;
+}
+
+.slide-8 .contenido .contenedor-imagen-adorno-1{
+	display: flex;
+	grid-area: 7/2/18/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-adorno-1 img{
+	width: 55%;
+}
+
+.slide-8 .contenido .contenedor-imagen-adorno-2{
+	display: flex;
+	grid-area: 9/16/17/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-adorno-2 img{
+	width: 60%;
+}
+
+.slide-8 .contenido .contenedor-imagen-adorno-3{
+	display: flex;
+	grid-area: 8/32/18/25;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-adorno-3 img{
+	width: 65%;
+}
+
+.slide-8 .contenido .contenedor-imagen-chile-1-pechugas-pio-pio{
+	display: flex;
+	grid-area: 16/13/18/15;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-chile-1-pechugas-pio-pio img{
+	width: 55%;
+}
+
+.slide-8 .contenido .contenedor-imagen-chile-2-pechugas-pio-pio{
+	display: flex;
+	grid-area: 9/20/11/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-chile-2-pechugas-pio-pio img{
+	width: 55%;
+}
+
+.slide-8 .contenido .contenedor-imagen-flecha-1-pechugas-pio-pio{
+	display: flex;
+	grid-area: 9/13/12/15;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-flecha-1-pechugas-pio-pio img{
+	width: 55%;
+}
+
+.slide-8 .contenido .contenedor-imagen-flecha-2-pechugas-pio-pio{
+	display: flex;
+	grid-area: 9/25/12/27;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-8 .contenido .contenedor-imagen-flecha-2-pechugas-pio-pio img{
+	width: 55%;
+	transform: rotateZ(50deg);
+}
+
+/* ====================== IMÁGENES Y EL PUERCO ================================ */
+
+.slide-9 .contenido .contenedor-imagen-costillas-cochi{
+	display: flex;
+	grid-area: 1/8/11/19;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-9 .contenido .contenedor-imagen-costillas-cochi img{
+	width: 70%;
+}
+
+.slide-9 .contenido .contenedor-imagen-flecha{
+	display: flex;
+	grid-area: 7/19/10/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-9 .contenido .contenedor-imagen-flecha img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-puerquito-3{
+	display: flex;
+	grid-area: 2/28/4/31;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-puerquito-3 img{
+	width: 65%;
+}
+
+.slide-9 .contenido .contenedor-imagen-puerquito-2{
+	display: flex;
+	grid-area: 10/16/15/20;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-puerquito-2 img{
+	width: 66%;
+}
+
+.slide-9 .contenido .contenedor-imagen-puerquito-1{
+	display: flex;
+	grid-area: 5/5/7/8;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-9 .contenido .contenedor-imagen-puerquito-1 img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-persona{
+	display: flex;
+	grid-area: 6/3/10/7;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-persona img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-limon-1{
+	display: flex;
+	grid-area: 12/14/14/16;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+
+.slide-9 .contenido .contenedor-imagen-limon-1 img{
+	width: 45%;
+}
+
+.slide-9 .contenido .contenedor-imagen-limon-2{
+	display: flex;
+	grid-area: 4/20/7/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-limon-2 img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-avion-1{
+	display: flex;
+	grid-area: 2/4/5/7;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-avion-1 img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-avion-2{
+	display: flex;
+	grid-area: 2/21/5/24;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-avion-2 img{
+	width: 80%;
+}
+
+.slide-9 .contenido .contenedor-imagen-adorno-1{
+	display: flex;
+	grid-area: 12/7/18/17;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-9 .contenido .contenedor-imagen-adorno-1 img{
+	width: 55%;
+}
+
+.slide-9 .contenido .contenedor-imagen-adorno-grande{
+	display: flex;
+	grid-area: 8/24/19/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-9 .contenido .contenedor-imagen-adorno-grande img{
+	width: 55%;
+}
+
+/* ==================== IMAGENES MARISCOS =========================== */
+.slide-10 .contenido .contenedor-imagen-caballo-mar-1{
+	display: flex;
+	grid-area: 8/24/19/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-caballo-mar-1 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-caballo-mar-2{
+	display: flex;
+	grid-area: 8/24/19/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-caballo-mar-2 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-caballo-mar-3{
+	display: flex;
+	grid-area: 7/32/10/34;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-caballo-mar-3 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-caballo-mar-4{
+	display: flex;
+	grid-area: 15/8/19/10;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-caballo-mar-4 img{
+	width: 45%;
+}
+
+.slide-10 .contenido .contenedor-imagen-flecha-1{
+	display: flex;
+	grid-area: 2/10/4/13;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-flecha-1 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-flecha-2{
+	display: flex;
+	grid-area: 11/9/13/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-flecha-2 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-pez-1{
+	display: flex;
+	grid-area: 9/11/12/15;	
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-pez-1 img{
+	width: 45%;
+}
+
+.slide-10 .contenido .contenedor-imagen-pez-2{
+	display: flex;
+	grid-area: 2/24/5/28;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-pez-2 img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-pez-dorado{
+	display: flex;
+	grid-area: 16/26/19/31;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-pez-dorado img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-submarino{
+	display: flex;
+	grid-area: 8/19/11/23;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-submarino img{
+	width: 55%;
+}
+
+.slide-10 .contenido .contenedor-imagen-ceviche-cuates{
+	display: flex;
+	grid-area: 1/2/9/13;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-ceviche-cuates img{
+	width: 80%;
+}
+
+.slide-10 .contenido .contenedor-imagen-fajitas-langostino{
+	display: flex;
+	grid-area: 10/9/17/21;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-10 .contenido .contenedor-imagen-fajitas-langostino img{
+	width: 80%;
+	transform: rotateZ(350deg);
+}
+
+/* ======================= IMÁGENES POSTRES ===================*/
+
+.slide-12 .contenido .contenedor-imagen-etiqueta{
+	display: flex;
+	grid-area: 2/25/7/28;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-etiqueta img{
+	width: 60%;
+}
+
+.slide-12 .contenido .contenedor-imagen-logo-cola-cao{
+	display: flex;
+	grid-area: 7/25/12/30;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-logo-cola-cao img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-flecha-1{
+	display: flex;
+	grid-area: 8/9/11/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-flecha-1 img{
+	width: 45%;
+}
+
+.slide-12 .contenido .contenedor-imagen-flecha-2{
+	display: flex;
+	grid-area: 6/27/9/29;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-flecha-2 img{
+	width: 60%;
+}
+
+.slide-12 .contenido .contenedor-imagen-flecha-3{
+	display: flex;
+	grid-area: 16/25/18/28;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-flecha-3 img{
+	width: 50%;
+}
+
+.slide-12 .contenido .contenedor-imagen-fresa-1{
+	display: flex;
+	grid-area: 7/13/9/14;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-fresa-1 img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-fresa-2{
+	display: flex;
+	grid-area: 7/9/9/10;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-fresa-2 img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-fresa-3{
+	display: flex;
+	grid-area: 10/9/12/10;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-fresa-3 img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-logo-chocolas{
+	display: flex;
+	grid-area: 11/31/13/33;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-logo-chocolas img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-corbatin-charro{
+	display: flex;
+	grid-area: 1/7/8/15;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-corbatin-charro img{
+	width: 100%;
+	margin-top: -31px;
+}
+
+.slide-12 .contenido .contenedor-imagen-queretaro{
+	display: flex;
+	grid-area: 8/12/16/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-queretaro img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-cola-cao{
+	display: flex;
+	grid-area: 1/27/8/34;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-cola-cao img{
+	width: 80%;
+}
+
+.slide-12 .contenido .contenedor-imagen-chanfle-chocolas{
+	display: flex;
+	grid-area: 13/26/19/37;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-chanfle-chocolas img{
+	width: 75%;
+}
+
 
 /* ========================================================================= */
 /* ================== ESTILOS GENRALES DE PLATOS =========================== */
@@ -383,6 +1354,56 @@ body{
 	background: #802780;
 }
 
+/* ============================= ENSALADAS =============================== */
+.slide-4 .contenedor .contenedor-platos.de-los-cuates h2 span,
+.slide-4 .contenedor .contenedor-platos.ranchera h2 span,
+.slide-4 .contenedor .contenedor-platos.vegetariana h2 span{
+	background: #006838;
+}
+
+/* ============================= TACOS ==================================== */
+.slide-4 .contenedor .contenedor-platos.tacos-cuates h2 span,
+.slide-4 .contenedor .contenedor-platos.cochinita-pibil h2 span,
+.slide-4 .contenedor .contenedor-platos.taquiza h2 span{
+	background: #D41C24;
+}
+
+.slide-4 .contenedor .contenedor-platos.tacos h2 span,
+.slide-4 .contenedor .contenedor-platos.taco-sudadero h2 span,
+.slide-4 .contenedor .contenedor-platos.taco-carne-asada h2 span{
+	background: #882D4B;
+}
+
+E07328
+
+/* LOS MERO MERO */
+
+/* ====================== LAS ESTRELLAS ================================== */
+
+.slide-6 .contenedor .contenedor-platos h2 span{
+	background: #479E4D;
+}
+
+/* ================= LO MEJOR DE NUESTRO GANADO ======================== */
+.slide-7 .contenedor .contenedor-platos h2 span {
+	background: #E07328;
+}
+
+/* ====================== PECHUGAS PIO PIO ============================ */
+
+/* ===================== Y EL PUERCO ================================== */
+
+.slide-9 .contenedor .contenedor-platos h2 span {
+	background: #DC2528;
+}
+
+/* ========================== MARISCOS ================================ */
+
+.slide-10 .contenedor .contenedor-platos h2 span {
+	background: #DF2062;
+}
+
+
 /* ===================================================================== */
 /* ============================ SUBTITULOS ============================ */
 .contenedor .contenido .contenedor-platos h3 {
@@ -423,7 +1444,39 @@ body{
 	color: #802780;
 }
 
+.slide-4 .contenedor .contenido .contenedor-platos.tacos .descripcion-platos p span,
+.slide-4 .contenedor .contenido .contenedor-platos.tacos-cuates .descripcion-platos p span,
+.slide-4 .contenedor .contenido .contenedor-platos.taco-sudadero .descripcion-platos p span,
+.slide-4 .contenedor .contenido .contenedor-platos.cochinita-pibil .descripcion-platos p span,
+.slide-4 .contenedor .contenido .contenedor-platos.taco-carne-asada .descripcion-platos p span,
+.slide-4 .contenedor .contenido .contenedor-platos.taquiza .descripcion-platos p span
+{
+	background: rgba(0, 46, 25, 0.5);
+}
 
+.slide-5{
+
+}
+
+.slide-6 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(61, 30, 78, 0.5);
+}
+
+.slide-7 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(34, 22, 9, 0.5);
+}
+
+.slide-8 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(34, 22, 9, 0.5);
+}
+
+.slide-9 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(1, 48, 23, 0.7);
+}
+
+.slide-10 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(5, 19, 18, 0.7);
+}
 /* =======================  PRECIOS   ================================ */
 /* ====== PRECIOS VARIOS ======== */
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios {
@@ -789,6 +1842,372 @@ body{
 	height: auto;
 }
 
+/* =========================== ENSALADAS ============================== */
+
+.contenedor .contenido .contenedor-platos.de-los-cuates{
+	position: absolute;
+	grid-area: 8 / 12 / 17 / 17;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.vegetariana{
+	position: absolute;
+	grid-area: 11 / 2 / 17 / 8;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.ranchera{
+	position: absolute;
+	grid-area: 14 / 9 / 16 / 14;
+	width: 100%;
+	height: auto;
+}
+
+/* ============================ TACOS ==================== */
+
+.contenedor .contenido .contenedor-platos.tacos{
+	position: absolute;
+	grid-area: 1 / 20 / 18 / 25;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.tacos-cuates{
+	position: absolute;
+	grid-area: 1 / 30 / 6 / 36;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.cochinita-pibil{
+	position: absolute;
+	grid-area: 6 / 20 / 17 / 26;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.taquiza{
+	position: absolute;
+	grid-area: 13 / 30 / 17 / 36;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.taco-sudadero{
+	position: absolute;
+	grid-area: 14 / 26 / 17 / 30;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.taco-carne-asada{
+	position: absolute;
+	grid-area: 5 / 26 / 10 / 31;
+	width: 100%;
+	height: auto;
+}
+
+
+/* ======================= MERO MERO ============================ */
+.contenedor .contenido .contenedor-platos.chimichangas{
+	position: absolute;
+	grid-area: 1 / 6 / 10 / 13;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.alambres{
+	position: absolute;
+	grid-area: 9 / 8 / 13 / 13;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.chilaquies{
+	position: absolute;
+	grid-area: 13 / 2 / 16 / 9;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.fajitas{
+	position: absolute;
+	grid-area: 13 / 12 / 14 / 18;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enchilada{
+	position: absolute;
+	grid-area: 8 / 14 / 14 / 19;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enchilada-tres-cuates{
+	position: absolute;
+	grid-area: 2 / 13 / 7 / 19;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enchilada-ranchera{
+	position: absolute;
+	grid-area: 10 / 18 / 15 / 24;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enmolada-pancho{
+	position: absolute;
+	grid-area: 5 / 26 / 10 / 31;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.burrito{
+	position: absolute;
+	grid-area: 5 / 19 / 10 / 26;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.burrito-cuates{
+	position: absolute;
+	grid-area: 2 / 21 / 10 / 28;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.huarache{
+	position: absolute;
+	grid-area: 7 / 31 / 12 / 37;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.supermachote{
+	position: absolute;
+	grid-area: 12 / 24 / 16 / 31;
+	width: 100%;
+	height: auto;
+}
+
+/* =================== LAS ESTRELLAS ===================== */
+
+.contenedor .contenido .contenedor-platos.tabla-ranchera{
+	position: absolute;
+	grid-area: 12 / 7 / 16 / 13;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.plato-cuates{
+	position: absolute;
+	grid-area: 3 / 26 / 16 / 33;
+	width: 100%;
+	height: auto;
+}
+
+/* =================== LO MEJOR DE NUESTRO GANADO ================== */
+
+.contenedor .contenido .contenedor-platos.bistec-chente{
+	position: absolute;
+	grid-area: 3 / 11 / 8 / 17;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.lomo-norteno{
+	position: absolute;
+	grid-area: 9 / 2 / 14 / 8;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.sabana-monterrey{
+	position: absolute;
+	grid-area: 14 / 7 / 18 / 13;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.tampiquena{
+	position: absolute;
+	grid-area: 4 / 19 / 10 / 25;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.lomo-ranchero{
+	position: absolute;
+	grid-area: 9 / 21 / 15 / 27;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.lomo-vaquero{
+	position: absolute;
+	grid-area: 9 / 31 / 16 / 36;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.t-bone-tejano{
+	position: absolute;
+	grid-area: 13 / 26 / 16 / 32;
+	width: 100%;
+	height: auto;
+}
+
+/* ================= PECHUGAS PIO PIO ===================== */
+
+.contenedor .contenido .contenedor-platos.pechuga-mole{
+	position: absolute;
+	grid-area: 13 / 10 / 16 / 15;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.pechuga-nortena{
+	position: absolute;
+	grid-area: 5 / 16 / 11 / 22;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.ave-corto-vuelo{
+	position: absolute;
+	grid-area: 2 / 26 / 8 / 32;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.pechuga-a-lo-mexicano{
+	position: absolute;
+	grid-area: 13 / 21 / 16 / 27;
+	width: 100%;
+	height: auto;
+}
+
+/* ==================== Y EL PUERCO ================================== */
+
+.contenedor .contenido .contenedor-platos.chuletas-ahumadas{
+	position: absolute;
+	grid-area: 10 / 5 / 14 / 10;	
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.costillas-cochi{
+	position: absolute;
+	grid-area: 11 / 20 / 16 / 25;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.chuletas-cochi{
+	position: absolute;
+	grid-area: 4 / 27 / 16 / 32;
+	width: 100%;
+	height: auto;
+}
+
+/* ========================= MARISCOS ==================== */
+
+.contenedor .contenido .contenedor-platos.ceviche-cuates{
+	position: absolute;
+	grid-area: 3 / 13 / 15 / 18;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.fajitas-langostino{
+	position: absolute;
+	grid-area: 11 / 3 / 16 / 9;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enchilada-camaron{
+	position: absolute;
+	grid-area: 2 / 30 / 8 / 36;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.enchilada-cangrejo{
+	position: absolute;
+	grid-area: 6 / 23 / 16 / 28;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.guachinango{
+	position: absolute;
+	grid-area: 13 / 21 / 18 / 27;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.fajitas-camaron{
+	position: absolute;
+	grid-area: 12 / 31 / 17 / 36;
+	width: 100%;
+	height: auto;
+}
+
+/* ========================= POSTRES ===================== */
+.contenedor .contenido .contenedor-platos.chanfle-chocolas{
+	position: absolute;
+	grid-area: 13 / 20 / 16 / 26;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.corbatin-charro{
+	position: absolute;
+	grid-area: 6 / 3 / 11 / 8;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.queretaro{
+	position: absolute;
+	grid-area: 15 / 7 / 18 / 13;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.brownie-helado{
+	position: absolute;
+	grid-area: 2 / 20 / 8 / 25;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.cola-cao{
+	position: absolute;
+	grid-area: 11 / 25 / 15 / 30;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.nieve-cuates{
+	position: absolute;
+	grid-area: 11 / 2 / 17 / 7;
+	width: 100%;
+	height: auto;
+}
+
+.contenedor .contenido .contenedor-platos.flan-caramelo{
+	position: absolute;
+	grid-area: 5 / 15 / 9 / 20;
+	width: 100%;
+	height: auto;
+}
 
 /* =================== TÍTULO PÁGINA ===================== */
 article img{
@@ -798,8 +2217,30 @@ article img{
 
 } 
 
+/* article.slide-10 img{
+    display: block;
+    margin: 0.5rem auto;
+	width: 90%;
+	background: red;
+}  */
+
 .contenedor-titulos-pagina-doble{
 	display: flex;
+}
+
+.contenedor-titulo-pagina-mariscos{
+	display: flex;
+	align-items: center;
+	/* background: blue; */
+}
+
+.contenedor-titulo-pagina-mariscos img:nth-child(1){
+	width: 40px;
+	max-width: 40px;
+}
+.contenedor-titulo-pagina-mariscos img:nth-child(3){
+	width: 40px;
+	max-width: 40px;
 }
 
 /* ==================== FOOTER ========================= */
@@ -843,6 +2284,21 @@ article img{
 	align-self: flex-start;
 }
 
+.contenedor-impuestos {
+	position: absolute;
+	width: 50%;
+	left: 0;
+	bottom: 50%;
+}
+
+.contenedor-impuestos p {
+	width: 40%;
+	background: rgba(25, 2, 39, 0.6);
+	font-family: 'Russian';
+	color: #fff;
+	text-align: center;
+	margin: auto;
+}
 /* PATRON */
 
 .footer .patron-footer {
