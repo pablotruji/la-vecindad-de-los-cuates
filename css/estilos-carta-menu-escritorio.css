@@ -272,7 +272,7 @@ body{
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
-	background: red;
+	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-jalapeno img{
     width: 64%;
@@ -285,7 +285,7 @@ body{
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
-	background: red;
+	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz img{
     width: 77%;
@@ -298,7 +298,7 @@ body{
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
-	background: red;
+	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua img{
     width: 77%;
@@ -306,19 +306,19 @@ body{
 
 /* ====================== IMAGENES SOPAS ==================================== */
 
-.slide-3.contenedor .contenido .contenedor-imagen-sopa-azteca{
+.slide-3 .contenedor .contenido .contenedor-imagen-sopa-azteca{
 	display: flex;
-	grid-area: 2/3/10/11;
+	grid-area: 2/6/11/15;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-3.contenedor .contenido .contenedor-imagen-sopa-azteca img{
+.slide-3 .contenedor .contenido .contenedor-imagen-sopa-azteca img{
 	width: 70%;
 }
 
-.slide-3.contenedor .contenido .contenedor-imagen-pozole-rojo{
+.slide-3 .contenedor .contenido .contenedor-imagen-pozole-rojo{
 	display: flex;
 	grid-area: 8/20/17/29;
 	/* background: red; */
@@ -326,11 +326,11 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-3.contenedor .contenido .contenedor-imagen-pozole-rojo img{
+.slide-3 .contenedor .contenido .contenedor-imagen-pozole-rojo img{
 	width: 73%;
 }
 
-.slide-3.contenedor .contenido .contenedor-imagen-flores{
+.slide-3 .contenedor .contenido .contenedor-imagen-flores{
 	display: flex;
 	grid-area: 7/17/10/19;
 	/* background: red; */
@@ -338,20 +338,20 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-3.contenedor .contenido .contenedor-imagen-flores img{
+.slide-3 .contenedor .contenido .contenedor-imagen-flores img{
 	width: 73%;
 }
 
 .slide-3 .contenido .contenedor-imagen-flecha-1{
 	display: flex;
-	grid-area: 8/6/12/8;
+	grid-area: 9/6/12/8;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
 .slide-3 .contenido .contenedor-imagen-flecha-1 img{
-	width: 60%;
+	width: 40%;
 }
 
 .slide-3 .contenido .contenedor-imagen-flecha-2{
@@ -1403,6 +1403,21 @@ E07328
 	background: #DF2062;
 }
 
+/* ==================== POSTRES ======================================== */
+.slide-12 .contenedor .contenedor-platos.corbatin-charro h2 span,
+.slide-12 .contenedor .contenedor-platos.nieve-cuates h2 span,
+.slide-12 .contenedor .contenedor-platos.chanfle-chocolas h2 span   {
+	background: #F4E425;
+	color: #DD2080;
+}
+
+.slide-12 .contenedor .contenedor-platos.flan-caramelo h2 span,
+.slide-12 .contenedor .contenedor-platos.brownie-helado h2 span,
+.slide-12 .contenedor .contenedor-platos.queretaro h2 span   {
+	background: #DD2080;
+}
+
+
 
 /* ===================================================================== */
 /* ============================ SUBTITULOS ============================ */
@@ -1476,6 +1491,16 @@ E07328
 
 .slide-10 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
 	background: rgba(5, 19, 18, 0.7);
+}
+
+.slide-12 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
+	background: rgba(58, 32, 39, 0.7);
+}
+.slide-12 .contenedor .contenido .contenedor-platos.chanfle-chocolas .descripcion-platos p span,
+.slide-12 .contenedor .contenido .contenedor-platos.cola-cao .descripcion-platos p span
+{
+	background: rgba(247, 227, 165, 0.7);
+	color: #422918;
 }
 /* =======================  PRECIOS   ================================ */
 /* ====== PRECIOS VARIOS ======== */
