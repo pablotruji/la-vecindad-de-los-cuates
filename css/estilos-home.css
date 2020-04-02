@@ -30,9 +30,7 @@ a{
 .contenedor {
     height: 100vh;
     position: relative;
-
 }
-
 /*==============  IMAGEN CENTRO CALAVERA ===============*/
 .contenedor-imagen-centro-escritorio{
     display: none;
@@ -183,11 +181,9 @@ a{
 /*=========================================================*/
 
 /*================= NAVEGADOR PRINCIPAL =================*/
-
 /*==================  BOTÓN MENÚ  =====================*/
 .contenedor-boton-menu{
     position: relative;
-    /* background: blue; */
     width: auto;
     margin-right: 20px;
 }
@@ -206,12 +202,6 @@ a{
     right: 0;
     left: 0;
     margin: auto;
-    /* right: 45px; */
-    /* top: 70px; */
-}
-
-.menu-imagen{
-    /* background: red; */
 }
 
 .menu-imagen img{
@@ -289,16 +279,15 @@ a{
 }
 
 
-/* ==================== LOGOS ==================*/
+/* ==================== SECCIÓN LOGOS ==================*/
 
-/* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
+/* ============ LOGOTIPO LA VECIDAD DE LOS CUATES ===========*/
 .contenedor-logo-principal {
     grid-area: logo;
     display: flex;
 	width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background: red; */
     height: auto;
     margin-left: 20px;
     margin-top: 20px;
@@ -308,8 +297,6 @@ a{
     width: 80px;
 }
 
-
-
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
 .contenedor-logo-2{
     grid-area: logo-2;
@@ -318,7 +305,6 @@ a{
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-end;
-    /* background: red; */
     box-sizing: border-box;
     margin-top: 20px;
 }
@@ -330,15 +316,12 @@ a{
 /* ======================== ASIDE GENERAL ENLACE ===============*/
 .enlace {
 	display: block;
-	/* width: 100%; */
-	/* background: red; */
 	border-radius: 100%;
 }
 
 .enlace img {
 	display: block;
 	width: 100px;
-	/* background: green; */
 	border-radius:100%;
 }
 /*==================== ASIDE DERECHA ==================*/
@@ -350,7 +333,6 @@ a{
     flex-direction: column-reverse;
     align-items: flex-end;
     justify-content: space-around;
-    /* background: red; */
     box-sizing: border-box;
 }
 
@@ -363,7 +345,6 @@ a{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
-    /* background: red; */
     margin-left: 12px;
 
 }
@@ -588,7 +569,7 @@ a{
     }
 
     .contenedor .contenedor-guirnaldas img {
-        width: 1200px;
+        width: 2000px;
     }
 
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
@@ -772,30 +753,7 @@ a{
         align-self: center;
         margin-top: 80px;
     }
-
     
-
-
-    /*  
-     .contenedor-botones-aside:first-child {
-        margin-left: 50px;
-        margin-top: 130px;
-    }
-
-    .aside-izquierda .contenedor-botones-aside:last-child {
-        margin-left: 100px;
-        margin-top: 10px;
-    }
-
-    .aside-derecha .contenedor-botones-aside:last-child {
-        margin-right: 100px;
-        margin-top: 10px;
-    }
-    
-    .contenedor-logo-principal .contenedor-botones-aside img {
-        margin-top: 0;
-    } */
-
     /* FOOTER */
     .contenedor-alas img.alas-izq{
         margin-top: -5%;
