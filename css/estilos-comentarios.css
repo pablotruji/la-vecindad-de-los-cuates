@@ -1,0 +1,821 @@
+/*================= FUENTES ==========================*/
+@font-face{
+    font-family: 'Mayan';
+    src: url(../fonts/Mayan\ 2.ttf);
+}
+
+@font-face{
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue\ Book.otf);
+}
+
+@font-face{
+    font-family: 'Woodstamp';
+    src: url(../fonts/Woodstamp.otf);
+}
+
+/*=============== ESTILOS GENERALES ===============*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagenes/Contactanos/Background-480.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 16px; 
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*=====================================================*/
+/*=============== CONTENEDOR PRINCIPAL ===============*/
+/*===================================================*/
+.contenedor {
+    height: 100vh;
+    position: relative;
+}
+
+/*=========================== CORTINAS ========================== */
+
+.contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+    position: absolute;
+    background-image: url(../imagenes/Imagen-cortina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:170px;
+    height:750px;
+    top: -100px;
+    z-index: 200;
+    left: -10px;
+}
+
+.contenedor .contenedor-cortina .contenedor-cortina-derecha{
+    position: absolute;
+    background-image: url(../imagenes/Imagen-cortina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:170px;
+    height:750px;
+    top: -100px;
+    right: 0 ;
+    transform: scaleX(-1);
+    z-index: 200;
+}
+
+/* GUIRNALDAS */
+.contenedor .contenedor-guirnaldas{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+    overflow: hidden;
+}
+
+.contenedor .contenedor-guirnaldas img{
+    width: 1200px;
+}
+
+/*=================  CONTENEDOR DE GRILLA  ===============*/
+.contenedor .contenedor-grid {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 300;
+}
+
+/*===================  GRILLA  ========================*/
+.contenedor .contenedor-grid .grid{
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo contenido-principal logo-2"
+                         "aside-izquierda contenido-principal aside-derecha"
+                         "footer footer footer";
+
+}
+
+/*===========================================================*/
+/*====================== HEADER ============================*/
+/*=========================================================*/
+
+/*================= NAVEGADOR PRINCIPAL =================*/
+/*==================  BOTÓN MENÚ  =====================*/
+.contenedor-boton-menu{
+    position: relative;
+    width: auto;
+    margin-right: 20px;
+}
+
+.menu-principal-toggle{
+    display:flex;
+    grid-area: logo-2;
+    width: 1.3rem;
+    height: 1rem;
+    background:linear-gradient(white 20%, transparent 20%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 80%,white 80% );
+    cursor: pointer;
+    z-index: 800;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.menu-imagen img{
+    width: 83px;
+}
+
+/*======================BARRA DE MENÚ===================== */
+/* BARRA MENÚ ESCRITORIO */
+.barra-menu{
+    display: none;
+}
+
+.nav-principal{
+    display: flex;
+    position: fixed;
+    height: calc(100vh - 4rem);
+    height: 240px;
+    width: 290px;
+    background: #2C0D10;
+    left: -80vh;
+    z-index: 700;
+    top: 1rem;
+    transition: left 0.8s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    font-family: Mayan;
+}
+
+.nav-principal .marco-menu{
+    width: 100%;
+}
+
+.nav-principal.show{
+    left: 0;
+}
+
+.menu-principal{
+   display: flex;
+   position: absolute;
+   flex-direction: column;
+   width: 90%;
+   height: 95%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.menu-principal-item{
+    width: 85%;
+    height: 16%;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s ease-in;
+
+}
+
+.menu-principal-item:not(:last-of-type){
+     border-bottom: 1px ridge #fff ;
+}
+
+.menu-principal-item:hover{
+    width: 80%;
+    height: 16%;
+    list-style: none;
+    text-align: center;
+    background: rgb(107, 32, 39);
+
+}
+
+.menu-principal a{
+    font-size: 10px;
+    color: #fff;
+}
+
+
+/* ==================== SECCIÓN LOGOS ==================*/
+
+/* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
+.contenedor-logo-principal {
+    grid-area: logo;
+    display: flex;
+	width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contenedor-logo-principal img{
+    width: 80px;
+}
+
+/*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
+.contenedor-logo-2{
+    grid-area: logo-2;
+    display:flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.contenedor-logo-2 .logo-2 img{
+    border-radius: initial;
+}
+
+/*===========================================================*/
+/*=============== CONTENIDO PRINCIPAL========================*/
+/*=========================================================*/
+
+.main{
+    grid-area: contenido-principal;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .contenido-principal {
+
+}
+
+/* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
+.contenido-principal .contactanos-imagen-charo {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+.contenido-principal .contactanos-imagen-charo img{
+    display: block;
+    width: 60%;
+    max-width: 160px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* INFO MAIL */
+.contenido-principal .informacion-email {
+	display: flex;
+	flex-wrap: wrap;
+	width: 79%;
+	margin: auto;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.informacion-email img{
+    display: block;
+    width: 60px;
+    max-width: 70px;
+    height: 100%;
+    align-self: center;
+    margin: auto;
+}
+
+.informacion-email p{
+    font-family: Woodstamp;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+
+.informacion-email p span{
+    color: #E62733;
+}
+
+
+/* INFO TELEFONO */
+.contenido-principal .informacion-telefono {
+    display: flex;
+	flex-wrap: wrap;
+	width: 81%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.informacion-telefono img {
+	width: 78px;
+	max-width: 120px;
+	height: 100%;
+	/* margin-left: -23px; */
+}
+
+.informacion-telefono p {
+	font-family: Woodstamp;
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+}
+
+.informacion-telefono p::first-line{
+    color: #E62733;
+}
+
+/* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
+/* ======================================================= */
+
+/* ======================== ASIDE GENERAL ENLACE ===============*/
+.enlace {
+	display: block;
+	border-radius: 100%;
+}
+
+.enlace img {
+	display: block;
+	width: 100px;
+	border-radius:100%;
+}
+
+/*==================== ASIDE DERECHA ==================*/
+.aside-derecha{
+    grid-area: aside-derecha;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+
+/*==================== ASIDE IZQUIERDA ==================*/
+.aside-izquierda{
+    display: flex;
+    grid-area: aside-izquierda;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 12px;
+
+}
+.aside-izquierda .contenedor-botones-aside:first-child{
+    display: none;
+}
+
+.aside-izquierda .contenedor-botones-aside:last-child{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.aside-izquierda .contenedor-botones-aside:first-child{
+    margin-left: -10px;
+    margin-top: 20px;
+}
+/*===================================================*/
+/*==================== FOOTER ======================*/
+/*=================================================*/
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer .contenedor-footer{
+    display: flex;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+
+.footer .contenedor-footer .caja-1{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background: #2C0D10;
+    box-shadow: 0px 0px 40px rgba(0,0,0,10);
+    z-index: 100;
+}
+
+.footer .contenedor-footer .caja-2{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: 0;
+    align-self:flex-start;
+}
+
+/* PATRON */
+.footer .patron-footer{
+    width: 99.9%;
+    position:absolute;
+    z-index: 400;
+    overflow: hidden;
+    bottom: 35px;
+}
+.footer .patron-footer img{
+    width: 1000px;
+}
+
+.footer .imagen-mitad-del-mundo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 60px;
+    justify-content: center;
+    z-index: 200;
+}
+
+.imagen-mitad-del-mundo img.monumento{
+    position: relative;
+    width: 30%;
+    max-width: 110px;
+    height: 10%;
+    z-index: 500;
+}
+
+.contenedor-alas{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    align-self: flex-start;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+
+.contenedor-alas img.alas-izq{
+    width: 24%;
+    height: 30%;
+    z-index: 500;
+    animation: animacion-alas-izq 1.5s 3s ease-in-out alternate-reverse  infinite;
+    animation-fill-mode: forwards;
+    margin-right: 30%;
+    margin-top: -5%;
+}
+
+.contenedor-alas img.alas-der{
+    width: 24%;
+    height: 10%;
+    z-index: 500;
+    animation: animacion-alas-der 1.5s 3s ease-in-out alternate-reverse infinite;
+    animation-fill-mode: forwards;
+    transform: scaleX(-1);
+    margin-left: 30%;
+    margin-top: -5%;
+    
+}
+
+/* ANIMACIONES ALAS  */
+
+@keyframes animacion-alas-izq{
+    0% {transform: rotate(-10deg) translateY(15px);}
+    20% {transform: rotate(0deg) translateY(0px);}
+    75% {transform: rotate(-15deg) translateY(15px);}
+    100% {transform: rotate(0deg) translateY(0px);}
+}
+@keyframes animacion-alas-der{
+    0% {transform: rotate(10deg) scaleX(-1) translateY(15px);}
+    20% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+    75% {transform: rotate(15deg) scaleX(-1) translateY(15px);}
+    100% {transform: rotate(0deg) scaleX(-1) translateY(0px);}
+}
+
+/* ======== IMAGENES FOOTER COSTADOS ========== */
+
+.footer .imagen-izquierda-footer{
+    display: flex;
+    width: 100%;
+}
+
+.footer .imagen-izquierda-footer img{
+    width: 26%;
+    max-width: 100px;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.footer .imagen-derecha-footer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer .imagen-derecha-footer img{
+    width: 26%;
+    max-width:100px;
+    position: absolute;
+    align-self: flex-end;
+}
+
+/* ================ REDES SOCIALES ===================== */
+.footer .redes-sociales{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-size: 25px;
+    z-index: 500;
+}
+
+
+.footer .redes-sociales a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin:  7px;
+    color: #2C0D10;
+    transition: 0.4s;
+    margin-top: -80px;
+}
+
+.footer .redes-sociales a:hover{
+    background: #2C0D10;
+    color: #fff;
+    font-size: 30px;
+}
+
+.redes-sociales img{
+    position: absolute;
+    width: 40px;
+}
+
+
+/* ============================================================================ */
+/* ============================== RESPONSIVE ================================= */
+/* ========================================================================== */
+
+@media screen and (max-width:432px){
+
+
+    .contenido-principal .informacion-telefono {
+        width: 60%;
+        justify-content: center;
+    }
+    
+    .informacion-telefono img {
+        width: 63px;
+        max-width: 120px;
+        margin-bottom: 1em;
+    }
+
+    .contenido-principal .informacion-email {
+        width: 48%;
+        justify-content: center;
+    }
+    
+    .informacion-email img{
+        width: 40px;
+        max-width: 70px;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background-image: url(../imagenes/Contactanos/Background-escritorio-02.png);
+    }
+
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:35%;
+        height:100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:35%;
+        height:100vh;
+        top: 0;
+        right: 0;
+    }
+
+    /*===================  GRILLA  ========================*/
+    .contenedor .contenedor-grid .grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "logo barra-menu logo-2"
+                             "aside-izquierda contenido-principal aside-derecha"
+                             "footer footer footer";
+
+    }
+    .barra-menu{
+        display: initial;
+        grid-area: barra-menu;
+        font-family: 'Mayan';
+    }
+
+    .barra-menu .nav-barra-principal{
+        height: 100%;
+    }
+
+    .barra-menu .nav-barra-principal {
+        display: flex;
+        width: 60vw;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        margin: auto;
+        /* background: red; */
+    }
+
+    .barra-menu .nav-barra-principal a{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;   
+        background: blue;
+    }
+
+    .barra-menu .nav-barra-principal a img{
+        position: relative;
+        width: 111px;
+        z-index: 200;
+        background: #320003;
+        transition: 0.3s ease-in;
+    }
+
+    .barra-menu .nav-barra-principal p{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 11px;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    /* FIN BARRA MENU */
+
+    /* QUITANDO MENÚ HAMBURGUESA */
+    .menu-imagen{
+        display: none;
+    }
+    .menu-principal-toggle{
+        display: none;
+    }
+
+    /* LOGOTIPOS */
+    .contenedor-logo-principal{
+        /* background:green; */
+        align-items: flex-start;
+    }
+
+    .contenedor-logo-principal .enlace img{
+        width: 130px;
+    }
+
+    .contenedor-logo-2{
+        align-items: center;
+        position: relative;
+    }
+
+    .contenedor-logo-2 .enlace img{
+        width: 130px;
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+
+    /* QUITANDO EL BOTON DE LA AREA DE LOGOTIPO */
+    .contenedor-logo-principal  .contenedor-botones-aside{
+        display: none;
+    }
+    
+    /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
+    .main {
+        /* grid-area: contenido-principal;
+        width: 100%;
+        height: 100%;
+        background: green; */
+    }
+    .main .contenido-principal{
+        /* background: pink; */
+    }
+
+    
+    /* ASIDE */
+
+    .contenedor-botones-aside .enlace img{
+        width: 165px;
+    }
+
+    .aside-izquierda{
+        /* background: blue; */
+        align-items: center;
+        margin-left: initial;
+        position: relative;
+        /* background: blue; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside
+    {
+        position: absolute;
+    }
+    .aside-izquierda .contenedor-botones-aside:nth-child(1){
+        top: -10px;
+        /* left: 20px; */
+        z-index: 200;
+        display: initial;
+    }
+
+    .aside-izquierda .contenedor-botones-aside:nth-child(2){
+        top: 200px;
+        /* left: 20px; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside:nth-child(3){
+        bottom: -80px;
+        right: -70px;
+        z-index: 200;
+    }
+
+    .aside-derecha{
+        /* background: green; */
+        align-items: flex-start;
+    }
+
+    .aside-derecha .contenedor-botones-aside:last-child {
+        /* background: blue; */
+        align-self: center;
+        margin-top: 80px;
+    }
+    
+    /* FOOTER */
+    .contenedor-alas img.alas-izq{
+        margin-top: -5%;
+    }
+    
+    .contenedor-alas img.alas-der{
+        margin-top: -5%;
+        
+    }
+
+    .footer .patron-footer img {
+        width: 1700px;
+    }
+
+    .footer .contenedor-footer .caja-1 {
+        height: 80%;
+    }
+
+    .footer .contenedor-footer .caja-2 {
+        z-index: 100;
+        height: 58%;
+    }
+
+    .imagen-mitad-del-mundo img.monumento{
+        max-width: 110px;
+    }
+    
+    .contenedor-alas{
+        max-width: 380px;
+    }
+
+    .footer .imagen-izquierda-footer img {
+        max-width: 130px;
+    }
+
+    .footer .imagen-derecha-footer img {
+        max-width: 130px;
+    }
+}
