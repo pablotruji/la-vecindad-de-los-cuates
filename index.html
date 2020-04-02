@@ -9,8 +9,6 @@
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>    
     <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="css/estilos-home.css"/> 
-    <!-- PÁGINA DE ESTILO CDN DE MATERIALIZE -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 </head>
 <body>
     <!-- CONTENEDOR PRINCIPAL -->
@@ -47,23 +45,37 @@
                     <!-- LOGOTIPO PRINCIPAL-->
                     <div class="contenedor-logo-principal">
                         <!-- IMAGEN LOGOTIPO PRINCIPAL -->
-                        <a href="http://proy-web.vip" class="logo-principal">
-                            <img src="imagenes/Logotipo-Principal-480.svg" alt="La Vecidad de los Cuates">
-                        </a>
+                        <div>
+                            <a class="enlace" href="http://proy-web.vip">
+                                <img src="imagenes/Logotipo-Principal-480.svg" alt="La Vecidad de los Cuates">
+                            </a>
+                        </div>
                         <!-- CONTENEDOR BOTON EVENTOS -->
                         <div class="contenedor-botones-aside">
-                            <!-- IMAGEN EVENTOS -->
-                            <img src="imagenes/Eventos-480.svg" alt="">
+                            <a class="enlace" href="http://proy-web.vip/cuates-en-tu-evento">
+                                <img src="imagenes/Cuates-en-tu-evento-480.svg" alt="Cuates en tu evento">
+                            </a>
                         </div>  
                     </div>
                     <!-- CONTENEDOR LOGO LOS CUATES MÁS CHIDOS -->
                     <div class="contenedor-logo-2">
-                        <a href="https://proy-web.vip/cuates-mas-chidos" class="logo-2">
-                            <img src="imagenes/Logotipo-2-480.svg" alt="Los Cuates Más Chidos">
-                        </a>
+                        <div>
+                            <a class="enlace logo-2" href="https://proy-web.vip/cuates-mas-chidos">
+                                <img src="imagenes/Logotipo-2-480.svg" alt="Los Cuates Más Chidos">
+                            </a>
+                        </div>
+                         <!-- IMAGEN BOTON TOGGLE -->
+                        <div class="contenedor-boton-menu">
+                            <div class="menu-imagen">
+                                <img src="imagenes/imagen-menu-14.png" alt="">
+                            </div>
+                               <!-- BARRAS NAVEGADOR TOGGLE -->
+                            <div id="menu-principal-toggle" class="menu-principal-toggle">
+                            </div>
+                        </div>
                     </div>    
-                    <!-- NAVEGADOR PRINCIPAL -->
-                    <!-- BARRA MENU -->
+                    <!-- NAVEGADOR ESCRITORIO -->
+                    <!-- BARRA MENU ESCRITORIO-->
                     <div class="barra-menu">
                         <nav class="nav-barra-principal">      
                             <div> 
@@ -96,26 +108,12 @@
                                     <p>CONTÁCTANOS</p>
                                 </a>
                             </div> 
-                            <!-- <ul>
-                                <li><a href="https://proy-web.vip/quienes-somos.html">QUIENES SOMOS</a></li>
-                                <li><a href="https://proy-web.vip/vive-la-experiencia-cuate.html">VIVE LA EXPERIENCIA CUATE</a></li>
-                                <li><a href="https://proy-web.vip/contactanos.html">CONTÁCTANOS</a></li>
-                                <li><a href="https://proy-web.vip/menu-fullpage.html">CARTA MENÚ</a></li>
-                                <li><a href="https://proy-web.vip/ubicanos.html">UBÍCANOS</a></li>
-                            </ul> -->
                         </nav>
                     </div>               
-                    <!-- NAVEGADOR PRINCIPAL -->
-                    <!-- BARRAS NAVEGADOR TOGGLE -->
-                   <div id="menu-principal-toggle" class="menu-principal-toggle"></div>
-                   <!-- IMAGEN BOTON TOGGLE -->
-                   <div class="menu-imagen"><img src="imagenes/imagen-menu-14.png" alt=""></div>
-                    <!-- NAVEGADOR -->
+                    <!-- NAVEGADOR MOVIL-->
                     <nav id="nav-principal" class="nav-principal">
                         <img  class="marco-menu" src="imagenes/Imagen-marco-nav.png" alt="">
-
-                        <!-- LINKS SERVIDOR -->
-
+                        <!-- LINKS -->
                          <ul class="menu-principal">
                             <li class="menu-principal-item"><a href="https://proy-web.vip/quienes-somos.html">QUIENES SOMOS</a></li>
                             <li class="menu-principal-item"><a href="https://proy-web.vip/vive-la-experiencia-cuate.html">VIVE LA EXPERIENCIA CUATE</a></li>
@@ -123,73 +121,37 @@
                             <li class="menu-principal-item"><a href="https://proy-web.vip/menu-fullpage.html">CARTA MENÚ</a></li>
                             <li class="menu-principal-item"><a href="https://proy-web.vip/ubicanos.html">UBÍCANOS</a></li>
                         </ul>
-
-                        <!-- LINKS PARA CABLE ETHERNET -->
-                        
-                        <!-- <ul class="menu-principal">
-                            <li class="menu-principal-item"><a href="http://192.168.0.10/project/quienes-somos.html">QUIENES SOMOS</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.10/project/vive-la-experiencia-cuate.html">VIVE LA EXPERIENCIA CUATE</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.10/project/contactanos.html">CONTÁCTANOS</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.10/project/menu-fullpage.html">CARTA MENÚ</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.10/project/ubicanos.html">UBÍCANOS</a></li>
-                        </ul> -->
-
-                        <!-- LINKS PARA RED WIFI-->
-
-                        <!-- <ul class="menu-principal">
-                            <li class="menu-principal-item"><a href="http://192.168.0.9/project/quienes-somos.html">QUIENES SOMOS</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.9/project/vive-la-experiencia-cuate.html">VIVE LA EXPERIENCIA CUATE</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.9/project/contactanos.html">CONTÁCTANOS</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.9/project/menu-fullpage.html">CARTA MENÚ</a></li>
-                            <li class="menu-principal-item"><a href="http://192.168.0.9/project/ubicanos.html">UBÍCANOS</a></li>
-                        </ul> -->
-
-                        <!-- <ul class="menu-principal">
-                            <li class="menu-principal-item"><a href="http://127.0.0.1:5500/quienes-somos.html">QUIENES SOMOS</a></li>
-                            <li class="menu-principal-item"><a href="http://127.0.0.1:5500/vive-la-experiencia-cuate.html">VIVE LA EXPERIENCIA CUATE</a></li>
-                            <li class="menu-principal-item"><a href="http://127.0.0.1:5500/contactanos.html">CONTÁCTANOS</a></li>
-                            <li class="menu-principal-item"><a href="http://127.0.0.1:5500/menu-fullpage.html">CARTA MENÚ</a></li>
-                            <li class="menu-principal-item"><a href="http://127.0.0.1:5500/ubicanos.html">UBÍCANOS</a></li>
-                        </ul> -->
                     </nav> 
-                <!-- FIN CABEZERA -->         
-                <!-- CONTENENIDO PRINCIPAL -->
-                <!-- <main class="contenedor-main">
-                </main> -->
-
-                <!-- CARRUSEL -->
-                <!-- 
-                <div class="carrusel">
-                    <div class="contenedor-carrusel">
-                        <div class="carousel center-align">                   
-                            <a class="carousel-item" href="#"><img src="imagenes/Eventos-480.svg"></a>
-                            <a class="carousel-item" href="#"><img src="imagenes/Delivery-480.svg"></a>
-                            <a class="carousel-item" href="#"><img src="imagenes/Cuates-en-tu-evento-480.svg"></a>
-                            <a class="carousel-item" href="#"><img src="imagenes/Comentarios-480.svg"></a>
-                            <a class="carousel-item" href="#"><img src="imagenes/Reservas-480.svg"></a>
-                        </div>
-                    </div> 
-                </div>
-                 -->
                  <!-- FIN CONTENENIDO PRINCIPAL -->
                 <!-- SIDEBAR IZQUIERDA-->
-                <aside class="aside-izquierda">              
+                <aside class="aside-izquierda">    
                     <div class="contenedor-botones-aside">
-                        <a href="https://proy-web.vip/cuates-en-tu-evento.html">
-                            <img src="imagenes/Cuates-en-tu-evento-480.svg" alt="Toque de los cuates">
+                        <a class="enlace" href="http://proy-web.vip/cuates-en-tu-evento">
+                            <img src="imagenes/Cuates-en-tu-evento-480.svg" alt="Cuates en tu evento">
+                        </a>
+                    </div>           
+                    <div class="contenedor-botones-aside">
+                        <a class="enlace" href="https://proy-web.vip/cuates-en-tu-evento">
+                            <img src="imagenes/Eventos-480.svg" alt="Eventos">
                         </a>
                     </div>
                     <div class="contenedor-botones-aside">
-                        <img src="imagenes/Delivery-480.svg" alt="">
+                        <a class="enlace" href="https://proy-web.vip">
+                            <img src="imagenes/Delivery-480.svg" alt="Delivery">
+                        </a>
                     </div>
                 </aside>
                 <!-- SIDEBAR DERECHA -->
                 <aside class="aside-derecha">
                     <div class="contenedor-botones-aside">
-                        <img src="imagenes/Comentarios-480.svg" alt="">                        
+                        <a class="enlace" href="https://proy-web.vip/comentarios">
+                            <img src="imagenes/Comentarios-480.svg" alt="Comentarios">                        
+                        </a>    
                     </div>
                     <div class="contenedor-botones-aside">
-                        <img src="imagenes/Reservas-480.svg" alt="">
+                        <a class="enlace" href="https://proy-web.vip">
+                            <img src="imagenes/Reservas-480.svg" alt="Reservas">
+                        </a>
                     </div>
                 </aside>           
                 <!-- FOOTER -->
@@ -242,8 +204,6 @@
             </div>
         </div>
     </div>
-    <!-- SCRIPT CDN DE MATETIALIZE-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- SCRIPTS -->
     <script src="javascript/main.js"></script>
     <script src="javascript/nav.js"></script>
