@@ -23,10 +23,11 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;   
-    background: #E62256;
-    height: 100vh;
+    background-image: url(../imagenes/Contactanos/Background-480.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 16px; 
 }
 
 a{
@@ -38,19 +39,8 @@ a{
 /*=============== CONTENEDOR PRINCIPAL ===============*/
 /*===================================================*/
 .contenedor {
-    background-color: #fff;
-    background-image: url(../imagenes/Contactanos/Background-480.png);
-    background-position: center center;
-    background-repeat: repeat-y;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    /* background-color: lightpink; */
-    box-sizing: content-box;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
-
 }
 
 /*=========================== CORTINAS ========================== */
@@ -124,6 +114,12 @@ a{
 
 /*================= NAVEGADOR PRINCIPAL =================*/
 /*==================  BOTÓN MENÚ  =====================*/
+.contenedor-boton-menu{
+    position: relative;
+    width: auto;
+    margin-right: 20px;
+}
+
 .menu-principal-toggle{
     display:flex;
     grid-area: logo-2;
@@ -133,15 +129,11 @@ a{
     cursor: pointer;
     z-index: 800;
     position: absolute;
-    right: 45px;
-    top: 70px;
-}
-
-.menu-imagen{
-    grid-area: logo-2;
-    position: absolute;
-    top: 36px;
-    right: 14px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .menu-imagen img{
@@ -149,6 +141,11 @@ a{
 }
 
 /*======================BARRA DE MENÚ===================== */
+/* BARRA MENÚ ESCRITORIO */
+.barra-menu{
+    display: none;
+}
+
 .nav-principal{
     display: flex;
     position: fixed;
@@ -208,50 +205,43 @@ a{
 }
 
 .menu-principal a{
-    display: block;
     font-size: 10px;
     color: #fff;
-    width: 100%;
 }
 
 
-/* ==================== LOGOS ==================*/
+/* ==================== SECCIÓN LOGOS ==================*/
 
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
-.contenedor-logo-principal{
+.contenedor-logo-principal {
     grid-area: logo;
-    width: 100%;
-    height: 60px;
+    display: flex;
+	width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .contenedor-logo-principal img{
-    width: 110px;
-    margin-top: 2rem;
-    margin-left: 0.3rem;
-}
-
-/* ============ BOTÓN EVENTOS =============== */
-
-.contenedor-logo-principal .contenedor-botones-aside img{
-    width: 100%;
-    margin-left: 0.5rem;
-    margin-top: 3.0rem;
-
+    width: 80px;
 }
 
 /*==================== LOGOTIPO CUATES MÁS CHIDOS ==================*/
 .contenedor-logo-2{
     grid-area: logo-2;
+    display:flex;
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
-.contenedor-logo-2 img{
-    width: 160%;
-    height: auto;
-    margin-top: 10.5rem;
-    margin-left: -2.5rem;
+.contenedor-logo-2 .logo-2 img{
+    border-radius: initial;
 }
 
 /*===========================================================*/
@@ -346,31 +336,34 @@ a{
 .informacion-telefono p::first-line{
     color: #E62733;
 }
+
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
-.contenedor-botones-aside{
-    width: 115px;
-    /* border: 1px solid lightpink; */
-}   
+
+/* ======================== ASIDE GENERAL ENLACE ===============*/
+.enlace {
+	display: block;
+	border-radius: 100%;
+}
+
+.enlace img {
+	display: block;
+	width: 100px;
+	border-radius:100%;
+}
+
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
-    display: flex;
     grid-area: aside-derecha;
+    display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-end;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
 
-.aside-derecha .contenedor-botones-aside:first-child{
-    margin-left: 0;
-    margin-top: 0.5rem;
-}
-
-.aside-derecha .contenedor-botones-aside:last-child{
-    margin-left: 0.2rem;
-    margin-top: 2rem;
-}
 
 /*==================== ASIDE IZQUIERDA ==================*/
 .aside-izquierda{
@@ -378,17 +371,24 @@ a{
     grid-area: aside-izquierda;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
     flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 12px;
 
 }
-
 .aside-izquierda .contenedor-botones-aside:first-child{
-    margin-left: 0;
-    margin-top: 1rem;
+    display: none;
 }
 
 .aside-izquierda .contenedor-botones-aside:last-child{
-    margin-left: 0;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.aside-izquierda .contenedor-botones-aside:first-child{
+    margin-left: -10px;
+    margin-top: 20px;
 }
 /*===================================================*/
 /*==================== FOOTER ======================*/
@@ -399,9 +399,9 @@ a{
     grid-area: footer;
     width: 100%;
     height: 100%;
+    position: relative;
     justify-content: center;
     align-items: flex-end;
-    position: sticky;
 }
 
 .footer .contenedor-footer{
@@ -601,5 +601,308 @@ a{
         width: 40px;
         max-width: 70px;
         margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        background-image: url(../imagenes/Contactanos/Background-escritorio-02.png);
+    }
+
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:35%;
+        height:100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Cortina-escritorio-02.png);
+        width:35%;
+        height:100vh;
+        top: 0;
+        right: 0;
+    }
+
+    /*===================  GRILLA  ========================*/
+    .contenedor .contenedor-grid .grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "logo barra-menu logo-2"
+                             "aside-izquierda contenido-principal aside-derecha"
+                             "footer footer footer";
+
+    }
+    .barra-menu{
+        display: initial;
+        grid-area: barra-menu;
+        font-family: 'Mayan';
+    }
+
+    .barra-menu .nav-barra-principal{
+        height: 100%;
+    }
+
+    .barra-menu .nav-barra-principal {
+        display: flex;
+        width: 60vw;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        margin: auto;
+        /* background: red; */
+    }
+
+    .barra-menu .nav-barra-principal a{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;   
+        background: blue;
+    }
+
+    .barra-menu .nav-barra-principal a img{
+        position: relative;
+        width: 111px;
+        z-index: 200;
+        background: #320003;
+        transition: 0.3s ease-in;
+    }
+
+    .barra-menu .nav-barra-principal p{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 11px;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    /* FIN BARRA MENU */
+
+    /* QUITANDO MENÚ HAMBURGUESA */
+    .menu-imagen{
+        display: none;
+    }
+    .menu-principal-toggle{
+        display: none;
+    }
+
+    /* LOGOTIPOS */
+    .contenedor-logo-principal{
+        /* background:green; */
+        align-items: flex-start;
+    }
+
+    .contenedor-logo-principal .enlace img{
+        width: 130px;
+    }
+
+    .contenedor-logo-2{
+        align-items: center;
+        position: relative;
+    }
+
+    .contenedor-logo-2 .enlace img{
+        width: 130px;
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+
+    /* QUITANDO EL BOTON DE LA AREA DE LOGOTIPO */
+    .contenedor-logo-principal  .contenedor-botones-aside{
+        display: none;
+    }
+    
+    /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
+    .main {
+        grid-area: contenido-principal;
+        width: 100%;
+        height: 100%;
+        /* background: green; */
+    }
+
+    .main .contenido-principal {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: initial;
+        position: relative;
+        /* background: rgb(17, 142, 201); */
+        
+    }
+    .contenido-principal .contactanos-imagen-charo img {
+        width: 18%;
+        margin-top: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .contenido-principal .contenedor-informacion{
+        display: flex;
+        margin-top: 100px;
+        flex-direction: row;
+        /* background: green;  */
+    }
+
+    .contenido-principal .informacion-email {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 79%;
+        height: 200px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 1em; */
+        /* background: red; */
+        position: relative;
+    }
+
+    .contenido-principal .informacion-email img{
+        width: 100px;
+        height: auto;
+        position:absolute;
+        display: block;
+        right: 100px;
+    }   
+
+    .contenido-principal .informacion-email p{
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        /* margin-top: 10px; */
+    }   
+
+    .contenido-principal .informacion-telefono {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 81%;
+        height: 200px;
+        margin: auto;
+        justify-content: space-between;
+        /* background: pink; */
+        position: relative;
+    }
+
+    .contenido-principal .informacion-telefono img{
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: auto;
+        /* background:blue; */
+        position:absolute;
+        left: 100px;
+    }
+
+    .contenido-principal .informacion-telefono p{
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        /* margin-top: 10px; */
+    }
+
+
+
+    /* ASIDE */
+
+    .contenedor-botones-aside .enlace img{
+        width: 165px;
+    }
+
+    .aside-izquierda{
+        /* background: blue; */
+        align-items: center;
+        margin-left: initial;
+        position: relative;
+        /* background: blue; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside
+    {
+        position: absolute;
+    }
+    .aside-izquierda .contenedor-botones-aside:nth-child(1){
+        top: -10px;
+        /* left: 20px; */
+        z-index: 200;
+        display: initial;
+    }
+
+    .aside-izquierda .contenedor-botones-aside:nth-child(2){
+        top: 200px;
+        /* left: 20px; */
+    }
+
+    .aside-izquierda .contenedor-botones-aside:nth-child(3){
+        bottom: -80px;
+        right: -70px;
+        z-index: 200;
+    }
+
+    .aside-derecha{
+        /* background: green; */
+        align-items: flex-start;
+    }
+
+    .aside-derecha .contenedor-botones-aside:last-child {
+        /* background: blue; */
+        align-self: center;
+        margin-top: 80px;
+    }
+    
+    /* FOOTER */
+    .contenedor-alas img.alas-izq{
+        margin-top: -5%;
+    }
+    
+    .contenedor-alas img.alas-der{
+        margin-top: -5%;
+        
+    }
+
+    .footer .patron-footer img {
+        width: 1700px;
+    }
+
+    .footer .contenedor-footer .caja-1 {
+        height: 80%;
+    }
+
+    .footer .contenedor-footer .caja-2 {
+        z-index: 100;
+        height: 58%;
+    }
+
+    .imagen-mitad-del-mundo img.monumento{
+        max-width: 110px;
+    }
+    
+    .contenedor-alas{
+        max-width: 380px;
+    }
+
+    .footer .imagen-izquierda-footer img {
+        max-width: 130px;
+    }
+
+    .footer .imagen-derecha-footer img {
+        max-width: 130px;
     }
 }
