@@ -15,7 +15,6 @@
 }
 
 /*=============== ESTILOS GENERALES ===============*/
-
 *{
     padding: 0;
     margin: 0;
@@ -746,6 +745,7 @@ a{
     }
     .contenido-principal .contactanos-imagen-charo img {
         width: 18%;
+        min-width: 120px;
         margin-top: initial;
         position: absolute;
         top: 0;
