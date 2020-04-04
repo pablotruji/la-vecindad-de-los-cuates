@@ -105,9 +105,11 @@ body{
 
 .contenedor{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* border: 1px solid #fff ; */
-    margin: auto;
+	margin: auto;
+	position: relative;
+	/* background: red; */
 }
 
 /* ============================= REJILLA ================================== */
@@ -118,9 +120,11 @@ body{
 	grid-template-columns: repeat(36, 1fr);
 	grid-template-rows: repeat(18, 1fr);
 	/* border: 1px solid rgb(37, 238, 10); */
-	width: 95%;
-	height: 75vh;
+	width: 100%;
+	height: 80vh;
 	margin: auto;
+	/* background: blue; */
+	top: 40px;
 }
 
 /* =================== IMAGENES PA' COMPARTIR ======================== */
@@ -275,7 +279,8 @@ body{
 	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-jalapeno img{
-    width: 64%;
+	width: 64%;
+	max-width: 200px;
 }
 
 .slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz {
@@ -288,7 +293,8 @@ body{
 	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz img{
-    width: 77%;
+	width: 77%;
+	max-width: 210px;
 }
 
 .slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua {
@@ -301,14 +307,29 @@ body{
 	/* background: red; */
 }
 .slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua img{
-    width: 77%;
+	width: 77%;
+	max-width: 270px;
+}
+
+.slide-2 .contenedor .contenido .contenedor-imagen-chile{
+	display: none;
+	grid-area: 6/25/15/35;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+	/* background: red; */
+}
+
+.slide-2 .contenedor .contenido .contenedor-imagen-chile img{
+
 }
 
 /* ====================== IMAGENES SOPAS ==================================== */
 
 .slide-3 .contenedor .contenido .contenedor-imagen-sopa-azteca{
 	display: flex;
-	grid-area: 2/6/11/15;
+	grid-area: 2/3/11/12;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -320,7 +341,7 @@ body{
 
 .slide-3 .contenedor .contenido .contenedor-imagen-pozole-rojo{
 	display: flex;
-	grid-area: 8/20/17/29;
+	grid-area: 8/19/17/28;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -344,7 +365,7 @@ body{
 
 .slide-3 .contenido .contenedor-imagen-flecha-1{
 	display: flex;
-	grid-area: 9/6/12/8;
+	grid-area: 11/5/14/7;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -356,7 +377,7 @@ body{
 
 .slide-3 .contenido .contenedor-imagen-flecha-2{
 	display: flex;
-	grid-area: 11/28/13/31;
+	grid-area: 11/27/13/30;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -394,31 +415,33 @@ body{
 /* ===================== IMAGENES TACOS =========================== */
 .slide-4 .contenido .contenedor-imagen-tacos-carne{
 	display: flex;
-	grid-area: 14/28/6/37;
+	grid-area: 7/30/19/38;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-4 .contenido .contenedor-imagen-tacos-carne img{
-	width: 90%;
+.slide-4 .contenido .contenedor-imagen-tacos-carne img {
+	width: 100%;
+	max-width: 300px;
 }
 
 .slide-4 .contenido .contenedor-imagen-taco-sudadero{
 	display: flex;
-	grid-area: 11/19/18/27;
+	grid-area: 12/18/16/27;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-4 .contenido .contenedor-imagen-taco-sudadero img{
-	width: 60%;
+.slide-4 .contenido .contenedor-imagen-taco-sudadero img {
+	width: 55%;
+	max-width: 200px;
 }
 
 .slide-4 .contenido .contenedor-imagen-flecha-2{
 	display: flex;
-	grid-area: 6/30/13/32;
+	grid-area: 7/30/13/32;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -445,11 +468,11 @@ body{
 /* ======================  IMAGENES LOS MERO MERO ============================ */
 .slide-5 .contenido .contenedor-imagen-chimichanga{
 	display: flex;
-	grid-area: 2/1/6/7;
+	grid-area: 1/1/6/7;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 } 
 .slide-5 .contenido .contenedor-imagen-chimichanga img{
 	width: 100%;
@@ -458,16 +481,17 @@ body{
 
 .slide-5 .contenido .contenedor-imagen-alambre{
 	display: flex;
-	grid-area: 8/1/10/7;
+	grid-area: 7/1/12/7;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 
 } 
 .slide-5 .contenido .contenedor-imagen-alambre img{
 	width: 100%;
 	transform: scaleY(-1) rotateZ(180deg);
+	max-width: 350px;
 }
 
 .slide-5 .contenido .contenedor-imagen-burrito-cuate{
@@ -483,39 +507,76 @@ body{
 	width: 100%;
 }
 
-.slide-5 .contenido .contenedor-imagen-huarache{
+.slide-5 .contenido .contenedor-imagen-huarache {
 	display: flex;
-	grid-area: 9/28/19/29;
+	grid-area: 4/22/12/31;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
-
+	align-items: flex-start;
 } 
 .slide-5 .contenido .contenedor-imagen-huarache img{
-	width: 60%;
+	width: 75%;
 }
 
 .slide-5 .contenido .contenedor-imagen-supermachote{
 	display: flex;
-	grid-area: 9/28/19/29;
-	/* background: red; */
+	grid-area: 16/22/19/32;
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 } 
 .slide-5 .contenido .contenedor-imagen-supermachote img{
 	width: 60%;
 }
 
+.slide-5 .contenido .contenedor-imagen-flecha-1 {
+	display: flex;
+	grid-area: 15/22/20/34;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.slide-5 .contenido .contenedor-imagen-flecha-1 img{
+	width: 60%;
+	display: none;
+}
+
+.slide-5 .contenido .contenedor-imagen-flecha-2 {
+	display: flex;
+	grid-area: 15/22/20/34;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.slide-5 .contenido .contenedor-imagen-flecha-2 img{
+	width: 60%;
+	display: none;
+}
+
+.slide-5 .contenido .contenedor-imagen-flecha-3 {
+	display: flex;
+	grid-area: 15/22/20/34;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.slide-5 .contenido .contenedor-imagen-flecha-3 img{
+	width: 60%;
+	display: none;
+}
+
 /* ================= IMAGENES LAS ESTRELLAS ===================== */
 .slide-6 .contenido .contenedor-imagen-tabla-ranchera{
 	display: flex;
-	grid-area: 1/7/12/21;
+	grid-area: 2/6/12/20;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 } 
 .slide-6 .contenido .contenedor-imagen-tabla-ranchera img{
 	width: 100%;
@@ -841,14 +902,14 @@ body{
 
 .slide-9 .contenido .contenedor-imagen-costillas-cochi{
 	display: flex;
-	grid-area: 1/8/11/19;
+	grid-area: 2/8/11/19;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 } 
 .slide-9 .contenido .contenedor-imagen-costillas-cochi img{
-	width: 70%;
+	width: 65%;
 }
 
 .slide-9 .contenido .contenedor-imagen-flecha{
@@ -1248,9 +1309,10 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 } 
-.slide-12 .contenido .contenedor-imagen-corbatin-charro img{
-	width: 100%;
-	margin-top: -31px;
+.slide-12 .contenido .contenedor-imagen-corbatin-charro img {
+	width: 90%;
+	/* margin-top: -31px; */
+	max-width: 300px;
 }
 
 .slide-12 .contenido .contenedor-imagen-queretaro{
@@ -1263,6 +1325,7 @@ body{
 } 
 .slide-12 .contenido .contenedor-imagen-queretaro img{
 	width: 80%;
+	max-width: 320px;
 }
 
 .slide-12 .contenido .contenedor-imagen-cola-cao{
@@ -1275,6 +1338,7 @@ body{
 } 
 .slide-12 .contenido .contenedor-imagen-cola-cao img{
 	width: 80%;
+	max-width: 250px;
 }
 
 .slide-12 .contenido .contenedor-imagen-chanfle-chocolas{
@@ -1735,7 +1799,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.jalapeno-relleno{
 	position: absolute;
-	grid-area: 8 / 1 / 14 / 6;
+	grid-area: 8 / 2 / 12 / 8;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1753,7 +1817,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.flauta-maiz{
 	position: absolute;
-	grid-area: 12 / 9 / 18 / 14;
+	grid-area: 10 / 9 / 18 / 14;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1771,7 +1835,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.queso-fundido {
 	position: absolute;
-	grid-area: 4 / 21 / 8 / 26;
+	grid-area: 5 / 21 / 8 / 26;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1780,7 +1844,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.elote{
 	position: absolute;
-	grid-area: 1 / 25 / 10 / 30;
+	grid-area: 2 / 25 / 10 / 30;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1789,7 +1853,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.sincronizadas{
 	position: absolute;
-	grid-area: 3 / 32 / 10 / 37;
+	grid-area: 3 / 31 / 10 / 36;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1798,7 +1862,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.papa-chiguagua {
 	position: absolute;
-	grid-area: 11 / 32 / 14 / 37;
+	grid-area: 11 / 31 / 14 / 36;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -1827,14 +1891,14 @@ E07328
 
 .contenedor .contenido .contenedor-platos.pozole-blanco{
 	position: absolute;
-	grid-area: 2 / 16 / 7 / 22;
+	grid-area: 4 / 12 / 8 / 18;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.sopa-azteca{
 	position: absolute;
-	grid-area: 11 / 7 / 17 / 12;
+	grid-area: 12 / 7 / 16 / 12;
 	width: 100%;
 	height: auto;
 }
@@ -1848,7 +1912,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.consome-reina{
 	position: absolute;
-	grid-area: 2 / 26 / 7 / 31;
+	grid-area: 2 / 24 / 7 / 29;
 	width: 100%;
 	height: auto;
 }
@@ -1894,21 +1958,21 @@ E07328
 
 .contenedor .contenido .contenedor-platos.tacos{
 	position: absolute;
-	grid-area: 1 / 20 / 18 / 25;
+	grid-area: 2 / 20 / 18 / 25;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.tacos-cuates{
 	position: absolute;
-	grid-area: 1 / 30 / 6 / 36;
+	grid-area: 3 / 30 / 6 / 36;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.cochinita-pibil{
 	position: absolute;
-	grid-area: 6 / 20 / 17 / 26;
+	grid-area: 7 / 20 / 17 / 26;
 	width: 100%;
 	height: auto;
 }
@@ -1929,7 +1993,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.taco-carne-asada{
 	position: absolute;
-	grid-area: 5 / 26 / 10 / 31;
+	grid-area: 6 / 26 / 10 / 31;
 	width: 100%;
 	height: auto;
 }
@@ -1938,70 +2002,70 @@ E07328
 /* ======================= MERO MERO ============================ */
 .contenedor .contenido .contenedor-platos.chimichangas{
 	position: absolute;
-	grid-area: 1 / 6 / 10 / 13;
+	grid-area: 2 / 7 / 10 / 13;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.alambres{
 	position: absolute;
-	grid-area: 9 / 8 / 13 / 13;
+	grid-area: 9 / 7 / 13 / 12;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.chilaquies{
 	position: absolute;
-	grid-area: 13 / 2 / 16 / 9;
+	grid-area: 14 / 3 / 18 / 9;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.fajitas{
 	position: absolute;
-	grid-area: 13 / 12 / 14 / 18;
+	grid-area: 14 / 11 / 14 / 18;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.enchilada{
 	position: absolute;
-	grid-area: 8 / 14 / 14 / 19;
+	grid-area: 8 / 13 / 14 / 17;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.enchilada-tres-cuates{
 	position: absolute;
-	grid-area: 2 / 13 / 7 / 19;
+	grid-area: 3/ 13 / 7 / 19;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.enchilada-ranchera{
 	position: absolute;
-	grid-area: 10 / 18 / 15 / 24;
+	grid-area: 11 / 17 / 15 / 22;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.enmolada-pancho{
 	position: absolute;
-	grid-area: 5 / 26 / 10 / 31;
+	grid-area: 11 / 23 / 18 / 30;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.burrito{
 	position: absolute;
-	grid-area: 5 / 19 / 10 / 26;
+	grid-area: 6 / 17 / 10 / 24;
 	width: 100%;
 	height: auto;
 }
 
 .contenedor .contenido .contenedor-platos.burrito-cuates{
 	position: absolute;
-	grid-area: 2 / 21 / 10 / 28;
+	grid-area: 1 / 22 / 10 / 29;
 	width: 100%;
 	height: auto;
 }
@@ -2015,7 +2079,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.supermachote{
 	position: absolute;
-	grid-area: 12 / 24 / 16 / 31;
+	grid-area: 12 / 30 / 18 / 35;
 	width: 100%;
 	height: auto;
 }
@@ -2024,7 +2088,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.tabla-ranchera{
 	position: absolute;
-	grid-area: 12 / 7 / 16 / 13;
+	grid-area: 14 / 7 / 16 / 13;
 	width: 100%;
 	height: auto;
 }
@@ -2208,7 +2272,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.brownie-helado{
 	position: absolute;
-	grid-area: 2 / 20 / 8 / 25;
+	grid-area: 3 / 20 / 8 / 25;
 	width: 100%;
 	height: auto;
 }
@@ -2222,7 +2286,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.nieve-cuates{
 	position: absolute;
-	grid-area: 11 / 2 / 17 / 7;
+	grid-area: 12 / 3 / 17 / 8;
 	width: 100%;
 	height: auto;
 }
@@ -2235,11 +2299,16 @@ E07328
 }
 
 /* =================== TÍTULO PÁGINA ===================== */
-article img{
-    display: block;
-    margin: 0.5rem auto;
-    width: 20%;
-
+article img.titulo-pagina{
+    /* display: block; */
+    margin: auto;
+	width: 40%;
+	max-width:300px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 10px;
+	z-index: 1000;
 } 
 
 /* article.slide-10 img{
@@ -2251,6 +2320,9 @@ article img{
 
 .contenedor-titulos-pagina-doble{
 	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	width: 100%;
 }
 
 .contenedor-titulo-pagina-mariscos{
@@ -2468,4 +2540,36 @@ article img{
 .redes-sociales img{
     position: absolute;
     width: 40px;
+}
+
+
+/* ======================== CLASES DE FULLPAGES ========================*/
+/* 
+#fp-nav ul li a span{
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: orange;
+} */
+
+/*================= CLASES DE FULL PAGE ESTILOS =============== */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 10px;
+    /* bottom: 0; */
+	margin: auto;
+	display: none;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 10px;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right: 10;
+    border-width: 20px 0px 20px 20px;
+    border-color: transparent transparent transparent #fff;
 }
