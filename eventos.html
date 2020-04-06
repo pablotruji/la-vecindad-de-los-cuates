@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CUATES EN TU EVENTO</title>
+    <title>EVENTOS</title>
+    <!-- CND BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- CND JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- SCRIPT Y PÁGINAS DE ESTILO CDN DE FONTAWOSOME -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <!-- HOJAS DE ESTILO -->
-    <link rel="stylesheet" href="css/estilos-cuates-en-tu-evento.css"/> 
+    <link rel="stylesheet" href="css/estilos-eventos.css"/> 
 </head>
 <body>
     <!-- CONTENEDOR PRINCIPAL -->
@@ -25,46 +29,52 @@
             </div>
         </div>
         <!-- CONTENEDOR DE GRILLA -->
-        <div class="contenedor-grid">      
+        <div class="contenedor-grid">
             <!-- GRILLA -->
             <div class="grid">
                 <!-- CONTENIDO PRINCIPAL DE PÁGINA -->
                 <main class="main">
                     <div class="contenido-principal">
-                        <div class="contenedor-imagen-principal">
-                            <img src="imagenes/Toque-de-los-cuates/Toque-de-los-cuates_maquetacion-imagen.png" alt="">
-                        </div>
-                        <div class="contenedor-informacion">
-                            <p> Cubrimos de todo mi cuate <br>  
-                                Bautizos, matrimonios, conciertos,
-                                feestivales, convenciones, torneos
-                                gamer, torneos de lucha libre, la 
-                                fiesta del abuelito, quinceañeras, 
-                                despedida de soltero/a, divorcios, 
-                                navidad, día de los inocentes, el
-                                cumpleaños del chihuahua , pases 
-                                del niño, la Kermesse del chamaco
-                                y mucho más.  
-                                
-                            </p>
-                        </div>
-                        <div class="contenedor-informacion-imagen">
-                            <div class="contenedor-mas-info">
-                                <p>
-                                    PARA MÁS INFORMACIÓN 
-                                    LLÁMANOS 4514 117/118
-                                    O ESCRIBE A INFO@BAZFEX.COM
-                                    TENEM0S PAQUETES DESDE $12,00
-                                </p>
-                            </div>
-
-                            <div class="contenedor-imagen-evento">
-                                <img src="imagenes/Toque-de-los-cuates/Imagen-evento-480.png" alt="">
-                            </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2" style="display: flex; justify-content:space-evenly; align-items: center; width: 90%;">
+                                    <div>
+                                        <a href="https://www.instagram.com/lavecindad" target="_blank">
+                                            <img src="" class="profile-pic" style="border-radius:50%; width:80%;">
+                                        </a>
+                                    </div>
+                                    <h2 class="username" style="font-size: 0.8em; text-align: center; margin-bottom: .2rem;"></h2>
+                                </div>
+                                <div class="col-md-9">
+                                  <div>
+                                    <span class="number-of-posts" style="margin: auto;"></span> posts
+                                  </div>
+                                  <div>
+                                    <span class="followers"></span> <span>seguidores</span>
+                                  </div>   
+                                  <div>
+                                    <span class="following"></span> <span style="color: rgb(44, 44, 44);">seguidos</span>
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                  <div class="row">
+                                  </div>
+                                  <div class="row" style="margin-top:5px;">
+                                    <!-- <h4 class="name"></h4> -->
+                                  </div>
+                                  <div class="row">
+                                    <h4 class="biography"></h4>
+                                  </div>
+                                  <div class="row">
+                                    <!-- <p>POSTS</p> -->
+                                  </div>
+                                  <div class="row posts"></div>
+                                </div>
+                              </div>
                         </div>
                     </div>
-                </main> 
-                <!-- FINAL CONTENIDO PRINCIPAL DE PÁGINA -->
+                </main>
+                <!-- FIN CONTENIDO PRINCIPAL DE PÁGINA -->
                 <!-- CABEZERA -->   
                 <!-- LOGOTIPO PRINCIPAL + BOTON EVENTOS-->
                 <div class="contenedor-logo-principal">
@@ -81,10 +91,10 @@
                         </a>
                     </div>  
                 </div>
-                <!-- CONTENEDOR LOGO LOS CUATES MÁS CHIDOS + BOTON TOGGLE -->
+                <!-- CONTENEDOR LOGO LOS CUATES MÁS CHIDOS + BOTON TOOGGLE -->
                 <div class="contenedor-logo-2">
                     <div>
-                        <a class="enlace logo-2" href="https://proy-web.vip/pagina-en-desarollo">
+                        <a class="enlace logo-2" href="https://proy-web.vip/cuates-mas-chidos">
                             <img src="imagenes/Logotipo-2-480.svg" alt="Los Cuates Más Chidos">
                         </a>
                     </div>
@@ -99,7 +109,7 @@
                     </div>
                 </div>                        
                 <!-- NAVEGADOR ESCRITORIO -->
-                <!-- BARRA MENÚ ESCRITORIO-->
+                <!-- BARRA MENU ESCRITORIO-->
                 <div class="barra-menu">
                     <nav class="nav-barra-principal">      
                         <div> 
@@ -121,7 +131,7 @@
                             </a>
                         </div> 
                         <div>
-                            <a href="https://proy-web.vip/pagina-en-desarollo">
+                            <a href="https://proy-web.vip/ubicanos">
                                 <img src="imagenes/Imagen-marco.menu-04.png" alt="">
                                 <p>UBÍCANOS</p>
                             </a>
@@ -134,7 +144,7 @@
                         </div> 
                     </nav>
                 </div>
-                <!-- NAVEGADOR MÓVIL-->
+                <!-- NAVEGADOR MOVIL-->
                 <nav id="nav-principal" class="nav-principal">
                     <img  class="marco-menu" src="imagenes/Imagen-marco-nav.png" alt="">
                     <!-- LINKS -->
@@ -146,7 +156,7 @@
                         <li class="menu-principal-item"><a href="https://proy-web.vip/ubicanos">UBÍCANOS</a></li>
                     </ul>
                 </nav> 
-                <!-- FIN CABEZERA -->        
+                <!-- FIN CABEZERA -->         
                 <!-- SIDEBAR IZQUIERDA-->
                 <aside class="aside-izquierda">    
                     <div class="contenedor-botones-aside">
@@ -177,7 +187,7 @@
                             <img src="imagenes/Reservas-480.svg" alt="Reservas">
                         </a>
                     </div>
-                </aside>             
+                </aside>            
                 <!-- FOOTER -->
                 <footer class="footer">
                     <div class="contenedor-footer">
@@ -233,5 +243,6 @@
     <!-- SCRIPTS -->
     <script src="javascript/main.js"></script>
     <script src="javascript/nav.js"></script>
+    <script src="javascript/eventos-instagram.js"></script>
 </body>
 </html>

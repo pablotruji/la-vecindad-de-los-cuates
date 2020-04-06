@@ -81,7 +81,7 @@ a{
 }
 
 .contenedor .contenedor-guirnaldas img{
-    width: 1200px;
+    width: 1500px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -272,7 +272,7 @@ a{
 
 .contenido-principal .contactanos-imagen-charo img{
     display: block;
-    width: 60%;
+    width: 45%;
     max-width: 160px;
     margin: auto;
     margin-top: 60px;
@@ -328,7 +328,7 @@ a{
 .informacion-telefono p {
 	font-family: Woodstamp;
 	color: #fff;
-	font-size: 26px;
+	font-size: 22px;
 	text-align: center;
 }
 
@@ -524,17 +524,24 @@ a{
     align-self: flex-end;
 }
 
-.footer .imagen-derecha-footer{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+.footer .imagen-derecha-footer {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
 }
 
-.footer .imagen-derecha-footer img{
-    width: 26%;
-    max-width:100px;
-    position: absolute;
-    align-self: flex-end;
+.footer .imagen-derecha-footer img:nth-child(1) {
+	width: 20%;
+	max-width: 90px;
+	position: absolute;
+	align-self: flex-end;
+}
+
+.footer .imagen-derecha-footer img:nth-child(2) {
+	width: 26%;
+	max-width: 100px;
+	position: absolute;
+	align-self: flex-end;
 }
 
 /* ================ REDES SOCIALES ===================== */
@@ -868,11 +875,14 @@ a{
     }
     
     /* FOOTER */
+    
     .contenedor-alas img.alas-izq{
+        width: 25%;
         margin-top: -5%;
     }
     
     .contenedor-alas img.alas-der{
+        width: 25%;
         margin-top: -5%;
         
     }
@@ -905,4 +915,10 @@ a{
     .footer .imagen-derecha-footer img {
         max-width: 130px;
     }
+
+    /* .footer .imagen-derecha-footer {
+        display: flex;
+        width: 10%;
+        justify-content: center;
+    } */
 }

@@ -82,7 +82,7 @@ a{
 }
 
 .contenedor .contenedor-guirnaldas img{
-    width: 1200px;
+    width: 1500px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -220,7 +220,7 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 20px;
 }
 
@@ -254,11 +254,13 @@ a{
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    /* background: red; */
 }
 
-.main .contenido-principal {
-
+.main .contenido-principal.escritorio {
+    display: none;
 }
 
 /* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
@@ -370,7 +372,7 @@ a{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 12px;
+    /* margin-left: 12px; */
 
 }
 .aside-izquierda .contenedor-botones-aside:first-child{
@@ -698,6 +700,7 @@ a{
     .contenedor-logo-principal{
         /* background:green; */
         align-items: flex-start;
+        margin-left: 20px;
     }
 
     .contenedor-logo-principal .enlace img{
@@ -732,6 +735,14 @@ a{
         /* background: pink; */
     }
 
+    .main .contenido-principal.escritorio {
+        display: initial;
+    }
+
+    .main .contenido-principal.movil {
+        display: none;
+    }
+
     
     /* ASIDE */
 
@@ -745,6 +756,7 @@ a{
         margin-left: initial;
         position: relative;
         /* background: blue; */
+        margin-left: 12px;
     }
 
     .aside-izquierda .contenedor-botones-aside

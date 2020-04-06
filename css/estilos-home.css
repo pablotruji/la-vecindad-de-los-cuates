@@ -150,7 +150,7 @@ a{
 }
 
 .contenedor .contenedor-guirnaldas img{
-    width: 1200px;
+    width: 1500px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -289,7 +289,7 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 20px;
 }
 
@@ -684,6 +684,8 @@ a{
     .contenedor-logo-principal{
         /* background:green; */
         align-items: flex-start;
+        margin-left: 20px;
+
     }
 
     .contenedor-logo-principal .enlace img{
