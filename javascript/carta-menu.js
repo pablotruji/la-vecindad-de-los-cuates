@@ -6,8 +6,6 @@ const seccionesPagina = new fullpage('#fullpage',{
 	lockAnchors: false,
 	anchors:['pagina-1'],
 	navigation: false,
-	// navigationPosition: 'right',
-	// navigationTooltips: ['inicio', '1', '2', '3', '4'],
 	showActiveTooltip: true,
 	slidesNavigation: false,
     slidesNavPosition: 'bottom',

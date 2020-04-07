@@ -356,7 +356,7 @@ a{
     height: 100%;
     flex-direction: column-reverse;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-end;
     box-sizing: border-box;
 }
 
@@ -368,9 +368,7 @@ a{
     height: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 12px;
-
+    justify-content: flex-start;
 }
 .aside-izquierda .contenedor-botones-aside:first-child{
     display: none;

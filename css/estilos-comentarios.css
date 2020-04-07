@@ -259,80 +259,9 @@ a{
     /* background: red; */
 }
 
+
 .main .contenido-principal.escritorio {
     display: none;
-}
-
-/* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
-.contenido-principal .contactanos-imagen-charo {
-	width: 100%;
-	margin-bottom: 0.5em;
-}
-
-.contenido-principal .contactanos-imagen-charo img{
-    display: block;
-    width: 60%;
-    max-width: 160px;
-    margin: auto;
-    margin-top: 60px;
-}
-
-/* INFO MAIL */
-.contenido-principal .informacion-email {
-	display: flex;
-	flex-wrap: wrap;
-	width: 79%;
-	margin: auto;
-    justify-content: space-between;
-    margin-bottom: 1em;
-}
-
-.informacion-email img{
-    display: block;
-    width: 60px;
-    max-width: 70px;
-    height: 100%;
-    align-self: center;
-    margin: auto;
-}
-
-.informacion-email p{
-    font-family: Woodstamp;
-    color: #fff;
-    font-size: 26px;
-    text-align: center;
-}
-
-.informacion-email p span{
-    color: #E62733;
-}
-
-
-/* INFO TELEFONO */
-.contenido-principal .informacion-telefono {
-    display: flex;
-	flex-wrap: wrap;
-	width: 81%;
-	margin: auto;
-	justify-content: space-between;
-}
-
-.informacion-telefono img {
-	width: 78px;
-	max-width: 120px;
-	height: 100%;
-	/* margin-left: -23px; */
-}
-
-.informacion-telefono p {
-	font-family: Woodstamp;
-	color: #fff;
-	font-size: 26px;
-	text-align: center;
-}
-
-.informacion-telefono p::first-line{
-    color: #E62733;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
@@ -358,7 +287,7 @@ a{
     height: 100%;
     flex-direction: column-reverse;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-end;
     box-sizing: border-box;
 }
 
@@ -371,7 +300,7 @@ a{
     height: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* margin-left: 12px; */
 
 }
