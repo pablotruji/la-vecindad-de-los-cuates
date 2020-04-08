@@ -67,7 +67,7 @@ a {
 
 /* ==================== LOGOTIPO STICKY ========================= */
 .contenedor-logotipo-sticky{
-    width: 28%;
+    width: 22%;
     height: auto;
     max-width: 100px;
     position: fixed;
@@ -417,7 +417,7 @@ a {
 
 .contenedor-impuestos p {
 	width: 100%;
-	background: rgba(25, 2, 39, 0.6);
+	background: rgba(65, 0, 13, 0.5);
     font-family: Russian;
     font-size: 10px;
 	color: #fff;
@@ -426,26 +426,38 @@ a {
     margin: auto;
     padding: 0.3em 0.8em;
 }
-
-#carta-menu-4 .contenedor-impuestos p {
-	background: rgba(212, 65, 54, 0.8);
-	color: #fff;
+#carta-menu-3 .contenedor-impuestos p {
+	background: rgba(0, 48, 25, 0.7);
 }
 
 #carta-menu-4 .contenedor-impuestos p {
-	background: rgba(212, 65, 54, 0.8);
-	color: #fff;
+	background: rgba(175, 22, 11, 0.5);
 }
 
 #carta-menu-5-ensaladas .contenedor-impuestos p {
-	background: rgba(0, 59, 25, 0.8);
-	color: #fff;
+	background: rgba(124, 0, 87, .7);
 }
 
 #carta-menu-5-tacos .contenedor-impuestos p  {
-    background: rgba(212, 65, 54, 0.8);
-    color: #fff;
+    background: rgba(65, 0, 13, 0.5);
 }
+
+#carta-menu-7 .contenedor-impuestos p  {
+    background: rgba(75, 38, 97, 0.7);
+}
+
+#carta-menu-8 .contenedor-impuestos p  {
+    background: rgba(65, 0, 13, 0.5)
+}
+
+#carta-menu-11 .contenedor-impuestos p  {
+    background: rgba(65, 0, 13, 0.5);
+}
+
+#carta-menu-13 .contenedor-impuestos p  {
+    background: rgba(65, 0, 13, 0.5);
+}
+
 
 
 /* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
@@ -897,8 +909,8 @@ a {
     position: absolute;
     color: #fff;
     font-family: 'Rye', cursive;
-    font-size: 20px;
-    top: 5%;
+    font-size: 17px;
+    top: 10px;
     text-transform: uppercase;
     background: rgb(208, 128, 33);
     line-height: 90%;
@@ -915,7 +927,7 @@ a {
 }
 
 .contenedor-info-producto-inferior .titulo{
-    left: 5%;
+    left: 30px;
 }
 
 .contenedor-info-producto-intermedio .titulo {
@@ -947,13 +959,13 @@ a {
     color: #fff;
     font-family: bison;
     font-size: 15px;
-    top: 13%;
+    top: 32px;
     text-transform: uppercase;
     background:#633180;
     line-height: 90%;
     padding: 0.3em;
     width: 150px;
-    left: 6%;
+    left: 20px;
 }
 
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .titulo{
@@ -1359,7 +1371,6 @@ a {
     position: initial;
 }
 
-
 /* =============================================================== */
 /* ======== ESTILOS PARTICULARES DE DESCRIPCIÓN DE PLATOS =======*/
 
@@ -1373,9 +1384,7 @@ a {
     font-family: Mayan;
 }
 /* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ==========*/
-
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .descripcion{
-    /* font-size: 15px; */
     top: 30%;
 }
 
@@ -1390,22 +1399,9 @@ a {
 }
 
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
-.contenedor-ensaladas-tacos .contenedor-info-producto-superior .descripcion{
-    /* width: 48%; */
-}
-.contenedor-ensaladas-tacos .contenedor-info-producto-superior span{
-     background: rgba(124, 0, 87, .7); 
-}
-
-.tacos .contenedor-info-producto-superior span{
-    background: rgba(0, 128, 68, .7); 
-}
-
-
-
-
-.contenedor-ensaladas-tacos .contenedor-info-producto-inferior span{
-    background: rgba(255, 73, 1, 0.4); 
+.tacos .contenedor-info-producto-superior span,
+.tacos .contenedor-info-producto-inferior span{
+    background: rgba(65, 0, 13, 0.5); 
 }
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
@@ -1413,63 +1409,36 @@ a {
     background: rgba(70, 25, 11, 0.7);
 }
 
-.contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion{
-    /* width: 53%; */
-}
-
 .contenedor-los-mero-mero-2 .contenedor-info-producto-superior .descripcion{
     top: 30%;
-    /* width: 53%; */
 }
-
-.contenedor-los-mero-mero-2 .contenedor-info-producto-inferior  .descripcion{
-    /* width: 53%; */
-}
-
 .contenedor-los-mero-mero-6 .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .descripcion{
     width: 105%;
 }
-
-
 /* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
-.contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion{
-    /* width: 50%; */
-    /* font-size: 11px; */
-}
 
 .contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion{
     width: 50%;
     font-size: 11px;
 }
-
 .contenedor-las-estrellas-1 span{
     background: rgba(75, 38, 97, 0.7);
 }
 
 /* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
-
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
-    /* width: 50%; */
     top: 30%;
 }
 
 /* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
-.contenedor-pechugas-pio-pio-1 .contenedor-info-producto-superior .descripcion
-{
+.contenedor-pechugas-pio-pio-1 .contenedor-info-producto-superior .descripcion{
     top: 35%;
 }
 
 /* ================== NOVENA SECCIÓN - Y EL PUERCO ============ */
 
-.contenedor-y-el-puerco-1 .contenedor-info-producto-intermedio .descripcion{
-    /* width: 52%; */
-}
 
 /* ================= DÉCIMA SECCIÓN - MARISCOS ============== */
-
-.contenedor-mariscos-1 .descripcion{
-    /* width: 50%; */
-}
 
 /* ===== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ===== */
 
@@ -1560,11 +1529,11 @@ a {
 
 .descripcion-precio-varios-sin-imagen {
 	display: flex;
-	width: 125%;
+	width: 150%;
 	font-family: 'Bison';
 	color: #fff;
-	font-size: 14px;
-	margin-left: -20px;
+	font-size: 16px;
+	margin-left: -25%;
     margin-top: 10px;
     justify-content: center;
 }
@@ -1590,8 +1559,7 @@ a {
 .descripcion-precio-varios p,
 .descripcion-precio-varios-sin-imagen p,
 .descripcion-precio-varios-especial-sin-imagen p{
-    text-align: start;
-    align-self: flex-end;
+    text-align: end;
 }
 
 .descripcion-precio div{
@@ -1810,127 +1778,158 @@ a {
 /* ==================== MENU INFANTIL ================================*/
 /* ================================================================= */
 .menu-infantil {
-	width: 80%;
+    width: 100%;
+    height: 100vh;
 	margin: auto;
-	/* background: red; */
-	max-width: 650px;
+}
+
+.contenedor-menu-infantil {
+    display: flex;
+	align-items: center;
+    height: 85%;
+    position: relative;
+    /* background: green; */
+}
+
+.contenedor-menu-infantil .contenedor-platos{
+    display: flex;
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    /* background: red; */
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*=============== IMAGENES ===================*/
-
-.imagenes-parte-superior{
-    display: flex;
-    width: 100%;
-    height: auto;
+.contenedor-rayuela{
+    position: absolute;
+    width: 26%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     margin: auto;
-    margin-top: 2.5em;
 }
 
 .contenedor-rayuela img {
-	width: 150%;
-	max-width: 120px;
-	min-width: 34px;
-}
-
-.contenedor-mariachi-calavera img{
-    width: 120%;
-    margin-left: 1em;
-}
-
-.imagenes-parte-inferior-1{
-    display: flex;
-    width: 80%;
-    height: auto; 
-    justify-content: center;
-    margin: auto;
-    margin-top: -3em;
-}
-
-.contenedor-chavo img {
-	display: block;
-	width: 80%;
-	margin: auto;
-	margin-top: 50%;
+    display: block;
+	width: 55%;
 	max-width: 130px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor-mariachi-calavera {
+	position: absolute;
+	width: 25%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: -24%;
+	margin: auto;
+}
+
+.contenedor-mariachi-calavera img {
+	display: block;
+	width: 45%;
+	max-width: 130px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.contenedor-chavo{
+    position: absolute;
+    width: 26%;
+    left: 0;
+    bottom: 0;
+}
+.contenedor-chavo img {
+    display: block;
+	width: 80%;
+	max-width: 130px;
+	margin: auto;
+}
+
+.contenedor-coco{
+    position: absolute;
+    width: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .contenedor-coco img {
-	display: block;
-	width: 90%;
+    display: block;
+	width: 100%;
+	max-width: 130px;
 	margin: auto;
-	margin-top: -0.8em;
-	max-width: 142px;
 }
 
-.contenedor-balero img {
-	display: block;
-	width: 73%;
-	margin: auto;
-	margin-top: 10%;
-	max-width: 160px;
-}
-
-.imagenes-parte-inferior-2 {
-	display: flex;
-	width: 90%;
-	height: auto;
-	justify-content: center;
-	margin: auto;
-	margin-top: -2em;
-}
-
-.contenedor-pinata img {
-    display:block;
-    width: 70%;
-    margin-top: 40%;
+.contenedor-spedy{
+    position: absolute;
+    width: 26%;
+    right: 0;
+    bottom: 0;
 }
 
 .contenedor-spedy img {
-    display:block;
-    width: 70%;
-    margin: auto;
-    margin-top: 30%;
+    display: block;
+	width: 95%;
+	max-width: 130px;
+	margin: auto;
 }
 
-.contenedor-nono img {
+/* .contenedor-nono img {
+    position: absolute;
     width: 90%;
-}
+} */
 
 /* ========== CONTENEDORES DESCRIPCIÓN PLATOS ============= */
 
 .contenido-1{
-    width: 80%;
+    width: 100%;
+    display: flex;
+    /* background: red; */
 }
 
 .contenido-2{
-    width: 80%;
+    width: 100%;
+    display: flex;
+    /* background: green; */
 }
 
 /* ============ TITULOS =================== */
 
-.contenido-1 .contenido-platos{
+.contenido-1 .contenido-platos,
+.contenido-2 .contenido-platos{
     width: 100%;
-    margin-bottom: 1.5em;
-    transform: rotateZ(-10deg);
+    margin-bottom: 0.5em;
+    transform: rotateZ(-5deg);
 }
 
-.contenido-2 .contenido-platos {
-	width: 100%;
-	margin-bottom: 2.5em;
-	transform: rotateZ(10deg);
-}
-
+.contenido-1 .contenido-platos:nth-child(2),
 .contenido-2 .contenido-platos:nth-child(2){
-    margin-right: 10px;
+    transform: rotateZ(5deg);
 }
+
+
 
 .contenido-platos h2{
-    width: 70%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 18px;
     text-align: center;
     margin: auto;
     color: #fff;
-    margin-bottom: 0.4em;
+    margin-bottom: 1em;
     font-family: 'Rye', cursive;
 }
 
@@ -1939,13 +1938,13 @@ a {
     padding: 4px;
 }
 
-.contenido-platos:nth-child(2) h2 span{
-    background: #E55B2B;
+.contenido-1 .contenido-platos:nth-child(2) h2 span{
+    background: #E12060;
     padding: 4px;
 }
 
 .contenido-2 .contenido-platos:nth-child(1) h2 span{
-    background: #E12060;
+    background: #E55B2B;
     padding: 4px;
 }
 
@@ -1971,12 +1970,12 @@ a {
 }
 
 .contenido-1 .contenido-platos:nth-child(2) p span{
-    background: #EE8E22;
+    background: #E55944;
     padding: 2px;
 }
 
 .contenido-2 .contenido-platos:nth-child(1) p span{
-    background: #E55944;
+    background: #EE8E22;
     padding: 1px;
 }
 
@@ -1986,6 +1985,14 @@ a {
 }
 
 
+/* ============= MENÚ INFATIL PRECIO ================== */
+
+p.menu-infantil-precio {
+	font-family: 'Mayan';
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin-top: 0.7em;
+}
 /* ============================================================================== */
 /* ============================ MENÚ EXTRAS ==================================== */
 /* ============================================================================ */
@@ -2268,7 +2275,6 @@ a {
 	width: 80%;
 }
 
-
 /* =================================================================== */
 /* ========== TERCERA SECCIÓN DE MENÚ LICORES BOTELLAS ============= */
 /* ================================================================= */
@@ -2312,12 +2318,22 @@ a {
 /* ========================== BEBIDAS ============================ */
 /* ============================================================== */
 
-.contenedor-menu-bebidas{
+.contenedor-menu-bebidas {
+    display: flex;
+	width: 100%;
+	max-width: 600px;
+    height: 100vh;
+    margin-top: 2em;
+    /* align-items: center; */
+}
+
+.contenedor-menu-bebidas .contenedor {
+    display: flex;
+    flex-direction: column;
+	height: 70vh;
+	margin: auto;
     width: 90%;
-    max-width: 600px;
-    height: auto;
-    margin: auto;
-    margin-top: 7em;
+    /* border: 1px solid #fff; */
 }
 
 .contenedor-menu-bebidas .contenedor-1, 
@@ -2325,34 +2341,23 @@ a {
 .contenedor-menu-bebidas .contenedor-3, 
 .contenedor-menu-bebidas .contenedor-4{
     width: 100%;
-    height: 90px;
+    height: auto;
     display: flex;
-    /* border: 1px solid #fff; */
     font-family: 'Rye', cursive;
-    font-size: 10px;
+    font-size: 9px;
     color:#BB163C;
     margin: auto;
     justify-content: space-around;
     text-align: center;
     line-height: 1.5em;
+    margin-bottom: 20px;
 }
 
 .contenedor-menu-bebidas .contenedor-1 h2, 
 .contenedor-menu-bebidas .contenedor-2 h2, 
 .contenedor-menu-bebidas .contenedor-3 h2, 
 .contenedor-menu-bebidas .contenedor-4 h2{
-    margin-bottom: 0.3em;
-}
-
-.contenedor-menu-bebidas .contenedor-2{
-    width: 80%;
-    /* justify-content: space-between; */
-}
-
-.contenedor-menu-bebidas .contenedor-3{
-    width: 90%;
-    height: 60px;
-    /* justify-content: space-between; */
+    margin-bottom: 0.4em;
 }
 
 .contenedor-menu-bebidas .contenedor-4{
@@ -2368,49 +2373,23 @@ a {
     color: #03582D;
 }
 
-.contenedor-menu-bebidas .contenedor-1 .bebida:nth-child(2){
-    /* align-self: flex-end; */
-}
-
-.contenedor-menu-bebidas .contenedor-2 .bebida:nth-child(1){
-    align-self: flex-start;
-}
-
-.contenedor-menu-bebidas .contenedor-2 .bebida:nth-child(2){
-    align-self: flex-start;
-}
-
 .contenedor-menu-bebidas .jugos {
-    display: flex;
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	width: 100%;
-	height:250px;
-    align-self: center;
-    justify-content: center;
+	height: 100%;
+	align-self: center;
+	justify-content: space-evenly;
 }
 
-.contenedor-menu-bebidas .jugos div{
-    position: absolute;
+.contenedor-menu-bebidas .imagen-jugo {
+	width: 75%;
+	align-self: center;
 }
 
-.contenedor-menu-bebidas .jugos div:nth-child(1){
-    top:0;
-    /* right: 22px; */
-}
-.contenedor-menu-bebidas .jugos div:nth-child(2) {
-	top: 25%;
-	/* right: 32px; */
-	line-height: 1.5em;
-}
-.contenedor-menu-bebidas .jugos div:nth-child(3){
-    top:43%;
-    /* right: 22px; */
-	line-height: 1.5em;
-}
-.contenedor-menu-bebidas .jugos div:nth-child(4){
-    bottom:25%;
-    /* right: 10px; */
-	line-height: 1.5em;
+.contenedor-menu-bebidas .imagen-jugo img{
+    width:70%;
 }
 
 .contenedor-menu-bebidas .jugos .titulo h2 {
@@ -2431,14 +2410,7 @@ a {
     font-family: 'Mayan';
     font-size: 20px;
     color: #812367;
-
 }
-
-.contenedor-menu-bebidas .contenedor-4 img {
-    width: 40%;
-    height: 50%;
-}
-
 
 /* ========== SLIDE 2 BEBIDAS============= */
 
@@ -2606,6 +2578,21 @@ a {
 /* ============================================= */
 
 @media screen and (min-width: 375px) and (min-height: 667px){
+    /* lOGTIPO */
+    .contenedor-logotipo-sticky {
+        width: 28%;
+    }
+    /* TÍTULO PLATOS */
+    .contenedor-info-producto .titulo {
+        font-size: 20px;
+    }
+    
+    /* SUBTÍTULO */
+    .contenedor-pa-compartir-1 .subtitulo {
+        left: 25px;
+    }
+
+
     .descripcion span {
         /* background: rgba(10, 201, 35, 0.5); */
     }   
@@ -2653,9 +2640,19 @@ a {
     .contenedor-4 .contenedor-iconos-titulo {
         margin-top: 0.7em;
     }
+
+    /* MENÚ INFANTIL */
+    .contenido-1 .contenido-platos, .contenido-2 .contenido-platos {
+        margin-bottom: 1.5em;
+    }
 }
 
 @media screen and (min-width: 412px) and (min-height: 736px){
+    /* SUBTÍTULO */
+    .contenedor-pa-compartir-1 .subtitulo {
+        left: 35px;
+    }
+
     .descripcion span {
         /* background: rgba(10, 201, 35, 0.5); */
     }   
@@ -2703,6 +2700,11 @@ a {
 
     .contenedor-4 .contenedor-iconos-titulo {
         margin-top: 0.7em;
+    }
+
+     /* MENÚ INFANTIL */
+     .contenedor-menu-infantil .contenedor-platos {
+        justify-content: space-evenly;
     }
 
 }
@@ -2760,9 +2762,6 @@ a {
 }
 
 @media screen and (min-width: 667px) and (min-height: 375px){
-    .descripcion span {
-        /* background: rgba(10, 201, 35, 0.5); */
-    }   
     .descripcion {
         font-size: 13px;
         width: 48%;
