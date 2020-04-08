@@ -458,6 +458,10 @@ a {
     background: rgba(65, 0, 13, 0.5);
 }
 
+#carta-menu-14 .contenedor-impuestos p  {
+    background: rgba(21, 11, 51, 0.75);
+}
+
 
 
 /* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
@@ -729,7 +733,7 @@ a {
 }
 
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-inferior img{
-    width: 55%;
+    width: 50%;
     max-width: 315px;
     transform: rotateZ(13deg);
 }
@@ -820,6 +824,39 @@ a {
 
 /* =========== TRIGÉSIMA SECCIÓN - LICORES =================*/
 
+/* IMÁGENES EXTRA LICORES*/
+.contenedor-licores-1 .contenedor-info-producto-inferior .imagen-extra-licor,
+.contenedor-licores-6 .contenedor-info-producto-inferior .imagen-extra-licor{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.contenedor-licores-3 .contenedor-info-producto-superior .imagen-extra-licor{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.contenedor-licores-1 .contenedor-info-producto-inferior .imagen-extra-licor img.imagen-licor, 
+.contenedor-licores-3 .contenedor-info-producto-superior .imagen-extra-licor img.imagen-licor, 
+.contenedor-licores-6 .contenedor-info-producto-inferior .imagen-extra-licor img.imagen-licor {
+	width: 30%;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	bottom: initial;
+	margin: auto;
+	left: 0;
+}
+
+.contenedor-licores-3 .contenedor-info-producto-superior .imagen-extra-licor img.imagen-licor{
+    width: 13%;
+}
+
+/* FIN SECCIÓN IMÁGENES EXTRA LICORES */
 
 .contenedor-licores-1 .contenedor-info-producto-superior img{
     width: 26%;
@@ -1222,8 +1259,6 @@ a {
 
 
 /* ============ TRIGÉSIMA SECCIÓN - LICORES 6 ============= */
-
-
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-superior .titulo { 
     width: 100%;
     background:transparent;
@@ -1247,7 +1282,7 @@ a {
     background:transparent;
     right: 22%;
     top: 50%;
-    color: rgb(255, 0, 149);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-2 .contenedor-info-producto-inferior .titulo{ 
@@ -1255,7 +1290,7 @@ a {
     background:transparent;
     left: 22%;
     top: 50%;
-    color: rgb(255, 0, 149);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-superior .titulo{ 
@@ -1271,7 +1306,7 @@ a {
 	background: transparent;
 	left: 49%;
 	top: 40%;
-	color: rgb(255, 0, 149);
+	color: #B43576;
 	line-height: 1;
 }
 
@@ -1281,7 +1316,7 @@ a {
     right: 20%;
     top: 50%;
     line-height: 100%;
-    color: #00DBC6;
+    color: #008E84;
 }
 
 .contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-inferior .titulo{ 
@@ -1290,7 +1325,7 @@ a {
     left: 22%;
     top: 40%;
     line-height: 100%;
-    color: rgb(255, 0, 149);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-superior .titulo{ 
@@ -1307,7 +1342,7 @@ a {
     background:transparent;
     left: 23%;
     top: 50%;
-    color: rgb(255, 0, 149);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-superior .titulo{ 
@@ -1316,7 +1351,7 @@ a {
     right: 21%;
     top: 50%;
     line-height: 100%;
-    color: rgb(255, 0, 34);
+    color: #B43576
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-inferior .titulo{ 
@@ -1328,7 +1363,7 @@ a {
 
 }
 #carta-menu-14 .titulo span{
-    background: indigo;  
+    background: rgba(21, 11, 51, 0.75);  
 }
 
 /* =========================================================================== */
@@ -1454,10 +1489,42 @@ a {
 	align-items: center;
 }
 
+
+#carta-menu-14 .contenedor-licores-1 .contenedor-info-producto-superior .descripcion,
+#carta-menu-14 .contenedor-licores-3 .contenedor-info-producto-superior .descripcion,
+#carta-menu-14 .contenedor-licores-4 .contenedor-info-producto-superior .descripcion
+ {
+	align-items: flex-start;
+}
+
 #carta-menu-14 .descripcion  span {
     background: none;
   
 }
+/* ETIQUETA VERSIONES COCTELES */
+.contenedor-versiones-cocteles{
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: 10px;
+}
+
+.contenedor-versiones-cocteles p {
+	width: 100%;
+	font-family: Russian;
+	font-size: 10px;
+	color: #BCC22E;
+	text-align: right;
+	letter-spacing: 0.1em;
+	margin: auto;
+	
+}
+
+.contenedor-versiones-cocteles p span{
+    background: rgba(21, 11, 51, 0.75);
+    padding: 0.3em 0.8em;
+}
+
 /* ============ CUATRIGÉSIMA SECCIÓN - BEBIDAS ============*/
 
 /* ====================================================================== */
@@ -1620,6 +1687,55 @@ a {
 .descripcion-precio-doble-sin-imagen div p span{
     text-align:center;
     font-size: 28px;
+}
+
+
+
+
+/* PRECIOS LICORES VARIOS */
+
+.precio-licores-varios{
+
+}
+
+.precio-plato-varios-licores{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    justify-content: space-around;
+    padding: 0.6em;
+}
+
+.precio-plato-varios-licores .contenedor-precio{
+    display: flex;
+    margin-bottom: 0.1em;
+    justify-content: space-evenly;
+}
+
+.precio-plato-varios-licores .tipo{
+    display: flex;
+    font-family: Bison;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px #fff solid;
+    margin-right: 0.5em;
+    padding: 0 0.5em;
+ }
+
+.precio-plato-varios-licores h5{
+    text-align: end;
+    color: #fff;
+    width: 60px;
+ }
+
+.precio-plato-varios-licores p{
+   color: #fff;
+   font-size: 24px;
+   align-self: center;
 }
 
 /* ================= ETIQUETA PICANTE ======================= */
