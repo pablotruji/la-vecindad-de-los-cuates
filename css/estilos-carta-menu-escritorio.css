@@ -107,6 +107,12 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+.slide-14{
+	background-image: url('../imagenes/Imagenes-menu/Bebidas/Background-bebidas-escritorios.png');
+    background-size: cover;
+    background-position: center;
+}
 .contenedor{
     width: 100%;
     height: 100vh;
@@ -670,30 +676,327 @@ body{
 	color: #fff;
 } 
 
+/* ========================= ESTRUCTURA BEBIDAS =================================== */
 
-/* DESCRIPCIÓN Y PRECIO ESTILOS PARTICULARES*/
+.slide-14 .contenedor .contenido {
+	top: initial;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-bebidas {
+	display: flex;
+	grid-area: 1/3/7/10;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-bebidas img{
+	width: 60%;
+	max-width: 180px;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-superior {
+	display: flex;
+	grid-area: 1/17/7/37;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-superior img{
+	width: 81%;
+	max-width: 691px;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-jugo {
+	display: flex;
+	grid-area: 10/28/19/35;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-jugo img{
+    width: 43%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-titulo-bebidas {
+	display: flex;
+	grid-area: 4/14/7/22;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-titulo-bebidas img{
+	width: 70%;
+	max-width: 240px;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-limon {
+	display: flex;
+	grid-area: 13/19/15/22;
+	/* background: skyblue; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-limon img{
+    width: 60%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-limon-entero {
+	display: flex;
+	grid-area: 6/22/8/24;
+	/* background: palevioletred; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-limon-entero img{
+    width: 60%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-sombrilla-1 {
+	display: flex;
+	grid-area: 16/16/19/18;
+	/* background: hotpink; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-sombrilla-1 img{
+    width: 95%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-sombrilla-2 {
+	display: flex;
+	grid-area: 10/21/13/23;
+	/* background: pink; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-sombrilla-2 img{
+    width: 85%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-cervezas {
+	display: flex;
+	grid-area: 6/1/18/10;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-adorno-cervezas img{
+    width: 92%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-stella {
+	display: flex;
+	grid-area: 5/8/8/11;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-stella img{
+    width: 70%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-budweiser {
+	display: flex;
+	grid-area: 8/9/10/12;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-budweiser img{
+    width: 90%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-club {
+	display: flex;
+	grid-area: 10/10/12/14;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-club img{
+    width: 60%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-corona {
+	display: flex;
+	grid-area: 12/10/14/13;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-corona img{
+    width: 80%;
+}
+
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-pilsener {
+	display: flex;
+	grid-area: 15/9/17/12;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-14 .contenedor .contenido .contenedor-imagen-logotipo-pilsener img{
+    width: 80%;
+}
+
+.aclaracion {
+	position: relative;
+	grid-area: 18/9/19/16;
+	font-size: 21px;
+	font-family: 'Bison';
+	color: #F8E825;
+}
+
+h2.aclaracion span{
+    background: #000;
+    padding: 0.1em 1em;
+}
+
+.contenedor-las-chelas {
+	position: relative;
+	grid-area: 7/2/19/12;
+    display: flex;
+	flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.contenedor-las-chelas h2 {
+	color: #fff;
+	font-family: 'Rye', cursive;
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+
+.contenedor-las-chelas h2 span{
+    background: #000;
+    padding: 0.3em;
+}
+
+.contenedor-las-chelas p{
+    margin-left: 4em;
+    margin-bottom: 0.5em;
+}
+
+.contenedor-las-chelas p .color {
+	background: red;
+	font-size: 20px;
+	font-family: 'Bison';
+	color: #fff;
+	padding: 0.1em 0.3em;
+}
+
+.contenedor-las-chelas p span {
+	font-size: 23px;
+	font-weight: 500;
+}
+
+.bebida p {
+	font-family: 'Mayan';
+	font-size: 25px;
+	color: #03582D;
+	font-weight: bold;
+}
+
+.bebida {
+	width: 100%;
+	height: auto;
+	font-family: 'Rye', cursive;
+	font-size: 13px;
+	color: #BB163C;
+	text-align: center;
+	/* background: red; */
+}
+
+.bebida.limonada-coco{
+	grid-area: 5/23/8/27;
+	color: #8C1343
+}
+.bebida.agua-sin-gas{
+	grid-area: 4/31/7/35;
+	color: #8C1343
+}
+.bebida.agua-gas{
+	grid-area: 7/27/10/31;
+}
+.bebida.te-helado{
+	grid-area: 8/23/11/26;
+	color: #8C1343
+}
+.bebida.jugos{
+	grid-area: 7/31/9/35;
+}
+.bebida.limonada{
+	grid-area: 11/23/13/27;
+}
+.bebida.fruit{
+	grid-area: 9/29/12/34;
+}
+.bebida.limonada-imperial{
+	grid-area: 11/16/14/20;
+}
+.bebida.gaseosa{
+	grid-area: 8/15/10/19;
+}
+
+.titulo-aguas-frescas{
+	grid-area: 12/26/14/30;
+}
+.titulo-aguas-frescas p{
+	font-family: 'Rye', cursive;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	
+}
+.titulo-aguas-frescas p span{
+	background: #633187;
+	padding: 0.2em 0.6em;
+}
+
+.bebida.jamaica p, .bebida.tamarindo p,
+.bebida.horchata p{
+	color: #812367;
+}
+.bebida.jamaica{
+	grid-area: 14/26/18/29;
+	color: #633187;
+}
+.bebida.tamarindo{
+	grid-area: 15/20/18/28;
+	color: #633187;
+}
+.bebida.horchata{
+	grid-area: 17/26/19/30;
+	color: #633187;
+}
 
 /* =================== IMAGENES PA' COMPARTIR ======================== */
 
 .slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos {
 	display: flex;
-	grid-area: 1/1/8/4;
+	grid-area: 1/1/6/6;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos img{
-    width: 77%;
+    width: 81%;
 }
 
 .slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon {
 	display: flex;
-	grid-area: 6/7/8/8;
+	grid-area: 5/12/8/14;
 	/* background: blue; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon img{
     width: 82%;
@@ -701,14 +1004,14 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-la-gringa {
 	display: flex;
-	grid-area: 9/7/14/10;
+	grid-area: 9/11/13/14;
 	/* background: blue; */
 	width: 100%;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-la-gringa img {
-	width: 42%;
+	width: 50%;
 }
 
 .slide-1 .contenedor .contenido .contenedor-imagen-la-gringa-plato {
@@ -726,11 +1029,11 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-supernacho {
 	display: flex;
-	grid-area: 14/1/16/4;
+	grid-area: 12/1/17/6;
 	/* background: blue; */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-supernacho img{
     width: 83%;
@@ -738,11 +1041,11 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 {
 	display: flex;
-	grid-area: 2/4/3/5;
+	grid-area: 1/5/4/7;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 img{
     width:70%;
@@ -750,23 +1053,23 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 {
 	display: flex;
-	grid-area: 10/1/14/2;
+	grid-area: 10/1/13/3;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 img{
-    width:70%;
+    width:50%;
 }
 
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 {
 	display: flex;
-	grid-area: 10/7/16/6;
+	grid-area: 11/7/15/9;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	transform: scaleX(-1) rotate(-83deg);
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 img{
@@ -775,13 +1078,10 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 {
 	display: flex;
-	grid-area: 5/15/9/16;
-	/* background: rgb(43, 255, 0); */
+	grid-area: 8/28/10/30;
 	width: 100%;
 	justify-content: center;
-	align-items: center;
-	left: 30px;
-	position: absolute;
+	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 img{
     width:50%;
@@ -789,10 +1089,10 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa {
 	display: flex;
-	grid-area: 6/25/15/37;
+	grid-area: 7/26/12/37;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: flex-start;
 }
 .slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa img {
@@ -802,15 +1102,12 @@ body{
 
 .slide-1 .contenedor .contenido .contenedor-imagen-chile {
 	display: flex;
-	grid-area: 4/18/7/19;
+	grid-area: 5/34/7/35;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
-	justify-content: flex-end;
-	align-items: center;
-	position: absolute;
-	z-index: 400;
+	justify-content: center;
+	align-items: flex-start;
 }
-
 .slide-1 .contenedor .contenido .contenedor-imagen-chile img{
    width: 56%;
 }
@@ -2285,7 +2582,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.supernacho {
 	position: absolute;
-	grid-area: 7 / 1 / 10 / 4;
+	grid-area: 7 / 3 / 10 / 7;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -2310,7 +2607,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.alitas-sinaloa {
 	position: absolute;
-	grid-area: 3 / 23 / 5 / 28;
+	grid-area: 6 / 24 / 9 / 29;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -3127,9 +3424,9 @@ article img.titulo-pagina{
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev{
     top: 10px;
-    /* bottom: 0; */
+    bottom: 0;
 	margin: auto;
-	display: none;
+	/* display: none; */
 }
 
 .fp-controlArrow.fp-prev{
