@@ -96,6 +96,12 @@ body{
     background-position: center;
 }
 
+.slide-11{
+	background-image: url('../imagenes/Imagenes-menu/Menu-Infantil/Background-infantil-extras-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .slide-12{
 	background-image: url('../imagenes/Imagenes-menu/Postres/Background-postres-escritorio.png');
     background-size: cover;
@@ -1197,7 +1203,6 @@ width: 80%;
     margin-left: 0.5em;
 }
 
-
 /* =================== IMAGENES PA' COMPARTIR ======================== */
 
 .slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos {
@@ -2258,6 +2263,140 @@ width: 80%;
 	transform: rotateZ(350deg);
 }
 
+/* ==================== IMAGENES INFANTIL Y EXTRAS ==================== */
+.slide-11 .contenido .contenedor-imagen-chavo{
+	display: flex;
+	grid-area: 13/3/16/6;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+} 
+.slide-11 .contenido .contenedor-imagen-chavo img{
+	width: 55%;
+}
+
+.slide-11 .contenido .contenedor-imagen-nono{
+	display: flex;
+	grid-area: 10/19/13/21;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-nono img{
+	width: 75%;
+}
+
+.slide-11 .contenido .contenedor-imagen-pinata-1{
+	display: flex;
+	grid-area: 6/33/11/36;
+	/* background: red; */
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-pinata-1 img{
+	width: 90%;
+}
+
+.slide-11 .contenido .contenedor-imagen-pinata-2{
+	display: flex;
+	grid-area: 15/10/18/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-pinata-2 img{
+	width: 80%;
+}
+
+.slide-11 .contenido .contenedor-imagen-coco{
+	display: flex;
+	grid-area: 11/7/15/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+} 
+.slide-11 .contenido .contenedor-imagen-coco img{
+	width: 60%;
+}
+
+.slide-11 .contenido .contenedor-imagen-balero{
+	display: flex;
+	grid-area: 13/12/16/16;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+} 
+.slide-11 .contenido .contenedor-imagen-balero img{
+	width: 55%;
+}
+
+.slide-11 .contenido .contenedor-imagen-aguacate-1{
+	display: flex;
+	grid-area: 12/32/15/35;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-aguacate-1 img{
+	width: 60%;
+}
+
+.slide-11 .contenido .contenedor-imagen-aguacate-2{
+	display: flex;
+	grid-area: 14/21/18/24;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+} 
+.slide-11 .contenido .contenedor-imagen-aguacate-2 img{
+	width: 50%;
+}
+
+.slide-11 .contenido .contenedor-imagen-speedy{
+	display: flex;
+	grid-area: 16/6/19/8;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-speedy img{
+	width: 80%;
+}
+
+.slide-11 .contenido .contenedor-imagen-calavera{
+	display: flex;
+	grid-area: 3/9/8/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-calavera img{
+	width: 70%;
+}
+
+.slide-11 .contenido .contenedor-imagen-rayuela{
+	display: flex;
+	grid-area: 4/7/13/10;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-11 .contenido .contenedor-imagen-rayuela img{
+	width: 55%;
+}
+
+
 /* ======================= IMÁGENES POSTRES ===================*/
 
 .slide-12 .contenido .contenedor-imagen-etiqueta{
@@ -2795,7 +2934,7 @@ E07328
 
 .contenedor .contenido .contenedor-platos.huevos-rancheros {
 	position: absolute;
-	grid-area: 6 / 8 / 7 / 15;
+	grid-area: 6 / 8 / 7 / 14;
 	width: 100%;
 	height: auto;
 	/* background: red; */
@@ -3331,6 +3470,146 @@ E07328
 	width: 100%;
 	height: auto;
 }
+
+/* ===================== MENÚ INFANTIL ==================== */
+
+.contenedor .contenido .contenedor-platos.burrito-coco h2 span{
+	background: #872F83;
+}
+.contenedor .contenido .contenedor-platos.burrito-coco{
+	position:absolute;
+	grid-area: 3 / 3 / 9 / 7;
+	width: 100%;
+	height: auto;
+	transform: rotateZ(-5deg);
+}
+.contenedor .contenido .contenedor-platos.burrito-coco .descripcion-platos p span{
+	background: #E12060;
+	font-size: 14px;
+	z-index: 500;
+}
+.contenedor .contenido .contenedor-platos.burrito-coco .descripcion-platos p .sorpresa{
+	background: #872F83;
+}
+
+
+.contenedor .contenido .contenedor-platos.taquitos-chavelo h2 span{
+	background: #E12060;
+}
+.contenedor .contenido .contenedor-platos.taquitos-chavelo{
+	position:absolute;
+	grid-area: 3 / 12 / 10 / 16;
+	width: 100%;
+	height: auto;
+	transform: rotateZ(5deg);
+}
+.contenedor .contenido .contenedor-platos.taquitos-chavelo .descripcion-platos p span{
+	background: #E55944;
+	font-size: 14px;
+}
+.contenedor .contenido .contenedor-platos.taquitos-chavelo .descripcion-platos p .sorpresa{
+	background: #E12060;
+}
+
+
+.contenedor .contenido .contenedor-platos.nachitos-speedy h2 span{
+	background:#E55B2B;
+}
+.contenedor .contenido .contenedor-platos.nachitos-speedy{
+	position: absolute;
+	grid-area: 9 / 3 / 13 / 7;
+	width: 100%;
+	height: auto;
+	transform: rotateZ(-5deg);
+}
+.contenedor .contenido .contenedor-platos.nachitos-speedy p span{
+	background: #EE8E22 ;
+	font-size: 14px;
+}
+
+
+.contenedor .contenido .contenedor-platos.flautas-nono h2 span{
+	background: #27A5DD;
+}
+.contenedor .contenido .contenedor-platos.flautas-nono{
+	position: absolute;
+	grid-area: 9 / 11 / 13 / 15;
+	width: 100%;
+	height: auto;
+	transform: rotateZ(5deg);
+}
+.contenedor .contenido .contenedor-platos.flautas-nono p span{
+	background: #087DBB;
+	font-size: 14px;
+}
+.contenedor .contenido .contenedor-platos.flautas-nono .descripcion-platos p .sorpresa{
+	background: #27A5DD;
+}
+
+.contenedor-extras{
+	position: absolute;
+	grid-area: 4 / 25 / 16 / 32;
+	width: 100%;
+	height: auto;
+	/* background: red; */
+}
+
+.contenedor-extras div p:nth-child(1),
+.contenedor-extras div p:nth-child(2),
+.contenedor-extras div p:nth-child(3),
+.contenedor-extras div p:nth-child(4),
+.contenedor-extras div p:nth-child(5),
+.contenedor-extras div p:nth-child(6){
+    display: flex;
+	font-family: 'Bison';
+	font-size: 18px;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 0.4em;
+    padding: 0.1em  0.3em;
+}
+
+.contenedor-extras div:nth-child(1){
+    background: #008F43;
+}
+.contenedor-extras div:nth-child(2){
+    background: #DD2080;
+}
+.contenedor-extras div:nth-child(3){
+    background: #2AA4DB;
+}
+.contenedor-extras div:nth-child(4){
+    background: #E55B2B;
+}
+.contenedor-extras div:nth-child(5){
+    background: #2AA4DB;
+}
+.contenedor-extras div:nth-child(6){
+    background: #DD2080;
+}
+.contenedor-extras div:nth-child(8){
+    background: #E55B2B;
+}
+.contenedor-extras div:nth-child(9){
+    background: #2AA4DB;
+}
+.contenedor-extras div:nth-child(10){
+    background: #DD2080;
+}
+.contenedor-extras div:nth-child(11){
+    background: #2AA4DB;
+}
+.contenedor-extras div:nth-child(12){
+    background: #008F43;
+}
+.contenedor-extras div:nth-child(13){
+    background: #2AA4DB;
+}
+
+.contenedor-extras div span:nth-child(2){
+    font-family: 'Mayan';
+}
+
 
 /* ========================= POSTRES ===================== */
 .contenedor .contenido .contenedor-platos.chanfle-chocolas{
