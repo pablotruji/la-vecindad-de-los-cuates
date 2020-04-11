@@ -1045,12 +1045,12 @@ h2.aclaracion span{
 	align-items: flex-end;
 }
 .slide-15 .contenedor .contenido .contenedor-imagen-sombrilla-2 img{
-width: 70%;
+width: 60%;
 }
 
 .slide-15 .contenedor .contenido .contenedor-imagen-sombrilla-3{
 	display: flex;
-	grid-area: 16/4/19/6;
+	grid-area: 9/1/13/3;
 	width: 100%;
 	justify-content: center;
 	align-items: flex-end;
@@ -1066,7 +1066,6 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-
 .slide-15 .contenedor .contenido .contenedor-imagen-botella-gin img{
 	width: 40%;
 	transform: rotateZ(-20deg);
@@ -1079,7 +1078,6 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-end;
 }
-
 .slide-15 .contenedor .contenido .contenedor-imagen-logo-grants img{
 	width: 80%;
 }
@@ -1092,9 +1090,8 @@ width: 80%;
 	align-items: flex-end;
 	/* background: violet; */
 }
-
 .slide-15 .contenedor .contenido .contenedor-imagen-adorno-vinos img{
-	width: 80%;
+	width: 60%;
 }
 
 .slide-15 .contenedor .contenido .contenedor-imagen-adorno-especiales{
@@ -1105,9 +1102,244 @@ width: 80%;
 	align-items: flex-end;
 	/* background: wheat; */
 }
-
 .slide-15 .contenedor .contenido .contenedor-imagen-adorno-especiales img{
 	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-adorno-especiales {
+	display: flex;
+	grid-area: 3/16/5/21;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-adorno-especiales img{
+	width: 70%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-1{
+	display: flex;
+	grid-area: 1/8/3/9;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-1 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-1{
+	display: flex;
+	grid-area: 1/10/3/10;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-1 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-2{
+	display: flex;
+	grid-area: 3/20/5/21;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-2 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-2{
+	display: flex;
+	grid-area: 3/22/5/23;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-2 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-3{
+	display: flex;
+	grid-area: 9/20/13/21;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-3 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-3{
+	display: flex;
+	grid-area: 9/22/13/23;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-3 img{
+	width: 80%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-4{
+	display: flex;
+	grid-area: 1/31/3/33;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-4 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-4{
+	display: flex;
+	grid-area: 1/33/3/35;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-4 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-5{
+	display: flex;
+	grid-area: 4/31/7/33;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-5 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-5{
+	display: flex;
+	grid-area: 4/33/7/35;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-5 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-6{
+	display: flex;
+	grid-area: 8/31/11/33;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-6 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-6{
+	display: flex;
+	grid-area: 8/33/11/35;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-6 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-7{
+	display: flex;
+	grid-area: 13/31/15/33;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	/* background: rgb(4, 82, 65); */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-botella-7 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-7{
+	display: flex;
+	grid-area: 13/33/15/35;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-end;
+	/* background: wheat; */
+}
+.slide-15 .contenedor .contenido .contenedor-imagen-logo-copa-7 img{
+	width: 40%;
+}
+
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-2,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-3{
+	font-family: Mayan;
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+}
+
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-1,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-4,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-5,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-6,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-7 {
+	font-family: 'Rye', cursive;
+	font-size: 15px;
+	width: 170px;
+	color: #fff;
+	margin-left: 0;
+	background: #911442;
+	margin: auto;
+	padding: 0 1.5em;
+}
+
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-1{
+	grid-area: 1/3/3/6;
+}
+
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-2{
+	grid-area: 2/17/4/19;
+}
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-3 {
+	grid-area: 10/17/12/20;
+	line-height: 4em;
+}
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-4{
+	grid-area: 1/26/4/28;
+}
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-5{
+	grid-area: 5/26/8/29;
+}
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-6{
+	grid-area: 8/26/13/28;
+}
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-7{
+	grid-area: 13/26/16/28;
+}
+
+
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-1 h2,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-4 h2,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-5 h2,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-6 h2,
+.slide-15 .contenedor .contenido .contenedor-titulo-seccion-7 h2 {
+	text-align: center;
 }
 
 .contenedor-nombres-precios{
@@ -1122,7 +1354,7 @@ width: 80%;
 }
 
 .contenedor-nombres-precios.seccion-1{
-	grid-area: 2/3/17/11;
+	grid-area: 3/3/18/11;
 }
 .contenedor-nombres-precios.seccion-2{
 	grid-area: 5/14/10/23;
@@ -1132,19 +1364,19 @@ width: 80%;
 	/* background: pink; */
 }
 .contenedor-nombres-precios.seccion-4{
-	grid-area: 2/26/5/33;
+	grid-area: 3/26/5/33;
 	/* background: rgb(206, 20, 51); */
 }
 .contenedor-nombres-precios.seccion-5{
-	grid-area: 6/26/9/33;
+	grid-area: 7/26/9/33;
 	/* background: rgb(192, 235, 255); */
 }
 .contenedor-nombres-precios.seccion-6{
-	grid-area: 10/26/13/33;
+	grid-area: 11/26/14/33;
 	/* background: rgb(221, 192, 255); */
 }
 .contenedor-nombres-precios.seccion-7{
-	grid-area: 14/26/18/33;
+	grid-area: 15/26/18/33;
 	/* background: rgb(16, 196, 187); */
 }
 
