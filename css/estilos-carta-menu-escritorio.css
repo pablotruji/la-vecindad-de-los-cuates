@@ -2892,7 +2892,7 @@ width: 80%;
 
 .slide-12 .contenido .contenedor-imagen-flecha-1{
 	display: flex;
-	grid-area: 8/9/11/11;
+	grid-area: 12/11/14/13;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -2900,6 +2900,7 @@ width: 80%;
 } 
 .slide-12 .contenido .contenedor-imagen-flecha-1 img{
 	width: 45%;
+	transform: scaleX(-1) rotateZ(-15deg);
 }
 
 .slide-12 .contenido .contenedor-imagen-flecha-2{
@@ -2926,6 +2927,19 @@ width: 80%;
 	width: 50%;
 }
 
+.slide-12 .contenido .contenedor-imagen-flecha-4{
+	display: flex;
+	grid-area: 7/8/10/10;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+} 
+.slide-12 .contenido .contenedor-imagen-flecha-4 img{
+	width: 50%;
+	transform: rotateZ(70deg);
+}
+
 .slide-12 .contenido .contenedor-imagen-fresa-1{
 	display: flex;
 	grid-area: 7/13/9/14;
@@ -2940,7 +2954,7 @@ width: 80%;
 
 .slide-12 .contenido .contenedor-imagen-fresa-2{
 	display: flex;
-	grid-area: 7/9/9/10;
+	grid-area: 8/22/10/23;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
@@ -3016,14 +3030,14 @@ width: 80%;
 
 .slide-12 .contenido .contenedor-imagen-chanfle-chocolas{
 	display: flex;
-	grid-area: 13/26/19/37;
+	grid-area: 13/26/19/34;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 } 
 .slide-12 .contenido .contenedor-imagen-chanfle-chocolas img{
-	width: 75%;
+	width: 85%;
 }
 
 /* =========================== IMAGENES COCTELES ============================ */
@@ -4227,21 +4241,61 @@ article img.titulo-pagina {
 	align-self: flex-start;
 }
 
+/* CONTENEDOR IMPUESTOS */
 .contenedor-impuestos {
 	position: absolute;
 	width: 50%;
 	left: 0;
-	bottom: 50%;
+	top: 85vh;
 }
 
 .contenedor-impuestos p {
-	width: 40%;
-	background: rgba(25, 2, 39, 0.6);
+	width: 35%;
+	background: rgba(214, 21, 7, 0.6);
 	font-family: 'Russian';
 	color: #fff;
 	text-align: center;
 	margin: auto;
 }
+
+.slide-2 .contenedor-impuestos p{
+	background: rgba(6, 43, 25, 0.7);
+}
+
+.slide-3 .contenedor-impuestos p {
+	background: rgba(128,30,33,.5);
+}
+
+.slide-6 .contenedor-impuestos {
+	width: 50%;
+	right: 0;
+	left: initial;
+}
+.slide-6 .contenedor-impuestos p{
+	background: rgba(40, 8, 58, 0.5);
+}
+
+.slide-7 .contenedor-impuestos p{
+	background: rgba(34, 22, 9, 0.5);
+}
+
+.slide-8 .contenedor-impuestos p{
+	background: rgba(34, 22, 9, 0.5);
+}
+
+.slide-9 .contenedor-impuestos p {
+	background: rgba(1, 48, 23, 0.7);
+}
+
+.slide-10 .contenedor-impuestos p {
+	background: rgba(5, 19, 18, 0.7);
+}
+
+.slide-12 .contenedor-impuestos p{
+	background: rgba(58, 32, 39, 0.7);
+}
+
+
 /* PATRON */
 
 .footer .patron-footer {
