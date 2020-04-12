@@ -148,86 +148,125 @@ body{
 }
 
 /* ================= ESTRUCTURA PÁGINA COCTELES ====================== */
+.contenedor .contenido .contenido-imagen-los-refrescantes{
+	display: flex;
+	grid-area: 8/26/11/31;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+		/* background: wheat; */
+}
+.contenedor .contenido .contenido-imagen-los-refrescantes img{
+	width: 75%;
+
+}
+
+.contenedor .contenido .contenido-imagen-los-tradicionales{
+	display: flex;
+	grid-area: 8/6/10/13;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+		/* background: wheat; */
+}
+.contenedor .contenido .contenido-imagen-los-tradicionales img{
+		width: 65%;
+
+}
+
+.contenedor .contenido .contenido-imagen-los-la-vecindad{
+	display: flex;
+	grid-area: 1/16/3/22;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+		/* background: wheat; */
+}
+.contenedor .contenido .contenido-imagen-los-la-vecindad img{
+		width: 70%;
+
+}
+
 .contenedor .contenido .contenido-coctel.zocalo-sour {
 	width: 100%;
-	grid-area: 3/3/9/7;
+	grid-area: 2/2/8/6;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.pepe-el-toro{
 	width: 100%;
-	grid-area: 3/8/9/12;
+	grid-area: 1/7/7/11;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.chavelita{
 	width: 100%;
-	grid-area: 11/4/17/8;
+	grid-area: 11/3/17/7;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.caipirina-veracruz{
 	width: 100%;
-	grid-area: 11/9/17/13;
+	grid-area: 12/8/18/12;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.la-sufrida{
 	width: 100%;
-	grid-area: 3/13/9/17;
+	grid-area: 2/12/8/16;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.martini{
 	width: 100%;
-	grid-area: 11/14/16/18;
+	grid-area: 11/13/16/17;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad{
 	width: 100%;
-	grid-area: 3/19/9/23;
+	grid-area: 5/17/11/21;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.cuate-viejo{
 	width: 100%;
-	grid-area: 3/24/9/28;
+	grid-area: 2/22/8/26;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.gin-tonic{
 	width: 100%;
-	grid-area: 3/29/9/33;
+	grid-area: 2/31/8/35;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.el-santo{
 	width: 100%;
-	grid-area:11/20/17/24;
+	grid-area: 1/26/6/30;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios{
 	width: 100%;
-	grid-area:11/25/17/29;
+	grid-area: 11/23/17/27;
 	position: relative;
 	height: auto;
 }
 
 .contenedor .contenido .contenido-coctel.caipirina{
 	width: 100%;
-	grid-area:11/30/17/34;
+	grid-area: 11/29/17/33;
 	position: relative;
 	height: auto;
 }
@@ -504,6 +543,7 @@ body{
 	bottom: 0;
 	left: -20px;
 	align-items: center;
+	bottom: -30px;
 }
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio .descripcion-coctel{
@@ -648,6 +688,27 @@ body{
 	font-size: 18px;
 	color: #D9951D;
 }
+
+.contenedor .contenido .contenido-coctel.gin-tonic .descripcion-coctel-precio {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: -20px;
+	align-items: center;
+	bottom: -40px;
+}
+
+.contenedor .contenido .contenido-coctel.gin-tonic .descripcion-coctel-precio .descripcion-coctel{
+	width: 100%;
+	border-right: 1px solid #fff;
+}
+.contenedor .contenido .contenido-coctel.gin-tonic  .descripcion-coctel-precio .descripcion-coctel p{
+	font-family: Mayan;
+	font-size: 11px;
+	text-align: center;
+	color: #fff;
+}
+
 /* ============================== NO CONTARON CON MI CAIPIRIÑA ======================== */
 .contenedor .contenido .contenido-coctel.caipirina .contenedor-imagen-coctel {
 	margin: auto;
@@ -687,6 +748,45 @@ body{
 	text-align: center;
 	color: #fff;
 } 
+
+/* PRECIOS VARIOS */
+.precio-plato-varios-licores{
+    width: 50%;
+    right: 20px;
+    justify-content: space-around;
+	padding: 0.6em;
+	z-index: 500;
+	/* background: red; */
+}
+
+.precio-plato-varios-licores .contenedor-precio{
+    display: flex;
+    margin-bottom: 0.1em;
+    justify-content: space-evenly;
+}
+
+.precio-plato-varios-licores .tipo{
+    display: flex;
+    font-family: Bison;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px #fff solid;
+    margin-right: 0.5em;
+    padding: 0 0.5em;
+ }
+
+.precio-plato-varios-licores h5{
+    text-align: end;
+    color: #fff;
+    width: 60px;
+ }
+
+.precio-plato-varios-licores p{
+   color: #fff;
+   font-size: 24px;
+   align-self: center;
+}
 
 /* ================================================================================= */
 /* ========================= ESTRUCTURA BEBIDAS =================================== */
