@@ -391,11 +391,17 @@ body{
 
 /* ===================================== PEPE EL TORO ====================== */
 .contenedor .contenido .contenido-coctel.pepe-el-toro .contenedor-imagen-coctel {
-	bottom: 30%;
+	bottom: 0;
 	top: initial;
+	width: 100%;
+	position: relative;
 }
 .contenedor .contenido .contenido-coctel.pepe-el-toro .contenedor-imagen-coctel img{
-	width: 100%;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
 }
 
 /* CONTENEDOR DESCRIPCIÓN */

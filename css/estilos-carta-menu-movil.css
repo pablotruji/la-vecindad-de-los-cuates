@@ -62,9 +62,7 @@ a {
 #fp-nav ul li .fp-tooltip{
     color: orange;
 }
-
 /* ======================= LOGOTIPOS ============================ */
-
 /* ==================== LOGOTIPO STICKY ========================= */
 .contenedor-logotipo-sticky{
     width: 22%;
@@ -75,7 +73,6 @@ a {
     left: 0.4rem;
     z-index: 1000;
 }
-
 /* =====================================================  */
 /*===================== CONTENIDO   =================== */
 /* ================================================== */
@@ -479,13 +476,10 @@ a {
 .titulo-paginas-menu img{
     width: 100%;
     height: auto;
-    left: 0;
-    right: 0;
     /* background: blue; */
 }
 
 /* =========== TÍTULO DE PÁGINAS DEL MENÚ ESTILOS INDIVIDUALES ======= */
-
 
 /* ====================== MENÚ INFANTIL Y EXTRAS ==================== */
 .menu-infantil .titulo-paginas-menu {
@@ -509,6 +503,32 @@ a {
     top: -100%;
     right: 0;
     left: 0;
+}
+
+/* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
+.contenedor-slide .titulo-paginas-menu-cocteles{
+    position: absolute;
+    width: 60%;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 300px;
+    background: red;
+}
+
+.contenedor-info-producto .titulo-paginas-menu-cocteles img{
+    /* position: initial; */
+    width: 60%;
+    right: 0;
+    left: 0;
+    top: 20px;
+    margin: auto;
+}
+
+.contenedor-info-producto .titulo-paginas-menu-cocteles.icono-intermedio img{
+    width: 50%;
+    right: 0;
 }
 
 /* ======== CONTENEDOR IMÁGENES DE PLATOS E INFORMACIÓN ===== */
@@ -826,7 +846,7 @@ a {
 /* =========== TRIGÉSIMA SECCIÓN - LICORES =================*/
 
 /* IMÁGENES EXTRA LICORES*/
-.contenedor-licores-1 .contenedor-info-producto-inferior .imagen-extra-licor,
+.contenedor-licores-4 .contenedor-info-producto-inferior .imagen-extra-licor,
 .contenedor-licores-6 .contenedor-info-producto-inferior .imagen-extra-licor{
     width: 50%;
     position: absolute;
@@ -841,11 +861,11 @@ a {
     right: 0;
 }
 
-.contenedor-licores-1 .contenedor-info-producto-inferior .imagen-extra-licor img.imagen-licor, 
+.contenedor-licores-4 .contenedor-info-producto-inferior .imagen-extra-licor img.imagen-licor, 
 .contenedor-licores-3 .contenedor-info-producto-superior .imagen-extra-licor img.imagen-licor, 
 .contenedor-licores-6 .contenedor-info-producto-inferior .imagen-extra-licor img.imagen-licor {
 	width: 30%;
-	position: absolute;
+	position: absolute; 
 	top: 60px;
 	right: 0;
 	bottom: initial;
@@ -859,10 +879,10 @@ a {
 
 /* FIN SECCIÓN IMÁGENES EXTRA LICORES */
 
-.contenedor-licores-1 .contenedor-info-producto-superior img{
-    width: 26%;
-    max-width: 130px;
-    left: 15%;
+.contenedor-licores-1 .contenedor-info-producto-superior img {
+	width: 32%;
+	max-width: 130px;
+	left: 11%;
 }
 .contenedor-licores-1 .contenedor-info-producto-inferior img{
     width: 36%;
@@ -886,7 +906,7 @@ a {
 }
 
 .contenedor-licores-3 .contenedor-info-producto-superior img{
-    width: 23%;
+    width: 20%;
     max-width: 130px;
     left: 15%;
 }
@@ -913,23 +933,23 @@ a {
     bottom: 0;
 }
 
-.contenedor-licores-5 .contenedor-info-producto-superior img{
-    width: 30%;
-    max-width: 140px;
-    left: 10%;
+.contenedor-licores-5 .contenedor-info-producto-superior img {
+	width: 35%;
+	max-width: 140px;
+	left: 5%;
 }
 
-.contenedor-licores-5 .contenedor-info-producto-inferior img{
-    width: 20%;
-    max-width: 120px;
-    right: 15%;
-    bottom: 10%;
+.contenedor-licores-5 .contenedor-info-producto-inferior img {
+	width: 26%;
+	max-width: 120px;
+	right: 14%;
+	/* bottom: 10%; */
 }
 
-.contenedor-licores-6 .contenedor-info-producto-superior img{
-    width: 37%;
-    max-width: 160px;
-    left: 10%;
+.contenedor-licores-6 .contenedor-info-producto-superior img {
+	width: 26%;
+	max-width: 160px;
+	left: 17%;
 }
 
 .contenedor-licores-6 .contenedor-info-producto-inferior img{
@@ -1266,7 +1286,7 @@ a {
     right: 23%;
     top: 50%;
     line-height: 1em;
-    color: rgb(209, 172, 8);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-1 .contenedor-info-producto-inferior .titulo{ 
@@ -1274,7 +1294,7 @@ a {
     background:transparent;
     left: 22%;
     top: 50%;
-    color: rgb(209, 172, 8);
+    color: #B43576;
 
 }
 
@@ -1299,7 +1319,7 @@ a {
     background:transparent;
     right: 25%;
     top: 50%;
-    color: rgb(209, 172, 8);
+    color: #B43576;
 }
 
 .contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-inferior .titulo {
@@ -1326,7 +1346,7 @@ a {
     left: 22%;
     top: 40%;
     line-height: 100%;
-    color: #B43576;
+    color: rgb(209, 172, 8);
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-superior .titulo{ 
@@ -1343,7 +1363,7 @@ a {
     background:transparent;
     left: 23%;
     top: 50%;
-    color: #B43576;
+    color: rgb(209, 172, 8);
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-superior .titulo{ 
@@ -1352,7 +1372,7 @@ a {
     right: 21%;
     top: 50%;
     line-height: 100%;
-    color: #B43576
+    color: rgb(209, 172, 8);
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-inferior .titulo{ 
@@ -1490,11 +1510,9 @@ a {
 	align-items: center;
 }
 
-
-#carta-menu-14 .contenedor-licores-1 .contenedor-info-producto-superior .descripcion,
-#carta-menu-14 .contenedor-licores-3 .contenedor-info-producto-superior .descripcion,
-#carta-menu-14 .contenedor-licores-4 .contenedor-info-producto-superior .descripcion
- {
+#carta-menu-14 .contenedor-licores-6 .contenedor-info-producto-superior .descripcion,
+#carta-menu-14 .contenedor-licores-5 .contenedor-info-producto-inferior .descripcion,
+#carta-menu-14 .contenedor-licores-4 .contenedor-info-producto-superior .descripcion{
 	align-items: flex-start;
 }
 
@@ -1696,7 +1714,7 @@ a {
 
 }
 
-.precio-plato-varios-licores{
+.contenedor-info-producto-superior .precio-plato-varios-licores{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1707,10 +1725,20 @@ a {
     padding: 0.6em;
 }
 
+.contenedor-info-producto-inferior .precio-plato-varios-licores{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    padding: 0.6em;
+}
+
 .precio-plato-varios-licores .contenedor-precio{
     display: flex;
     margin-bottom: 0.1em;
-    justify-content: space-evenly;
 }
 
 .precio-plato-varios-licores .tipo{
@@ -1731,6 +1759,7 @@ a {
  }
 
 .precio-plato-varios-licores p{
+   font-family: 'Mayan';
    color: #fff;
    font-size: 24px;
    align-self: center;
