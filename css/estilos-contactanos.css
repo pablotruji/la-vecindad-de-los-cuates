@@ -200,12 +200,13 @@ a{
     list-style: none;
     text-align: center;
     background: rgb(107, 32, 39);
-
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 
@@ -251,7 +252,6 @@ a{
     grid-area: contenido-principal;
     width: 100%;
     height: auto;
-    /* border: 1px solid #444; */
 }
 
 .main .contenido-principal {
@@ -261,13 +261,13 @@ a{
 	justify-content: center;
 	margin: auto;
 	margin-bottom: 2em;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 /* ================ LOGOTIPO VIVE LA EXPERIENCIA CUATE =================== */
 .contenido-principal .contactanos-imagen-charo {
 	width: 100%;
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .contenido-principal .contactanos-imagen-charo img{
@@ -350,7 +350,6 @@ a{
 	width: 100px;
 	border-radius:100%;
 }
-
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
     grid-area: aside-derecha;
@@ -366,8 +365,8 @@ a{
 
 /*==================== ASIDE IZQUIERDA ==================*/
 .aside-izquierda{
-    display: flex;
     grid-area: aside-izquierda;
+    display: flex;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -839,8 +838,7 @@ a{
         /* background: blue; */
     }
 
-    .aside-izquierda .contenedor-botones-aside
-    {
+    .aside-izquierda .contenedor-botones-aside{
         position: absolute;
     }
     .aside-izquierda .contenedor-botones-aside:nth-child(1){

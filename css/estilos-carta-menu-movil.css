@@ -947,7 +947,7 @@ a {
 }
 
 .contenedor-licores-6 .contenedor-info-producto-superior img {
-	width: 26%;
+	width: 25%;
 	max-width: 160px;
 	left: 17%;
 }
@@ -1346,7 +1346,7 @@ a {
     left: 22%;
     top: 40%;
     line-height: 100%;
-    color: rgb(209, 172, 8);
+    color: #D9951D;
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-superior .titulo{ 
@@ -1355,7 +1355,7 @@ a {
     right: 22%;
     top: 40%;
     line-height: 120%;
-    color: rgb(209, 172, 8);
+    color: #D9951D;
 }
 
 .contenedor-info-producto.contenedor-licores-5 .contenedor-info-producto-inferior .titulo{ 
@@ -1363,7 +1363,7 @@ a {
     background:transparent;
     left: 23%;
     top: 50%;
-    color: rgb(209, 172, 8);
+    color: #D9951D;
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-superior .titulo{ 
@@ -1372,7 +1372,7 @@ a {
     right: 21%;
     top: 50%;
     line-height: 100%;
-    color: rgb(209, 172, 8);
+    color: #D9951D;
 }
 
 .contenedor-info-producto.contenedor-licores-6 .contenedor-info-producto-inferior .titulo{ 
@@ -1380,7 +1380,7 @@ a {
     background:transparent;
     left: 23%;
     top: 50%;
-    color: rgb(209, 172, 8);
+    color: #D9951D;
 
 }
 #carta-menu-14 .titulo span{
