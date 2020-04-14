@@ -5,7 +5,12 @@
 }
 
 @font-face{
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+
+@font-face{
+    font-family: 'Helvetica UltraComp';
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
 
@@ -319,7 +324,7 @@ a{
 }
 
 .contenedor-mas-info p{
-    font-family: Helvetica;
+    font-family: 'Helvetica UltraComp';
     font-size: 14px;
     text-align: end;
     color: #7F4F25;
@@ -569,7 +574,12 @@ a{
 
 .redes-sociales img{
     position: absolute;
-    width: 40px;
+    width: 50px;
+}
+.redes-sociales p{
+    color: #fff;
+    font-family: 'Helvetica Bold';
+    font-size: 9px;
 }
 
 /* ============================================================================ */
@@ -766,7 +776,7 @@ a{
     }
 
     .main .contenido-principal.escritorio .contenedor-informacion .contenedor-mas-info p{
-        font-family: Helvetica;
+        font-family: 'Helvetica UltraComp';
         font-size: 20px;
         text-align: end;
         margin: auto;

@@ -5,6 +5,11 @@
 }
 
 @font-face{
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+
+@font-face{
     font-family: 'Woodstand';
     src: url(../fonts/Woodstamp.otf);
 }
@@ -198,8 +203,10 @@ a{
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 /* ==================== SECCIÓN LOGOS ==================*/
@@ -537,7 +544,12 @@ section{
 
 .redes-sociales img{
     position: absolute;
-    width: 40px;
+    width: 50px;
+}
+.redes-sociales p{
+    color: #fff;
+    font-family: 'Helvetica Bold';
+    font-size: 9px;
 }
 
 
