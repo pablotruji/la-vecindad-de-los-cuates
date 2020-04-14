@@ -317,6 +317,31 @@ a{
     border-radius: initial;
 }
 
+/*===========================================================*/
+/*=============== CONTENIDO PRINCIPAL========================*/
+/*=========================================================*/
+
+.main{
+    grid-area: contenido-principal;
+    width:100% ;
+    height: auto;
+    
+}
+
+.main .contenido-principal{
+   width: 100px;
+   height:100vh;
+   background: red;
+}
+
+.main .contenido-principal span{
+    width: 100px;
+    height:100vh;
+    background: red;
+ }
+
+/* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
+/* ======================================================= */
 /* ======================== ASIDE GENERAL ENLACE ===============*/
 .enlace {
 	display: block;
@@ -365,7 +390,6 @@ a{
     margin-left: -10px;
     margin-top: 20px;
 }
-
 /*===================================================*/
 /*==================== FOOTER ======================*/
 /*=================================================*/
@@ -377,7 +401,6 @@ a{
     height: 100%;
     justify-content: center;
     align-items: flex-end;
-    position: sticky;
 }
 
 .footer .contenedor-footer{
@@ -510,7 +533,7 @@ a{
 
 .footer .imagen-derecha-footer img{
     width: 26%;
-    max-width:100px;
+    max-width:75px;
     position: absolute;
     align-self: flex-end;
 }

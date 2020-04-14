@@ -152,7 +152,7 @@ a{
 }
 
 .menu-imagen img{
-    width: 83px;
+    width: 70px;
 }
 
 /*======================BARRA DE MENÚ===================== */
@@ -536,7 +536,7 @@ a{
 
 .footer .imagen-derecha-footer img{
     width: 26%;
-    max-width:100px;
+    max-width:75px;
     position: absolute;
     align-self: flex-end;
 }
