@@ -4,6 +4,11 @@
     src: url(../fonts/Mayan\ 2.ttf);
 }
 
+@font-face{
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+
 /*=============== ESTILOS GENERALES ===============*/
 *{
     padding: 0;
@@ -546,7 +551,12 @@ a{
 
 .redes-sociales img{
     position: absolute;
-    width: 40px;
+    width: 50px;
+}
+.redes-sociales p{
+    color: #fff;
+    font-family: 'Helvetica Bold';
+    font-size: 9px;
 }
 
 

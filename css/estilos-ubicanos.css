@@ -5,7 +5,12 @@
 }
 
 @font-face{
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+
+@font-face{
+    font-family: 'Helvetica UltraComp';
     src: url(../fonts/HelveticaLTStd-UltraComp.otf);
 }
 
@@ -351,7 +356,7 @@ a{
 .contenedor-info-local{
     position: relative;
     width: 150px;
-    font-family: Helvetica;
+    font-family: 'Helvetica UltraComp';
     margin: auto;
 }
 
@@ -382,7 +387,7 @@ a{
 .contenedor-info-local .telefono-numero{
     width: 75%;
     letter-spacing: 0.8px;
-    font-family: Helvetica;
+    font-family: 'Helvetica UltraComp';
     color: #fff;
     font-size: 12px;
     margin-left: 2em;
@@ -616,7 +621,12 @@ a{
 
 .redes-sociales img{
     position: absolute;
-    width: 40px;
+    width: 50px;
+}
+.redes-sociales p{
+    color: #fff;
+    font-family: 'Helvetica Bold';
+    font-size: 9px;
 }
 
 /* ============================================================================ */
@@ -849,7 +859,7 @@ a{
     .contenedor-info-local {
         position: relative;
         width: 240px;
-        font-family: Helvetica;
+        font-family: 'Helvetica UltraComp';
         margin: auto;
     }
 
@@ -927,7 +937,7 @@ a{
     .contenedor-info-local .telefono-numero {
         width: auto;
         letter-spacing: 0.8px;
-        font-family: Helvetica;
+        font-family: 'Helvetica UltraComp';
         color: #fff;
         font-size: 17px;
         margin-left: 2em;

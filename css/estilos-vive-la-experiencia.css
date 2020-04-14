@@ -527,7 +527,12 @@ a{
 
 .redes-sociales img{
     position: absolute;
-    width: 40px;
+    width: 50px;
+}
+.redes-sociales p{
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 9px;
 }
 
 /* =============================================== */
