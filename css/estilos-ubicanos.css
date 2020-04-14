@@ -204,8 +204,10 @@ a{
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 /* ==================== SECCIÓN LOGOS =======================*/

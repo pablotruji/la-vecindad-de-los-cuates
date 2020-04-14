@@ -16,8 +16,14 @@
 
 @font-face{
     font-family: 'Bebas';
-    src: url(../fonts/BebasNeue\ Book.otf)
+    src: url(../fonts/BebasNeue\ Book.otf);
 }
+
+@font-face{
+    font-family: 'Atma';
+    src: url(../fonts/atma/Atma-Medium.ttf);
+}
+
 
 /*=============== ESTILOS GENERALES ===============*/
 *{
@@ -207,8 +213,10 @@ a{
 }
 
 .menu-principal a{
+    display: block;
     font-size: 10px;
     color: #fff;
+    width: 100%;
 }
 
 /* ==================== SECCIÓN LOGOS ==================*/
@@ -263,6 +271,10 @@ a{
     margin-top: 2.5rem;
 }
 
+.main .contenido-principal.escritorio{
+    display: none;
+}
+
 .contenedor-imagen-principal img{
     display: block;
     width: 50%;
@@ -280,13 +292,13 @@ a{
     margin-top: 20px;
 }
 
-.contenedor-informacion p{
-    font-family: Bebas;
-    font-size: 13px;
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    color: #2C0D10;
+.contenedor-informacion p {
+	font-family: Atma;
+	font-size: 11px;
+	text-align: center;
+	width: 67%;
+	margin: auto;
+	color: #2C0D10;
 }
 .contenedor-informacion p::first-line{
     color: red;
@@ -309,9 +321,9 @@ a{
 .contenedor-mas-info p{
     font-family: Helvetica;
     font-size: 14px;
-    text-align: center;
+    text-align: end;
     color: #7F4F25;
-    width: 100%;
+    width: 80%;
 }
 
 .contenedor-imagen-evento{
@@ -324,6 +336,7 @@ a{
     transform: rotateZ(10deg);
     margin-left: -10px;
     margin-top: 20px;
+    max-width: 180px;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
@@ -362,8 +375,6 @@ a{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: flex-start;
-    /* margin-left: 12px; */
-
 }
 .aside-izquierda .contenedor-botones-aside:first-child{
     display: none;
@@ -577,7 +588,7 @@ a{
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Cortina-escritorio-02.png);
         width:35%;
-        height:100vh;
+        height:110vh;
         top: 0;
         left: 0;
     }
@@ -585,7 +596,7 @@ a{
     .contenedor .contenedor-cortina .contenedor-cortina-derecha{
         background-image: url(../imagenes/Cortina-escritorio-02.png);
         width:35%;
-        height:100vh;
+        height:110vh;
         top: 0;
         right: 0;
     }
@@ -661,7 +672,6 @@ a{
 
     /* LOGOTIPOS */
     .contenedor-logo-principal{
-        /* background:green; */
         align-items: flex-start;
     }
 
@@ -690,21 +700,83 @@ a{
     .main{
         grid-area: contenido-principal;
         width: 100%;
-        height: 100%;
-        background: green;
+        height: 100%;       
         /* display: flex; */
+    }
+
+    .main .contenido-principal.movil{
+        display: none;
     }
     
-    .main .contenido-principal {
-        /* display: flex; */
-        width: 60%;
+    .main .contenido-principal.escritorio{
+        display: flex;
+        width: 50vw;
         height: 100%;
-        justify-content: center;
         margin: auto;
         margin-bottom: initial;
-        position: relative;
-        background: rgb(17, 142, 201);
+        position: initial;    
     }
+
+    .main .contenido-principal.escritorio .contenedor-imagen-principal{
+        width: 35%;
+        align-self: center;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-imagen-principal img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        /* align-self: center; */
+        margin: initial;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-parrafo-principal{
+
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-parrafo-principal p{
+        width: 70%;
+        font-family: Atma;
+        font-size: 20px;
+        line-height: 1.5em;margin-bottom: 1em;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-imagen-evento{
+        align-self: flex-end;
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-imagen-evento img{
+        display: block;
+        margin: auto;
+        width: 300px;
+        max-width: 300px;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-mas-info{
+        width: 70%;
+        align-self: flex-end;
+        margin-bottom: 1em;
+    }
+
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-mas-info p{
+        font-family: Helvetica;
+        font-size: 20px;
+        text-align: end;
+        margin: auto;
+        color: #7E4E24;
+        width: 50%;
+    }
+    .main .contenido-principal.escritorio .contenedor-informacion .contenedor-mas-info p::first-line{
+        color: #7E4E24;
+    }
+    
     /* ASIDE */
 
     .contenedor-botones-aside .enlace img{
@@ -736,7 +808,7 @@ a{
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(3){
-        bottom: -80px;
+        bottom: 0;
         right: -70px;
         z-index: 200;
     }
@@ -744,6 +816,7 @@ a{
     .aside-derecha{
         /* background: green; */
         align-items: flex-start;
+        justify-content: space-evenly;
     }
 
     .aside-derecha .contenedor-botones-aside:last-child {
