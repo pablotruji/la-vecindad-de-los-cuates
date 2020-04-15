@@ -280,6 +280,10 @@ a{
     display: none;
 }
 
+.main .contenido-principal.tablet{
+    display: none;
+}
+
 .contenedor-imagen-principal img{
     display: block;
     width: 50%;
@@ -621,16 +625,105 @@ a{
 }
 
 /* TABLET */
-@media screen and (min-width: 640px){
+@media screen and (min-width: 639px){
+    
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
 
-    .redes-sociales p{
-        color: rgb(0, 238, 255);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
+    body{
+        background-image: url(../imagenes/Toque-de-los-cuates/Background-toque-de-los-cuates-tablet.png);
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal.movil{
+        display: none;
+    }
+    .main .contenido-principal.tablet{
+        display: block;
+        margin-top: 2.5em;
+        width: 70%;
+    }
+
+    .contenedor-imagen-principal img {
+        max-width: 190px;
+    }
+
+    .contenido-principal.tablet .contenedor-informacion-principal-imagen{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contenido-principal.tablet .contenedor-informacion-principal-imagen .contenedor-informacion{
+        width: 100%;
+        margin: initial;
+    }
+
+    .contenido-principal.tablet .contenedor-informacion-principal-imagen .contenedor-informacion p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .contenido-principal.tablet .contenedor-informacion-principal-imagen .contenedor-imagen-evento{
+        margin: initial;
+        width: 90%;
+        align-self: center;
+    }
+
+    .contenido-principal.tablet .contenedor-informacion-principal-imagen .contenedor-imagen-evento img{
+        display: block;
+        margin: auto;
+        max-width: 250px;
+    }
+
+    .contenido-principal.tablet .contenedor-mas-info{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content:flex-end ;
+    }
+
+    .contenido-principal.tablet .contenedor-mas-info p {
+        font-size: 19px;
+        width: 170px;
+    }
+
+    /* ASIDE */
+    .enlace img {
+        width: 135px;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 767px){
+    .menu-imagen img {
+        width: 80px;
+    }
+
+    .enlace img {
+        width: 150px;
+    }
+
+    /* NAV */
+    .nav-principal {
+        height: 320px;
+        width: 400px;
+        top: 2rem;
+    }
+
+    .menu-principal-item {
+        height: 16%;
+        line-height: 55px;
+    }
+
+    .menu-principal a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Toque-de-los-cuates/Background-toque-de-los-cuates-escritorio.png);
     }
@@ -759,6 +852,9 @@ a{
     }
 
     .main .contenido-principal.movil{
+        display: none;
+    }
+    .main .contenido-principal.tablet{
         display: none;
     }
     

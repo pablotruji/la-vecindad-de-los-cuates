@@ -4,6 +4,12 @@
     src: url(../fonts/Mayan\ 2.ttf);
 }
 
+
+@font-face{
+    font-family: 'Helvetica Bold';
+    src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+
 @font-face{
     font-family: 'Bebas';
     src: url(../fonts/BebasNeue\ Book.otf);
@@ -17,7 +23,7 @@
 }
 
 body{
-    background-image: url(../imagenes/Vive-la-experiencia/Background.png);
+    background-image: url(../imagenes/Vive-la-experiencia/Background-480.png);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -531,7 +537,7 @@ a{
 }
 .redes-sociales p{
     color: #fff;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Bold';
     font-size: 9px;
 }
 
@@ -547,11 +553,7 @@ a{
 }
 
 @media screen and (min-width: 479px){
-    .redes-sociales p{
-        color: rgb(255, 0, 0);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
-    }
+    
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Imagen-cortina.png);
         width:40%;
@@ -589,10 +591,57 @@ a{
 /* TABLET */
 @media screen and (min-width: 640px){
 
-    .redes-sociales p{
-        color: rgb(0, 238, 255);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+
+    body{
+        background-image: url(../imagenes/Vive-la-experiencia/Background-vive-la-experiencia-tablet.png);
+    }
+
+    /* GRID */
+    .contenedor .contenedor-grid .grid {
+        grid-template-rows: 300px auto auto;
+    }
+
+    /* ASIDE */
+    .enlace img {
+        width: 135px;
+    }
+
+    .aside-izquierda {
+        justify-content: space-between;
+    }
+
+    .aside-derecha {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 767px){
+
+    .menu-imagen img {
+        width: 80px;
+    }
+
+    .enlace img {
+        width: 150px;
+    }
+
+    /* NAV */
+    .nav-principal {
+        height: 320px;
+        width: 400px;
+        top: 2rem;
+    }
+
+    .menu-principal-item {
+        height: 16%;
+        line-height: 55px;
+    }
+
+    .menu-principal a {
+        font-size: 13px;
     }
 }
 
@@ -623,7 +672,7 @@ a{
 
 @media screen and (min-width: 1024px){
     body{
-        background-image: url(../imagenes/Vive-la-experiencia/Background-escritorio.png);
+        background-image: url(../imagenes/Vive-la-experiencia/Background-vive-la-experiencia-escritorio.png);
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -902,10 +951,4 @@ a{
     .footer .imagen-derecha-footer img {
         max-width: 130px;
     }
-
-    /* .footer .imagen-derecha-footer {
-        display: flex;
-        width: 10%;
-        justify-content: center;
-    } */
 }

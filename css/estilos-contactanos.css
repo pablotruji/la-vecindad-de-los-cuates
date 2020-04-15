@@ -278,7 +278,7 @@ a{
 .contenido-principal .contactanos-imagen-charo img{
     display: block;
     width: 45%;
-    max-width: 160px;
+    max-width: 170px;
     margin: auto;
     margin-top: 60px;
 }
@@ -618,11 +618,7 @@ a{
 }
 
 @media screen and (min-width: 479px){
-    .redes-sociales p{
-        color: rgb(255, 0, 0);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
-    }
+    
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Imagen-cortina.png);
         width:40%;
@@ -667,18 +663,71 @@ a{
 }
 
 /* TABLET */
-@media screen and (min-width: 640px){
+@media screen and (min-width: 639px){
 
-    .redes-sociales p{
-        color: rgb(0, 238, 255);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+
+    body{
+        background-image: url(../imagenes/Contactanos/Background-conctactanos-tablet.png);
+    }
+
+    /* CONTENIDO PRINCIPAl */
+    .informacion-telefono img {
+        width: 130px;
+        max-width: initial;
+    }
+
+    .informacion-telefono p {
+        font-size: 32px;
+    }
+
+    .informacion-email img {
+        width: 80px;
+        max-width: initial;
+    }
+
+    .informacion-email p {
+        font-size: 32px;
+    }
+    
+    /* ASIDE */
+    .enlace img {
+        width: 135px;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 767px){
+
+    .menu-imagen img {
+        width: 80px;
+    }
+
+    .enlace img {
+        width: 150px;
+    }
+
+    /* NAV */
+    .nav-principal {
+        height: 320px;
+        width: 400px;
+        top: 2rem;
+    }
+
+    .menu-principal-item {
+        height: 16%;
+        line-height: 55px;
+    }
+
+    .menu-principal a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1023px){
     body{
-        background-image: url(../imagenes/Contactanos/Background-escritorio-02.png);
+        background-image: url(../imagenes/Contactanos/Background-contactanos-escritorio.png);
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -834,24 +883,19 @@ a{
     }
 
     .contenido-principal .informacion-email {
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 79%;
         height: 200px;
-        margin: auto;
         justify-content: space-between;
         align-items: center;
-        /* margin-bottom: 1em; */
-        /* background: red; */
         position: relative;
     }
 
     .contenido-principal .informacion-email img{
-        width: 100px;
+        width: 80px;
         height: auto;
         position:absolute;
-        display: block;
         right: 100px;
     }   
 

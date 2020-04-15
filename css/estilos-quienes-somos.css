@@ -265,11 +265,12 @@ a{
     height: auto;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
 }
 
 /* ================ LOGOTIPO BAZFEX =================== */
 .contenido-principal img{
-    width: 60%;
+    width: 50%;
     max-width: 120px;
 }
 /* ================ TEXTO QUIENES SOMOS ============== */
@@ -583,11 +584,7 @@ a{
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 @media screen and (min-width: 479px){
-    .redes-sociales p{
-        color: rgb(255, 0, 0);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
-    }
+    
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Imagen-cortina.png);
         width:40%;
@@ -631,16 +628,82 @@ a{
 }
 
 /* TABLET */
-@media screen and (min-width: 640px){
+@media screen and (min-width: 639px){
 
-    .redes-sociales p{
-        color: rgb(0, 238, 255);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+
+    body{
+        background-image: url(../imagenes/Quienes-somos/Background-quienes-somos-tablet.png);
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal {
+        margin-top: initial;
+    }
+
+    .quienes-somos-texto p {
+        font-size: 16px;
+    }
+
+    .quienes-somos-iconos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        justify-content: space-around;
+    }
+
+    .quienes-somos-iconos .logo-1 img {
+        width: 80px;
+    }
+
+    .quienes-somos-iconos .logo-2 img {
+        width: 75px;
+    }
+
+    .quienes-somos-iconos .logo-3 img {
+        width: 105px;
+    }
+
+    .quienes-somos-iconos p {
+        font-size: 13px;
+    }
+
+    /* ASIDE */
+    .enlace img {
+        width: 135px;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 767px){
+
+    .menu-imagen img {
+        width: 80px;
+    }
+
+    .enlace img {
+        width: 150px;
+    }
+
+    /* NAV */
+    .nav-principal {
+        height: 320px;
+        width: 400px;
+        top: 2rem;
+    }
+
+    .menu-principal-item {
+        height: 16%;
+        line-height: 55px;
+    }
+
+    .menu-principal a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Quienes-somos/Background-quienes-somos-escritorio.png);
     }
@@ -787,27 +850,41 @@ a{
     .quienes-somos-texto{
         margin-top: initial;
         margin-bottom: initial;
-        width: 40%;
+        width: 70%;
     }
 
     .quienes-somos-texto p{
-        font-size: 14px;
+        font-size: 15px;
     }
     
     .quienes-somos-iconos{
         margin-bottom: initial;
+        width: 600px;
+        background: initial;
     }
 
     .quienes-somos-iconos .logo-1 img {
         width: 90px;
     }
+    .quienes-somos-iconos .logo-1 p {
+        margin-top: 1em;
+        padding: 0.2em 2em;
+    }
 
     .quienes-somos-iconos .logo-2 img {
         width: 90px;
     }
+    .quienes-somos-iconos .logo-2 p {
+        margin-top: 0.8em;
+        padding: 0.2em 1.5em;
+    }
 
     .quienes-somos-iconos .logo-3 img {
         width: 134px;
+    }
+    .quienes-somos-iconos .logo-3 p {
+        margin-top: 0.7em;
+        padding: 0.2em 3em;
     }
 
     .quienes-somos-iconos p {

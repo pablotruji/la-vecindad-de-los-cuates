@@ -28,7 +28,7 @@
 }
 
 body{
-    background-image: url(../imagenes/Contactanos/Background-480.png);
+    background-image: url(../imagenes/Eventos/Background-480.png);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -563,11 +563,7 @@ a{
 }
 
 @media screen and (min-width: 479px){
-    .redes-sociales p{
-        color: rgb(255, 0, 0);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
-    }
+    
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Imagen-cortina.png);
         width:40%;
@@ -598,18 +594,62 @@ a{
 }
 
 /* TABLET */
-@media screen and (min-width: 640px){
+@media screen and (min-width: 639px){
 
-    .redes-sociales p{
-        color: rgb(0, 238, 255);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
+    .contenedor .contenedor-guirnaldas img {
+        width: 2000px;
+    }
+    
+    body{
+        background-image: url(../imagenes/Eventos/Background-eventos-tablet.png);
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal {
+        width: 48%;
+        /* overflow: scroll; */
+    }
+
+    .username{
+        font-size: 1.2em !important;
+    }
+
+    /* ASIDE */
+    .enlace img {
+        width: 135px;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 767px){
+
+    .menu-imagen img {
+        width: 80px;
+    }
+
+    .enlace img {
+        width: 150px;
+    }
+
+    /* NAV */
+    .nav-principal {
+        height: 320px;
+        width: 400px;
+        top: 2rem;
+    }
+
+    .menu-principal-item {
+        height: 16%;
+        line-height: 55px;
+    }
+
+    .menu-principal a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1023px){
     body{
-        background-image: url(../imagenes/Contactanos/Background-escritorio-02.png);
+        background-image: url(../imagenes/Eventos/Background-eventos-escritorio.png);
     }
 
     .contenedor .contenedor-guirnaldas img {
