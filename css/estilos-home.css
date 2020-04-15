@@ -237,6 +237,7 @@ a{
 
 .nav-principal .marco-menu{
     width: 100%;
+    position: absolute;
 }
 
 .nav-principal.show{
@@ -251,7 +252,6 @@ a{
    height: 95%;
    justify-content: center;
    align-items: center;
-
 }
 
 .menu-principal-item{
@@ -561,16 +561,59 @@ a{
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 
-
-@media screen and (min-width: 640px){
-
-    .footer .contenedor-footer .caja-1{
-        /* background: red;    */
+@media screen and (min-width: 479px){
+    .redes-sociales p{
+        color: rgb(255, 0, 0);
+        font-family: 'Helvetica Bold';
+        font-size: 9px;
     }
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Imagen-cortina.png);
+        width:40%;
+        height:110vh;
+        left: 0;
+        top: -120px;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Imagen-cortina.png);
+        width:40%;
+        height:110vh;
+        right: 0;
+        top: -120px;
+    }
+
+    /* ASIDE IZQUIERDA */
+    .aside-izquierda {
+        justify-content: space-evenly;
+    }
+    /* ASIDE DERECHA */
+    .aside-derecha {
+        justify-content: space-evenly;
+    }
+    .enlace img {
+        width: 120px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 639px){
+
+    .redes-sociales p{
+        color: rgb(0, 238, 255);
+        font-family: 'Helvetica Bold';
+        font-size: 9px;
+    }
+
+    body{
+        background-image: url(../imagenes/Background-home-tablet.png);
+    }
+
     
 }
 
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Fondo-escritorio.png);
     }

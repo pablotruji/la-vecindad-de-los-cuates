@@ -134,7 +134,7 @@ a{
 }
 
 .menu-imagen img{
-    width: 83px;
+    width: 70px;
 }
 
 /*======================BARRA DE MENÚ===================== */
@@ -582,6 +582,63 @@ a{
 /* ============================================================================ */
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
+@media screen and (min-width: 479px){
+    .redes-sociales p{
+        color: rgb(255, 0, 0);
+        font-family: 'Helvetica Bold';
+        font-size: 9px;
+    }
+    .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
+        background-image: url(../imagenes/Imagen-cortina.png);
+        width:40%;
+        height:110vh;
+        left: 0;
+        top: -120px;
+    }
+
+    .contenedor .contenedor-cortina .contenedor-cortina-derecha{
+        background-image: url(../imagenes/Imagen-cortina.png);
+        width:40%;
+        height:110vh;
+        right: 0;
+        top: -120px;
+    }
+
+    /* ASIDE IZQUIERDA */
+    .aside-izquierda {
+        justify-content: space-evenly;
+    }
+    /* ASIDE DERECHA */
+    .aside-derecha {
+        justify-content: space-evenly;
+    }
+
+    /* CONTENIDO */
+    .contenido-principal img {
+        width: 60%;
+        max-width: 150px;
+    }
+
+    .quienes-somos-texto p {
+        color: #058181;
+        text-align: center;
+        font-size: 14px;
+        line-height: 145%;
+    }
+    .enlace img {
+        width: 120px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 640px){
+
+    .redes-sociales p{
+        color: rgb(0, 238, 255);
+        font-family: 'Helvetica Bold';
+        font-size: 9px;
+    }
+}
 
 @media screen and (min-width: 1024px){
     body{
