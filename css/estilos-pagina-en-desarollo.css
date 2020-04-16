@@ -209,6 +209,69 @@ a{
     color: #fff;
 }
 
+.nav-carta-menu{
+    display: flex;
+    position: fixed;
+    height: 0;
+    width: 280px;
+    background: #FFDF00;
+    z-index: 700;
+    top: 1rem;
+    transition: height 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    font-family: Mayan;
+    right: 0;
+    left: 170px;
+    top: 125px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.nav-carta-menu.showMenu{
+   height: 53vh;
+}
+
+.carta-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+ }
+
+.carta-menu-item{
+    width: 100%;
+    height: 25px;
+    list-style: none;
+    text-align: center;
+    line-height: 25px;
+    transition: 0.1s;
+}
+
+.nav-carta-menu .carta-menu a{
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.carta-menu-item a{
+    color: #B2262D;
+    transition: 0.1s;
+}
+
+.carta-menu-item:hover{
+    background:#662D80;
+}
+
+.carta-menu-item a:hover{
+    color: #fff;
+}
+
 
 /* ==================== SECCIÓN LOGOS ==================*/
 

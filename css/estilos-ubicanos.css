@@ -216,25 +216,26 @@ a{
 
 /* BARRA CARTA MENÚ */
 .nav-carta-menu{
-    display: none;
+    display: flex;
     position: fixed;
-    height: 53vh;
-    width: 300px;
+    height: 0;
+    width: 280px;
     background: #FFDF00;
     z-index: 700;
     top: 1rem;
-    transition: flex 10s ease-in-out;
+    transition: height 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
     right: 0;
-    left: 160px;
-    top: 15vh;
+    left: 159px;
+    top: 125px;
     margin: auto;
+    overflow: hidden;
 }
 
 .nav-carta-menu.showMenu{
-   display: flex;
+   height: 53vh;
 }
 
 .carta-menu{
