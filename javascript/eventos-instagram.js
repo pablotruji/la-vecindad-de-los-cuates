@@ -28,7 +28,7 @@ $.ajax({
       url = posts[i].node.display_url;
       likes = posts[i].node.edge_liked_by.count;
       comments = posts[i].node.edge_media_to_comment.count;
-      posts_html += '<div class="col-md-4 equal-height"><img style="min-height:40px;background-color:#fff;width:100%" src="'+url+'"><div class="row like-comment"><div class="col-md-6">'+nFormatter(likes)+' LIKES</div><div class="col-md-6">'+nFormatter(comments)+' COMMENTS</div></div></div>';
+      posts_html += '<div class="col-sm-4 equal-height"><img style="display:block; margin:auto; min-height:40px;background-color:#fff;width:100%" src="'+url+'"><div class="row like-comment"><div class="col-md-4">'+nFormatter(likes)+' LIKES</div><div class="col-md-6">'+nFormatter(comments)+' COMMENTS</div></div></div>';
     }
     $(".posts").html(posts_html);
     console.log(this.url);

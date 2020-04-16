@@ -590,11 +590,7 @@ a{
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 @media screen and (min-width: 479px){
-    .redes-sociales p{
-        color: rgb(255, 0, 0);
-        font-family: 'Helvetica Bold';
-        font-size: 9px;
-    }
+    
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Imagen-cortina.png);
         width:40%;

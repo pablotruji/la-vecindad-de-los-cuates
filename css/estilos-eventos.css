@@ -261,6 +261,7 @@ a{
     height: auto;
     overflow: scroll;
     margin-bottom: 20px;
+    background: red;
 }
 
 .main .contenido-principal{
@@ -725,6 +726,7 @@ a{
         font-size: 11px;
         cursor: pointer;
         z-index: 200;
+        margin-bottom: initial;
     }
 
     .barra-menu .nav-barra-principal a:hover img{

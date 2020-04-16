@@ -1,11 +1,10 @@
-const showMenu = (toggleId, navId) => {
+const showCartaMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
              nav = document.getElementById(navId)
     
     
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
+            nav.classList.toggle('showMenu')
         })
-        
 }
-showMenu('menu-principal-toggle', 'nav-principal');
+showCartaMenu('despliegue-carta-menu', 'nav-carta-menu');
