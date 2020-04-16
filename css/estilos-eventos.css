@@ -718,6 +718,11 @@ a{
     }
 }
 
+@media screen and (min-width: 960px){
+    main .contenido-principal{
+    width: 70%;
+}
+
 @media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Eventos/Background-eventos-escritorio.png);
@@ -847,7 +852,7 @@ a{
         overflow: initial;
     }
     main .contenido-principal{
-        width: 75%;
+        width: 80%;
         /* overflow: scroll; */
     }
     
