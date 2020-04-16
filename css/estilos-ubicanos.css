@@ -1209,7 +1209,7 @@ a{
     .aside-izquierda .contenedor-botones-aside:nth-child(3){
         bottom: -80px;
         right: -70px;
-        z-index: 200;
+        z-index: 500;
     }
 
     .aside-derecha{

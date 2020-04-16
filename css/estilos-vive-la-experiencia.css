@@ -959,7 +959,7 @@ a{
     .aside-izquierda .contenedor-botones-aside:nth-child(3){
         bottom: -80px;
         right: -70px;
-        z-index: 200;
+        z-index: 500;
     }
 
     .aside-derecha{
@@ -971,7 +971,7 @@ a{
     .aside-derecha .contenedor-botones-aside:last-child {
         /* background: blue; */
         align-self: center;
-        margin-top: 80px;
+        margin-top: 120px;
     }
     
     /* FOOTER */
