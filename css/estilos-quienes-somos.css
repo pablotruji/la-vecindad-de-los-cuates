@@ -260,7 +260,7 @@ a{
 }
 
 .carta-menu-item a{
-    color: #B2262D;
+    color: rgb(233, 52, 61);
     transition: 0.1s;
 }
 
@@ -848,6 +848,10 @@ a{
     }
 
     .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    .barra-menu .nav-barra-principal .activo a img{
         background: #ac101a;
     }
 

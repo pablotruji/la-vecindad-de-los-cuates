@@ -818,6 +818,10 @@ a{
         background: #ac101a;
     }
 
+    .barra-menu .nav-barra-principal .activo a img{
+        background: #ac101a;
+    }
+
     /* FIN BARRA MENU */
 
     /* QUITANDO MENÚ HAMBURGUESA */
