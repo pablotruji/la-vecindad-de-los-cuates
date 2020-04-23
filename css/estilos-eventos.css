@@ -852,9 +852,27 @@ a{
     .main{
         overflow: initial;
     }
-    main .contenido-principal{
+    .main .banner.escritorio{
+        width: 90%;
+        margin: auto;
+    }
+
+    .main .banner img{
+        display: block;
         width: 80%;
+        margin: auto;
+    }
+
+    .main .contenido-principal{
+        width: 70%;
         /* overflow: scroll; */
+    }
+
+    .container {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);    
     }
     
     /* ASIDE */

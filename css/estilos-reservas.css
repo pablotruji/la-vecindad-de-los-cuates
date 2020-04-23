@@ -318,24 +318,27 @@ a{
 
 .main{
     grid-area: contenido-principal;
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-bottom: 5%;
-    margin-top: 10%;
-    align-items: center;
-    justify-content: center;
+    /* outline: 1px solid #fff; */
+    align-self: center;
+
 }
 
-.main .contenido-principal{
-    width: 70%;
-    height: auto;
-}
-
-#escritorio{
+.main .banner.escritorio{
     display: none;
 }
 
+.main .banner.movil{
+    width: 90%;
+    margin: auto;
+}
+.main .banner img{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.main .contenido-principal{
+}
 /* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
 
 /* == EL BATÁN == */
@@ -790,21 +793,6 @@ a{
     }
 
     /* CONTENIDO PRINCIPALS*/
-
-    .contenedor-info-local .direccion {
-        line-height: 1em;
-        font-size: 17px;
-    }
-
-    .contenedor-info-local .telefono {
-        font-size: 16px;
-        letter-spacing: 0.6px;
-    }
-
-    .contenedor-info-local .telefono-numero {
-        font-size: 15px;
-        margin-left: 2em;
-    }
 }
 
 /* TABLET */
@@ -819,55 +807,6 @@ a{
     }
 
     /* CONTENIDO PRINCIPAL */
-
-    .main .contenido-principal {
-        width: 55%;
-        height: auto;
-    }
-
-    .contenedor-info-local img {
-        width: 100px;
-        margin-bottom: 0.5em;
-    }
-
-    .contenedor-info-local {
-        width: 190px;
-        font-family: 'Helvetica UltraComp';
-    }
-
-    .contenedor-info-local .direccion {
-        width: 99%;
-    }
-
-    .contenedor-info-local .direccion {
-        line-height: 1.1em;
-        font-size: 20px;
-    }
-
-    .contenedor-info-local .telefono {
-        font-size: 18px;
-        letter-spacing: 0.6px;
-    }
-
-    .contenedor-info-local .telefono-numero {
-        width: 100%;
-        font-size: 17px;
-        margin-left: 2em;
-    }
-
-    .contenido-batan, .contenido-condado,
-    .contenido-bosque, .contenido-cumbaya,
-    .contenido-floresta {
-        margin-bottom: 2em;
-    }
-
-    .contenido-floresta {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1em;
-    }
 
     /* ASIDE */
     .enlace img {
@@ -1026,13 +965,29 @@ a{
     
     /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
     .main{
-        margin-top: initial;
-        margin-bottom: initial;
+        grid-area: contenido-principal;
+        /* outline: 1px solid #fff; */
+        align-self: initial;
     }
-    
-    .main .contenido-principal {
-        display: grid;
-        height: 95%;
+
+    .main .banner.movil{
+        display: none;
+    }
+
+    .main .banner.escritorio{
+        display: block;
+    }
+
+    .main .banner{
+        width: 100%;
+        margin: auto;
+        /* background: red; */
+    }
+
+    .main .banner img{
+        display: block;
+        width: 80%;
+        margin: auto;
     }
 
     /* ASIDE */
