@@ -27,7 +27,7 @@
 }
 
 body{
-    background-image: url(../imagenes/Ubicanos/Background-480.png);
+    background-image: url(../imagenes/Reservas/Background-480.png);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -815,7 +815,7 @@ a{
     }
 
     body{
-        background-image: url(../imagenes/Ubicanos/Background-ubicanos-tablet.png);
+        background-image: url(../imagenes/Reservas/Background-reservas-tablet.png);
     }
 
     /* CONTENIDO PRINCIPAL */
@@ -904,7 +904,7 @@ a{
 
 @media screen and (min-width: 1024px){
     body{
-        background-image: url(../imagenes/Ubicanos/Background-ubicanos-escritorio.png);
+        background-image: url(../imagenes/Reservas/Background-reservas-escritorio.png);
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -1026,155 +1026,13 @@ a{
     
     /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
     .main{
-        /* grid-area: contenido-principal;
-        width: 100%;
-        height: 100%; */
-        /* background: green; */
         margin-top: initial;
         margin-bottom: initial;
-        /* display: flex; */
     }
     
     .main .contenido-principal {
         display: grid;
         height: 95%;
-        /* background: rgb(17, 142, 201); */
-    }
-
-    #movil{
-        display: none;
-    }
-    
-    #escritorio{
-        display: grid;
-        width: 85%;
-        position: relative;
-        grid-template-columns: repeat(15, auto);
-	    grid-template-rows: repeat(10, auto);
-    }
-
-    .contenedor-info-local {
-        position: relative;
-        width: 240px;
-        font-family: 'Helvetica UltraComp';
-        margin: auto;
-    }
-
-    .contenido-condado, .contenido-batan, .contenido-bosque,
-    .contenido-cumbaya, .contenido-floresta {
-        display: block;
-        position: absolute;
-        width: 35%;
-        /* background: blue; */
-        margin: auto;
-    }
-
-    /* UBICACIÓN ELEMENTOS LOCALES*/
-    .contenido-batan{
-        grid-area: 2/1/6/4;;
-    }
-
-    .contenido-condado{
-        grid-area: 4/6/8/9;
-    }
-
-    .contenido-bosque {
-        grid-area: 8/1/10/8;
-    }
-
-    .contenido-cumbaya {
-        grid-area: 2/12/6/13;
-    }
-
-    .contenido-floresta{
-        grid-area: 7/12/8/14;
-    }
-
-    .contenedor-sombrero, .contenedor-limon, .contenedor-tequila, .contenedor-captus,
-    .contenedor-limonada, .contenedor-aji-1, .contenedor-aji-2, .contenedor-pinata{
-        display: block;
-        width: 30px;
-        margin: auto;
-        /* background: pink; */
-        position: absolute;
-    }
-
-    .contenido-condado .contenedor-info-local, 
-    .contenido-batan .contenedor-info-local, 
-    .contenido-bosque .contenedor-info-local,
-    .contenido-cumbaya .contenedor-info-local, 
-    .contenido-floresta .contenedor-info-local {
-        margin: auto;
-        /* background:red; */
-    }
-
-    .contenedor-info-local img {
-        width: 120px;
-    }
-
-    .contenedor-info-local .direccion {
-        width: 100%;
-        margin: auto;
-        line-height: 1em;
-        letter-spacing: 0.9px;
-        font-size: 22px;
-        color: #fff;
-        /* background: green; */
-    }
-
-    .contenedor-info-local .telefono {
-        font-family: Woodstand;
-        font-size: 25px;
-        letter-spacing: 0.6px;
-        color: #FABC1A;
-        margin-left: 25px;
-        /* background: lightgreen; */
-    }
-
-    .contenedor-info-local .telefono-numero {
-        width: auto;
-        letter-spacing: 0.8px;
-        font-family: 'Helvetica UltraComp';
-        color: #fff;
-        font-size: 17px;
-        margin-left: 2em;
-        /* background: lightblue; */
-    }
-
-    /* UBICACIÓN ELEMENTOS IMÁGENES */
-    .contenedor-sombrero{
-        grid-area: 9/10/9/15;
-        width: 25%;
-    }
-
-    .contenedor-limon {
-        grid-area: 6/4/8/9;
-    }
-
-    .contenedor-captus{
-        grid-area: 9/7/9/13;
-    }
-
-    .contenedor-aji-1{
-        grid-area: 2/9/8/14;
-        width: 18%;
-    }
-
-    .contenedor-aji-2{
-        grid-area: 6/2/8/4;
-    }
-
-    .contenedor-pinata{
-        grid-area: 5/15/6/16;
-        width: 100%;
-    }
-
-    .contenedor-limonada{
-        grid-area: 6/12/8/14;
-    }
-    
-    .contenedor-tequila{
-        grid-area: 1/6/5/14;
     }
 
     /* ASIDE */

@@ -15,7 +15,7 @@
 }
 
 @font-face{
-    font-family: 'Woodstand';
+    font-family: 'Woodstamp';
     src: url(../fonts/Woodstamp.otf);
 }
 
@@ -27,7 +27,7 @@
 }
 
 body{
-    background-image: url(../imagenes/Ubicanos/Background-480.png);
+    background-image: url(../imagenes/Delivery/Background-480.png);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -318,144 +318,109 @@ a{
 
 .main{
     grid-area: contenido-principal;
-    display: flex;
+    /* outline: #fff solid 1px; */
     width: 100%;
     height: auto;
-    margin-bottom: 5%;
-    margin-top: 10%;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    /* background: red; */
 }
 
-.main .contenido-principal{
-    width: 70%;
-    height: auto;
+.main .contenido-principal {
+	/* outline: #fff solid 1px; */
+	width: 90%;
+	height: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template: 1fr 1fr auto auto auto /1fr;
+	justify-content: center;
+	margin: auto;
+	margin-top: 30%;
+	margin-bottom: 30px;
 }
 
-#escritorio{
+.main .contenido-principal .item-grid{
+    /* outline: rgb(255, 255, 255) solid 1px; */
+}
+
+.main .contenido-principal .item-grid:nth-child(1){
+    grid-row: 1/3;
+    height: 100%;
+}
+
+.main .contenido-principal .item-grid:nth-child(1) img{
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.main .contenido-principal .item-grid:nth-child(2){
+    grid-row: 5/6;
+    align-self: center;
+    position: relative;
+}
+
+.main .contenido-principal .item-grid:nth-child(2) img:nth-child(2){
+    display: block;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.main .contenido-principal .item-grid:nth-child(2) img:nth-child(1){
+    width: 23px;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    margin: auto;
+    position: absolute;
+}
+
+.main .contenido-principal .item-grid:nth-child(3),
+.main .contenido-principal .item-grid:nth-child(4){
+    font-family:'Woodstamp';
+    position: relative;
+
+}
+
+.main .contenido-principal .item-grid h3{
+    color: #ED1E2F;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main .contenido-principal .item-grid p{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.main .contenido-principal .item-grid:nth-child(3) img,
+.main .contenido-principal .item-grid:nth-child(4) img{
+    width: 23px;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+}
+
+.main img.adorno-1{
     display: none;
 }
 
-/* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
-
-/* == EL BATÁN == */
-
-.contenido-batan{
-    display: flex;
-    width: 80%; 
-    margin: auto;
-    margin-bottom: 1em;
+.main img.adorno-2{
+    display: none;
 }
 
-/* == CONDADO SHOPING == */
-
-.contenido-condado{
-    display: flex;
-    width: 100%; 
-    margin-bottom: 1em;
+.main img.adorno-3{
+    display: none;
 }
 
-.contenido-condado .contenedor-info-local{
-    margin-left: 0.7em;
+.main img.adorno-3{
+    position: absolute;
+    width: 15%;
+    top: 60%;
+    right: 30%;
 }
-
-.contenido-condado .contenedor-sombrero{
-    width: 70px;
-    height: 100%;
-    margin-right: 1em;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-/* == EL BOSQUE == */
-
-.contenido-bosque{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%; 
-    margin-bottom: 1em;
-}
-
-.contenido-bosque .contenedor-info-local{
-    margin-right: 0;
-}
-
-.contenido-bosque .contenedor-limon{
-    width: 50px;
-    height: 100%;
-    margin: auto;
-}
-
-/* == CUMBAYA == */
-
-.contenido-cumbaya{
-    display: flex;
-    width: 90%; 
-    margin-bottom: 1em;
-}
-
-.contenido-cumbaya .contenedor-tequila{
-    width: 40px;
-    height: 100%;
-}
-
-/* == LA FLORESTA == */
-
-.contenido-floresta{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%; 
-    margin: auto;
-    margin-bottom: 1em;
-    
-}
-
-.contenido-floresta .contenedor-captus{
-    width: 50px;
-
-}
-
-/* ========= ESTILOS GENERALES DE INFOMRACIÓN ============ */
-.contenedor-info-local{
-    position: relative;
-    width: 150px;
-    font-family: 'Helvetica UltraComp';
-    margin: auto;
-}
-
-.contenedor-info-local img {
-	width: 90px;
-	margin: auto;
-    display: block;
-    margin-bottom: 0.2em;
-}
-
-.contenedor-info-local .direccion{
-    width: 90%;
-    margin: auto;
-    line-height: 10px;
-    letter-spacing: 0.9px; 
-    font-size: 11px;
-    color: #fff;
-}
-
-.contenedor-info-local .telefono{
-    font-family: Woodstand;
-    font-size: 12px;
-    letter-spacing: 0.6px;
-    color: #FABC1A;
-    margin-left: 25px;
-}
-
-.contenedor-info-local .telefono-numero{
-    width: 75%;
-    letter-spacing: 0.8px;
-    font-family: 'Helvetica UltraComp';
-    color: #fff;
-    font-size: 12px;
-    margin-left: 2em;
-}
-
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
@@ -696,66 +661,25 @@ a{
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 
-@media screen and (max-width: 360px){
+@media screen and (min-width: 360px){
 
     .main .contenido-principal{
-        /* border: 1px solid #E62256; */
-        font-size: 12px;
+        grid-template: auto auto 1fr 1fr 1fr /1fr;
+        font-size: 14px;
     }
-    
-    /* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
-    
-    /* == EL BATÁN == */ 
-    .contenido-batan{
-        width: 70%; 
-        margin-bottom: 1em;
-    }
-    
-    /* == CONDADO SHOPING == */
-    .contenido-condado{
-        width: 80%;
-        margin-left: 0.7rem;
-        margin-bottom: 1em;
-    }
-    
-    .contenido-condado .contenedor-sombrero{
-        display: none;
-    }
-    
-    .contenido-bosque .contenedor-limon{
-        display: none;
-    }
-    
-    /* == CUMBAYA == */
 
-    .contenido-cumbaya{
-        margin: auto;
-        margin-bottom: 1em;
+    .main .contenido-principal .item-grid h3 {
+        color: #ED1E2F;
+        font-size: 35px;
+        text-align: center;
     }
-    
-    .contenido-cumbaya .contenedor-tequila{
-        display: none;
+
+    .main .contenido-principal .item-grid p {
+        font-size: 41px;
     }
+
     
-    /* == LA FLORESTA == */
     
-    .contenido-floresta{
-        width: 80%;
-    }
-    .contenido-floresta .contenedor-captus{
-        display: none;
-    }
-    
-    /* ========= ESTILOS GENERALES DE INFOMRACIÓN ============ */
-    
-    .contenedor-info-local img{
-        width: 70px;
-        margin-left: 1.5em;
-    }
-    
-    .contenedor-info-local .direccion{
-        font-size: 10px;
-    }
     
 }
 
@@ -790,20 +714,24 @@ a{
     }
 
     /* CONTENIDO PRINCIPALS*/
-
-    .contenedor-info-local .direccion {
-        line-height: 1em;
-        font-size: 17px;
+    .main .contenido-principal .item-grid:nth-child(1) img {
+        width: 50%;
     }
 
-    .contenedor-info-local .telefono {
-        font-size: 16px;
-        letter-spacing: 0.6px;
+    .main .contenido-principal .item-grid h3 {
+        font-size: 42px;
     }
 
-    .contenedor-info-local .telefono-numero {
-        font-size: 15px;
-        margin-left: 2em;
+    .main .contenido-principal .item-grid p {
+        font-size: 42px;
+    }
+
+    .main .contenido-principal .item-grid:nth-child(3) img, .main .contenido-principal .item-grid:nth-child(4) img {
+        left: 20%;
+    }
+
+    .main .contenido-principal .item-grid:nth-child(2) img:nth-child(1) {
+        left: 20%;
     }
 }
 
@@ -815,7 +743,7 @@ a{
     }
 
     body{
-        background-image: url(../imagenes/Ubicanos/Background-ubicanos-tablet.png);
+        background-image: url(../imagenes/Delivery/Background-delivery-tablet.png);
     }
 
     /* CONTENIDO PRINCIPAL */
@@ -823,52 +751,14 @@ a{
     .main .contenido-principal {
         width: 55%;
         height: auto;
+        margin-top: 50px;
     }
 
-    .contenedor-info-local img {
-        width: 100px;
-        margin-bottom: 0.5em;
+    /* CONTENIDO PRINCIPALS*/
+    .main .contenido-principal .item-grid:nth-child(1) img {
+        width: 66%;
     }
-
-    .contenedor-info-local {
-        width: 190px;
-        font-family: 'Helvetica UltraComp';
-    }
-
-    .contenedor-info-local .direccion {
-        width: 99%;
-    }
-
-    .contenedor-info-local .direccion {
-        line-height: 1.1em;
-        font-size: 20px;
-    }
-
-    .contenedor-info-local .telefono {
-        font-size: 18px;
-        letter-spacing: 0.6px;
-    }
-
-    .contenedor-info-local .telefono-numero {
-        width: 100%;
-        font-size: 17px;
-        margin-left: 2em;
-    }
-
-    .contenido-batan, .contenido-condado,
-    .contenido-bosque, .contenido-cumbaya,
-    .contenido-floresta {
-        margin-bottom: 2em;
-    }
-
-    .contenido-floresta {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1em;
-    }
-
+    
     /* ASIDE */
     .enlace img {
         width: 135px;
@@ -904,7 +794,7 @@ a{
 
 @media screen and (min-width: 1024px){
     body{
-        background-image: url(../imagenes/Ubicanos/Background-ubicanos-escritorio.png);
+        background-image: url(../imagenes/Delivery/Background-delivery-escritorio.png);
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -986,6 +876,10 @@ a{
         background: #ac101a;
     }
 
+    .barra-menu .nav-barra-principal .activo a img{
+        background: #ac101a;
+    }
+
     /* FIN BARRA MENU */
 
     /* QUITANDO MENÚ HAMBURGUESA */
@@ -1026,156 +920,133 @@ a{
     
     /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
     .main{
-        /* grid-area: contenido-principal;
-        width: 100%;
-        height: 100%; */
-        /* background: green; */
-        margin-top: initial;
-        margin-bottom: initial;
-        /* display: flex; */
+        width: 900px;
+        height: 100%;
+        margin: auto;
+        position: relative;
     }
     
     .main .contenido-principal {
+        width: 90%;
         display: grid;
-        height: 95%;
-        /* background: rgb(17, 142, 201); */
+        grid-gap: 10px;
+        grid-template:100px 100px 100px 100px/1fr 1fr 1fr 1fr;
+        align-content: flex-start;
+        margin-top: initial;
+        margin-bottom: initial;
+    }
+    .main .contenido-principal .item-grid{
+        /* outline: rgb(255, 255, 255) solid 1px; */
+        /* width: 100%; */
+        /* height: 100px; */
     }
 
-    #movil{
-        display: none;
-    }
-    
-    #escritorio{
-        display: grid;
-        width: 85%;
-        position: relative;
-        grid-template-columns: repeat(15, auto);
-	    grid-template-rows: repeat(10, auto);
+    .main .contenido-principal .item-grid:nth-child(1){
+        grid-row-end: span 4;
+        /* background: red; */
+        height: 100%;
     }
 
-    .contenedor-info-local {
-        position: relative;
-        width: 240px;
-        font-family: 'Helvetica UltraComp';
-        margin: auto;
-    }
-
-    .contenido-condado, .contenido-batan, .contenido-bosque,
-    .contenido-cumbaya, .contenido-floresta {
+    .main .contenido-principal .item-grid:nth-child(1) img{
         display: block;
-        position: absolute;
-        width: 35%;
-        /* background: blue; */
+        width: 120%;
+        height: 100%;
         margin: auto;
+        position: relative;
+        z-index: 200;
     }
 
-    /* UBICACIÓN ELEMENTOS LOCALES*/
-    .contenido-batan{
-        grid-area: 2/1/6/4;;
+    .main .contenido-principal .item-grid:nth-child(2){
+        grid-row: 2/4;
+        grid-column: 2/4;
+        height: 100%;
+        align-self: center;
+        position: relative;
     }
-
-    .contenido-condado{
-        grid-area: 4/6/8/9;
-    }
-
-    .contenido-bosque {
-        grid-area: 8/1/10/8;
-    }
-
-    .contenido-cumbaya {
-        grid-area: 2/12/6/13;
-    }
-
-    .contenido-floresta{
-        grid-area: 7/12/8/14;
-    }
-
-    .contenedor-sombrero, .contenedor-limon, .contenedor-tequila, .contenedor-captus,
-    .contenedor-limonada, .contenedor-aji-1, .contenedor-aji-2, .contenedor-pinata{
+ 
+    .main .contenido-principal .item-grid:nth-child(2) img:nth-child(2){
         display: block;
-        width: 30px;
+        width: 50%;
+        height: 100%;
         margin: auto;
-        /* background: pink; */
+    }
+
+    .main .contenido-principal .item-grid:nth-child(2) img:nth-child(1){
+        width: 32px;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        margin: auto;
         position: absolute;
     }
 
-    .contenido-condado .contenedor-info-local, 
-    .contenido-batan .contenedor-info-local, 
-    .contenido-bosque .contenedor-info-local,
-    .contenido-cumbaya .contenedor-info-local, 
-    .contenido-floresta .contenedor-info-local {
-        margin: auto;
-        /* background:red; */
+    .main .contenido-principal .item-grid:nth-child(3),
+    .main .contenido-principal .item-grid:nth-child(4){
+        font-family:'Woodstamp';
+        position: relative;
+
     }
 
-    .contenedor-info-local img {
-        width: 120px;
+    .main .contenido-principal .item-grid h3{
+        color: #ED1E2F;
+        font-size: 44px;
+        text-align: center;
+        /* letter-spacing: 2px; */
     }
 
-    .contenedor-info-local .direccion {
-        width: 100%;
-        margin: auto;
-        line-height: 1em;
-        letter-spacing: 0.9px;
-        font-size: 22px;
+    .main .contenido-principal .item-grid p{
         color: #fff;
-        /* background: green; */
-    }
-
-    .contenedor-info-local .telefono {
-        font-family: Woodstand;
-        font-size: 25px;
-        letter-spacing: 0.6px;
-        color: #FABC1A;
-        margin-left: 25px;
-        /* background: lightgreen; */
-    }
-
-    .contenedor-info-local .telefono-numero {
-        width: auto;
-        letter-spacing: 0.8px;
-        font-family: 'Helvetica UltraComp';
-        color: #fff;
-        font-size: 17px;
-        margin-left: 2em;
-        /* background: lightblue; */
-    }
-
-    /* UBICACIÓN ELEMENTOS IMÁGENES */
-    .contenedor-sombrero{
-        grid-area: 9/10/9/15;
-        width: 25%;
-    }
-
-    .contenedor-limon {
-        grid-area: 6/4/8/9;
-    }
-
-    .contenedor-captus{
-        grid-area: 9/7/9/13;
-    }
-
-    .contenedor-aji-1{
-        grid-area: 2/9/8/14;
-        width: 18%;
-    }
-
-    .contenedor-aji-2{
-        grid-area: 6/2/8/4;
-    }
-
-    .contenedor-pinata{
-        grid-area: 5/15/6/16;
-        width: 100%;
-    }
-
-    .contenedor-limonada{
-        grid-area: 6/12/8/14;
+        font-size: 45px;
+        text-align: center;
     }
     
-    .contenedor-tequila{
-        grid-area: 1/6/5/14;
+    .main .contenido-principal .item-grid:nth-child(3) img,
+    .main .contenido-principal .item-grid:nth-child(4) img{
+        width: 32px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
     }
+
+    .main .contenido-principal .item-grid:nth-child(4) img{
+        left: 5px;
+    }
+    
+    .main .contenido-principal .item-grid:nth-child(3){
+        grid-column: 3/4;
+        /* outline: rgb(58, 13, 223) solid 1px; */
+    }
+
+    .main .contenido-principal .item-grid:nth-child(4){
+        grid-column: 4/5;
+        grid-row: 3/4;
+        /* outline: rgb(10, 170, 10) solid 1px; */
+    }
+
+    .main img.adorno-1{
+        display: block;
+        position: absolute;
+        width: 14%;
+        right: 10%;
+        top: 15%;
+    }
+
+    .main img.adorno-2{
+        display: block;
+        position: absolute;
+        width: 30%;
+        top: 12%;
+        left: 17%;
+    }
+
+    .main img.adorno-3{
+        display: block;
+        position: absolute;
+        width: 15%;
+        top: 60%;
+        right: 30%;
+    }
+
 
     /* ASIDE */
     .contenedor-botones-aside .enlace img{
