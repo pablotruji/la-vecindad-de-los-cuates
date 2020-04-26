@@ -218,24 +218,36 @@ a{
 .nav-carta-menu{
     display: flex;
     position: fixed;
-    height: 0;
-    width: 280px;
+    height: 350px;
+    width: 290px;
     background: #FFDF00;
-    z-index: 700;
-    top: 1rem;
-    transition: height 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
-    right: 0;
-    left: 159px;
-    top: 125px;
+    left: -290px;
+    top: 1rem;
     margin: auto;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .nav-carta-menu.showMenu{
-   height: 53vh;
+    left: 0 ;
+}
+
+.pantalla{
+    position: fixed;
+}
+
+.oscurecer-pantalla{
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+    transition: background-color 1000ms;
 }
 
 .carta-menu{
