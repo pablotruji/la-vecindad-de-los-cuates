@@ -285,7 +285,10 @@ a{
 }
 
 /* BARRA CARTA MENÚ */
-.nav-carta-menu{
+.nav-carta-menu-escritorio{
+    display: none;
+}
+.nav-carta-menu-movil{
     display: flex;
     position: fixed;
     height: 350px;
@@ -302,7 +305,7 @@ a{
     z-index: 1000;
 }
 
-.nav-carta-menu.showMenu{
+.nav-carta-menu-movil.showMenu{
     left: 0 ;
 }
 
@@ -341,7 +344,8 @@ a{
     transition: 0.1s;
 }
 
-.nav-carta-menu .carta-menu a{
+.nav-carta-menu-movil .carta-menu a,
+.nav-carta-menu-escritorio .carta-menu a{
     display: block;
     font-size: 11px;
     width: 100%;
@@ -831,21 +835,28 @@ a{
     /* FIN BARRA MENU */
 
     /* BARRA CARTA MENÚ ESCRITORIO */
-
-    .nav-carta-menu{
+    .nav-carta-menu-movil{
+        display:none;
+    }
+    .nav-carta-menu-escritorio{
+        display: flex;
+        position: fixed;
         height: 0;
         width: 280px;
+        background: #FFDF00;
         top: 1rem;
         transition: height 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
         right: 0;
         left: 170px;
         top: 125px;
         margin: auto;
         overflow: hidden;
+        z-index: 1000;
     }
 
-    .nav-carta-menu.showMenu{
-        left: 170px;
+    .nav-carta-menu-escritorio.showMenu{
         height: 53vh;
     }
 
