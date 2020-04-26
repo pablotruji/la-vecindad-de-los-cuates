@@ -849,6 +849,10 @@ a{
         height: 53vh;
     }
 
+    .pantalla{
+        display: none;
+    }
+
     .carta-menu{
         height: 80%;
      }

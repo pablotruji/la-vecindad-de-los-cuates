@@ -1,4 +1,4 @@
-const showMenuPrincipal = (toggleId, navId) => {
+/*const showMenuPrincipal = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
              nav = document.getElementById(navId)
 
@@ -8,8 +8,9 @@ const showMenuPrincipal = (toggleId, navId) => {
         })
 }
 showMenuPrincipal('despliegue-carta-menu', 'nav-carta-menu');
-
-var despliegue = document.getElementById("despliegue-carta-menu-movil");
+*/
+var despliegueEscritorio = document.getElementById("despliegue-carta-menu-escritorio")
+var despliegueMovil = document.getElementById("despliegue-carta-menu-movil");
 var menu = document.getElementById("nav-carta-menu");
 var oscurecer = document.getElementById("oscurecer-pantalla");
 
@@ -27,7 +28,8 @@ function showHide(e){
     }
 }   
 
-despliegue.addEventListener("click", showHide, false);
+despliegueEscritorio.addEventListener("click", showHide, false);
+despliegueMovil.addEventListener("click", showHide, false);
        
 document.addEventListener("click", function(e){
     var clic = e.target;

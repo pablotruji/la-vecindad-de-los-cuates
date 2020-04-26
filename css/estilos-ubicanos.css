@@ -138,6 +138,7 @@ a{
     right: 0;
     left: 0;
     margin: auto;
+    z-index: 200;
 }
 
 .menu-imagen img{
@@ -238,16 +239,18 @@ a{
 
 .pantalla{
     position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transition: 500ms;
 }
 
 .oscurecer-pantalla{
-    position: fixed;
     background-color: rgba(0,0,0,.6);
     top: 0;
-    width: 100%;
-    height: 100vh;
+    left: 0;
     z-index: 900;
-    transition: background-color 1000ms;
+    transition:  500ms;
 }
 
 .carta-menu{
@@ -255,7 +258,7 @@ a{
     position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 89%;
     justify-content: center;
     align-items: center;
  }
@@ -265,13 +268,13 @@ a{
     height: 25px;
     list-style: none;
     text-align: center;
-    line-height: 25px;
+    line-height: 22px;
     transition: 0.1s;
 }
 
 .nav-carta-menu .carta-menu a{
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     width: 100%;
     text-align: start;
     margin-left: 10px;
@@ -320,8 +323,10 @@ a{
     margin-top: 20px;
 }
 
-.contenedor-logo-2 .logo-2 img{
-    border-radius: initial;
+.contenedor-logo-2 .logo-2 img {
+	border-radius: initial;
+	margin-right: 10px;
+	width: 80px;
 }
 
 /*===========================================================*/
@@ -801,7 +806,7 @@ a{
         width: 120px;
     }
 
-    /* CONTENIDO PRINCIPALS*/
+    /* CONTENIDO PRINCIPAL*/
 
     .contenedor-info-local .direccion {
         line-height: 1em;
@@ -998,7 +1003,49 @@ a{
         background: #ac101a;
     }
 
+    .barra-menu .nav-barra-principal .activo a img{
+        background: #ac101a;
+    }
+
     /* FIN BARRA MENU */
+
+    /* BARRA CARTA MENÚ ESCRITORIO */
+
+    .nav-carta-menu{
+        height: 0;
+        width: 280px;
+        top: 1rem;
+        transition: height 0.5s ease-in-out;
+        right: 0;
+        left: 170px;
+        top: 125px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .nav-carta-menu.showMenu{
+        left: 170px;
+        height: 53vh;
+    }
+
+    .pantalla{
+        display: none;
+    }
+
+    .carta-menu{
+        height: 80%;
+     }
+
+     .carta-menu-item{
+        line-height: 25px;
+    }
+
+     .nav-carta-menu .carta-menu a{
+        font-size: 12px;
+    }
+
+    /* FIN BARRA CARTA MENÚ ESCRITORIO */
+
 
     /* QUITANDO MENÚ HAMBURGUESA */
     .menu-imagen{
