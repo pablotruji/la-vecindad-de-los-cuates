@@ -23,12 +23,12 @@ function showHide(e){
         menuEscritorio.classList.remove("showMenu");
         menuMovil.classList.remove("showMenu");
         oscurecer.classList.remove("oscurecer-pantalla");
-        console.log("No tiene");
+        // console.log("No tiene");
     }else{
         menuEscritorio.classList.add("showMenu");
         menuMovil.classList.add("showMenu");
         oscurecer.classList.add("oscurecer-pantalla");
-        console.log("tiene");
+        // console.log("tiene");
     }
 }   
 
@@ -37,10 +37,36 @@ despliegueMovil.addEventListener("click", showHide, false);
        
 document.addEventListener("click", function(e){
     var clic = e.target;
-    console.log("clic");
+    // console.log("clic");
     if((menuEscritorio.classList.contains("showMenu") || menuMovil.classList.contains("showMenu")) && (clic != menuEscritorio || clic != menuMovil)){
         menuEscritorio.classList.remove("showMenu");
         menuMovil.classList.remove("showMenu");
         oscurecer.classList.remove("oscurecer-pantalla");
     }
 }, false);
+
+/*
+function showHide(e){
+    e.preventDefault();
+    e.stopPropagation();
+    if(menuMovil.classList.contains("showMenu")){
+        menuMovil.classList.remove("showMenu");
+        oscurecer.classList.remove("oscurecer-pantalla");
+        console.log("No tiene");
+    }else{
+        menuMovil.classList.add("showMenu");
+        oscurecer.classList.add("oscurecer-pantalla");
+        console.log("tiene");
+    }
+}   
+
+despliegueMovil.addEventListener("click", showHide, false);
+       
+document.addEventListener("click", function(e){
+    var clic = e.target;
+    console.log("clic");
+    if(menuMovil.classList.contains("showMenu") && clic != menuMovil){
+        menuMovil.classList.remove("showMenu");
+        oscurecer.classList.remove("oscurecer-pantalla");
+    }
+}, false);*/
