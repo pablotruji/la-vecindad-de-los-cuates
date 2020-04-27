@@ -215,27 +215,43 @@ a{
 }
 
 /* BARRA CARTA MENÚ */
-.nav-carta-menu{
+.nav-carta-menu-escritorio{
+    display: none;
+}
+.nav-carta-menu-movil{
     display: flex;
     position: fixed;
-    height: 0;
-    width: 280px;
+    height: 350px;
+    width: 290px;
     background: #FFDF00;
-    z-index: 700;
-    top: 1rem;
-    transition: height 0.5s ease-in-out;
+    transition: left .5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
-    right: 0;
-    left: 159px;
-    top: 125px;
+    left: -290px;
+    top: 1rem;
     margin: auto;
     overflow: hidden;
+    z-index: 1000;
 }
 
-.nav-carta-menu.showMenu{
-   height: 53vh;
+.nav-carta-menu-movil.showMenu{
+    left: 0 ;
+}
+
+.pantalla{
+    position: fixed;
+}
+
+.oscurecer-pantalla{
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    transition:  background-color 1000ms;
 }
 
 .carta-menu{
@@ -243,7 +259,7 @@ a{
     position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 89%;
     justify-content: center;
     align-items: center;
  }
@@ -253,13 +269,14 @@ a{
     height: 25px;
     list-style: none;
     text-align: center;
-    line-height: 25px;
+    line-height: 22px;
     transition: 0.1s;
 }
 
-.nav-carta-menu .carta-menu a{
+.nav-carta-menu-movil .carta-menu a,
+.nav-carta-menu-escritorio .carta-menu a{
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     width: 100%;
     text-align: start;
     margin-left: 10px;
@@ -308,8 +325,10 @@ a{
     margin-top: 20px;
 }
 
-.contenedor-logo-2 .logo-2 img{
-    border-radius: initial;
+.contenedor-logo-2 .logo-2 img {
+	border-radius: initial;
+	margin-right: 10px;
+	width: 80px;
 }
 
 /*===========================================================*/
@@ -319,8 +338,7 @@ a{
 .main{
     grid-area: contenido-principal;
     /* outline: 1px solid #fff; */
-    align-self: center;
-
+    /* align-self: center; */
 }
 
 .main .banner.escritorio{
@@ -330,6 +348,7 @@ a{
 .main .banner.movil{
     width: 90%;
     margin: auto;
+    margin-top: 85%;
 }
 .main .banner img{
     display: block;
@@ -339,126 +358,6 @@ a{
 
 .main .contenido-principal{
 }
-/* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
-
-/* == EL BATÁN == */
-
-.contenido-batan{
-    display: flex;
-    width: 80%; 
-    margin: auto;
-    margin-bottom: 1em;
-}
-
-/* == CONDADO SHOPING == */
-
-.contenido-condado{
-    display: flex;
-    width: 100%; 
-    margin-bottom: 1em;
-}
-
-.contenido-condado .contenedor-info-local{
-    margin-left: 0.7em;
-}
-
-.contenido-condado .contenedor-sombrero{
-    width: 70px;
-    height: 100%;
-    margin-right: 1em;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-/* == EL BOSQUE == */
-
-.contenido-bosque{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%; 
-    margin-bottom: 1em;
-}
-
-.contenido-bosque .contenedor-info-local{
-    margin-right: 0;
-}
-
-.contenido-bosque .contenedor-limon{
-    width: 50px;
-    height: 100%;
-    margin: auto;
-}
-
-/* == CUMBAYA == */
-
-.contenido-cumbaya{
-    display: flex;
-    width: 90%; 
-    margin-bottom: 1em;
-}
-
-.contenido-cumbaya .contenedor-tequila{
-    width: 40px;
-    height: 100%;
-}
-
-/* == LA FLORESTA == */
-
-.contenido-floresta{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%; 
-    margin: auto;
-    margin-bottom: 1em;
-    
-}
-
-.contenido-floresta .contenedor-captus{
-    width: 50px;
-
-}
-
-/* ========= ESTILOS GENERALES DE INFOMRACIÓN ============ */
-.contenedor-info-local{
-    position: relative;
-    width: 150px;
-    font-family: 'Helvetica UltraComp';
-    margin: auto;
-}
-
-.contenedor-info-local img {
-	width: 90px;
-	margin: auto;
-    display: block;
-    margin-bottom: 0.2em;
-}
-
-.contenedor-info-local .direccion{
-    width: 90%;
-    margin: auto;
-    line-height: 10px;
-    letter-spacing: 0.9px; 
-    font-size: 11px;
-    color: #fff;
-}
-
-.contenedor-info-local .telefono{
-    font-family: Woodstand;
-    font-size: 12px;
-    letter-spacing: 0.6px;
-    color: #FABC1A;
-    margin-left: 25px;
-}
-
-.contenedor-info-local .telefono-numero{
-    width: 75%;
-    letter-spacing: 0.8px;
-    font-family: 'Helvetica UltraComp';
-    color: #fff;
-    font-size: 12px;
-    margin-left: 2em;
-}
-
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
 /* ======================================================= */
@@ -706,60 +605,6 @@ a{
         font-size: 12px;
     }
     
-    /* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
-    
-    /* == EL BATÁN == */ 
-    .contenido-batan{
-        width: 70%; 
-        margin-bottom: 1em;
-    }
-    
-    /* == CONDADO SHOPING == */
-    .contenido-condado{
-        width: 80%;
-        margin-left: 0.7rem;
-        margin-bottom: 1em;
-    }
-    
-    .contenido-condado .contenedor-sombrero{
-        display: none;
-    }
-    
-    .contenido-bosque .contenedor-limon{
-        display: none;
-    }
-    
-    /* == CUMBAYA == */
-
-    .contenido-cumbaya{
-        margin: auto;
-        margin-bottom: 1em;
-    }
-    
-    .contenido-cumbaya .contenedor-tequila{
-        display: none;
-    }
-    
-    /* == LA FLORESTA == */
-    
-    .contenido-floresta{
-        width: 80%;
-    }
-    .contenido-floresta .contenedor-captus{
-        display: none;
-    }
-    
-    /* ========= ESTILOS GENERALES DE INFOMRACIÓN ============ */
-    
-    .contenedor-info-local img{
-        width: 70px;
-        margin-left: 1.5em;
-    }
-    
-    .contenedor-info-local .direccion{
-        font-size: 10px;
-    }
-    
 }
 
 @media screen and (min-width: 479px){
@@ -792,7 +637,7 @@ a{
         width: 120px;
     }
 
-    /* CONTENIDO PRINCIPALS*/
+    /* CONTENIDO PRINCIPAL*/
 }
 
 /* TABLET */
@@ -926,6 +771,54 @@ a{
     }
 
     /* FIN BARRA MENU */
+
+    /* BARRA CARTA MENÚ ESCRITORIO */
+    .nav-carta-menu-movil{
+        display:none;
+    }
+    .nav-carta-menu-escritorio{
+        display: flex;
+        position: fixed;
+        height: 0;
+        width: 280px;
+        background: #FFDF00;
+        top: 1rem;
+        transition: height 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        left: 170px;
+        top: 125px;
+        margin: auto;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    .oscurecer-pantalla{
+        display: none;
+    }
+
+    .nav-carta-menu-escritorio.showMenu{
+        height: 53vh;
+    }
+
+    .pantalla{
+        display: none;
+    }
+
+    .carta-menu{
+        height: 80%;
+     }
+
+     .carta-menu-item{
+        line-height: 25px;
+    }
+
+    .nav-carta-menu-escritorio .carta-menu a{
+        font-size: 13px;
+    }
+
+    /* FIN BARRA CARTA MENÚ ESCRITORIO */
 
     /* QUITANDO MENÚ HAMBURGUESA */
     .menu-imagen{
