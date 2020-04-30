@@ -350,6 +350,7 @@ a{
 .main .contenido-principal{
     width: 90%;
     height: auto;
+    margin-top: 50px;
     /* background: blue; */
 }
 
@@ -655,11 +656,14 @@ a{
         background-image: url(../imagenes/Reservas/Background-reservas-tablet.png);
     }
 
-    /* CONTENIDO PRINCIPAL */
-
     /* ASIDE */
     .enlace img {
         width: 135px;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal{
+        margin-top: initial;
     }
 }
 
