@@ -47,17 +47,14 @@ a{
     max-width: 400px;
     height: 100%;
     margin: auto;
-    /* background: red; */
     justify-content: center;
     align-items: center;
     align-self: center;
 }
 
 .contenedor-imagen-centro img{
-    /* top: 28vh; */
     position: absolute;
     width: 80%;
-    /* top: 100px; */
     min-width: 100px;
 }
 

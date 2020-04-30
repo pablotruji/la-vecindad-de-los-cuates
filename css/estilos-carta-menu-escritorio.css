@@ -54,8 +54,14 @@ body{
     background-position: center;
 }
 
-.slide-4{
-	background-image: url('../imagenes/Imagenes-menu/Ensaladas/Fondo-ensaladas-tacos-escritorio.png');
+.slide-4.ensaladas{
+	background-image: url('../imagenes/Imagenes-menu/Ensaladas/Background-ensaladas-escritorio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-4.tacos{
+	background-image: url('../imagenes/Imagenes-menu/Tacos/Background-tacos-escritorio.png');
     background-size: cover;
     background-position: center;
 }
@@ -1553,133 +1559,59 @@ width: 80%;
 }
 
 /* =================== IMAGENES PA' COMPARTIR ======================== */
-
-.slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos {
+	/* ======================== PRIMERA PÁGINA ======================  */
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-tlacoyos {
 	display: flex;
-	grid-area: 1/1/6/6;
+	grid-area: 1/1/16/14;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-1 .contenedor .contenido .contenedor-imagen-tlacoyos img{
-    width: 81%;
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-tlacoyos img{
+	width: 65%;
+	max-width: 350px;
 }
 
-.slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-supernacho {
 	display: flex;
-	grid-area: 5/13/9/15;
+	grid-area: 10/24/19/33;
 	/* background: blue; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-1 .contenedor .contenido .contenedor-imagen-huevos-cartoon img{
-    width: 82%;
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-supernacho img {
+	width: 90%;
+	max-width: 420px;
 }
 
-.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-1 {
 	display: flex;
-	grid-area: 10/13/13/16;
-	/* background: blue; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-end;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa img {
-	width: 40%;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa-plato {
-	display: flex;
-	grid-area: 14/3/20/14;
-	/* background: blue; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-la-gringa-plato img {
-	width: 56%;
-	max-width: 238px;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-supernacho {
-	display: flex;
-	grid-area: 12/1/17/6;
-	/* background: blue; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-supernacho img {
-	width: 95%;
-	max-width: 220px;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 {
-	display: flex;
-	grid-area: 1/5/4/7;
+	grid-area: 2/10/4/13;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-1 img{
-    width:70%;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 {
-	display: flex;
-	grid-area: 10/1/13/3;
-	/* background: rgb(43, 255, 0); */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-2 img{
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-1 img{
     width:50%;
 }
 
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-2 {
 	display: flex;
-	grid-area: 11/7/15/9;
+	grid-area: 10/22/12/25;
 	/* background: rgb(43, 255, 0); */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
-	transform: scaleX(-1) rotate(-83deg);
 }
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-3 img{
-    width:50%;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 {
-	display: flex;
-	grid-area: 11/29/13/31;
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-flecha-4 img{
-	width:50%;
-	/* transform: scale(-1); */
-	transform: scaleY(-1) rotate(-162deg);
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-2 img{
+	width:60%;
+	transform: rotate(124deg) scaleY(-1);
 }
 
-.slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa {
-	display: flex;
-	grid-area: 10/25/19/35;
-	/* background: rgb(43, 255, 0); */
-	width: 100%;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-.slide-1 .contenedor .contenido .contenedor-imagen-alitas-sinaloa img {
-	width: 71%;
-	max-width: 370px;
-}
-
-.slide-1 .contenedor .contenido .contenedor-imagen-chile {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-chile {
 	display: flex;
 	grid-area: 6/34/8/35;
 	/* background: rgb(43, 255, 0); */
@@ -1687,52 +1619,104 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-1 .contenedor .contenido .contenedor-imagen-chile img{
+.slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-chile img{
    width: 76%;
 }
 
+/* ========================= SEGUNDA PÁGINA ======================= */
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-huevos-cartoon {
+	display: flex;
+	grid-area: 12/11/14/13;
+	/* background: blue; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-huevos-cartoon img {
+	width: 95%;
+	max-width: 125px;
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-la-gringa {
+	display: flex;
+	grid-area: 10/13/13/16;
+	/* background: blue; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-end;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-la-gringa img {
+	width: 40%;
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-la-gringa-plato {
+	display: flex;
+	grid-area: 3/1/13/13;		
+	/* background: blue; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-la-gringa-plato img {
+	width: 78%;
+	max-width: 420px;
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-alitas-sinaloa {
+	display: flex;
+	grid-area: 10/23/19/34;
+	/* background: rgb(43, 255, 0); */
+	width: 100%;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-alitas-sinaloa img {
+	width: 95%;
+	max-width: 440px;
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-3 {
+	display: flex;
+	grid-area: 3/8/6/10;
+	/* background: rgb(43, 255, 0); */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-3 img{
+	width:50%;
+	transform: scaleX(-1) rotate(255deg);
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-4 {
+	display: flex;
+	grid-area: 10/27/13/29;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-4 img{
+	width:50%;
+	/* transform: scale(-1); */
+	transform: scaleY(-1) rotate(182deg);
+}
 
 /* ======================= IMAGENES PA' ENTRARLE SOLITO ==================== */
-.slide-2 .contenedor .contenido .contenedor-imagen-jalapeno {
+/* ============================= PRIMERA PÁGINA  ========================== */
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-jalapeno {
 	display: flex;
-	grid-area: 1/1/8/9;
+	grid-area: 1/1/9/11;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-jalapeno img{
-	width: 64%;
-	max-width: 200px;
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-jalapeno img {
+	width: 74%;
+	max-width: 350px;
 }
 
-.slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz {
-	display: flex;
-	grid-area: 9/14/17/21;
-	/* background: red; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-2 .contenedor .contenido .contenedor-imagen-flauta-maiz img{
-	width: 77%;
-	max-width: 210px;
-}
-
-.slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua {
-	display: flex;
-	grid-area: 6/25/15/35;
-	/* background: red; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-2 .contenedor .contenido .contenedor-imagen-papa-chihuahua img{
-	width: 77%;
-	max-width: 270px;
-}
-
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-1 {
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-chile-1 {
 	display: flex;
 	grid-area: 10/5/12/9;
 	/* background: red; */
@@ -1740,11 +1724,11 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-end;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-1 img{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-chile-1 img{
 	width: 25%;
 }
 
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-2 {
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-chile-2 {
 	display: flex;
 	grid-area: 8/14/10/15;
 	/* background: red; */
@@ -1753,11 +1737,52 @@ width: 80%;
 	align-items: center;
 	z-index: 500;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-2 img{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-chile-2 img{
 	width: 95%;
 }
 
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-3{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-1{
+	display: flex;
+	grid-area: 2/10/4/12;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-2.primera-pagina .contenedor .contenido .contenedor-imagen-flecha-1 img{
+	width: 50%;
+	max-width: 100px;
+	transform: rotate(250deg);
+}
+
+/* =========================== SEGUNDA PÁGINA ========================== */
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flauta-maiz {
+	display: flex;
+	grid-area: 9/14/17/21;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flauta-maiz img{
+	width: 77%;
+	max-width: 210px;
+}
+
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-papa-chihuahua {
+	display: flex;
+	grid-area: 6/25/15/35;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-papa-chihuahua img{
+	width: 77%;
+	max-width: 270px;
+}
+
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-chile-3{
 	display: flex;
 	grid-area: 17/29/19/32;
 	/* background: red; */
@@ -1765,23 +1790,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-chile-3 img{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-chile-3 img{
 	width: 30%;
 }
 
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-1{
-	display: flex;
-	grid-area: 6/7/9/8;
-	/* background: red; */
-	width: 100%;
-	justify-content: center;
-	align-items: flex-start;
-}
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-1 img{
-	width: 80%;
-}
-
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-2{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-2{
 	display: flex;
 	grid-area: 10/12/12/14;
 	/* background: red; */
@@ -1789,11 +1802,11 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-2 img{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-2 img{
 	width: 80%;
 }
 
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-3 {
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-3 {
 	display: flex;
 	grid-area: 11/29/13/31;
 	/* background: red; */
@@ -1801,7 +1814,7 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-end;
 }
-.slide-2 .contenedor .contenido .contenedor-imagen-flecha-3 img{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-imagen-flecha-3 img{
 	width: 80%;
 }
 
@@ -1868,7 +1881,7 @@ width: 80%;
 }
 
 /* ===================== IMAGENES ENSALADAS =========================== */
-.slide-4 .contenido .contenedor-imagen-ensalada{
+.slide-4.ensaladas .contenido .contenedor-imagen-ensalada{
 	display: flex;
 	grid-area: 3/2/12/11;
 	/* background: red; */
@@ -1876,12 +1889,12 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-4 .contenido .contenedor-imagen-ensalada img {
+.slide-4.ensaladas .contenido .contenedor-imagen-ensalada img {
 	width: 95%;
 	max-width: 388px;
 }
 
-.slide-4 .contenido .contenedor-imagen-flecha-1{
+.slide-4.ensaladas .contenido .contenedor-imagen-flecha-1{
 	display: flex;
 	grid-area: 5/10/13/13;
 	/* background: red; */
@@ -1889,12 +1902,12 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 } 
-.slide-4 .contenido .contenedor-imagen-flecha-1 img{
+.slide-4.ensaladas .contenido .contenedor-imagen-flecha-1 img{
 	width: 60%;
 }
 
 /* ===================== IMAGENES TACOS =========================== */
-.slide-4 .contenido .contenedor-imagen-tacos-carne{
+.slide-4.tacos .contenido .contenedor-imagen-tacos-carne{
 	display: flex;
 	grid-area: 7/30/19/38;
 	/* background: red; */
@@ -1902,12 +1915,12 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-4 .contenido .contenedor-imagen-tacos-carne img {
+.slide-4.tacos .contenido .contenedor-imagen-tacos-carne img {
 	width: 100%;
 	max-width: 300px;
 }
 
-.slide-4 .contenido .contenedor-imagen-taco-sudadero{
+.slide-4.tacos .contenido .contenedor-imagen-taco-sudadero{
 	display: flex;
 	grid-area: 12/18/16/27;
 	/* background: red; */
@@ -1915,12 +1928,12 @@ width: 80%;
 	justify-content: center;
 	align-items: flex-start;
 }
-.slide-4 .contenido .contenedor-imagen-taco-sudadero img {
+.slide-4.tacos .contenido .contenedor-imagen-taco-sudadero img {
 	width: 55%;
 	max-width: 200px;
 }
 
-.slide-4 .contenido .contenedor-imagen-flecha-2{
+.slide-4.tacos .contenido .contenedor-imagen-flecha-2{
 	display: flex;
 	grid-area: 7/30/13/32;
 	/* background: red; */
@@ -1929,11 +1942,11 @@ width: 80%;
 	align-items: flex-start;
 	transform: scaleY(-1) rotateZ(160deg);
 } 
-.slide-4 .contenido .contenedor-imagen-flecha-2 img{
+.slide-4.tacos .contenido .contenedor-imagen-flecha-2 img{
 	width: 60%;
 }
 
-.slide-4 .contenido .contenedor-imagen-flecha-3{
+.slide-4.tacos .contenido .contenedor-imagen-flecha-3{
 	display: flex;
 	grid-area: 9/28/19/29;
 	/* background: red; */
@@ -1942,11 +1955,11 @@ width: 80%;
 	align-items: flex-start;
 	transform: rotateZ(-60deg);
 } 
-.slide-4 .contenido .contenedor-imagen-flecha-3 img{
+.slide-4.tacos .contenido .contenedor-imagen-flecha-3 img{
 	width: 60%;
 }
 
-.slide-4 .contenido .contenedor-imagen-chile{
+.slide-4.tacos .contenido .contenedor-imagen-chile{
 	display: flex;
 	grid-area: 5/24/7/26;
 	/* background: red; */
@@ -1955,7 +1968,7 @@ width: 80%;
 	align-items: center;
 	z-index: 500;
 } 
-.slide-4 .contenido .contenedor-imagen-chile img{
+.slide-4.tacos .contenido .contenedor-imagen-chile img{
 	width: 40%;
 }
 
@@ -2229,8 +2242,8 @@ width: 80%;
 }
 
 /* ============= IMAGENES LO MEJOR DE NUESTRO GANADO ============ */
-
-.slide-7 .contenido .contenedor-imagen-bistec-chente{
+/* ==================?===== PRIMERA PAGINA ====================== */
+.slide-7.primera-pagina .contenido .contenedor-imagen-bistec-chente{
 	display: flex;
 	grid-area: 1/1/9/12;
 	/* background: red; */
@@ -2238,11 +2251,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-bistec-chente img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-bistec-chente img{
 	width: 77%;
 }
 
-.slide-7 .contenido .contenedor-imagen-sabana-monterrey{
+.slide-7.primera-pagina .contenido .contenedor-imagen-sabana-monterrey{
 	display: flex;
 	grid-area: 9/12/18/22;
 	/* background: red; */
@@ -2250,23 +2263,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-sabana-monterrey img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-sabana-monterrey img{
 	width: 75%;
 }
 
-.slide-7 .contenido .contenedor-imagen-tapiquena{
-	display: flex;
-	grid-area: 1/26/9/37;
-	/* background: red; */
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-} 
-.slide-7 .contenido .contenedor-imagen-tapiquena img{
-	width: 65%;
-}
-
-.slide-7 .contenido .contenedor-imagen-adorno-1{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-1{
 	display: flex;
 	grid-area: 15/20/17/22;
 	/* background: red; */
@@ -2274,11 +2275,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-1 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-1 img{
 	width: 50%;
 }
 
-.slide-7 .contenido .contenedor-imagen-adorno-2{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-2{
 	display: flex;
 	grid-area: 9/9/11/11;
 	/* background: red; */
@@ -2286,11 +2287,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-2 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-2 img{
 	width: 50%;
 }
 
-.slide-7 .contenido .contenedor-imagen-adorno-3{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-3{
 	display: flex;
 	grid-area: 6/17/8/19;
 	/* background: red; */
@@ -2298,11 +2299,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-3 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-3 img{
 	width: 50%;
 }
 
-.slide-7 .contenido .contenedor-imagen-adorno-4{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-4{
 	display: flex;
 	grid-area: 15/32/17/34;
 	/* background: red; */
@@ -2310,11 +2311,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-4 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-4 img{
 	width: 40%;
 }
 
-.slide-7 .contenido .contenedor-imagen-adorno-5{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-5{
 	display: flex;
 	grid-area: 6/17/8/19;
 	/* background: red; */
@@ -2322,11 +2323,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-5 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-5 img{
 	width: 40%;
 }
 
-.slide-7 .contenido .contenedor-imagen-adorno-6{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-6{
 	display: flex;
 	grid-area: 6/1/8/3;
 	/* background: red; */
@@ -2334,11 +2335,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-adorno-6 img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-adorno-6 img{
 	width: 50%;
 }
 
-.slide-7 .contenido .contenedor-imagen-chile-nuestro-ganado{
+.slide-7.primera-pagina .contenido .contenedor-imagen-chile-nuestro-ganado{
 	display: flex;
 	grid-area: 13/6/16/7;
 	/* background: red; */
@@ -2346,11 +2347,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-chile-nuestro-ganado img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-chile-nuestro-ganado img{
 	width: 90%;
 }
 
-.slide-7 .contenido .contenedor-imagen-flecha-1-nuestro-ganado{
+.slide-7.primera-pagina .contenido .contenedor-imagen-flecha-1-nuestro-ganado{
 	display: flex;
 	grid-area: 1/9/4/12;
 	/* background: red; */
@@ -2358,11 +2359,11 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-flecha-1-nuestro-ganado img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-flecha-1-nuestro-ganado img{
 	width: 50%;
 }
 
-.slide-7 .contenido .contenedor-imagen-flecha-2-nuestro-ganado{
+.slide-7.primera-pagina .contenido .contenedor-imagen-flecha-2-nuestro-ganado{
 	display: flex;
 	grid-area: 11/10/13/13;
 	/* background: red; */
@@ -2370,20 +2371,93 @@ width: 80%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-flecha-2-nuestro-ganado img{
+.slide-7.primera-pagina .contenido .contenedor-imagen-flecha-2-nuestro-ganado img{
 	width: 55%;
 }
 
-.slide-7 .contenido .contenedor-imagen-flecha-3-nuestro-ganado{
+/* ======================== SEGUNDA PÁGINA ========================== */
+.slide-7.segunda-pagina .contenido .contenedor-imagen-tapiquena{
 	display: flex;
-	grid-area: 1/25/4/28;
+	grid-area: 1/26/9/37;
 	/* background: red; */
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 } 
-.slide-7 .contenido .contenedor-imagen-flecha-3-nuestro-ganado img{
-	width: 55%;
+.slide-7.segunda-pagina .contenido .contenedor-imagen-tapiquena img{
+	width: 65%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-1{
+	display: flex;
+	grid-area: 15/20/17/22;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-1 img{
+	width: 50%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-2{
+	display: flex;
+	grid-area: 9/9/11/11;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-2 img{
+	width: 50%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-3{
+	display: flex;
+	grid-area: 6/17/8/19;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-3 img{
+	width: 50%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-4{
+	display: flex;
+	grid-area: 15/32/17/34;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-4 img{
+	width: 40%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-5{
+	display: flex;
+	grid-area: 6/17/8/19;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-5 img{
+	width: 40%;
+}
+
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-6{
+	display: flex;
+	grid-area: 6/1/8/3;
+	/* background: red; */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+.slide-7.segunda-pagina .contenido .contenedor-imagen-adorno-6 img{
+	width: 50%;
 }
 
 /* ============ IMAGENES PECHUGAS PIO PIO ===================== */
@@ -3144,6 +3218,7 @@ width: 80%;
 	padding: 0 0.3em;
 }
 
+.contenedor .contenido .contenedor-platos.sopes h2 span,
 .contenedor .contenido .contenedor-platos.huevos-rancheros h2 span, 
 .contenedor .contenido .contenedor-platos.alitas-sinaloa h2 span,
 .contenedor .contenido .contenedor-platos.nachos h2 span,
@@ -3258,9 +3333,9 @@ width: 80%;
 /* ============================ SUBTITULOS ============================ */
 .contenedor .contenido .contenedor-platos h3 {
 	font-family: 'Bison';
-	font-size: 14px;
+	font-size: 16.5px;
 	color: #fff;
-	margin-top: -0.5em;
+	margin-top: -0.2em;
 	margin-bottom: 0.4em;
 	text-align: center;
 }
@@ -3268,15 +3343,16 @@ width: 80%;
 .contenedor .contenido .contenedor-platos h3 span {
 	background: #4A266A;
 	padding: 0.2em 0.5em;
+	line-height: 1.4em;
 }
 
 /* ========================= DESCRIPCION PLATOS ============================ */
 .contenedor .contenido .contenedor-platos .descripcion-platos p {
 	text-align: center;
-	margin-bottom: 0.3em;
 	color: #fff;
 	font-size: 15px;
 	font-family: 'Mayan';
+	line-height: 1.4em;
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
@@ -3341,6 +3417,7 @@ width: 80%;
 .slide-13 .contenedor .contenido .contenedor-platos .descripcion-platos p span{
 	background: initial;
 }
+
 /* =======================  PRECIOS   ================================ */
 /* ====== PRECIOS VARIOS ======== */
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios {
@@ -3349,29 +3426,65 @@ width: 80%;
 	font-family: 'Bison';
 	color: #fff;
 	text-transform: uppercase;
-	justify-content: center;
-    margin: auto;
-	font-size: 16px;
-	width: 100%;
+	margin-left: 0.2em;
+	margin-top: 0.7em;
+	font-size: 17px;
+	width: 110%;
 }
 
+
+
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div{
-    margin-right: 1em;
+	width: 32%;
+	/* background: blue; */
+}
+
+.contenedor .contenido .contenedor-platos.gorditas .descripcion-precios-varios div,
+.contenedor .contenido .contenedor-platos.nachos .descripcion-precios-varios div{
+	width: 25%;
+	/* background: blue; */
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div p{
-    text-align: end;
+    text-align: center;
   
 }
 
+.contenedor .contenido .contenedor-platos .descripcion-precios-varios div:nth-child(3) p{
+	text-align: end;
+	width: 120px;
+}
+
+.contenedor .contenido .contenedor-platos.nachos .descripcion-precios-varios div:nth-child(3) p{
+	text-align: end;
+	width: 100px;
+}
+
+.contenedor .contenido .contenedor-platos.flauta-trigo .descripcion-precios-varios{
+	width: 100%;
+}
+.contenedor .contenido .contenedor-platos.flauta-trigo .descripcion-precios-varios div:nth-child(3) p {
+	text-align: end;
+	width: 100%;
+}
 /* ===== PRECIO UNICO ======= */
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-unico{
     font-family: 'Mayan';
     color: #fff;
-    text-align: center;
-    font-size: 30px;
+	text-align: center;
+	margin-top: -0.4em;
 }
+
+.contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(1){
+	/* color: red; */
+	font-size: 46px;
+}
+.contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(2){
+	/* color: red; */
+	font-size: 31px;
+}
+
 
 /* ======== ETIQUETA ======= */
 
@@ -3384,9 +3497,9 @@ width: 80%;
 /* ======== PRECIOS NACHOS ESTILOS ESPECIALES =============== */
 .contenedor .contenido .contenedor-platos .etiqueta-2 {
 	font-family: 'Bison';
-	font-size: 15px;
 	margin-top: 0.5em;
 }
+
 
 .contenedor .contenido .contenedor-platos .etiqueta-2 p{
     text-align: center;
@@ -3397,17 +3510,12 @@ width: 80%;
 	position: relative;
 	background: #D8C724;
 	color: #C22528;
-	padding: 0 0.3em;
+	padding: 0 0.4em;
 }
 
 .contenedor .contenido .contenedor-platos .etiqueta-2 img {
-	/* background: blue; */
-	/* position: relative; */
-	/* left: 199px; */
-	/* bottom: 35px; */
 	width: 16%;
 }
-
 
 /* ======== PRECIOS NACHOS ESTILOS FIN =============== */
 
@@ -3438,9 +3546,13 @@ width: 80%;
 	text-align: center;
 }
 
-.contenedor .contenido .contenedor-platos .descripcion-precio-2 p span{
+.contenedor .contenido .contenedor-platos .descripcion-precio-2 p:nth-child(2) span:nth-child(1){
 	text-align: center;
-	font-size: 28px;
+	font-size: 35px;
+}
+.contenedor .contenido .contenedor-platos .descripcion-precio-2 p:nth-child(2) span:nth-child(2){
+	text-align: center;
+	font-size: 23px;
 }
 /* ========== PRECIOS ALITAS SINALOA FIN ============= */
 
@@ -3449,6 +3561,12 @@ width: 80%;
     color: #fff;
     text-align: center;
     font-size: 35px;
+}
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .precio-unico span:nth-child(1){
+    font-size: 46px;
+}
+.contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .precio-unico span:nth-child(2){
+    font-size: 31px;
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .etiqueta-1 {
@@ -3477,32 +3595,14 @@ width: 80%;
 
 /* ============================ PRECIOS PA' COMPARTIR =============================== */
 
-.contenedor .contenido .contenedor-platos.nachos .descripcion-precios-varios {
-	/* display: flex;
-	height: auto;
-	font-family: 'Bison';
-	color: #fff;
-	text-transform: uppercase;
-	justify-content: center;
-	margin: auto;
-	font-size: 16px; */
+.contenedor .contenido .contenedor-platos.sopes .descripcion-precios-varios,
+.contenedor .contenido .contenedor-platos.tlacoyos .descripcion-precios-varios,
+.contenedor .contenido .contenedor-platos.tostadas .descripcion-precios-varios {
 	position: relative;
-	width: 300px;
-	left: -20px;
-	/* background: red; */
-}
-
-.contenedor .contenido .contenedor-platos.sopes .descripcion-precios-varios {
-	width: 300px;
 	left: -20px;
 }
 
-.contenedor .contenido .contenedor-platos.gorditas .descripcion-precios-varios {
-	width: 300px;
-	left: -20px;
-}
-
-/* PRECIOS PA ENTRARLE SOLITO */
+/* ============================ PRECIOS PA ENTRARLE SOLITO ========================== */
 
 .slide-2 .contenedor .contenido .contenedor-platos .descripcion-precio-2 {
 	display: flex;
@@ -3534,191 +3634,205 @@ width: 80%;
 	text-align: center;
 }
 
+/* ===================== ETIQUETAS NUEVO ============================= */
+.contenedor .contenido .contenedor-platos .etiqueta-nuevo-plato span {
+	font-family: 'Russian';
+	font-size: 20px;
+	background: #2C86BD;
+	color: #fff;
+	padding: 0 0.4em;
+	position: relative;
+	left: 41px;
+	top: 2px;
+	z-index: 500;
+}
+
+
 /* ===================== UBICACION CONTENEDOR PLATOS ========================== */
-	/* ======================== PA COMPARTIR ============================= */
-.contenedor .contenido .contenedor-platos.tlacoyos {
+/* ======================== PA COMPARTIR ============================= */
+/* ======================== PRIMERA PÁGINA ======================  */
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.tlacoyos {
 	position: absolute;
-	grid-area: 1 / 6/ 3 / 13;
+	grid-area: 3 / 12/ 9 / 18;
 	/* background: blue; */
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.huevos-rancheros {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.supernacho {
 	position: absolute;
-	grid-area: 7 / 9 / 7 / 15;
-	width: 100%;
-	height: auto;
-	/* background: red; */
-}
-
-.contenedor .contenido .contenedor-platos.supernacho {
-	position: absolute;
-	grid-area: 7 / 2 / 10 / 8;
+	grid-area: 10 / 16 / 15 / 22;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 }
 
-.contenedor .contenido .contenedor-platos.la-gringa {
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.tostadas {
 	position: absolute;
-	grid-area: 12 / 10 / 16 / 16;
+	grid-area: 4 / 21 / 7 / 27;
+	width: 100%;
+	height: auto;
+	top: -20px;
+	/* background: green; */
+}
+
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.nachos {
+	position: absolute;
+	grid-area: 3 / 29 / 6 / 36;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	top: 20px;
+}
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.nachos .descripcion-platos p{
+	width: 70%;
+	margin:auto;
+}
+
+.slide-1.primera-pagina .contenedor .contenido .contenedor-platos.sopes {
+	position: absolute;
+	grid-area: 13 / 4 / 15 / 11;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	/* left: 31px; */
+}
+
+/* ========================== SEGUNDA PÁGINA ============================ */
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-platos.huevos-rancheros {
+	position: absolute;
+	grid-area: 12 / 5 / 13 / 11;
+	width: 100%;
+	height: auto;
+	/* background: red; */
+}
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-platos.la-gringa {
+	position: absolute;
+	grid-area: 3 / 12 / 8 / 18;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	top: 25px;
 }
 
-.contenedor .contenido .contenedor-platos.tostadas {
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-platos.alitas-sinaloa {
 	position: absolute;
-	grid-area: 4 / 16 / 7 / 23;
+	grid-area: 6 / 28 / 9 / 35;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+	top: -30px;
+}
+
+
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-platos.gorditas {
+	position: absolute;
+	grid-area: 9 / 15 / 15 / 22;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 }
 
-.contenedor .contenido .contenedor-platos.alitas-sinaloa {
+.slide-1.segunda-pagina .contenedor .contenido .contenedor-platos.carne-chile {
 	position: absolute;
-	grid-area: 7 / 31 / 9 / 37;
-	width: 100%;
-	height: auto;
-	/* background: green; */
-	left: -27px;
-}
-
-.contenedor .contenido .contenedor-platos.nachos {
-	position: absolute;
-	grid-area: 1 / 29 / 5 / 35;
-	width: 100%;
-	height: auto;
-	/* background: green; */
-}
-
-.contenedor .contenido .contenedor-platos.sopes {
-	position: absolute;
-	grid-area: 6 / 22 / 9 / 28;
-	width: 100%;
-	height: auto;
-	/* background: green; */
-	left: 31px;
-}
-
-.contenedor .contenido .contenedor-platos.gorditas {
-	position: absolute;
-	grid-area: 9 / 16 / 15 / 22;
-	width: 100%;
-	height: auto;
-	/* background: green; */
-}
-
-.contenedor .contenido .contenedor-platos.carne-chile {
-	position: absolute;
-	grid-area: 13 / 21 / 16 / 28;
+	grid-area: 3 / 21 / 8 / 28;
 	width: 100%;
 	height: auto;
 	/* background: green; */
 	top: 15px;
 }
 
-/* ====================== PA' ENTRARLE SOLITA ========================== */
-
-.contenedor .contenido .contenedor-platos.empanadas-veracruz{
+/* ====================== PA' ENTRARLE SOLITO ========================== */
+/* ======================= PRIMERA PÁGINA ======================== */
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.empanadas-veracruz{
 	position: absolute;
-	grid-area: 3 / 9 / 8 / 15;
+	grid-area: 12 / 6 / 16 / 13;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.jalapeno-relleno{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.jalapeno-relleno{
 	position: absolute;
-	grid-area: 7 / 2 / 12 / 9;
+	grid-area: 4 / 11 / 13 / 17;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.flauta-trigo{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.quesadillas{
 	position: absolute;
-	grid-area: 12 / 2 / 13 / 9;
+	grid-area: 9 / 17 / 10 / 23;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.flauta-maiz{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.queso-fundido {
 	position: absolute;
-	grid-area: 12 / 9 / 17 / 15;
+	grid-area: 13 / 24 / 16 / 29;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.quesadillas{
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.elote{
 	position: absolute;
-	grid-area: 4 / 16 / 6 / 21;
+	grid-area: 3 / 23 / 9 / 29;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.queso-fundido {
+.slide-2.primera-pagina .contenedor .contenido .contenedor-platos.esquites{
 	position: absolute;
-	grid-area: 5 / 21 / 8 / 26;
+	grid-area: 8 / 28 / 8 / 34;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.elote{
+/* ====================== SEGUNDA PÁGINA  ===============================*/
+
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.flauta-trigo{
 	position: absolute;
-	grid-area: 2 / 25 / 10 / 30;
+	grid-area: 3 / 9 / 16 / 15;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.sincronizadas{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.flauta-maiz{
+	position: absolute;
+	grid-area: 12 / 5 / 17 / 12;
+	width: 100%;
+	height: auto;
+	/* background: green; */
+}
+
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.sincronizadas{
 	position: absolute;
 	grid-area: 1 / 30 / 5 / 36;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.papa-chiguagua {
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.papa-chiguagua {
 	position: absolute;
 	grid-area: 11 / 32 / 14 / 37;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
 }
 
-.contenedor .contenido .contenedor-platos.esquites{
+.slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.queso-fundido-chorizo{
 	position: absolute;
-	grid-area: 12 / 21 / 15 / 25;
+	grid-area: 11 / 19 / 17 / 25;
 	width: 100%;
 	height: auto;
 	/* background: green; */
-	/* top: 15px; */
-}
-
-.contenedor .contenido .contenedor-platos.queso-fundido-chorizo{
-	position: absolute;
-	grid-area: 14 / 26 / 17 / 32;
-	width: 100%;
-	height: auto;
-	/* background: green; */
-	/* top: 15px; */
 }
 
 /* ========================= SOPAS ===========================*/
@@ -3767,21 +3881,21 @@ width: 80%;
 
 /* =========================== ENSALADAS ============================== */
 
-.contenedor .contenido .contenedor-platos.de-los-cuates{
+.ensaladas .contenedor .contenido .contenedor-platos.de-los-cuates{
 	position: absolute;
 	grid-area: 7 / 11 / 17 / 18;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.vegetariana{
+.ensaladas .contenedor .contenido .contenedor-platos.vegetariana{
 	position: absolute;
 	grid-area: 11 / 2 / 17 / 8;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.ranchera{
+.ensaladas .contenedor .contenido .contenedor-platos.ranchera{
 	position: absolute;
 	grid-area: 13 / 9 / 15 / 15;
 	width: 100%;
@@ -3790,42 +3904,42 @@ width: 80%;
 
 /* ============================ TACOS ==================== */
 
-.contenedor .contenido .contenedor-platos.tacos{
+.tacos .contenedor .contenido .contenedor-platos.tacos{
 	position: absolute;
 	grid-area: 1 / 18 / 18 / 25;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.tacos-cuates{
+.tacos .contenedor .contenido .contenedor-platos.tacos-cuates{
 	position: absolute;
 	grid-area: 3 / 30 / 6 / 36;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.cochinita-pibil{
+.tacos .contenedor .contenido .contenedor-platos.cochinita-pibil{
 	position: absolute;
 	grid-area: 7 / 18 / 17 / 25;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.taquiza{
+.tacos .contenedor .contenido .contenedor-platos.taquiza{
 	position: absolute;
 	grid-area: 13 / 30 / 17 / 36;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.taco-sudadero{
+.tacos .contenedor .contenido .contenedor-platos.taco-sudadero{
 	position: absolute;
 	grid-area: 14 / 25 / 17 / 30;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.taco-carne-asada{
+.tacos .contenedor .contenido .contenedor-platos.taco-carne-asada{
 	position: absolute;
 	grid-area: 7 / 25 / 11 / 30;
 	width: 100%;
@@ -3941,52 +4055,54 @@ width: 80%;
 }
 
 /* =================== LO MEJOR DE NUESTRO GANADO ================== */
-
-.contenedor .contenido .contenedor-platos.bistec-chente{
+/* ======================== PRIMERA PÁGINA ======================== */
+.slide-7.primera-pagina .contenedor .contenido .contenedor-platos.bistec-chente{
 	position: absolute;
 	grid-area: 4 / 11 / 8 / 18;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.lomo-norteno{
+.slide-7.primera-pagina .contenedor .contenido .contenedor-platos.lomo-norteno{
 	position: absolute;
 	grid-area: 9 / 2 / 14 / 8;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.sabana-monterrey{
+.slide-7.primera-pagina .contenedor .contenido .contenedor-platos.sabana-monterrey{
 	position: absolute;
 	grid-area: 13 / 7 / 19 / 14;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.tampiquena{
+.slide-7.primera-pagina .contenedor .contenido .contenedor-platos.t-bone-tejano{
+	position: absolute;
+	grid-area: 14 / 24 / 16 / 32;
+	width: 100%;
+	height: auto;
+}
+
+
+/* ========================= SEGUNDA PÁGINA ============================ */
+.slide-7.segunda-pagina .contenedor .contenido .contenedor-platos.tampiquena{
 	position: absolute;
 	grid-area: 4 / 20 / 10 / 26;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.lomo-ranchero{
+.slide-7.segunda-pagina .contenedor .contenido .contenedor-platos.lomo-ranchero{
 	position: absolute;
 	grid-area: 9 / 21 / 15 / 29;
 	width: 100%;
 	height: auto;
 }
 
-.contenedor .contenido .contenedor-platos.lomo-vaquero{
+.slide-7.segunda-pagina .contenedor .contenido .contenedor-platos.lomo-vaquero{
 	position: absolute;
 	grid-area: 9 / 31 / 16 / 36;
-	width: 100%;
-	height: auto;
-}
-
-.contenedor .contenido .contenedor-platos.t-bone-tejano{
-	position: absolute;
-	grid-area: 14 / 24 / 16 / 32;
 	width: 100%;
 	height: auto;
 }
@@ -4139,7 +4255,7 @@ width: 80%;
 	height: auto;
 	transform: rotateZ(-5deg);
 }
-.contenedor .contenido .contenedor-platos.nachitos-speedy p span{
+.contenedor .contenido .contenedor-platos.nachitos-speedy .descripcion-platos p span{
 	background: #EE8E22 ;
 	font-size: 14px;
 }
@@ -4155,7 +4271,7 @@ width: 80%;
 	height: auto;
 	transform: rotateZ(5deg);
 }
-.contenedor .contenido .contenedor-platos.flautas-nono p span{
+.contenedor .contenido .contenedor-platos.flautas-nono .descripcion-platos p span{
 	background: #087DBB;
 	font-size: 14px;
 }
@@ -4387,16 +4503,28 @@ article.slide-3 img.titulo-pagina {
 }
 
 .contenedor-impuestos p {
-	width: 35%;
+	width: 45%;
 	background: rgba(214, 21, 7, 0.6);
 	font-family: 'Russian';
+	font-size: 20px;
 	color: #fff;
 	text-align: center;
 	margin: auto;
+	letter-spacing: 2px;
 }
 
-.slide-2 .contenedor-impuestos p{
-	background: rgba(6, 43, 25, 0.7);
+.slide-1 .contenedor-impuestos p{
+	background: rgba(59, 20, 35, 0.7);
+}
+
+.slide-2.primera-pagina .contenedor-impuestos{
+	width: 50%;
+	right: 0;
+	left: initial;
+}
+
+.slide-2.primera-pagina .contenedor-impuestos p{
+	background: rgba(22, 13, 1, 0.7);
 }
 
 .slide-3 .contenedor-impuestos p {
