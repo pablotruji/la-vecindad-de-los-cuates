@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DELIVERY</title>
+    <title>EVENTOS</title>
+    <!-- CND BOOSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" /> -->
+    <!-- CND JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- SCRIPT Y PÁGINAS DE ESTILO CDN DE FONTAWOSOME -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <!-- HOJAS DE ESTILO -->
-    <link rel="stylesheet" href="css/estilos-delivery.css"/> 
+    <link rel="stylesheet" href="css/estilos-eventos.css"/> 
 </head>
 <body>
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="contenedor">
         <!-- CONTENEDOR GUIRNALDAS -->
         <div class="contenedor-guirnaldas">
-            <img src="imagenes/Guirnalda-05.png" alt="Gurinalda">
+            <img src="imagenes/Guirnalda-05.png" alt="Guirnalda">
         </div>
         <!-- CONTENEDOR DE LA CORTINA -->
         <div class="contenedor-cortina">
@@ -25,39 +29,59 @@
             </div>
         </div>
         <!-- CONTENEDOR DE GRILLA -->
-        <div class="contenedor-grid">       
+        <div class="contenedor-grid">
             <!-- GRILLA -->
             <div class="grid">
                 <!-- CONTENIDO PRINCIPAL DE PÁGINA -->
                 <main class="main">
-                    <section class="contenido-principal">
-                        <div class="item-grid">
-                            <img src="imagenes/Delivery/delivery-imagen.svg" alt="Imagen-Delivery">
+                    <div class="contenido-principal"> 
+                        <div class="banner escritorio">
+                            <img src="imagenes/Reservas/reservas-banner-escritorio.svg" alt="Banner, Pronto volveremos a reunirnos para seguir viviendo la experiencia cuate">
                         </div>
-                        <div class="item-grid">
-                            <img src="imagenes/Delivery/delivery-visto.svg" alt="Adorno visto">
-                            <a class="delivery-imagen" href="https://rappi.app.link/jKyoaFzSj5" target="_blank">
-                                <img src="imagenes/Delivery/delivery-rappi-imagen-nueva.svg" alt="Link Rappi">
-                            </a> 
-                                <!-- <img src="imagenes/Delivery/delivery-rappi.svg" alt="Link Rappi"> -->
+                        <div class="banner movil">
+                            <img src="imagenes/Reservas/reservas-banner-movil.svg" alt="Banner, Pronto volveremos a reunirnos para seguir viviendo la experiencia cuate">
                         </div>
-                        <div class="item-grid">
-                            <img src="imagenes/Delivery/delivery-visto.svg" alt="Adorno visto">
-                            <h3>quito</h3>
-                            <p>022465053 / 054</p>
-                            <p>099 945 1815</p>
+                    </div>
+                    <!-- INSTAGRAM EN STAND -->
+                    <!-- <div class="contenido-principal">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6" style="display: flex; justify-content:space-evenly; align-items: center; width: 90%;">
+                                    <div>
+                                        <a href="https://www.instagram.com/lavecindad" target="_blank">
+                                            <img src="" class="profile-pic" style="border-radius:50%; width:80%;">
+                                        </a>
+                                    </div>
+                                    <h2 class="username" style="font-size: 0.8em; text-align: center; margin-bottom: .2rem;"></h2>
+                                </div>
+                                <div class="col-md-6">
+                                  <div>
+                                    <span class="number-of-posts" style="margin: auto;"></span> posts
+                                  </div>
+                                  <div>
+                                    <span class="followers"></span> <span>seguidores</span>
+                                  </div>   
+                                  <div>
+                                    <span class="following"></span> <span style="color: rgb(44, 44, 44);">seguidos</span>
+                                  </div>
+                                </div>
+                                <div class="col-md-12 contenedor-posts">
+                                  <div class="row">
+                                  </div>
+                                  <div class="row" style="margin-top:5px;">
+                                  </div>
+                                  <div class="row">
+                                    <h4 class="biography"></h4>
+                                  </div>
+                                  <div class="row">
+                                  </div>
+                                  <div class="row posts"></div>
+                                </div>
+                              </div>
                         </div>
-                        <div class="item-grid">
-                            <img src="imagenes/Delivery/delivery-visto.svg" alt="Adorno visto">
-                            <h3>cumbayá</h3>
-                            <p>022890589</p>
-                            <p>098 942 9566</p>
-                        </div>
-                        <img class="adorno-1" src="imagenes/Delivery/delivery-adorno-1.svg" alt="Adorno">
-                        <img class="adorno-2" src="imagenes/Delivery/delivery-adorno-2.svg" alt="Adorno">
-                    </section>
+                    </div> -->
                 </main>
-                 <!-- FIN CONTENIDO PRINCIPAL -->
+                <!-- FIN CONTENIDO PRINCIPAL DE PÁGINA -->
                 <!-- CABEZERA -->   
                 <!-- LOGOTIPO PRINCIPAL + BOTON EVENTOS-->
                 <div class="contenedor-logo-principal">
@@ -72,7 +96,7 @@
                         <a class="enlace" href="http://proy-web.vip/eventos">
                             <img src="imagenes/Eventos-480.svg" alt="Eventos">
                         </a>
-                    </div> 
+                    </div>  
                 </div>
                 <!-- CONTENEDOR LOGO LOS CUATES MÁS CHIDOS + BOTON TOOGGLE-->
                 <div class="contenedor-logo-2">
@@ -180,23 +204,23 @@
                 <!-- DIV PANTALLA OSCURA -->
                 <div id="oscurecer-pantalla" class="pantalla"></div>
                 <!-- FIN CABEZERA -->         
-               <!-- SIDEBAR IZQUIERDA-->
-               <aside class="aside-izquierda">
-                <div class="contenedor-botones-aside">
-                    <a class="enlace" href="http://proy-web.vip/eventos">
-                        <img src="imagenes/Eventos-480.svg" alt="Eventos">
-                    </a>
-                </div>
-                <div class="contenedor-botones-aside">
-                    <a class="enlace" href="http://proy-web.vip/cuates-en-tu-evento">
-                        <img src="imagenes/Cuates-en-tu-evento-480.svg" alt="Cuates en tu Evento">
-                    </a>
-                </div>
-                <div class="contenedor-botones-aside">
-                    <a class="enlace" href="http://proy-web.vip/delivery">
-                        <img src="imagenes/Delivery-480.svg" alt="Delivery">
-                    </a>
-                </div>
+                <!-- SIDEBAR IZQUIERDA-->
+                <aside class="aside-izquierda">
+                    <div class="contenedor-botones-aside">
+                        <a class="enlace" href="http://proy-web.vip/eventos">
+                            <img src="imagenes/Eventos-480.svg" alt="Eventos">
+                        </a>
+                    </div>           
+                    <div class="contenedor-botones-aside">
+                        <a class="enlace" href="http://proy-web.vip/cuates-en-tu-evento">
+                            <img src="imagenes/Cuates-en-tu-evento-480.svg" alt="Cuates en tu Evento">
+                        </a>
+                    </div>
+                    <div class="contenedor-botones-aside">
+                        <a class="enlace" href="http://proy-web.vip/delivery">
+                            <img src="imagenes/Delivery-480.svg" alt="Delivery">
+                        </a>
+                    </div>
                 </aside>
                 <!-- SIDEBAR DERECHA -->
                 <aside class="aside-derecha">
@@ -206,11 +230,11 @@
                         </a>    
                     </div>
                     <div class="contenedor-botones-aside">
-                        <a class="enlace" href="https://proy-web.vip">
+                        <a class="enlace" href="https://proy-web.vip/reservas">
                             <img src="imagenes/Reservas-480.svg" alt="Reservas">
                         </a>
                     </div>
-                </aside>                       
+                </aside>    
                 <!-- FOOTER -->
                 <footer class="footer">
                     <div class="contenedor-footer">
@@ -267,5 +291,6 @@
     <!-- SCRIPTS -->
     <script src="javascript/nav.js"></script>
     <script src="javascript/carta-menu-despliegue.js"></script>
+    <script src="javascript/eventos-instagram.js"></script>
 </body>
 </html>

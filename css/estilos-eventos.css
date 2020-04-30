@@ -5,22 +5,21 @@
 }
 
 @font-face{
-    font-family: 'Bebas';
-    src: url(../fonts/BebasNeue\ Book.otf);
-}
-
-@font-face{
     font-family: 'Helvetica Bold';
     src: url(../fonts/HelveticaLTStd-Bold.otf);
 }
 
 @font-face{
-    font-family: 'Woodstamp';
+    font-family: 'Helvetica UltraComp';
+    src: url(../fonts/HelveticaLTStd-UltraComp.otf);
+}
+
+@font-face{
+    font-family: 'Woodstand';
     src: url(../fonts/Woodstamp.otf);
 }
 
 /*=============== ESTILOS GENERALES ===============*/
-
 *{
     padding: 0;
     margin: 0;
@@ -84,11 +83,10 @@ a{
     width: 100%;
     z-index: 600;
     overflow: hidden;
-    margin-top: -8px;
 }
 
 .contenedor .contenedor-guirnaldas img{
-    width: 1700px;
+    width: 1500px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -185,7 +183,6 @@ a{
    height: 95%;
    justify-content: center;
    align-items: center;
-
 }
 
 .menu-principal-item{
@@ -195,7 +192,6 @@ a{
     text-align: center;
     line-height: 40px;
     transition: 0.3s ease-in;
-
 }
 
 .menu-principal-item:not(:last-of-type){
@@ -228,7 +224,7 @@ a{
     height: 350px;
     width: 290px;
     background: #FFDF00;
-    transition: left .5s ease-in-out;
+    transition: left 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
     font-family: Mayan;
@@ -266,7 +262,6 @@ a{
     height: 89%;
     justify-content: center;
     align-items: center;
-    margin-bottom: initial; /*Clase reboot*/
  }
 
 .carta-menu-item{
@@ -300,7 +295,7 @@ a{
     color: #fff;
 }
 
-/* ==================== SECCIÓN LOGOS ==================*/
+/* ==================== SECCIÓN LOGOS =======================*/
 
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
 .contenedor-logo-principal {
@@ -310,6 +305,7 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
+    /* margin-left: 20px; */
     margin-top: 20px;
 }
 
@@ -336,61 +332,35 @@ a{
 }
 
 /*===========================================================*/
-/*=============== CONTENIDO PRINCIPAL========================*/
+/*=============== CONTENIDO PRINCIPAL ========================*/
 /*=========================================================*/
 
 .main{
     grid-area: contenido-principal;
+    display: flex;
     width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.main .banner.escritorio{
-    display: none;
-}
-
-.main .banner.movil{
-    /* margin-top: 20px; */
-    width: 90%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.main .banner img{
-    display: block;
-    width: 60%;
-    margin: auto;
+    height: 100%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
 }
 
 .main .contenido-principal{
-    width: 60%;
+    width: 90%;
     height: auto;
+    /* background: blue; */
+}
+
+.main .contenido-principal .banner{
+    width: 100%;
+}
+
+.main .contenido-principal .banner img{
+    width: 70%;
+    display: block;
     margin: auto;
-}
-
-.container {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.2);    
-}
-
-.posts {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	flex-wrap: wrap;
-	overflow: auto;
-	height: 250px;
-}
-
-.like-comment{
-    font-size: 10px;
-    color:#333;
-    padding-bottom: 10px;
-    font-weight: bold;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
@@ -407,7 +377,6 @@ a{
 	width: 100px;
 	border-radius:100%;
 }
-
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
     grid-area: aside-derecha;
@@ -430,7 +399,6 @@ a{
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .aside-izquierda .contenedor-botones-aside:first-child{
     display: none;
 }
@@ -449,11 +417,10 @@ a{
 /*=================================================*/
 
 .footer{
-    display: flex;
     grid-area: footer;
+    display: flex;
     width: 100%;
     height: 100%;
-    position: relative;
     justify-content: center;
     align-items: flex-end;
 }
@@ -466,7 +433,6 @@ a{
     justify-content:center;
     align-items: flex-end;
 }
-
 
 .footer .contenedor-footer .caja-1{
     width: 100%;
@@ -494,6 +460,7 @@ a{
     overflow: hidden;
     bottom: 35px;
 }
+
 .footer .patron-footer img{
     width: 1000px;
 }
@@ -547,7 +514,6 @@ a{
     transform: scaleX(-1);
     margin-left: 30%;
     margin-top: -5%;
-    
 }
 
 /* ANIMACIONES ALAS  */
@@ -614,7 +580,6 @@ a{
     color: #2C0D10;
     transition: 0.4s;
     margin-top: -80px;
-    
 }
 
 .footer .redes-sociales a:hover{
@@ -633,34 +598,15 @@ a{
     font-size: 9px;
 }
 
-
 /* ============================================================================ */
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 
-@media screen and (max-width:432px){
+@media screen and (max-width: 360px){
 
-
-    .contenido-principal .informacion-telefono {
-        width: 60%;
-        justify-content: center;
-    }
-    
-    .informacion-telefono img {
-        width: 63px;
-        max-width: 120px;
-        margin-bottom: 1em;
-    }
-
-    .contenido-principal .informacion-email {
-        width: 48%;
-        justify-content: center;
-    }
-    
-    .informacion-email img{
-        width: 40px;
-        max-width: 70px;
-        margin-bottom: 1em;
+    .main .contenido-principal{
+        /* border: 1px solid #E62256; */
+        font-size: 12px;
     }
 }
 
@@ -693,6 +639,8 @@ a{
     .enlace img {
         width: 120px;
     }
+
+    /* CONTENIDO PRINCIPAL*/
 }
 
 /* TABLET */
@@ -701,19 +649,9 @@ a{
     .contenedor .contenedor-guirnaldas img {
         width: 2000px;
     }
-    
+
     body{
         background-image: url(../imagenes/Eventos/Background-eventos-tablet.png);
-    } 
-    
-    /* CONTENIDO PRINCIPAL */
-    .main .contenido-principal {
-        width: 48%;
-        /* overflow: scroll; */
-    }
-
-    .username{
-        font-size: 1.2em !important;
     }
 
     /* ASIDE */
@@ -747,22 +685,12 @@ a{
     .menu-principal a {
         font-size: 13px;
     }
-
-    /* CONTENIDO PRINCIPAL */
-    .main .contenido-principal{
-        width: 60%;
-    }
 }
 
-@media screen and (min-width: 960px){
-    main .contenido-principal{
-    width: 70%;
-}
-
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
     body{
         background-image: url(../imagenes/Eventos/Background-eventos-escritorio.png);
-    } 
+    }
 
     .contenedor .contenedor-guirnaldas img {
         width: 2000px;
@@ -771,7 +699,7 @@ a{
     .contenedor .contenedor-cortina .contenedor-cortina-izquierda{
         background-image: url(../imagenes/Cortina-escritorio-02.png);
         width:35%;
-        height:140vh;
+        height:100vh;
         top: 0;
         left: 0;
     }
@@ -779,7 +707,7 @@ a{
     .contenedor .contenedor-cortina .contenedor-cortina-derecha{
         background-image: url(../imagenes/Cortina-escritorio-02.png);
         width:35%;
-        height:140vh;
+        height:100vh;
         top: 0;
         right: 0;
     }
@@ -810,6 +738,7 @@ a{
         justify-content: space-evenly;
         align-items: flex-end;
         margin: auto;
+        /* background: red; */
     }
 
     .barra-menu .nav-barra-principal a{
@@ -817,7 +746,8 @@ a{
         width: 100%;
         height: auto;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
+        background: blue;
     }
 
     .barra-menu .nav-barra-principal a img{
@@ -835,10 +765,13 @@ a{
         font-size: 11px;
         cursor: pointer;
         z-index: 200;
-        margin-bottom: initial;
     }
 
     .barra-menu .nav-barra-principal a:hover img{
+        background: #ac101a;
+    }
+
+    .barra-menu .nav-barra-principal .activo a img{
         background: #ac101a;
     }
 
@@ -892,6 +825,7 @@ a{
 
     /* FIN BARRA CARTA MENÚ ESCRITORIO */
 
+
     /* QUITANDO MENÚ HAMBURGUESA */
     .menu-imagen{
         display: none;
@@ -905,7 +839,6 @@ a{
         /* background:green; */
         align-items: flex-start;
         margin-left: 20px;
-        
     }
 
     .contenedor-logo-principal .enlace img{
@@ -931,33 +864,20 @@ a{
     
     /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
     .main{
-        overflow: initial;
+        margin-bottom: initial;
+        margin-top: initial;
     }
-    .main .banner.escritorio{
-        width: 90%;
-        margin: auto;
-    }
-
-    .main .banner img{
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-
     .main .contenido-principal{
-        width: 70%;
-        /* overflow: scroll; */
-    }
-
-    .container {
-        margin-top: 5px;
-        margin-bottom: 20px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.2);    
+        width: 60%;
+        height: auto;
+        /* background: blue; */
     }
     
-    /* ASIDE */
+    .main .contenido-principal .banner{
+        width: 100%;
+    }
 
+    /* ASIDE */
     .contenedor-botones-aside .enlace img{
         width: 165px;
     }
@@ -982,14 +902,14 @@ a{
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(2){
-        top: 300px;
+        top: 200px;
         /* left: 20px; */
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(3){
-        bottom: 120px;
+        bottom: -80px;
         right: -70px;
-        z-index: 200;
+        z-index: 500;
     }
 
     .aside-derecha{

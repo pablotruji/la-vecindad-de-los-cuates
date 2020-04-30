@@ -5,21 +5,22 @@
 }
 
 @font-face{
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue\ Book.otf);
+}
+
+@font-face{
     font-family: 'Helvetica Bold';
     src: url(../fonts/HelveticaLTStd-Bold.otf);
 }
 
 @font-face{
-    font-family: 'Helvetica UltraComp';
-    src: url(../fonts/HelveticaLTStd-UltraComp.otf);
-}
-
-@font-face{
-    font-family: 'Woodstand';
+    font-family: 'Woodstamp';
     src: url(../fonts/Woodstamp.otf);
 }
 
 /*=============== ESTILOS GENERALES ===============*/
+
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +28,7 @@
 }
 
 body{
-    background-image: url(../imagenes/Reservas/Background-480.png);
+    background-image: url(../imagenes/Eventos/Background-480.png);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -83,10 +84,11 @@ a{
     width: 100%;
     z-index: 600;
     overflow: hidden;
+    margin-top: -8px;
 }
 
 .contenedor .contenedor-guirnaldas img{
-    width: 1500px;
+    width: 1700px;
 }
 
 /*=================  CONTENEDOR DE GRILLA  ===============*/
@@ -138,6 +140,7 @@ a{
     right: 0;
     left: 0;
     margin: auto;
+    z-index: 200;
 }
 
 .menu-imagen img{
@@ -182,6 +185,7 @@ a{
    height: 95%;
    justify-content: center;
    align-items: center;
+
 }
 
 .menu-principal-item{
@@ -262,6 +266,7 @@ a{
     height: 89%;
     justify-content: center;
     align-items: center;
+    margin-bottom: initial; /*Clase reboot*/
  }
 
 .carta-menu-item{
@@ -295,7 +300,7 @@ a{
     color: #fff;
 }
 
-/* ==================== SECCIÓN LOGOS =======================*/
+/* ==================== SECCIÓN LOGOS ==================*/
 
 /* ====== LOGOTIPO LA VECIDAD DE LOS CUATES ===*/
 .contenedor-logo-principal {
@@ -305,7 +310,6 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
-    /* margin-left: 20px; */
     margin-top: 20px;
 }
 
@@ -332,35 +336,61 @@ a{
 }
 
 /*===========================================================*/
-/*=============== CONTENIDO PRINCIPAL ========================*/
+/*=============== CONTENIDO PRINCIPAL========================*/
 /*=========================================================*/
 
 .main{
     grid-area: contenido-principal;
-    display: flex;
     width: 100%;
-    height: 100%;
-    margin-bottom: 5%;
-    margin-top: 10%;
-    align-items: center;
-    justify-content: center;
-    /* background: red; */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main .banner.escritorio{
+    display: none;
+}
+
+.main .banner.movil{
+    /* margin-top: 20px; */
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.main .banner img{
+    display: block;
+    width: 60%;
+    margin: auto;
 }
 
 .main .contenido-principal{
-    width: 90%;
+    width: 60%;
     height: auto;
-    /* background: blue; */
-}
-
-.main .contenido-principal .banner{
-    width: 100%;
-}
-
-.main .contenido-principal .banner img{
-    width: 70%;
-    display: block;
     margin: auto;
+}
+
+.container {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.2);    
+}
+
+.posts {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+	height: 250px;
+}
+
+.like-comment{
+    font-size: 10px;
+    color:#333;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 /* ============== FIN CONTENIDO PRINCIPAL DE PÁGINA ======*/
@@ -377,6 +407,7 @@ a{
 	width: 100px;
 	border-radius:100%;
 }
+
 /*==================== ASIDE DERECHA ==================*/
 .aside-derecha{
     grid-area: aside-derecha;
@@ -399,6 +430,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .aside-izquierda .contenedor-botones-aside:first-child{
     display: none;
 }
@@ -417,10 +449,11 @@ a{
 /*=================================================*/
 
 .footer{
-    grid-area: footer;
     display: flex;
+    grid-area: footer;
     width: 100%;
     height: 100%;
+    position: relative;
     justify-content: center;
     align-items: flex-end;
 }
@@ -433,6 +466,7 @@ a{
     justify-content:center;
     align-items: flex-end;
 }
+
 
 .footer .contenedor-footer .caja-1{
     width: 100%;
@@ -460,7 +494,6 @@ a{
     overflow: hidden;
     bottom: 35px;
 }
-
 .footer .patron-footer img{
     width: 1000px;
 }
@@ -514,6 +547,7 @@ a{
     transform: scaleX(-1);
     margin-left: 30%;
     margin-top: -5%;
+    
 }
 
 /* ANIMACIONES ALAS  */
@@ -580,6 +614,7 @@ a{
     color: #2C0D10;
     transition: 0.4s;
     margin-top: -80px;
+    
 }
 
 .footer .redes-sociales a:hover{
@@ -598,17 +633,35 @@ a{
     font-size: 9px;
 }
 
+
 /* ============================================================================ */
 /* ============================== RESPONSIVE ================================= */
 /* ========================================================================== */
 
-@media screen and (max-width: 360px){
+@media screen and (max-width:432px){
 
-    .main .contenido-principal{
-        /* border: 1px solid #E62256; */
-        font-size: 12px;
+
+    .contenido-principal .informacion-telefono {
+        width: 60%;
+        justify-content: center;
     }
     
+    .informacion-telefono img {
+        width: 63px;
+        max-width: 120px;
+        margin-bottom: 1em;
+    }
+
+    .contenido-principal .informacion-email {
+        width: 48%;
+        justify-content: center;
+    }
+    
+    .informacion-email img{
+        width: 40px;
+        max-width: 70px;
+        margin-bottom: 1em;
+    }
 }
 
 @media screen and (min-width: 479px){
@@ -640,8 +693,6 @@ a{
     .enlace img {
         width: 120px;
     }
-
-    /* CONTENIDO PRINCIPAL*/
 }
 
 /* TABLET */
@@ -650,12 +701,20 @@ a{
     .contenedor .contenedor-guirnaldas img {
         width: 2000px;
     }
-
+    
     body{
-        background-image: url(../imagenes/Reservas/Background-reservas-tablet.png);
+        background-image: url(../imagenes/Eventos/Background-eventos-tablet.png);
+    } 
+    
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal {
+        width: 48%;
+        /* overflow: scroll; */
     }
 
-    /* CONTENIDO PRINCIPAL */
+    .username{
+        font-size: 1.2em !important;
+    }
 
     /* ASIDE */
     .enlace img {
@@ -688,12 +747,22 @@ a{
     .menu-principal a {
         font-size: 13px;
     }
+
+    /* CONTENIDO PRINCIPAL */
+    .main .contenido-principal{
+        width: 60%;
+    }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 960px){
+    main .contenido-principal{
+    width: 70%;
+}
+
+@media screen and (min-width: 1023px){
     body{
-        background-image: url(../imagenes/Reservas/Background-reservas-escritorio.png);
-    }
+        background-image: url(../imagenes/Eventos/Background-eventos-escritorio.png);
+    } 
 
     .contenedor .contenedor-guirnaldas img {
         width: 2000px;
@@ -741,7 +810,6 @@ a{
         justify-content: space-evenly;
         align-items: flex-end;
         margin: auto;
-        /* background: red; */
     }
 
     .barra-menu .nav-barra-principal a{
@@ -749,8 +817,7 @@ a{
         width: 100%;
         height: auto;
         justify-content: center;
-        align-items: center;   
-        background: blue;
+        align-items: center;
     }
 
     .barra-menu .nav-barra-principal a img{
@@ -768,6 +835,7 @@ a{
         font-size: 11px;
         cursor: pointer;
         z-index: 200;
+        margin-bottom: initial;
     }
 
     .barra-menu .nav-barra-principal a:hover img{
@@ -837,6 +905,7 @@ a{
         /* background:green; */
         align-items: flex-start;
         margin-left: 20px;
+        
     }
 
     .contenedor-logo-principal .enlace img{
@@ -862,20 +931,33 @@ a{
     
     /* ========== CONTENIDO PRINCIPAL DE PÁGINA ============ */
     .main{
-        margin-bottom: initial;
-        margin-top: initial;
+        overflow: initial;
     }
-    .main .contenido-principal{
-        width: 60%;
-        height: auto;
-        /* background: blue; */
-    }
-    
-    .main .contenido-principal .banner{
-        width: 100%;
+    .main .banner.escritorio{
+        width: 90%;
+        margin: auto;
     }
 
+    .main .banner img{
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
+
+    .main .contenido-principal{
+        width: 70%;
+        /* overflow: scroll; */
+    }
+
+    .container {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);    
+    }
+    
     /* ASIDE */
+
     .contenedor-botones-aside .enlace img{
         width: 165px;
     }
@@ -892,22 +974,27 @@ a{
     {
         position: absolute;
     }
+    .aside-derecha .contenedor-botones-aside
+    {
+        position: relative;
+        z-index: 500;
+    }
     .aside-izquierda .contenedor-botones-aside:nth-child(1){
         top: -10px;
-        /* left: 20px; */
+        left: 40px;
         z-index: 200;
         display: initial;
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(2){
         top: 200px;
-        /* left: 20px; */
+        left: 30px;
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(3){
         bottom: -80px;
-        right: -70px;
-        z-index: 500;
+        right: -170px;
+        z-index: 400;
     }
 
     .aside-derecha{
@@ -915,10 +1002,16 @@ a{
         align-items: flex-start;
     }
 
-    .aside-derecha .contenedor-botones-aside:last-child {
-        /* background: blue; */
-        align-self: center;
-        margin-top: 80px;
+    .aside-derecha .contenedor-botones-aside:nth-child(1) {
+        right: 90px;
+        /* align-items: flex-end; */
+        bottom: -40px;
+    }
+
+    .aside-derecha .contenedor-botones-aside:nth-child(2) {
+        top: 50px;
+        right: 50px;
+        /* align-items: flex-end; */
     }
     
     /* FOOTER */
