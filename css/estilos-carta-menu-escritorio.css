@@ -3384,7 +3384,7 @@ width: 80%;
 .contenedor .contenido .contenedor-platos .descripcion-platos p {
 	text-align: center;
 	color: #fff;
-	font-size: 15px;
+	font-size: 14.2px;
 	font-family: 'Mayan';
 	line-height: 1.3em;
 }
@@ -3462,7 +3462,7 @@ width: 80%;
 	text-transform: uppercase;
 	margin-left: 0.2em;
 	margin-top: 0.7em;
-	font-size: 17px;
+	font-size: 16.3px;
 	width: 110%;
 }
 
@@ -3512,11 +3512,11 @@ width: 80%;
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(1){
 	/* color: red; */
-	font-size: 46px;
+	font-size: 42px;
 }
 .contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(2){
 	/* color: red; */
-	font-size: 31px;
+	font-size: 27px;
 }
 
 
@@ -3597,10 +3597,10 @@ width: 80%;
     font-size: 35px;
 }
 .contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .precio-unico span:nth-child(1){
-    font-size: 46px;
+    font-size: 42px;
 }
 .contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .precio-unico span:nth-child(2){
-    font-size: 31px;
+    font-size: 27px;
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-etiqueta .etiqueta-1 {
@@ -3811,7 +3811,7 @@ width: 80%;
 
 .slide-2.primera-pagina .contenedor .contenido .contenedor-platos.queso-fundido {
 	position: absolute;
-	grid-area: 13 / 24 / 16 / 29;
+	grid-area: 13 / 25 / 16 / 30;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -3819,7 +3819,7 @@ width: 80%;
 
 .slide-2.primera-pagina .contenedor .contenido .contenedor-platos.elote{
 	position: absolute;
-	grid-area: 3 / 23 / 9 / 29;
+	grid-area: 3 / 23 / 9 / 28;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -3827,7 +3827,7 @@ width: 80%;
 
 .slide-2.primera-pagina .contenedor .contenido .contenedor-platos.esquites{
 	position: absolute;
-	grid-area: 8 / 28 / 8 / 34;
+	grid-area: 6 / 29 / 9 / 35;
 	width: 100%;
 	height: auto;
 	/* background: green; */

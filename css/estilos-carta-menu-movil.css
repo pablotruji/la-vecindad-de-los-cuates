@@ -1560,6 +1560,14 @@ a {
 	flex-direction: row-reverse;
 }
 
+.precio-plato-sin-imagen p span:nth-child(1){
+    font-size: 42px;
+}
+
+.precio-plato-sin-imagen p span:nth-child(2){
+    font-size: 27px;
+}
+
 .precio-plato-superior,
 .precio-plato-inferior {
 	background: initial;
@@ -1576,6 +1584,16 @@ a {
 	justify-content: center;
     align-items: flex-end;
     /* background: red; */
+}
+
+.precio-plato-superior span:nth-child(1),
+.precio-plato-inferior span:nth-child(1){
+    font-size: 42px;
+}
+
+.precio-plato-superior span:nth-child(2),
+.precio-plato-inferior span:nth-child(2){
+    font-size: 27px;
 }
 
 .precio-plato-superior {
@@ -1784,22 +1802,23 @@ a {
 	padding: 0 0.3em;
 }
 
-.etiqueta-1 {
+.precio-plato-sin-imagen .etiqueta-1 {
 	font-family: 'Bison';
 	font-size: 16px;
 	margin-top: 1em;
 	transform: rotateZ(-10deg);
 }
 
-.etiqueta-1 p{
+.precio-plato-sin-imagen .etiqueta-1 p{
     text-align: center;
     color: #C22528;
     line-height: 1.2em;
 }
 
-.etiqueta-1 p span {
+.precio-plato-sin-imagen .etiqueta-1 p span {
 	background: #D8C724;
-	padding: 0.1em 0.9em;
+    padding: 0.1em 0.9em;
+    font-size: 16px;
 }
 
 /* ================= PRECIO PLATOS ESTILOS INDIVIDUALES ========================*/
@@ -1829,7 +1848,14 @@ a {
 
 .contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div p span{
     text-align:center;
-    font-size: 28px;
+}
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div p span:nth-child(1){
+    font-size: 37px;
+}
+
+.contenedor-pa-compartir-2 .contenedor-info-producto-inferior .descripcion-precio div p span:nth-child(2){
+    font-size: 22px;
 }
 
 /*========================== PA' ENTRARLE SOLITO ================================*/
