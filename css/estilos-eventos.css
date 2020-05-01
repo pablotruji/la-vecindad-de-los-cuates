@@ -662,8 +662,7 @@ a{
 
     /* CONTENIDO PRINCIPAL */
     .main .contenido-principal{
-        margin-top: initial;
-        /* background: blue; */
+        margin-top: initial
     }
 }
 
