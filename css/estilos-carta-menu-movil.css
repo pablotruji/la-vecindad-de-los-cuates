@@ -1726,6 +1726,16 @@ a {
     font-size: 28px;
 }
 
+.descripcion-precio-doble div p span:nth-child(1),
+.descripcion-precio-doble-sin-imagen div p span:nth-child(1){
+    font-size: 37px;
+}
+
+.descripcion-precio-doble div p span:nth-child(2),
+.descripcion-precio-doble-sin-imagen div p span:nth-child(2){
+    font-size: 22px;
+}
+
 /* PRECIOS LICORES VARIOS */
 
 .precio-licores-varios{

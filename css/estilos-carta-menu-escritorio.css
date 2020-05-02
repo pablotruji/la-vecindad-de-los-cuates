@@ -1973,13 +1973,13 @@ width: 80%;
 	transform: rotateZ(-90deg);
 }
 
-.slide-4.tacos .contenido .contenedor-imagen-chile{
+.slide-4.tacos .contenido .contenedor-imagen-chile {
 	display: flex;
 	position: relative;
-	grid-area: 12/8/19/11;
+	grid-area: 15/7/18/10;
 	/* background: red; */
 	width: 100%;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
 	z-index: 500;
 	left: 10px;
@@ -3947,7 +3947,7 @@ width: 80%;
 
 .tacos .contenedor .contenido .contenedor-platos.tacos{
 	position: absolute;
-	grid-area: 10 / 4 / 15 / 10;
+	grid-area: 11 / 4 / 15 / 9;
 	width: 100%;
 	height: auto;
 }
