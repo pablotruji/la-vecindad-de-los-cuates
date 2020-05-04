@@ -1015,16 +1015,20 @@ a {
 .contenedor-pa-compartir-1 .subtitulo{
     position: absolute;
     color: #fff;
-    font-family: bison;
+    font-family: 'Bison';
     font-size: 15px;
-    top: 32px;
+    top: 12%;
     text-transform: uppercase;
-    background:#633180;
-    line-height: 90%;
     padding: 0.3em;
     width: 150px;
     left: 20px;
 }
+
+.contenedor-pa-compartir-1 .subtitulo span{
+    background: #4A266A;
+    line-height: 0.2em;
+    padding: 0.2em;
+}   
 
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .titulo{
     background:#633180;
@@ -1035,15 +1039,20 @@ a {
     background:#633180;
 }
 
-.contenedor-pa-compartir-4 .contenedor-info-producto-sin-imagenes h3 {
+.contenedor-pa-compartir-4 .contenedor-info-producto-sin-imagenes .subtitulo {
     font-family: 'Bison';
+    position: relative;
     font-size: 15px ;
     color: #fff;
     margin-top: -1em;
     margin-bottom: 1em;
-    background:#633180;
+    width: 120%;
+    right: 10%;
+} 
+
+.contenedor-pa-compartir-4 .contenedor-info-producto-sin-imagenes .subtitulo span{
+    background: #4A266A;
     padding: 0.3em;
-    /* line-height: 90%; */
 }
 
 .contenedor-pa-compartir-3 .contenedor-info-producto-sin-imagenes .titulo span,
@@ -1167,6 +1176,24 @@ a {
     background: #AE0D40;
     line-height: 1em;
 }   
+
+.contenedor-los-mero-mero-2 .subtitulo{
+    position: absolute;
+    color: #fff;
+    font-family: 'Bison';
+    font-size: 15px;
+    top: 22%;
+    text-transform: uppercase;
+    padding: 0.3em;
+    /* width: 150px; */
+    right: 20px;
+}
+
+.contenedor-los-mero-mero-2 .subtitulo span{
+    background: #4A266A;
+    line-height: 0.2em;
+    padding: 0.2em;
+} 
 
 .contenedor-los-mero-mero-4 .contenedor-info-producto-sin-imagenes .titulo span{
     background: #AE0D40
@@ -1441,7 +1468,7 @@ a {
 }
 /* ============ SEGUNDA SECCIÓN - PA' ENTRARLE SOLITO ==========*/
 .contenedor-pa-compartir-1 .contenedor-info-producto-inferior .descripcion{
-    top: 30%;
+    top: 32%;
 }
 
 #carta-menu-3 .descripcion span{
@@ -1457,7 +1484,7 @@ a {
 /* ======== CUARTA SECCIÓN DOBLE - ENSALADAS Y TACOS =========*/
 .tacos .contenedor-info-producto-superior span,
 .tacos .contenedor-info-producto-inferior span{
-    background: rgba(65, 0, 13, 0.5); 
+    /* background: rgba(65, 0, 13, 0.5);  */
 }
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
@@ -1466,7 +1493,7 @@ a {
 }
 
 .contenedor-los-mero-mero-2 .contenedor-info-producto-superior .descripcion{
-    top: 30%;
+    top: 34%;
 }
 .contenedor-los-mero-mero-6 .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .descripcion{
     width: 105%;

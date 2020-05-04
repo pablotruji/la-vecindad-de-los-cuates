@@ -3380,6 +3380,17 @@ width: 80%;
 	line-height: 1.4em;
 }
 
+/* ====================== SUBTITULO BURRITO DE LOS CUATES ==================== */
+.contenedor .contenido .contenedor-platos h3 {
+	position: relative;
+	width: 120%;
+	right: 10%;
+}
+.contenedor .contenido .contenedor-platos.burrito-cuates h3 span {
+	background: transparent;
+}
+
+
 /* ========================= DESCRIPCION PLATOS ============================ */
 .contenedor .contenido .contenedor-platos .descripcion-platos p {
 	text-align: center;
@@ -3463,20 +3474,17 @@ width: 80%;
 	margin-left: 0.2em;
 	margin-top: 0.7em;
 	font-size: 16.3px;
-	width: 110%;
+	width: 100%;
 }
-
-
 
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div{
 	width: 32%;
-	/* background: blue; */
+	margin: auto;
 }
 
 .contenedor .contenido .contenedor-platos.gorditas .descripcion-precios-varios div,
 .contenedor .contenido .contenedor-platos.nachos .descripcion-precios-varios div{
 	width: 25%;
-	/* background: blue; */
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div p{
@@ -3486,28 +3494,67 @@ width: 80%;
 
 .contenedor .contenido .contenedor-platos .descripcion-precios-varios div:nth-child(3) p{
 	text-align: end;
-	width: 120px;
+	width: 120%;
+}
+
+.contenedor .contenido .contenedor-platos.gorditas .descripcion-precios-varios div:nth-child(3) p{
+	width: 140%;
 }
 
 .contenedor .contenido .contenedor-platos.nachos .descripcion-precios-varios div:nth-child(3) p{
 	text-align: end;
-	width: 100px;
+	width: 130%;
+}
+
+.contenedor .contenido .contenedor-platos.enmolada-pancho .descripcion-precios-varios div:nth-child(3) p,
+.contenedor .contenido .contenedor-platos.empanadas-veracruz .descripcion-precios-varios div:nth-child(3) p{
+	text-align: center;
+	width: 90%;
 }
 
 .contenedor .contenido .contenedor-platos.flauta-trigo .descripcion-precios-varios{
 	width: 100%;
 }
 .contenedor .contenido .contenedor-platos.flauta-trigo .descripcion-precios-varios div:nth-child(3) p {
-	text-align: end;
+	text-align: center;
 	width: 100%;
+}
+
+.contenedor .contenido .contenedor-platos.sincronizadas .descripcion-precios-varios div {
+	text-align: center;
+	width: 100%;
+}
+
+.contenedor .contenido .contenedor-platos.tacos .descripcion-precios-varios div {
+		width: 65%;
+}
+
+.contenedor .contenido .contenedor-platos.alambres .descripcion-precios-varios {
+	width: 100%;
+	justify-content: center;
+
+}
+.contenedor .contenido .contenedor-platos.alambres .descripcion-precios-varios div {
+	width: 30%;
+	margin: initial;
+}
+
+.contenedor .contenido .contenedor-platos.burrito .descripcion-precios-varios{
+	left: -30px;
+	position: relative;
 }
 /* ===== PRECIO UNICO ======= */
 
-.contenedor .contenido .contenedor-platos .descripcion-precio-unico{
-    font-family: 'Mayan';
-    color: #fff;
-	text-align: center;
+.contenedor .contenido .contenedor-platos .descripcion-precio-unico {
+	font-family: 'Mayan';
+	color: #fff;
+	/* text-align: center; */
 	margin-top: -0.2em;
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin: auto;
+	outline: 1px solid #fff;
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(1){
@@ -3519,6 +3566,13 @@ width: 80%;
 	font-size: 27px;
 }
 
+.contenedor .contenido .contenedor-platos .descripcion-precio-unico img {
+	width: 40%;
+	height: 100%;
+	align-self: center;
+	max-width: 50px;
+	min-width: 45px;
+}
 
 /* ======== ETIQUETA ======= */
 
@@ -3532,25 +3586,35 @@ width: 80%;
 .contenedor .contenido .contenedor-platos .etiqueta-2 {
 	font-family: 'Bison';
 	margin-top: 0.5em;
+	width: 100%;
+	height: auto;	
+	/* outline: 1px solid #fff; */
 }
 
-
 .contenedor .contenido .contenedor-platos .etiqueta-2 p{
-    text-align: center;
-    /* background: #D8C724; */
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	/* outline: 1px solid #BB163C; */
+	width: 300px;
+	height: 100%;
+	margin: auto;
+}
+
+.contenedor .contenido .contenedor-platos .etiqueta-2 p img{
+	position: relative;
+	right: 8px;
+	width: 15%;
+	height: 100%;
+	max-width: 100px;
 }
 
 .contenedor .contenido .contenedor-platos .etiqueta-2 p span {
-	position: relative;
 	background: #D8C724;
 	color: #C22528;
-	padding: 0 0.4em;
+	padding: 0 0.6em 0 0.5em;
+	align-self: center;
 }
-
-.contenedor .contenido .contenedor-platos .etiqueta-2 img {
-	width: 16%;
-}
-
 /* ======== PRECIOS NACHOS ESTILOS FIN =============== */
 
 /* ========== PRECIOS ALITAS SINALOA ============= */
@@ -3947,7 +4011,7 @@ width: 80%;
 
 .tacos .contenedor .contenido .contenedor-platos.tacos{
 	position: absolute;
-	grid-area: 11 / 4 / 15 / 9;
+	grid-area: 11 / 4 / 15 / 10;
 	width: 100%;
 	height: auto;
 }
@@ -4060,7 +4124,7 @@ width: 80%;
 
 .slide-5.segunda-pagina .contenedor-platos.burrito-cuates{
 	position: absolute;
-	grid-area: 5 / 11 / 8 / 18;
+	grid-area: 4 / 11 / 8 / 18;
 	width: 100%;
 	height: auto;
 }
