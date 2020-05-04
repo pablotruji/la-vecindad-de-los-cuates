@@ -216,7 +216,7 @@ a{
 .nav-carta-menu-movil{
     display: flex;
     position: fixed;
-    height: 350px;
+    height: 363px;
     width: 290px;
     background: #FFDF00;
     transition: left 0.5s ease-in-out;
@@ -904,7 +904,7 @@ a{
 
     .nav-carta-menu-escritorio.showMenu{
         left: 170px;
-        height: 53vh;
+        height: 56vh;
     }
 
     .carta-menu{
