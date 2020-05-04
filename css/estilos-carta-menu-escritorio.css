@@ -3554,7 +3554,7 @@ width: 80%;
 	justify-content: space-evenly;
 	width: 60%;
 	margin: auto;
-	outline: 1px solid #fff;
+	/* outline: 1px solid #fff; */
 }
 
 .contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(1){
