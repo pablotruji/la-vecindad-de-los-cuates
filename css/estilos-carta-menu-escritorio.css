@@ -5041,17 +5041,10 @@ article.slide-3 img.titulo-pagina {
 /* ======================== REESPONSIVE ================================ */
 @media screen and (max-width: 1600px){
 
- .contenedor .contenido {
-	 display: grid;
-	 position: relative;
-	 grid-template-columns: repeat(36, 1fr);
-	 grid-template-rows: repeat(18, 1fr);
-	 width: 100%;
-	 height: 90vh;
-	 margin: auto;
-	 top: 50px;
-	 /* background: green; */
- }
+ 	.contenedor .contenido {
+	 	top: 40px;
+	 	/* background: green; */
+ 	}
 
 }
 
@@ -5119,31 +5112,15 @@ article.slide-3 img.titulo-pagina {
 @media screen and (max-width: 1280px){
 
 	.contenedor .contenido {
-		display: grid;
-		position: relative;
-		grid-template-columns: repeat(36, 1fr);
-		grid-template-rows: repeat(18, 1fr);
-		width: 100%;
-		height: 90vh;
-		margin: auto;
-		top: 50px;
 		background: rgb(211, 181, 15);
 	}
 
 	.contenedor .contenido .contenedor-platos h2 {
-		text-align: center;
-		font-family: 'Rye', cursive;
-		font-size: 20px;
-		color: #fff;
-		line-height: 1.1em;
+		font-size: 19px;
 	}
 
 	.contenedor .contenido .contenedor-platos .descripcion-platos p {
-		text-align: center;
-		color: #fff;
-		font-size: 13px;
-		font-family: 'Mayan';
-		line-height: 1.3em;
+		font-size: 12px;
 	}
    
 }
@@ -5151,44 +5128,19 @@ article.slide-3 img.titulo-pagina {
 @media screen and (max-width: 1024px){
 
 	.contenedor .contenido {
-		display: grid;
-		position: relative;
-		grid-template-columns: repeat(36, 1fr);
-		grid-template-rows: repeat(18, 1fr);
-		width: 100%;
-		height: 90vh;
-		margin: auto;
-		top: 50px;
 		background: rgb(91, 4, 109);
 	}
 
 	.contenedor .contenido .contenedor-platos h2 {
-		text-align: center;
-		margin-bottom: 0.3em;
-		font-family: 'Rye', cursive;
-		font-size: 20px;
-		color: #fff;
-		line-height: 1.1em;
+		font-size: 18px;
 	}
 
 	.contenedor .contenido .contenedor-platos .descripcion-platos p {
-		text-align: center;
-		color: #fff;
 		font-size: 11px;
-		font-family: 'Mayan';
-		line-height: 1.3em;
 	}
 
 	.contenedor .contenido .contenedor-platos .descripcion-precios-varios {
-		display: flex;
-		height: auto;
-		font-family: 'Bison';
-		color: #fff;
-		text-transform: uppercase;
-		margin-left: 0.2em;
-		margin-top: 0.7em;
 		font-size: 10px;
-		width: 100%;
 	}
    
 }
