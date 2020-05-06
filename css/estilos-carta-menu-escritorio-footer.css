@@ -41,173 +41,21 @@ body{
     width: 100%;
 }
 
-.background-slide{
-	position: fixed;
-	z-index: -1;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	/* transition: background-i 1s; */
-}
-
 .slide-1-background{
 	background-image: url('../imagenes/Imagenes-menu/Pa-compartir/Fondo-pa-compartir-escritorio.png');
     position: fixed;
 	z-index: -1;
-	background-size: cover;
 	width: 100%;
 	height: 100vh;
 	top: 0;
-	/* transition: background-image 1s; */
+	transition: background-image 1s;
 }
 
-.slide-2-background{
-	background-image: url('../imagenes/Imagenes-menu/Pa-entrarle-solito/fondo-pa-entrarle-solito-escritorio-1.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	transition: height 1s;
-}
-.slide-2-background-show{
-	height: 100vh;
-	transition: height 4s;
-}
-
-.slide-3-background{
-	background-image: url('../imagenes/Imagenes-menu/Sopas/fondo-sopas-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-4-ensaladas-background{
-	background-image: url('../imagenes/Imagenes-menu/Ensaladas/Background-ensaladas-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-4-tacos-background{
-	background-image: url('../imagenes/Imagenes-menu/Tacos/Background-tacos-escritorio.png');
-    position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-5-background{
-	background-image: url('../imagenes/Imagenes-menu/Meros-Mexicanos/Fondo-los-mero-mero-escritorio-1.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-6-background{
-	background-image: url('../imagenes/Imagenes-menu/Las-Estrellas/Background-las-estrellas-escritorio-1.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-7-background{
-	background-image: url('../imagenes/Imagenes-menu/Nuestro-ganado/Background-nuestro-ganado-escritorio-2.png');
-    position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-8-background{
-	background-image: url('../imagenes/Imagenes-menu/Pechugas-pio-pio/Background-pechugas-pio-pio-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-9-background{
-	background-image: url('../imagenes/Imagenes-menu/Y-el-puerco/Background-y-el-puerco-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-10-background{
-	background-image: url('../imagenes/Imagenes-menu/Mariscos/Background-mariscos-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-11-background{
-	background-image: url('../imagenes/Imagenes-menu/Menu-Infantil/Background-infantil-extras-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-12-background{
-	background-image: url('../imagenes/Imagenes-menu/Postres/Background-postres-escritorio.png');
-	position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-13-background{
-	background-image: url('../imagenes/Imagenes-menu/Cocteles/Background-cocteles-escritorio.png');
-    position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-14-background{
-	background-image: url('../imagenes/Imagenes-menu/Bebidas/Background-bebidas-escritorios.png');
-    position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-.slide-15-background{
-	background-image: url('../imagenes/Imagenes-menu/Licores-botellas/Background-licores-escritorio.png');
-    position: fixed;
-	z-index: -1;
-	background-size: cover;
-	top: 0;
-	/* transition: background-image 1s; */
-}
-
-
-/*
 .slide-1{
     background-image: url('../imagenes/Imagenes-menu/Pa-compartir/Fondo-pa-compartir-escritorio.png');
     background-size: cover;
 	background-position: center;
 }
-
 
 .slide-2{
 	background-image: url('../imagenes/Imagenes-menu/Pa-entrarle-solito/fondo-pa-entrarle-solito-escritorio-1.png');
@@ -298,7 +146,6 @@ body{
     background-size: cover;
     background-position: center;
 }
-*/
 
 .contenedor{
     width: 100%;
@@ -317,10 +164,10 @@ body{
 	grid-template-columns: repeat(36, 1fr);
 	grid-template-rows: repeat(18, 1fr);
 	width: 100%;
-	height: 90vh;
+	height: auto;
 	margin: auto;
 	top: 50px;
-	/* background: red; */
+	background: red;
 }
 
 /* ==================== LOGOTIPO STICKY ========================= */
@@ -3758,7 +3605,6 @@ width: 80%;
 	margin-top: 0.5em;
 	width: 100%;
 	height: auto;	
-	font-size: 16px;
 	/* outline: 1px solid #fff; */
 }
 
@@ -4736,12 +4582,12 @@ article.slide-3 img.titulo-pagina {
 	width: 100%;
 	height: 30vh;
 	/* background: #2C0D10; */
-	/* background: rgba(7, 122, 26, 0.5); */
+	background: rgba(7, 122, 26, 0.5);
 	position: relative;
 	bottom: 0;
 	align-items: flex-end;
 	z-index: 500;
-	/* outline: 4px solid rgb(255, 255, 255); */
+	outline: 4px solid rgb(255, 255, 255);
 }
 
 .footer .contenedor-footer{
@@ -4751,9 +4597,9 @@ article.slide-3 img.titulo-pagina {
     position: relative;
     justify-content:center;
 	align-items: flex-end;
-	background: #2C0D10;
-	/* background: rgba(100, 100, 100, 0.2); */
-	/* outline: 3px solid #fff; */
+	/* background: #2C0D10; */
+	background: rgba(100, 100, 100, 0.2);
+	outline: 3px solid #fff;
 
 }
 
@@ -4762,7 +4608,7 @@ article.slide-3 img.titulo-pagina {
     height: 85%;
     position: absolute;
 	/* background: #2C0D10; */
-	/* background: rgba(100,100,100,0.5); */
+	background: rgba(100,100,100,0.5);
     /* box-shadow: 0px 0px 40px rgba(0,0,0,10); */
     z-index: 100;
 }
@@ -4774,7 +4620,7 @@ article.slide-3 img.titulo-pagina {
 	position: absolute;
 	z-index: 0;
 	align-self: flex-start;
-	/* background: rgba(230, 6, 6, 0.3); */
+	background: rgba(230, 6, 6, 0.3);
 }
 
 /* CONTENEDOR IMPUESTOS */
@@ -4782,7 +4628,7 @@ article.slide-3 img.titulo-pagina {
 	position: absolute;
 	width: 50%;
 	left: 0;
-	top: 95vh;
+	top: 85vh;
 }
 
 .contenedor-impuestos p {
@@ -5035,160 +4881,4 @@ article.slide-3 img.titulo-pagina {
     right: 10;
     border-width: 20px 0px 20px 20px;
     border-color: transparent transparent transparent #fff;
-}
-
-
-/* ======================== REESPONSIVE ================================ */
-@media screen and (max-width: 1600px){
-
- .contenedor .contenido {
-	 display: grid;
-	 position: relative;
-	 grid-template-columns: repeat(36, 1fr);
-	 grid-template-rows: repeat(18, 1fr);
-	 width: 100%;
-	 height: 90vh;
-	 margin: auto;
-	 top: 50px;
-	 /* background: green; */
- }
-
-}
-
-@media screen and (max-width: 1440px){
-
-	.contenedor .contenido {
-		/* background: rgb(15, 133, 211); */
-	}
-
-	.contenedor .contenido .contenedor-platos {
-		/* border: 1px solid #fff; */
-		width: 105% !important;
-	}
-
-	.contenedor .contenido .contenedor-platos .etiqueta-nuevo-plato span {
-		font-size: 16px;
-	}
-
-	.contenedor .contenido .contenedor-platos h2 {
-		font-size: 20px;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-platos p {
-		font-size: 13px;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(1) {
-		font-size: 37px;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-precio-unico span:nth-child(2) {
-		font-size: 22px;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-precios-varios {
-		font-size: 14px;
-		width: 100%;
-	}
-
-	.contenedor .contenido .contenedor-platos .etiqueta-2 {
-		/* outline: 1px solid #fff; */
-		font-size: 14px;
-	}
-
-	.contenedor-las-chelas p .color {
-		font-size: 17px;
-	}
-
-	.contenedor-las-chelas p span {
-		font-size: 16px;
-	}
-	
-	.aclaracion {
-		grid-area: 18/9/19/18;
-		font-size: 20px;
-	}
-
-	/* BOTELLAS LICORES */
-	.contenedor-nombres-precios {
-		font-size: 15px;
-	}
-   
-}
-
-@media screen and (max-width: 1280px){
-
-	.contenedor .contenido {
-		display: grid;
-		position: relative;
-		grid-template-columns: repeat(36, 1fr);
-		grid-template-rows: repeat(18, 1fr);
-		width: 100%;
-		height: 90vh;
-		margin: auto;
-		top: 50px;
-		background: rgb(211, 181, 15);
-	}
-
-	.contenedor .contenido .contenedor-platos h2 {
-		text-align: center;
-		font-family: 'Rye', cursive;
-		font-size: 20px;
-		color: #fff;
-		line-height: 1.1em;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-platos p {
-		text-align: center;
-		color: #fff;
-		font-size: 13px;
-		font-family: 'Mayan';
-		line-height: 1.3em;
-	}
-   
-}
-
-@media screen and (max-width: 1024px){
-
-	.contenedor .contenido {
-		display: grid;
-		position: relative;
-		grid-template-columns: repeat(36, 1fr);
-		grid-template-rows: repeat(18, 1fr);
-		width: 100%;
-		height: 90vh;
-		margin: auto;
-		top: 50px;
-		background: rgb(91, 4, 109);
-	}
-
-	.contenedor .contenido .contenedor-platos h2 {
-		text-align: center;
-		margin-bottom: 0.3em;
-		font-family: 'Rye', cursive;
-		font-size: 20px;
-		color: #fff;
-		line-height: 1.1em;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-platos p {
-		text-align: center;
-		color: #fff;
-		font-size: 11px;
-		font-family: 'Mayan';
-		line-height: 1.3em;
-	}
-
-	.contenedor .contenido .contenedor-platos .descripcion-precios-varios {
-		display: flex;
-		height: auto;
-		font-family: 'Bison';
-		color: #fff;
-		text-transform: uppercase;
-		margin-left: 0.2em;
-		margin-top: 0.7em;
-		font-size: 10px;
-		width: 100%;
-	}
-   
 }
