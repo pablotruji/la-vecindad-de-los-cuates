@@ -447,7 +447,8 @@ body{
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	mix-blend-mode: multiply;
+	opacity: 0.8;
+	/* mix-blend-mode: multiply; */
 }
 .contenedor .contenido .contenido-coctel .contenedor-imagen-fondo-diseno img{
 	width: 90%;
@@ -1624,7 +1625,7 @@ width: 80%;
     display: flex;
 	justify-content: space-around;
 	font-family: 'Bison';
-	font-size: 17px;
+	font-size: 18px;
 	/* background: red; */
 	color: #fff;
 
