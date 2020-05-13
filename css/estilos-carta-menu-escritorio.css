@@ -358,6 +358,10 @@ body{
 
 }
 
+.contenedor .contenido .contenido-coctel{
+	outline: 1px solid #fff;
+}
+
 .contenedor .contenido .contenido-coctel.zocalo-sour {
 	width: 100%;
 	grid-area: 2/2/8/6;
@@ -430,7 +434,7 @@ body{
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios{
 	width: 100%;
-	grid-area: 11/23/17/27;
+	grid-area: 11/23/16/27;
 	position: relative;
 	height: auto;
 }
@@ -451,7 +455,7 @@ body{
 	/* mix-blend-mode: multiply; */
 }
 .contenedor .contenido .contenido-coctel .contenedor-imagen-fondo-diseno img{
-	width: 90%;
+	width: 100%;
 }
 
 /* COCTEL */
@@ -482,13 +486,14 @@ body{
 
 /* TITULO */
 .contenedor .contenido .contenido-coctel h2{
-	position: relative;
+	/* position: relative; */
 	z-index: 10;
 	font-family: 'Rye', cursive;
 	font-size: 19px;
 	text-align: center;
 	line-height: 1em;
 	color: #B43576;
+	outline: 1px solid rgb(253, 6, 6);
 }
 
 .contenedor .contenido .contenido-coctel h2 span{
@@ -500,15 +505,17 @@ body{
 	display: flex;
 	margin-top: 0.2em;
 	justify-content: space-evenly;
+	outline: 1px solid #D9951D;
 }
 
 /* DESCRIPCIÓN */
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-coctel{
-	width: 40%;
+	width: 70%;
+	outline: 1px solid rgb(114, 14, 14);
 }
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: center;
 	color: #fff;
 }
@@ -516,6 +523,7 @@ body{
 /* PRECIO */
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-precio-unico-coctel{
 	width: 50%;
+	margin: auto;
 }
 
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-precio-unico-coctel p{
@@ -526,18 +534,35 @@ body{
 
 }
 
+.contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-precio-unico-coctel p span:first-child{
+	font-size: 35px;
+}
+
+.contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-precio-unico-coctel p span:last-child{
+	font-size: 25px;
+}
+
 /* ESTILOS PARTICULARES */
 /* ===================================== ZOCALO ZOUR ====================== */
+
+.contenedor .contenido .contenido-coctel.zocalo-sour .contenedor-imagen-coctel{
+	width: 85%;
+}
+
 /* CONTENEDOR DESCRIPCIÓN */
 .contenedor .contenido .contenido-coctel.zocalo-sour  .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
+	/* position: absolute; */
 	bottom: 0;
 	left: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.zocalo-sour h2{
 	bottom: 15px;
+}
+
+.contenedor .contenido .contenido-coctel.zocalo-sour .descripcion-coctel-precio .descripcion-coctel{
+	width: 45%;
 }
 
 /* ===================================== CHEVELITA ====================== */
@@ -550,6 +575,15 @@ body{
 	width: 100%;
 }
 
+.contenedor .contenido .contenido-coctel.chavelita h2{
+	bottom: -65px;
+}
+
+.contenedor .contenido .contenido-coctel.chavelita .descripcion-coctel-precio {
+	display: flex;
+	bottom: 0;
+	left: -20px;
+}
 /* ===================================== PEPE EL TORO ====================== */
 .contenedor .contenido .contenido-coctel.pepe-el-toro .contenedor-imagen-coctel {
 	bottom: 0;
@@ -578,9 +612,8 @@ body{
 
 .contenedor .contenido .contenido-coctel.pepe-el-toro  .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
-	left: -20px;
+	left: -50px;
 }
 
 .contenedor .contenido .contenido-coctel.pepe-el-toro  .descripcion-coctel-precio .descripcion-coctel{
@@ -589,7 +622,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.pepe-el-toro  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -613,7 +646,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.caipirina-veracruz  .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
 	left: -20px;
 }
@@ -624,7 +656,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.caipirina-veracruz  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -648,18 +680,17 @@ body{
 
 .contenedor .contenido .contenido-coctel.la-sufrida  .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
-	bottom: 0;
+	bottom: -3em;
 	left: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.la-sufrida .descripcion-coctel-precio .descripcion-coctel{
-	width: 100%;
+	width: 150%;
 	border-right: 1px solid #fff;
 }
 .contenedor .contenido .contenido-coctel.la-sufrida  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -679,7 +710,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.martini .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: -30px;
 	left: -20px;
 	align-items: center;
@@ -691,7 +721,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.martini  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -717,7 +747,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
 	left: -20px;
 	align-items: center;
@@ -730,7 +759,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.margarita-vecindad  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -758,7 +787,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.cuate-viejo .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
 	left: -20px;
 	align-items: center;
@@ -770,7 +798,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.cuate-viejo  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -796,7 +824,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.el-santo .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
 	left: -20px;
 	align-items: center;
@@ -808,7 +835,6 @@ body{
 }
 .contenedor .contenido .contenido-coctel.el-santo  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
 	text-align: center;
 	color: #fff;
 }
@@ -833,7 +859,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: -40px;
 	left: -20px;
 	align-items: center;
@@ -845,7 +870,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.mojitos-tapatios  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -869,7 +894,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.gin-tonic .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: 0;
 	left: -20px;
 	align-items: center;
@@ -882,7 +906,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.gin-tonic  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 }
@@ -910,7 +934,6 @@ body{
 
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio {
 	display: flex;
-	position: absolute;
 	bottom: -30px;
 	left: -20px;
 	align-items: center;
@@ -922,7 +945,7 @@ body{
 }
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
-	font-size: 11px;
+	/* font-size: 11px; */
 	text-align: center;
 	color: #fff;
 } 
