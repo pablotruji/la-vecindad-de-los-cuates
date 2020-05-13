@@ -1171,9 +1171,16 @@ a {
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS =========*/
 .contenedor-los-mero-mero-1 .titulo,
-.contenedor-los-mero-mero-2 .contenedor-info-producto-inferior .titulo,
-.contenedor-los-mero-mero-3 .titulo{
+.contenedor-los-mero-mero-2 .contenedor-info-producto-inferior .titulo
+{
     background: #AE0D40;
+}
+.contenedor-los-mero-mero-3 .titulo{
+    background: transparent;
+}
+.contenedor-los-mero-mero-3 .titulo span{
+    background:  #AE0D40;
+    padding: 0.2em;
 }
 .contenedor-los-mero-mero-2 .contenedor-info-producto-superior .titulo {
 	background-color: initial;
@@ -1219,6 +1226,13 @@ a {
 .contenedor-las-estrellas-1 .titulo{
     background: rgb(5, 196, 5);
 }
+
+.contenedor-las-estrellas-1 .precio-plato-superior span,
+.contenedor-las-estrellas-1 .precio-plato-inferior span{
+    background: none;
+}
+
+
 
 /* ===== SÉPTIMA SECCIÓN - LO MEJOR DE NUESTRO GANADO ====== */
 .contenedor-nuestro-ganado-1 .contenedor-info-producto .titulo{
@@ -1524,6 +1538,7 @@ a {
 /* ========== SÉPTIMA SECCIÓN - LO MEJOR DE LO NUESTRO =========== */
 .contenedor-nuestro-ganado-1 .contenedor-info-producto-superior .descripcion{
     top: 30%;
+    width: 46%;
 }
 
 /* ========== OCTAVA SECCIÓN - PECHUGAS PIO PIO ================ */
@@ -1623,7 +1638,7 @@ a {
 	display: flex;
 	justify-content: center;
     align-items: flex-end;
-    /* background: red; */
+    background: none;
 }
 
 .precio-plato-superior span:nth-child(1),
