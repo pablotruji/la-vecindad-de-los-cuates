@@ -1512,7 +1512,7 @@ a {
 
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
 .contenedor-los-mero-mero-1 span, .contenedor-los-mero-mero-2 span, .contenedor-los-mero-mero-3 span{
-    background: rgba(70, 25, 11, 0.7);
+    /* background: rgba(70, 25, 11, 0.7); */
 }
 
 .contenedor-los-mero-mero-2 .contenedor-info-producto-superior .descripcion{
