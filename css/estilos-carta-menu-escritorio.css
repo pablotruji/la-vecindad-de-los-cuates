@@ -359,7 +359,7 @@ body{
 }
 
 .contenedor .contenido .contenido-coctel{
-	outline: 1px solid #fff;
+	/* outline: 1px solid #fff; */
 }
 
 .contenedor .contenido .contenido-coctel.zocalo-sour {
@@ -485,7 +485,7 @@ body{
 }
 
 /* TITULO */
-.contenedor .contenido .contenido-coctel h2{
+.contenedor .contenido .contenido-coctel h2 {
 	/* position: relative; */
 	z-index: 10;
 	font-family: 'Rye', cursive;
@@ -493,9 +493,10 @@ body{
 	text-align: center;
 	line-height: 1em;
 	color: #B43576;
-	outline: 1px solid rgb(253, 6, 6);
+	/* outline: 1px solid rgb(253, 6, 6); */
+	margin-top: 5em;
+	margin-bottom: 1em;
 }
-
 .contenedor .contenido .contenido-coctel h2 span{
 	background: rgba(21, 11, 51, 0.8);
 }
@@ -505,13 +506,13 @@ body{
 	display: flex;
 	margin-top: 0.2em;
 	justify-content: space-evenly;
-	outline: 1px solid #D9951D;
+	/* outline: 1px solid #D9951D; */
 }
 
 /* DESCRIPCIÓN */
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-coctel{
 	width: 70%;
-	outline: 1px solid rgb(114, 14, 14);
+	/* outline: 1px solid rgb(114, 14, 14); */
 }
 .contenedor .contenido .contenido-coctel .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
@@ -675,13 +676,16 @@ body{
 /* CONTENEDOR DESCRIPCIÓN */
 .contenedor .contenido .contenido-coctel.la-sufrida h2{
 	position: relative;
+	margin-bottom: 3em;
+	margin-top: 6em;
 
 }
 
-.contenedor .contenido .contenido-coctel.la-sufrida  .descripcion-coctel-precio {
+.contenedor .contenido .contenido-coctel.la-sufrida .descripcion-coctel-precio {
 	display: flex;
-	bottom: -3em;
-	left: -20px;
+	/* background: red; */
+	margin-left: -10%;
+	width: 120%;
 }
 
 .contenedor .contenido .contenido-coctel.la-sufrida .descripcion-coctel-precio .descripcion-coctel{
@@ -742,15 +746,11 @@ body{
 	position: relative;
 	font-size: 14px;
 	color: #008E84;
-	top: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio {
 	display: flex;
-	bottom: 0;
-	left: -20px;
 	align-items: center;
-	bottom: -30px;
 }
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio .descripcion-coctel{
@@ -782,7 +782,6 @@ body{
 	position: relative;
 	font-size: 18px;
 	color: #D9951D;
-	top: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.cuate-viejo .descripcion-coctel-precio {
@@ -819,13 +818,11 @@ body{
 	position: relative;
 	font-size: 18px;
 	color: #D9951D;
-	top: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.el-santo .descripcion-coctel-precio {
 	display: flex;
 	bottom: 0;
-	left: -20px;
 	align-items: center;
 }
 
@@ -854,7 +851,6 @@ body{
 	position: relative;
 	font-size: 18px;
 	color: #D9951D;
-	top: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios .descripcion-coctel-precio {
@@ -929,7 +925,6 @@ body{
 	position: relative;
 	font-size: 18px;
 	color: #D9951D;
-	top: -20px;
 }
 
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio {
