@@ -439,9 +439,9 @@ body{
 	height: auto;
 }
 
-.contenedor .contenido .contenido-coctel.caipirina{
+.contenedor .contenido .contenido-coctel.caipirina {
 	width: 100%;
-	grid-area: 11/29/17/33;
+	grid-area: 11/30/16/34;
 	position: relative;
 	height: auto;
 }
@@ -582,8 +582,8 @@ body{
 
 .contenedor .contenido .contenido-coctel.chavelita .descripcion-coctel-precio {
 	display: flex;
-	bottom: 0;
-	left: -20px;
+	width: 120%;
+	margin-left: -25%;
 }
 /* ===================================== PEPE EL TORO ====================== */
 .contenedor .contenido .contenido-coctel.pepe-el-toro .contenedor-imagen-coctel {
@@ -708,8 +708,10 @@ body{
 	width: 100%;
 }
 /* CONTENEDOR DESCRIPCIÓN */
-.contenedor .contenido .contenido-coctel.martini h2{
+.contenedor .contenido .contenido-coctel.martini h2 {
 	position: relative;
+	margin-bottom: 4em;
+	margin-top: 6em;
 }
 
 .contenedor .contenido .contenido-coctel.martini .descripcion-coctel-precio {
@@ -751,11 +753,13 @@ body{
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio {
 	display: flex;
 	align-items: center;
+	width: 160%;
+	margin-left: -30%;
 }
 
 .contenedor .contenido .contenido-coctel.margarita-vecindad .descripcion-coctel-precio .descripcion-coctel{
-	width: 100%;
-	border-right: 1px solid #fff;
+	width: 60%;
+	/* border-right: 1px solid #fff; */
 }
 .contenedor .contenido .contenido-coctel.margarita-vecindad  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
@@ -814,10 +818,12 @@ body{
 }
 
 /* CONTENEDOR DESCRIPCIÓN */
-.contenedor .contenido .contenido-coctel.el-santo h2{
+.contenedor .contenido .contenido-coctel.el-santo h2 {
 	position: relative;
 	font-size: 18px;
 	color: #D9951D;
+	margin-top: 6em;
+	margin-bottom: 2em;
 }
 
 .contenedor .contenido .contenido-coctel.el-santo .descripcion-coctel-precio {
@@ -855,14 +861,13 @@ body{
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios .descripcion-coctel-precio {
 	display: flex;
-	bottom: -40px;
-	left: -20px;
 	align-items: center;
+	width: 165%;
+	margin-left: -40%;
 }
 
 .contenedor .contenido .contenido-coctel.mojitos-tapatios .descripcion-coctel-precio .descripcion-coctel{
 	width: 100%;
-	border-right: 1px solid #fff;
 }
 .contenedor .contenido .contenido-coctel.mojitos-tapatios  .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
@@ -890,10 +895,9 @@ body{
 
 .contenedor .contenido .contenido-coctel.gin-tonic .descripcion-coctel-precio {
 	display: flex;
-	bottom: 0;
-	left: -20px;
 	align-items: center;
-	bottom: -40px;
+	width: 150%;
+	margin-left: -25%;
 }
 
 .contenedor .contenido .contenido-coctel.gin-tonic .descripcion-coctel-precio .descripcion-coctel{
@@ -929,14 +933,14 @@ body{
 
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio {
 	display: flex;
-	bottom: -30px;
-	left: -20px;
 	align-items: center;
+	width: 160%;
+	margin-left: -30%;
 }
 
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio .descripcion-coctel{
 	width: 100%;
-	border-right: 1px solid #fff;
+	/* border-right: 1px solid #fff;	 */
 }
 .contenedor .contenido .contenido-coctel.caipirina .descripcion-coctel-precio .descripcion-coctel p{
 	font-family: Mayan;
@@ -982,6 +986,7 @@ body{
    color: #fff;
    font-size: 24px;
    align-self: center;
+   font-family: 'Mayan';
 }
 
 /* ================================================================================= */

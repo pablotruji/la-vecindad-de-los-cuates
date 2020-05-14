@@ -1327,6 +1327,15 @@ a {
     color: #E3007E;
 }
 
+.contenedor-postres-2 img.titulo-imagen {
+	position: absolute;
+	top: -15px;
+	bottom: initial;
+	right: 10px;
+	left: initial;
+	width: 41%;
+}
+
 
 
 /* ============ TRIGÉSIMA SECCIÓN - LICORES 6 ============= */
@@ -1554,6 +1563,10 @@ a {
 /* ===== UNDÉCIMA SECCIÓN DOBLE - MENÚ INFANTIL Y EXTRAS ===== */
 
 /* ============= DUODECIMA SECCIÓN - POSTRES =============== */
+
+.contenedor-postres-2 .contenedor-info-producto-superior .descripcion{
+    top: 39%;
+}
 
 /* ============= TRIGÉSIMA SECCIÓN - LICORES ============== */
 #carta-menu-14 .contenedor-info-producto .descripcion {
