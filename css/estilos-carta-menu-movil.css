@@ -1261,12 +1261,9 @@ a {
     background: transparent;
 }
 
-.contenedor-pechugas-pio-pio-1 .titulo span{
-    background: rgb(255, 109, 24);
-}
-
+.contenedor-pechugas-pio-pio-1 .titulo span,
 .contenedor-pechugas-pio-pio-2 .titulo span{
-    background: rgb(255, 109, 24);
+    background: #D08021;
 }
 
 
@@ -1526,6 +1523,7 @@ a {
 
 .contenedor-los-mero-mero-2 .contenedor-info-producto-superior .descripcion{
     top: 34%;
+    width: 48%;
 }
 .contenedor-los-mero-mero-6 .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .descripcion{
     width: 105%;
