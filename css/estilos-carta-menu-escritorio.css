@@ -1736,7 +1736,7 @@ width: 80%;
     margin-left: 0.5em;
 }
 
-/* =================== IMAGENES PA' COMPARTIR ======================== */
+/* ======================== IMAGENES PA' COMPARTIR ======================== */
 	/* ======================== PRIMERA PÁGINA ======================  */
 .slide-1.primera-pagina .contenedor .contenido .contenedor-imagen-tlacoyos {
 	display: flex;
@@ -3423,11 +3423,15 @@ width: 80%;
 	color: #fff;
 	line-height: 1.1em;
 }
+.contenedor .contenido .contenedor-platos h2 span{
+	padding: 0 0.6em;
+}
+
 
 /* =========================== PA' COMPARTIR ================================= */
 .contenedor .contenido .contenedor-platos h2 span {
 	background: #D08021;
-	padding: 0 0.3em;
+	
 }
 
 .contenedor .contenido .contenedor-platos.sopes h2 span,
@@ -3441,7 +3445,6 @@ width: 80%;
 /* =========================== PA' ENTRARLE SOLITO================================= */
 .slide-2 .contenedor .contenido .contenedor-platos h2 span {
 	background: #CF1C24;
-	padding: 0 0.3em;
 }
 
 .slide-2 .contenedor .contenedor-platos.empanadas-veracruz h2 span,
@@ -4113,7 +4116,7 @@ width: 80%;
 
 .slide-2.segunda-pagina .contenedor .contenido .contenedor-platos.queso-fundido-chorizo{
 	position: absolute;
-	grid-area: 10 / 15 / 17 / 21;
+	grid-area: 10 / 14 / 17 / 21;
 	width: 100%;
 	height: auto;
 	/* background: green; */
@@ -4123,7 +4126,7 @@ width: 80%;
 
 .contenedor .contenido .contenedor-platos.pozole-blanco{
 	position: absolute;
-	grid-area: 4 / 12 / 8 / 18;
+	grid-area: 4 / 11 / 8 / 18;
 	width: 100%;
 	height: auto;
 }
@@ -4225,7 +4228,7 @@ width: 80%;
 
 .tacos .contenedor .contenido .contenedor-platos.taco-carne-asada{
 	position: absolute;
-	grid-area: 3 / 24 / 8 / 29;
+	grid-area: 3 / 23 / 8 / 29;
 	width: 100%;
 	height: auto;
 }
@@ -4469,7 +4472,7 @@ width: 80%;
 
 .contenedor .contenido .contenedor-platos.enchilada-cangrejo{
 	position: absolute;
-	grid-area: 6 / 23 / 16 / 28;
+	grid-area: 6 / 23 / 16 / 29;
 	width: 100%;
 	height: auto;
 }
