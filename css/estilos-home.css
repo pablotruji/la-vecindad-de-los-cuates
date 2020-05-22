@@ -415,7 +415,7 @@ a{
     height: 100%;
     flex-direction: column-reverse;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -427,7 +427,7 @@ a{
     height: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .aside-izquierda .contenedor-botones-aside:first-child{
     display: none;
@@ -462,7 +462,6 @@ a{
     position: relative;
     justify-content:center;
     align-items: flex-end;
-
 }
 
 
@@ -630,6 +629,115 @@ a{
     font-size: 9px;
 }
 
+/*===================================================*/
+/*============== FOOTER DELIVERY ===================*/
+/*=================================================*/
+.footer-delivery{
+    display: flex;
+    grid-area: footer;
+    /* outline: 4px solid #fff; */
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.footer-delivery .contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background: blue; */
+    /* outline: 3px solid blue; */
+    width: 100%;
+    height: 170px;
+    align-self: flex-end;
+    justify-content: center;
+
+}
+
+.footer-delivery .contenedor-footer .caja-superior{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40%;
+    /* outline: 4px solid rgb(172, 207, 17); */
+}
+
+.footer-delivery .contenedor-footer .caja-inferior{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background: #2C0D10;
+    box-shadow: 0px 0px 40px rgba(0,0,0,10);
+}
+
+.footer-delivery .contenedor-imagen-mariachi-llamando{
+    width: 50%;
+    /* outline: 4px dashed rgb(255, 187, 0); */
+    position: relative;
+}
+
+.footer-delivery .contenedor-imagen-mariachi-llamando img{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    max-width: 170px;
+    /* outline: 5px dotted red; */
+}
+
+.footer-delivery .contenedor-imagen-medalla{
+	width: 75%;
+	position: relative;
+	bottom: 20px;
+}
+
+.footer-delivery .contenedor-imagen-medalla img{
+    width: 40%;
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+}
+
+.footer-delivery .contenedor-imagen-moto{
+    width: 70%;
+}
+
+.footer-delivery .contenedor-imagen-moto img {
+	position: absolute;
+	width: 40%;
+	max-width: 220px;
+	bottom: 10px;
+	height: auto;
+    z-index: 300;
+}
+
+.footer-delivery .contenedor-imagen-domicilio{
+    width: 100%;
+    /* background: green; */
+    align-self:center ;
+}
+
+.footer-delivery .contenedor-imagen-domicilio img {
+    width: 95%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    /* background: lightcyan; */
+    position: relative;
+}
+
+.footer-delivery .contenedor-imagen-adorno-amarillo {
+    width: 100%;
+    display: none;
+}
+
+.footer-delivery .contenedor-imagen-adorno-amarillo img {
+	position: absolute;
+	width: 166%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
 
 /* ============================================================================ */
 /* ============================== RESPONSIVE ================================= */
@@ -717,6 +825,7 @@ a{
 @media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Fondo-escritorio.png);
+        overflow: hidden;
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -894,7 +1003,7 @@ a{
     }
 
     .contenedor-logo-2 .enlace img{
-        width: 130px;
+        width: 115px;
         position: absolute;
         top:20px;
         right: 20px;
@@ -908,7 +1017,7 @@ a{
     /* ASIDE */
 
     .contenedor-botones-aside .enlace img{
-        width: 165px;
+        width: 150px;
     }
 
     .aside-izquierda{
@@ -931,13 +1040,13 @@ a{
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(2){
-        top: 200px;
+        top: 170px;
         /* left: 20px; */
     }
 
-    .aside-izquierda .contenedor-botones-aside:nth-child(3){
-        bottom: -80px;
-        right: -70px;
+    .aside-izquierda .contenedor-botones-aside:nth-child(3) {
+        bottom: -39px;
+        right: -65px;
         z-index: 500;
     }
 
@@ -989,5 +1098,65 @@ a{
 
     .footer .imagen-derecha-footer img {
         max-width: 130px;
+    }
+
+    /* FOOTER DELIVERY */
+
+    .footer-delivery .contenedor-footer{
+        flex-direction: initial;
+    }
+
+    .footer-delivery .contenedor-footer .caja-superior{
+        position: absolute;
+        height: 58%;
+        z-index: 100;
+    }
+
+    .footer-delivery .contenedor-footer .caja-inferior{
+        position: absolute;
+        height: 80%;
+        bottom: 0;
+    }
+
+    .footer-delivery .contenedor-imagen-medalla{
+        display: none;
+    }
+
+    .footer-delivery .contenedor-imagen-moto {
+        width: 0%;
+        background: #2C0D10;
+    }
+    
+    .footer-delivery .contenedor-imagen-mariachi-llamando{
+        width: 100%
+    }
+
+    .footer-delivery .contenedor-imagen-adorno-amarillo {
+        background: red;
+        width: 0%;
+        display: initial;
+    }
+
+    .footer-delivery .contenedor-imagen-domicilio {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer-delivery .contenedor-imagen-domicilio img {
+        background: #2c0d10;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 30px;
+    }
+
+    .moto-fondo{
+        position: absolute;
+        background: #2c0d10;
+        width: 16%;
+        height: 100%;
+        z-index: 200;
     }
 }
