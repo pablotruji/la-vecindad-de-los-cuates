@@ -162,6 +162,7 @@ a{
     height: 100vh;
     top: 0;
     z-index: 300;
+    
 }
 
 /*===================  GRILLA  ========================*/
@@ -175,7 +176,6 @@ a{
     grid-template-areas: "logo contenido-principal logo-2"
                          "aside-izquierda contenido-principal aside-derecha"
                          "footer footer footer";
-
 }
 
 /*===========================================================*/
@@ -417,6 +417,11 @@ a{
     align-items: flex-end;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+/* =========== MEDALLA CUMPLIMIENTO DE NORMAS ============ */
+.aside-derecha .contenedor-imagen-medalla{
+    display: none;
 }
 
 /*==================== ASIDE IZQUIERDA ==================*/
@@ -731,13 +736,6 @@ a{
     display: none;
 }
 
-.footer-delivery .contenedor-imagen-adorno-amarillo img {
-	position: absolute;
-	width: 166%;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-}
 
 /* ============================================================================ */
 /* ============================== RESPONSIVE ================================= */
@@ -825,7 +823,7 @@ a{
 @media screen and (min-width: 1023px){
     body{
         background-image: url(../imagenes/Fondo-escritorio.png);
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .contenedor .contenedor-guirnaldas img {
@@ -1015,11 +1013,6 @@ a{
     }
     
     /* ASIDE */
-
-    .contenedor-botones-aside .enlace img{
-        width: 150px;
-    }
-
     .aside-izquierda{
         /* background: blue; */
         align-items: center;
@@ -1040,8 +1033,7 @@ a{
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(2){
-        top: 170px;
-        /* left: 20px; */
+        top: 200px;
     }
 
     .aside-izquierda .contenedor-botones-aside:nth-child(3) {
@@ -1060,6 +1052,20 @@ a{
         align-self: center;
         margin-top: 80px;
     }
+
+    /* =========== MEDALLA CUMPLIMIENTO DE NORMAS ============ */
+    .aside-derecha .contenedor-imagen-medalla{
+        display: initial;
+        width: 100%;
+        position: relative;
+        /* background: red; */
+        right: 50px;
+    }   
+
+    .aside-derecha .contenedor-imagen-medalla img{
+        width: 51%;
+    } 
+
     
     /* FOOTER */
     .contenedor-alas img.alas-izq{
@@ -1132,14 +1138,23 @@ a{
     }
 
     .footer-delivery .contenedor-imagen-adorno-amarillo {
-        background: red;
-        width: 0%;
+        /* background: red; */
+        width: 99%;
         display: initial;
+        position: absolute;
+        overflow: hidden;
+        bottom: 35px;
+        z-index: 20;
+    }
+
+    .footer-delivery .contenedor-imagen-adorno-amarillo img{
+        width: 2200px;
     }
 
     .footer-delivery .contenedor-imagen-domicilio {
         width: 100%;
         position: relative;
+        z-index: 200;
     }
 
     .footer-delivery .contenedor-imagen-domicilio img {
