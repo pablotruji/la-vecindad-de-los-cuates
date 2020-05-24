@@ -356,6 +356,12 @@ a{
     display: none;
 }
 
+.contenedor-info-local a{
+    /* background: red; */
+    width: 100%;
+    display: block;
+}
+
 /* ================ INFORMACIÓN LOCALES ESTILOS PARTICULARES =================== */
 
 /* == EL BATÁN == */
