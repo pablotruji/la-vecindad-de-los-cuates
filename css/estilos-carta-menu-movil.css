@@ -16,7 +16,6 @@
 @font-face{
     font-family: 'Bison';
     src: url(../fonts/Bison-Bold\(PersonalUse\).ttf);
-
 }
 
 @font-face{
@@ -35,7 +34,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body{
@@ -53,13 +51,11 @@ a {
 }
 
 .full-page{
-    /* background: rgb(191, 230, 173); */
     width: 100%;
     height: 100vh;
 }
 
 /* ======================== CLASES DE FULLPAGES ========================*/
-
 #fp-nav ul li a span{
     background: orange;
 }
@@ -90,7 +86,6 @@ a {
     height: 100%;
     top: 0;
     z-index: 300;
-
 }
 
 /* ======================== CSS GRID ============================*/
@@ -343,7 +338,6 @@ a {
 .contenedor-slide {
     display: flex;
     position: relative;
-    /* width: 100% !important; */
     height: 100vh;
 }
 
@@ -358,7 +352,6 @@ a {
     background-position: center center;
     background-repeat: repeat-x;
     background-size: cover;
-    /* background-attachment: fixed; */
     width: 100%;
     z-index: 100;
 }
@@ -375,7 +368,6 @@ a {
 #carta-menu-3{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-3.png");
 }
-
 #carta-menu-4{
     background-image: url("../imagenes/Imagenes-menu/Carta-Menu-4.png");
 }
@@ -487,12 +479,11 @@ a {
     left: 0;
     top: 10px;
     margin: auto;
-    max-width: 300px;
+    max-width: 400px;
 }
 .titulo-paginas-menu img{
     width: 100%;
     height: auto;
-    /* background: blue; */
 }
 
 /* =========== TÍTULO DE PÁGINAS DEL MENÚ ESTILOS INDIVIDUALES ======= */
@@ -512,14 +503,6 @@ a {
     right: 8%;
     margin: initial;    
 }
-/* ============== TÍTULO DE SECCIÓN DOBLE ================= */
-.contenedor-ensaladas-tacos .imagen-titulo-seccion-doble{
-    position: absolute;
-    width: 67%;
-    top: -100%;
-    right: 0;
-    left: 0;
-}
 
 /* ================== TÍTULO DE PAGINAS DEL MENÚ ================ */
 .contenedor-slide .titulo-paginas-menu-cocteles{
@@ -530,7 +513,6 @@ a {
     left: 0;
     margin: auto;
     max-width: 300px;
-    /* background: red; */
 }
 
 .contenedor-slide .titulo-paginas-menu-cocteles.icono-intermedio{
@@ -539,9 +521,6 @@ a {
 
 .contenedor-info-producto .titulo-paginas-menu-cocteles img{
     width: 60%;
-    right: 0;
-    left: 0;
-    top: 0;
     margin: auto;
 }
 
@@ -553,11 +532,10 @@ a {
 .contenedor-info-producto {
     display: flex;
     flex-direction: column;
-	position: relative;
+    position: relative;
     width: 100%;
     max-width: 700px;
 	height: 100%;
-    z-index: 300;
     justify-content: center;
     margin: auto;
 }
@@ -596,28 +574,29 @@ a {
     flex-direction: column;
     width: 100%;
     height: 80%;    
-    /* background: green; */
     align-items: center;
     justify-content: space-evenly;
+    /* outline: 4px dashed azure; */
+    /* background: #4415c7; */
 }
 
-.contenedor-info-producto .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen{
-    width: 70%;
-    max-width: 213px;
-    /* background: blue; */
-    height: auto;
+.contenedor-info-producto .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen {
+	width: 100%;
+	/* max-width: 213px; */
+	height: auto;
+	/* outline: 4px solid yellow; */
+	display: flex;
+	flex-direction: column;
 }
 
 /* CONTEDORES COCTELES */
 #carta-menu-14 .contenedor-info-producto-superior{
     display: flex;
-    /* outline: 3px dotted #DFBF28; */
     flex-direction: initial;
     
 }
 #carta-menu-14 .contenedor-info-producto-inferior{
     display: flex;
-    /* outline: 3px dotted #DFBF28; */
     flex-direction: row-reverse;
 }
 
@@ -659,9 +638,8 @@ a {
 }
 
 .contenedor-pa-entrarle-solito-1 .contenedor-info-producto-inferior img {
-	width: 90%;
+	width: 100%;
 	max-width: 375px;
-	/* background: red; */
 }
 
 .contenedor-pa-entrarle-solito-2 .contenedor-info-producto-intermedio img{
@@ -671,20 +649,12 @@ a {
 
 .contenedor-pa-entrarle-solito-1 img.imagen-chile,
 .contenedor-pa-entrarle-solito-6 img.imagen-chile{
-    position: initial;
     width: 25%;
     margin: initial;
 }
 
-.contenedor-pa-entrarle-solito-6 img.imagen-chile {
-	width: 15%;
-	height: 100%;
-	align-self: center;
-}
-
 .contenedor-pa-entrarle-solito-6 .contenedor-info-plato-sin-imagen:last-child 
 .precio-plato-sin-imagen {
-    justify-content: flex-end;
     flex-direction: initial;
 }
 
@@ -709,7 +679,7 @@ a {
 
 /* ======== CUARTA SECCIÓN DOBLE - TACOS =========*/
 .contenedor-ensaladas-tacos.tacos .contenedor-info-producto-superior img {
-	width: 100%;
+	width: 110%;
     transform: rotateY(180deg);
 }
 
@@ -748,7 +718,7 @@ a {
 
 /* ================= SEXTA SECCIÓN  - LAS ESTRELLAS ============== */
 .contenedor-las-estrellas-1 .contenedor-info-producto-superior img{
-    width: 105%;
+    width: 115%;
     max-width: 320px;
     transform: rotateY(180deg);
 }
@@ -777,16 +747,12 @@ a {
 }
 
 .contenedor-nuestro-ganado-3  img.imagen-chile {
-	width: 15%;
-	height: 100%;
-    align-self: center;
+	width: 25%;
     margin: initial;
-    position: initial;
 }
 
 .contenedor-nuestro-ganado-3 .contenedor-info-plato-sin-imagen:first-child 
 .precio-plato-sin-imagen {
-    justify-content: flex-end;
     flex-direction: initial;
 }
 
@@ -863,7 +829,18 @@ a {
 }
 /* FIN SECCIÓN IMÁGENES EXTRA LICORES */
 
-.contenedor-licores-1 .contenedor-info-producto-superior img {
+.contenedor-licores-1 .contenedor-info-producto-superior img,
+.contenedor-licores-1 .contenedor-info-producto-inferior img,
+.contenedor-licores-2 .contenedor-info-producto-superior img,
+.contenedor-licores-2 .contenedor-info-producto-inferior img,
+.contenedor-licores-3 .contenedor-info-producto-superior img,
+.contenedor-licores-3 .contenedor-info-producto-inferior img,
+.contenedor-licores-4 .contenedor-info-producto-superior img,
+.contenedor-licores-4 .contenedor-info-producto-inferior .contenedor-imagen-y-titulo-cocteles img,
+.contenedor-licores-5 .contenedor-info-producto-superior img,
+.contenedor-licores-5 .contenedor-info-producto-inferior img,
+.contenedor-licores-6 .contenedor-info-producto-superior img,
+.contenedor-licores-6 .contenedor-info-producto-inferior img{
 	width: 60%;
 	max-width: 130px;
     left: 0;
@@ -871,124 +848,62 @@ a {
     bottom: 0;
     top: 0;
     position: absolute;
-    /* background: blue; */
 }
+
 .contenedor-licores-1 .contenedor-info-producto-inferior img{
     width: 70%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-2 .contenedor-info-producto-superior img{
     width: 70%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-2 .contenedor-info-producto-inferior img {
 	width: 70%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-3 .contenedor-info-producto-superior img {
 	width: 37%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-3 .contenedor-info-producto-inferior img {
 	width: 70%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-4 .contenedor-info-producto-superior img {
 	width: 80%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-4 .contenedor-info-producto-inferior .contenedor-imagen-y-titulo-cocteles img{
     width: 70%;
 	max-width: 150px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
     transform: scaleX(-1);
 }
 
 .contenedor-licores-5 .contenedor-info-producto-superior img {
 	width: 70%;
 	max-width: 130px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
-    /* background: blue; */
 }
 
 .contenedor-licores-5 .contenedor-info-producto-inferior img{
     width: 50%;
 	max-width: 120px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
 }
 
 .contenedor-licores-6 .contenedor-info-producto-superior img{
     width: 50%;
 	max-width: 120px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
 }
 
 .contenedor-licores-6 .contenedor-info-producto-inferior img{
     width: 70%;
 	max-width: 120px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: absolute;
 }
 
 /* ============== CUATRIGÉSIMA SECCIÓN BEBIDAS ==================== */
@@ -1022,20 +937,26 @@ a {
 .contenedor-info-producto .titulo{
     color: #fff;
     font-family: 'Rye', cursive;
-    font-size: 19px;
+    font-size: 20px;
     text-transform: uppercase;
     line-height: 90%;
+}
+
+.contenedor-info-producto-sin-imagenes .titulo{
+    /* margin-bottom: 1em;   */
+}
+
+.contenedor-los-mero-mero-6 .contenedor-info-producto-sin-imagenes .titulo{
+    /* margin-bottom: 0.5em; */
+}
+
+.contenedor-postres-3 .contenedor-info-producto-sin-imagenes .titulo{
+    /* margin-bottom: 0.5em; */
 }
 
 .contenedor-info-producto .titulo span{
     padding: 0 0.7em;
     line-height: 1.2em;
-}
-
-.contenedor-info-producto-sin-imagenes .titulo{
-    background: initial;
-    position: initial;
-    margin-bottom: 0.8em;    
 }
 
 .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .titulo span{
@@ -1098,15 +1019,11 @@ a {
 
 
 .contenedor-pa-compartir-4 .contenedor-info-producto-sin-imagenes .subtitulo {
-    font-family: 'Bison';
-    position: relative;
-    font-size: 15px ;
-    color: #fff;
-    margin-top: -1em;
-    margin-bottom: 1em;
-    width: 120%;
-    right: 10%;
-} 
+	font-family: 'Bison';
+	position: relative;
+	font-size: 15px;
+	color: #fff;
+}
 
 .contenedor-pa-compartir-4 .contenedor-info-producto-sin-imagenes .subtitulo span{
     background: #4A266A;
@@ -1224,9 +1141,6 @@ a {
 }
 
 /* ====================== OCTAVA SECCIÓN - PECHUGAS PIO PIO ===================== */
-.contenedor-pechugas-pio-pio-1 .titulo{
-    background: transparent;
-}
 
 .contenedor-pechugas-pio-pio-1 .titulo span,
 .contenedor-pechugas-pio-pio-2 .titulo span{
@@ -1237,19 +1151,16 @@ a {
 .contenedor-pechugas-pio-pio-1 img.imagen-chile {
 	position: initial;
 	width: 25%;
-	margin: initial;
+    margin: initial;
+    transform: initial;
 }
 
 .contenedor-pechugas-pio-pio-2 img.imagen-chile {
-	position: initial;
-	width: 15%;
+    width: 25%;
     margin: initial;
-    align-self: center;
-    height: 100%;
-}
+}   
 
 .contenedor-pechugas-pio-pio-2 .contenedor-info-plato-sin-imagen:first-child .precio-plato-sin-imagen {
-	justify-content: flex-end;
 	flex-direction: initial;
 }
 /* =========== NOVENA SECCIÓN - Y EL PUERCO ================ */
@@ -1446,6 +1357,23 @@ a {
     justify-content: center;
 }
 
+.contenedor-info-plato-sin-imagen .descripcion{
+    /* background: red; */
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contenedor-los-mero-mero-6 .contenedor-info-plato-sin-imagen .descripcion{
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+.contenedor-postres-3 .contenedor-info-plato-sin-imagen .descripcion{
+    margin-bottom: initial;
+    margin-top: 0.2em;
+}
+
 .contenedor-info-producto-superior .descripcion p,
 .contenedor-info-producto-inferior .descripcion p,
 .contenedor-info-producto-intermedio .descripcion p{
@@ -1453,9 +1381,9 @@ a {
     max-width: 200px;
 }
 
-.contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .descripcion{
-    width: 100%;
-    position: initial;
+.contenedor-info-plato-sin-imagen .descripcion p{
+    width: 90%;
+    max-width: 250px;
 }
 
 /* =============================================================== */
@@ -1482,8 +1410,7 @@ a {
 /* ======== QUINTA SECCIÓN - LOS MERO MERO MEXICANOS ========*/
 
 .contenedor-los-mero-mero-6 .contenedor-info-producto-sin-imagenes .contenedor-info-plato-sin-imagen .descripcion{
-    width: 105%;
-    background: red;
+    /* background: red; */
 }
 /* ================= SEXTA SECCIÓN - LAS ESTRELLAS ============== */
 .contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion,
@@ -1576,12 +1503,13 @@ a {
 	font-family: 'Mayan';
 	color: #fff;
 	text-align: end;
-	font-size: 38px;
-	/* background: red; */
 	display: flex;
-	justify-content: space-between;
-    flex-direction: row-reverse;
-    /* outline: 5px solid #008F43; */
+	justify-content: space-evenly;
+	flex-direction: row-reverse;
+	/* outline: 5px solid #008F43; */
+	max-width: 200px;
+	align-self: center;
+	width: 100%;
 }
 
 .precio-plato-sin-imagen p span:nth-child(1){
@@ -1618,23 +1546,11 @@ a {
 	display: flex;
 	width: 100%;
 	height: auto;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Bison';
 	color: #fff;
 	text-transform: uppercase;
     justify-content: space-evenly;
-    /* outline: 4px dotted rgb(255, 178, 152); */
-}
-
-.descripcion-precio-varios-sin-imagen {
-	display: flex;
-	width: 150%;
-	font-family: 'Bison';
-	color: #fff;
-	font-size: 16px;
-	margin-left: -25%;
-    margin-top: 10px;
-    justify-content: center;
 }
 
 .descripcion-precio-varios-especial-sin-imagen {
@@ -1648,12 +1564,6 @@ a {
     justify-content: center;
 }
 
-.descripcion-precio-varios-sin-imagen div,
-.descripcion-precio-varios-especial-sin-imagen div{
-    margin-right: 1em;
-}
-
-.descripcion-precio-varios-sin-imagen p,
 .descripcion-precio-varios-especial-sin-imagen p{
     text-align: end;
 }
@@ -1662,11 +1572,12 @@ a {
     text-align: start;
 }
 
-.descripcion-precio div{
-}
-
 .descripcion-precio p{
     text-align: end;
+}
+
+.contenedor-pa-entrarle-solito-5 .contenedor-info-producto-sin-imagenes .descripcion-precio p{
+    text-align: center;
 }
 
 .descripcion-precio-doble {
@@ -1740,8 +1651,7 @@ a {
 
 .precio-plato-varios-licores .contenedor-precio{
     display: flex;
-    margin-bottom: 0.1em;
-    justify-content: center;
+    margin-bottom: 0.2em;
 }
 
 .precio-plato-varios-licores .tipo{
@@ -1780,18 +1690,37 @@ a {
 	font-family: 'Bison';
     font-size: 15px;
     align-self: flex-end;
+    /* outline: 3px solid #fff; */
 }
 
 .etiqueta-toque-picante p{
+    display: flex;
     text-align: center;
-    /* background: #D8C724; */
+    width: 250px;
+    height: 100%;
+    margin: auto;
+    justify-content: flex-end;
 }
 
 .etiqueta-toque-picante p span {
-	position: relative;
 	background: #D8C724;
 	color: #C22528;
-	padding: 0 0.3em;
+    padding: 0 0.3em;
+    align-self: center;
+}
+
+.etiqueta-toque-picante p .imagen-chorizo{
+    position: relative;
+	right: 6px;
+	width: 15%;
+	height: 100%;
+    max-width: 100px;
+    transform: initial;
+    margin: initial;
+}
+
+.contenedor-info-producto-sin-imagenes .etiqueta-toque-picante{
+    align-self: center;
 }
 
 .precio-plato-sin-imagen .etiqueta-pidelo-picante {
@@ -1818,7 +1747,6 @@ a {
 /*============================== PA COMPARTIR ================================ */
 .contenedor-pa-compartir-2 .contenedor-info-producto-superior .descripcion-precio{
     width: 100%;
-    font-size: 14px;
     max-width: 300px;
     align-self: flex-end;
 }
@@ -1885,10 +1813,6 @@ a {
     background: rgba(70, 25, 11, 0.7);
     max-width: 200px;
     align-self: flex-end;
-}
-
-.contenedor-los-mero-mero-1 .contenedor-info-producto-superior .etiqueta-toque-picante{
-    
 }
 
 .contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion-precio{
@@ -2738,13 +2662,28 @@ p.menu-infantil-precio {
         left: 25px;
     }
 
-
+    /* DESCRIPCIÓN */
     .descripcion span {
-        /* background: rgba(10, 201, 35, 0.5); */
     }   
     .descripcion {
+        font-size: 14px;
+    }
+    .contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion, .contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion {
         font-size: 12px;
-        /* width: 43%; */
+    }
+
+    /* PRECIOS VARIOS  */
+    .descripcion-precio{
+        font-size: 18px;
+    }
+
+    .contenedor-los-mero-mero-1 .contenedor-info-producto-inferior .descripcion-precio {
+        font-size: 18px;
+    }
+
+    /* ETIQUETA PICANTE */
+    .etiqueta-toque-picante {
+        font-size: 17px;
     }
 
     /* BEBIDAS */
@@ -2803,21 +2742,24 @@ p.menu-infantil-precio {
         /* background: rgba(10, 201, 35, 0.5); */
     }   
     .descripcion {
-        font-size: 14px;
+        font-size: 16px;
         /* width: 48%; */
+    }
+
+     /* VERSIONES COCTELES */
+     .contenedor-versiones-cocteles p {
+        width: 195px;
+        font-size: 10px;
+    }
+
+    .contenedor-info-producto-superior .descripcion p,
+    .contenedor-info-producto-superior .descripcion p {
+        width: 100%;
     }
     
     .contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion,
     .contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion{
         font-size: 13px;
-    }
-
-    /* PRECIOS */
-    .precio-plato-superior {
-        bottom: 10px;
-    }
-    .precio-plato-inferior{
-        bottom: 10px;
     }
 
     /* BOTELLAS */
@@ -2853,28 +2795,38 @@ p.menu-infantil-precio {
         justify-content: space-evenly;
     }
 
+    /* CONTENEDOR IMPUESTOS */
+
+    .contenedor-impuestos p {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (min-width: 375px) and (min-height: 800px){
 
-    .descripcion span {
-        /* background: rgba(10, 201, 35, 0.5); */
-    }   
+    .contenedor-info-producto .titulo {
+        font-size: 22px;
+    }
+
+    .contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-inferior .titulo span, 
+    .contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-superior .titulo span {
+        font-size: 21px;
+    }
+  
     .descripcion {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion,
     .contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion{
-        font-size: 13px;
+        font-size: 14px;
     }
 
-    /* PRECIOS */
-    .precio-plato-superior {
-        bottom: 10px;
-    }
-    .precio-plato-inferior{
-        bottom: 10px;
+    /* VERSIONES COCTELES */
+    .contenedor-versiones-cocteles p {
+        width: 195px;
+        font-size: 10px;
     }
 
     /* BOTELLAS */
@@ -2904,12 +2856,71 @@ p.menu-infantil-precio {
     .contenedor-4 .contenedor-iconos-titulo {
         margin-top: 0.7em;
     }
+
+    /* CONTENEDOR IMPUESTOS */
+
+    .contenedor-impuestos p {
+        font-size: 14px;
+    }
+
 }
 
-@media screen and (min-width: 667px) and (min-height: 375px){
+@media screen and (min-width: 480px){
+
+    .contenedor-info-producto .titulo {
+        font-size: 25px;
+    }
+
+    .contenedor-info-producto.contenedor-licores-3 .contenedor-info-producto-inferior .titulo span, 
+    .contenedor-info-producto.contenedor-licores-4 .contenedor-info-producto-superior .titulo span {
+        font-size: 23px;
+    }
+  
     .descripcion {
-        font-size: 13px;
-        width: 48%;
+        font-size: 18px;
+    }
+
+    .descripcion span {
+        line-height: 1.3em;
+    }
+
+    .contenedor-las-estrellas-1 .contenedor-info-producto-superior .descripcion,
+    .contenedor-las-estrellas-1 .contenedor-info-producto-inferior .descripcion{
+        font-size: 16px;
+    }
+
+    .contenedor-postres-3 .contenedor-info-plato-sin-imagen .descripcion {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .contenedor-los-mero-mero-6 .contenedor-info-plato-sin-imagen .descripcion {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+  
+}
+
+@media screen and (min-width: 667px){
+    .contenedor-info-producto .titulo {
+        font-size: 28px;
+    }
+
+    .descripcion {
+        font-size: 26px;
+    }
+
+    .contenedor-info-producto-superior .descripcion p, 
+    .contenedor-info-producto-inferior .descripcion p, 
+    .contenedor-info-producto-intermedio .descripcion p {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contenedor-info-plato-sin-imagen .descripcion p {
+        width: 100%;
+        max-width: 450px;
     }
 
     /* BEBIDAS */
